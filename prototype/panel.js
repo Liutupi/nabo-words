@@ -101,7 +101,7 @@ const Panel = (() => {
       ['学习日', `第 ${S.day} 天${S.doneDay === S.day ? ' · 今天已完成' : ''}`],
       ['学段', allDone(S) ? '全部完成' : `${st.name}（${st.region}）${examReady(S) ? ' · 可以结业考' : ''}`],
       ['词汇', `已掌握 ${mastered(S)} · 学过 ${learned(S)} / ${TOTAL_WORDS}`],
-      ['今日', `复习 ${plan.reviews.length} · 新词 ${plan.fresh.length}`],
+      ['今日', `复习 ${plan.reviews.length} · 新词 ${plan.fresh.length} · 约 ${(plan.seconds / 60).toFixed(1)} 分钟${plan.backlog ? ` · 积压 ${plan.backlog}` : ''}`],
       ['打卡', `连续 ${S.streak} 天 · 最长 ${S.bestStreak} · 补签卡 ${S.freezes}`],
       ['金币', `${S.coins} · 摆件 ${S.toys.length}/${BOX_TOYS.length}`],
       ['护照', `${stampCount(S)} / ${TOTAL_UNITS} 枚`],

@@ -19,13 +19,13 @@ function setMood(m, sec) { G.mood = m; G.moodT = sec; }
 function buildMenu() {
   const plan = planToday(S), done = S.doneDay === S.day, items = [];
   items.push(done ? { id: 'study', label: '今日学习 ✓', sub: '今天完成了，明天再来' }
-    : { id: 'study', label: '今日学习', sub: plan.reviews.length + plan.fresh.length ? `复习 ${plan.reviews.length} · 新词 ${plan.fresh.length}` : (examReady(S) ? '先通过结业考解锁新词' : '没有要学的词') });
+    : { id: 'study', label: '今日学习', sub: plan.reviews.length + plan.fresh.length ? `复习 ${plan.reviews.length} · 新词 ${plan.fresh.length} · 约 ${Math.max(1, Math.round(plan.seconds / 60))} 分钟` : (examReady(S) ? '先通过结业考解锁新词' : '没有要学的词') });
   if (examReady(S)) items.push({ id: 'exam', label: '结业考', sub: `${STAGES[S.stage].name} · ${EXAM_Q} 题答对 ${EXAM_PASS} 题通过` });
   items.push({ id: 'battle', label: '对战', sub: `${rankOf(S.rating)} · 积分 ${S.rating}` });
   items.push({ id: 'stars', label: '星图', sub: `已掌握 ${mastered(S)} / ${TOTAL_WORDS}` });
   items.push({ id: 'passport', label: '护照', sub: `已盖 ${stampCount(S)} 枚章` });
   items.push({ id: 'desk', label: '书桌', sub: `金币 ${S.coins} · 盲盒 5 枚一次` });
-  items.push({ id: 'newper', label: '每日新词', sub: `${S.newPerDay} 个 · OK 切换` });
+  items.push({ id: 'newper', label: '每日新词', sub: `${S.newPerDay} 个 · 复习最多 ${reviewBudget(S) / 60} 分钟 · OK 切换` });
   const keep = G.menu[G.menuIdx] && G.menu[G.menuIdx].id;
   G.menu = items;
   const k = items.findIndex(it => it.id === keep);

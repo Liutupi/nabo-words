@@ -17,9 +17,17 @@ function shuffle(arr, rnd) {
 }
 
 // ---------- 记忆盒 ----------
-const INTERVAL = [0, 1, 2, 4, 7, 15, 30, 60];   // 盒子 1..7 的复习间隔（天）
-const MAX_BOX = 7, FAMILIAR = 3, MASTERED = 4;
-const REVIEW_CAP = 80, REVIEW_SOFT = 50;
+const INTERVAL = [0, 1, 3, 7, 14, 30, 60];      // 盒子 1..6 的复习间隔（天）；盒子 7 毕业，不再排期
+const MAX_BOX = 7, FAMILIAR = 3, MASTERED = 4, GRADUATED = 7;
+const NEVER = 1e9;
+const MAINT_PER_DAY = 3;                        // 每天从毕业词里抽查几个
+// 每天复习时间上限：每个新词配 30 秒，至少 5 分钟（默认 10 个新词正好 5 分钟）
+const REVIEW_SEC_PER_NEW = 30, REVIEW_BUDGET_MIN_S = 300;
+function reviewBudget(s) { return Math.max(REVIEW_BUDGET_MIN_S, REVIEW_SEC_PER_NEW * s.newPerDay); }
+const BACKLOG_SOFT = 20;                        // 排不下的复习超过这个数，当天新词减半
+// 每道题的预计用时（秒）：新词卡、新词检测、按盒子决定的复习题型
+const SEC_INTRO = 4, SEC_CHECK = 4;
+function reviewSeconds(box) { return box <= 3 ? 4 : box === 4 ? 4.5 : 2.5; }
 const EXAM_UNLOCK = 0.9, EXAM_Q = 20, EXAM_PASS = 16;
 const STREAK_FREEZE_EVERY = 7, FREEZE_MAX = 2;
 
@@ -73,25 +81,38 @@ function spriteForm(s, stageIdx) {
 }
 
 // ---------- 今日学习的题单 ----------
-// 返回 { reviews: [idx], fresh: [idx] }
+// 复习按到期先后排，累计预计用时到当天预算为止；排不下的留到明天。
+// 只有复习排不下时才减新词：积压超过 BACKLOG_SOFT 个减半，积压超过一天的量停发。
+// 返回 { reviews: [idx], fresh: [idx], backlog, seconds }
 function planToday(s) {
-  const due = dueList(s).sort((a, b) => s.due[a] - s.due[b] || a - b).slice(0, REVIEW_CAP);
+  const due = dueList(s).sort((a, b) => s.due[a] - s.due[b] || a - b);
+  const grads = [];
+  for (let i = 0; i < s.next; i++) if (s.box[i] === GRADUATED) grads.push(i);
+  const pick = mulberry32(s.day * 7919 + 13);
+  const maint = grads.length ? shuffle(grads, pick).slice(0, MAINT_PER_DAY) : [];
+  const reviews = [], budget = reviewBudget(s); let sec = 0;
+  for (const i of [...due, ...maint]) {
+    const t = reviewSeconds(s.box[i]);
+    if (sec + t > budget) break;
+    reviews.push(i); sec += t;
+  }
+  const backlog = due.length + maint.length - reviews.length;
   let quota = s.newPerDay;
-  if (due.length > REVIEW_CAP - 1) quota = 0; else if (due.length > REVIEW_SOFT) quota = Math.floor(quota / 2);
+  if (backlog > reviews.length) quota = 0; else if (backlog > BACKLOG_SOFT) quota = Math.floor(quota / 2);
   const fresh = [];
   if (!allDone(s)) {
     const limit = STAGES[s.stage].end;
     for (let i = s.next; i < limit && fresh.length < quota; i++) fresh.push(i);
   }
-  return { reviews: due, fresh };
+  return { reviews, fresh, backlog, seconds: Math.round(sec + fresh.length * (SEC_INTRO + SEC_CHECK)) };
 }
 
 // 答题结果写回记忆盒。first=true 表示本次学习里这个词第一次作答（重问不改盒子）
 function grade(s, idx, correct, first) {
   if (!first) return;
   if (correct) s.box[idx] = Math.min(MAX_BOX, s.box[idx] + 1);
-  else s.box[idx] = Math.max(1, s.box[idx] - 2);
-  s.due[idx] = s.day + (correct ? INTERVAL[s.box[idx]] : 1);
+  else s.box[idx] = Math.max(1, s.box[idx] - 1);
+  s.due[idx] = !correct ? s.day + 1 : s.box[idx] === GRADUATED ? NEVER : s.day + INTERVAL[s.box[idx]];
 }
 function introduce(s, idx) { if (s.box[idx] === 0) { s.box[idx] = 1; s.due[idx] = s.day + 1; } s.next = Math.max(s.next, idx + 1); }
 

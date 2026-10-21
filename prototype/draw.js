@@ -26,6 +26,21 @@ const SPRITE_COL = ['#7BC86C', '#5AA9E6', '#9B7BE0', '#F08A3C', '#3CC2C8', '#F07
 let ctx;
 function bindCtx(c) { ctx = c; }
 
+// ---------- 已交付的美术（tools/build_proto_atlas.py 生成），没有就用下面的占位画法 ----------
+const ART_IMG = {};
+for (const [name, a] of Object.entries(window.NABO_ART || {})) { const im = new Image(); im.src = a.src; ART_IMG[name] = { im, ...a }; }
+function hasArt(name) { const a = ART_IMG[name]; return !!(a && a.im.complete && a.im.naturalWidth); }
+// 把图的锚点放到 (x, y)
+function drawArt(name, x, y) {
+  if (!hasArt(name)) return false;
+  const a = ART_IMG[name];
+  ctx.imageSmoothingEnabled = false;
+  ctx.drawImage(a.im, Math.round(x - a.ax), Math.round(y - a.ay), a.w, a.h);
+  return true;
+}
+const NABO_ART_BY_LOOK = ['nabo_primary'];
+function naboArtFor(look) { const n = NABO_ART_BY_LOOK[LOOK.indexOf(look)]; return n && hasArt(n) ? n : null; }
+
 function rect(x, y, w, h, col) { ctx.fillStyle = col; ctx.fillRect(x, y, w, h); }
 function rrect(x, y, w, h, r, col) { ctx.fillStyle = col; ctx.beginPath(); ctx.roundRect(x, y, w, h, r); ctx.fill(); }
 function circle(x, y, r, col) { ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill(); }
@@ -57,6 +72,12 @@ function drawDesk(look) {
 function drawNabo(stageLook, mood, t) {
   const bob = mood === 'happy' ? -Math.abs(Math.sin(t * 9)) * 5 : Math.sin(t * 2) * 1.2;
   const cx = 120, hy = 104 + bob, L = stageLook;
+  const art = naboArtFor(stageLook);
+  if (art) {   // 视频帧到之前先用起始图；开心 / 沮丧只做位移和汗滴
+    drawArt(art, cx, 176 + (mood === 'happy' ? bob : mood === 'sad' ? 2 : 0));
+    if (mood === 'sad') { ctx.fillStyle = '#7CC4F0'; ctx.beginPath(); ctx.ellipse(cx + 30, hy - 8, 3, 5, 0, 0, Math.PI * 2); ctx.fill(); }
+    return;
+  }
   // 身体
   ctx.fillStyle = L.body; ctx.beginPath(); ctx.moveTo(cx - 40, 178); ctx.quadraticCurveTo(cx - 38, hy + 34, cx, hy + 32); ctx.quadraticCurveTo(cx + 38, hy + 34, cx + 40, 178); ctx.fill();
   if (L.kind === 'backpack') { rect(cx - 30, hy + 38, 6, 40, L.acc); rect(cx + 24, hy + 38, 6, 40, L.acc); }
@@ -95,7 +116,9 @@ function drawNabo(stageLook, mood, t) {
 // ---------- 单词精灵 ----------
 function drawSprite(stageIdx, form, x, y, t, scale = 1) {
   const col = SPRITE_COL[Math.min(stageIdx, 5)], bob = Math.sin(t * 3 + stageIdx) * 2 * scale;
+  const artName = stageIdx === 0 ? 'doudou_' + ['egg', 'baby', 'teen', 'final'][form] : '';
   ctx.save(); ctx.translate(x, y + bob); ctx.scale(scale, scale);
+  if (artName && drawArt(artName, 0, 0)) { ctx.restore(); return; }
   if (form === 0) {
     ctx.fillStyle = '#FBF4E6'; ctx.beginPath(); ctx.ellipse(0, -14, 11, 14, 0, 0, Math.PI * 2); ctx.fill();
     circle(-4, -18, 2.5, col); circle(4, -10, 2, col); circle(3, -22, 1.6, col);
@@ -114,14 +137,14 @@ function drawSprite(stageIdx, form, x, y, t, scale = 1) {
 
 // ---------- 书桌道具 ----------
 const PROP_DRAW = {
-  clock(t) { circle(34, 52, 13, '#FFFFFF'); ctx.strokeStyle = '#333'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(34, 52, 13, 0, Math.PI * 2); ctx.stroke(); const a = t * 0.5; ctx.beginPath(); ctx.moveTo(34, 52); ctx.lineTo(34 + Math.sin(a) * 9, 52 - Math.cos(a) * 9); ctx.moveTo(34, 52); ctx.lineTo(34, 45); ctx.stroke(); },
+  clock(t) { if (!drawArt('clock', 34, 52)) { circle(34, 52, 13, '#FFFFFF'); ctx.strokeStyle = '#333'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(34, 52, 13, 0, Math.PI * 2); ctx.stroke(); } ctx.strokeStyle = '#2A3A44'; ctx.lineWidth = 1.5; const a = t * 0.5; ctx.beginPath(); ctx.moveTo(34, 53); ctx.lineTo(34 + Math.sin(a) * 6, 53 - Math.cos(a) * 6); ctx.moveTo(34, 53); ctx.lineTo(34, 49); ctx.stroke(); },
   cert() { rect(18, 78, 34, 26, '#FFF6D8'); ctx.strokeStyle = C.gold; ctx.lineWidth = 2; ctx.strokeRect(18, 78, 34, 26); circle(35, 98, 4, C.red); },
   map() { rect(172, 22, 58, 36, '#BFE0F0'); ctx.fillStyle = '#7FBF6A'; ctx.beginPath(); ctx.ellipse(186, 36, 8, 6, 0, 0, 7); ctx.ellipse(208, 42, 11, 7, 0.4, 0, 7); ctx.ellipse(222, 30, 5, 4, 0, 0, 7); ctx.fill(); ctx.strokeStyle = '#6B4B2E'; ctx.lineWidth = 2; ctx.strokeRect(172, 22, 58, 36); },
   shelf() { rect(170, 100, 66, 4, '#7A5434'); },
   plant() { rrect(206, 86, 14, 14, 2, '#C8693A'); ctx.fillStyle = '#4FA35A'; ctx.beginPath(); ctx.ellipse(209, 80, 4, 9, -0.4, 0, 7); ctx.ellipse(217, 80, 4, 9, 0.4, 0, 7); ctx.fill(); },
-  lamp() { rect(20, 172, 16, 4, '#444'); rect(26, 140, 3, 32, '#555'); ctx.fillStyle = '#F2A93B'; ctx.beginPath(); ctx.moveTo(18, 146); ctx.lineTo(40, 146); ctx.lineTo(34, 132); ctx.lineTo(24, 132); ctx.fill(); },
+  lamp() { if (drawArt('lamp', 28, 176)) return; rect(20, 172, 16, 4, '#444'); rect(26, 140, 3, 32, '#555'); ctx.fillStyle = '#F2A93B'; ctx.beginPath(); ctx.moveTo(18, 146); ctx.lineTo(40, 146); ctx.lineTo(34, 132); ctx.lineTo(24, 132); ctx.fill(); },
   globe() { rect(52, 172, 14, 4, '#6B4B2E'); circle(59, 158, 11, '#5AA9E6'); ctx.fillStyle = '#7FBF6A'; ctx.beginPath(); ctx.ellipse(55, 155, 4, 5, 0.3, 0, 7); ctx.ellipse(63, 162, 3, 3, 0, 0, 7); ctx.fill(); },
-  pencilcase() { rrect(70, 186, 34, 10, 4, '#E05A7A'); rect(94, 182, 3, 6, '#F2C230'); },
+  pencilcase() { if (drawArt('pencilcase', 87, 197)) return; rrect(70, 186, 34, 10, 4, '#E05A7A'); rect(94, 182, 3, 6, '#F2C230'); },
   laptop() { rrect(98, 150, 44, 26, 2, '#C9CDD6'); rect(101, 153, 38, 20, C.screen); rect(92, 176, 56, 3, '#AEB3BE'); },
   mug() { rrect(150, 162, 14, 14, 2, '#FFFFFF'); ctx.strokeStyle = '#FFFFFF'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(165, 169, 4, -1.4, 1.4); ctx.stroke(); rect(152, 164, 10, 3, '#6B3E26'); },
   phones() { ctx.strokeStyle = '#2B2F38'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(160, 196, 9, Math.PI, 0); ctx.stroke(); rrect(149, 194, 6, 8, 2, '#2B2F38'); rrect(165, 194, 6, 8, 2, '#2B2F38'); },

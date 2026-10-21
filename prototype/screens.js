@@ -19,8 +19,10 @@ function drawTopBar(s) {
 function drawHome(s, G) {
   const look = lookFor(s), t = G.t;
   drawRoom(look, t); drawProps(s, t, 'wall');
-  drawNabo(look, G.mood, t);
-  drawDesk(look); drawProps(s, t, 'desk');
+  // 美术版 NABO 的双手搭在桌沿上，所以画在桌子之后；占位版身体要被桌子挡住
+  if (naboArtFor(look)) { drawDesk(look); drawNabo(look, G.mood, t); }
+  else { drawNabo(look, G.mood, t); drawDesk(look); }
+  drawProps(s, t, 'desk');
   const si = Math.min(s.stage, 5);
   drawSprite(si, spriteForm(s, si), 196, 176, t);
   drawTopBar(s);
