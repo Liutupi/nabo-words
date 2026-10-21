@@ -15,8 +15,9 @@
 二分查找起点，最多 3 轮 30 题，每题都有“不认识”），测出的起点之前的词记为毕业，星图上用浅色。
 
 主页菜单：今日学习、结业考（达到条件才出现）、加学 5 个新词（今天学完后，每天最多 4 组，全对 +1 金币）、闪电挑战（60 秒抢答学过的词，
-答错的排进明天复习，每天第一次每答对 5 题 1 金币）、分级测试（还在小学开头时）、对战、星图、护照、书桌、小卖部、每日新词、家乡、声音。
-规则在 `main/words/nabo_words_extra.c`，用例 `tests/words_host/test_extra.py`（原型里还没有这三项）。
+答错的排进明天复习，每天第一次每答对 5 题 1 金币）、分级测试（还在小学开头时）、对战、星图、护照、成就、书桌、小卖部、每日新词、家乡、声音。
+每满 7 个学习日回主页时弹出 NABO 周报（新学、新掌握、打卡天数、这周容易错的词）。对战结算页按下键可以和同一个对手再来一局。
+规则在 `main/words/nabo_words_extra.c`，原型对应 `prototype/extra.js`；用例 `tests/words_host/test_extra.py`，原型和 C 逐题对拍 `tests/words_host/extra_parity.py`。
 5 分钟没有操作会先保存再深睡，按任意键唤醒。
 
 ## 对战（ESP-NOW）
@@ -82,12 +83,15 @@ python3 tools/verify_firmware.py build
 
 ```sh
 python3 tests/words_host/test_words.py          # 规则模块和原型逐步对拍
-python3 tests/fw_host/run_host_render.py out/   # 游戏层在宿主上跑一遍主要画面，截图；核对增量重画 = 整屏重画、绘制列表不溢出
+python3 tests/words_host/test_extra.py          # 分级测试 / 加学 / 闪电挑战规则用例
+python3 tests/words_host/extra_parity.py        # 上面三项原型和 C 逐题对拍（需要 node）
+python3 tests/fw_host/run_host_render.py out/   # 游戏层在宿主上跑一遍所有画面，截图；核对增量重画 = 整屏重画、绘制列表不溢出
+python3 tests/fw_host/run_host_battle.py        # 两个进程经本机 UDP 打两局对战（含再来一局），核对比分和积分
 ```
 
 ## 串口调试命令
 
-USB 串口（115200）每行一条：`status`、`key up|down|ok|back`、`solve [N]`（把当前学习 / 分级测试答对做完）、`days N`（推进 N 个学习日）、`sim N [正确率]`（按原型面板的方法自动学 N 天）、
+USB 串口（115200）每行一条：`status`、`key up|down|ok|back`、`solve [N]`（把当前学习 / 分级测试答对做完）、`goto <study|extra|challenge|place|battle|stars|passport|ach|desk|shop|home>`、`perf`（帧耗时统计）、`vs` / `vstat`（对战）、`days N`（推进 N 个学习日）、`sim N [正确率]`（按原型面板的方法自动学 N 天）、
 `coins N`、`save`、`wipe`（清空学习记录）。
 
 ## 验证记录

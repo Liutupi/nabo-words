@@ -17,7 +17,13 @@ def script(host: bool) -> str:
         s += "wait 1500\nkey ok\nwait 6500\n" + "wait 800\nkey ok\nwait 3600\n" * 10
     else:
         s += "wait 3000\nkey ok\nwait 3500\n" + "wait 1300\nkey down\nkey ok\nwait 3100\n" * 10
-    return s + "wait 4000\ncmd vstat\n"
+    s += "wait 4000\ncmd vstat\n"
+    # 再来一局：挑战方在结算页按下键，接受方按 OK
+    if host:
+        s += "wait 500\ncmd vstat\nkey down\ncmd vstat\nwait 6500\ncmd vstat\n" + "wait 800\nkey ok\nwait 3600\n" * 10
+    else:
+        s += "wait 8000\ncmd vstat\nkey ok\ncmd vstat\nwait 5000\ncmd vstat\n" + "wait 1300\nkey down\nkey ok\nwait 3100\n" * 10
+    return s + "wait 12000\ncmd vstat\n"
 
 
 def main() -> int:
@@ -37,9 +43,14 @@ def main() -> int:
     a.wait()
     b.wait()
     pat = re.compile(r"phase=(\d+) .*score=(\d+):(\d+) counted=(\d) .*rating=(-?\d+)")
-    ra, rb = pat.findall(oa)[-1], pat.findall(ob)[-1]
-    print("挑战方", ra, "\n接受方", rb)
-    ok = ra[0] == rb[0] == "8" and ra[1:3] == rb[2:0:-1] and ra[3] == rb[3] == "1" and int(ra[4]) + int(rb[4]) == 2000
+    if "-v" in sys.argv: print(oa[-700:], "\n----\n", ob[-700:])
+    ga = [m for m in pat.findall(oa) if m[0] == "8"]
+    gb = [m for m in pat.findall(ob) if m[0] == "8"]
+    ok = len(ga) >= 2 and len(gb) >= 2 and ga[0][4] != ga[-1][4]   # 两局都打完，第二局积分又变了
+    for game in (0, -1):
+        ra, rb = ga[game], gb[game]
+        print("第 1 局" if game == 0 else "再来一局", " 挑战方", ra, " 接受方", rb)
+        ok &= ra[1:3] == rb[2:0:-1] and ra[3] == rb[3] == "1" and int(ra[4]) + int(rb[4]) == 2000
     print("对战联机测试", "通过" if ok else "失败")
     return 0 if ok else 1
 

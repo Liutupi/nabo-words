@@ -238,6 +238,12 @@ const char *nw_menu_label(int id, char *sub, size_t n)
     case MI_HOME:
         snprintf(sub, n, "%s · OK 修改", nw_unit_city(0));
         return "家乡";
+    case MI_ACH: {
+        int got = 0;
+        for (int k = 0; k < 7; k++) got += (s->achievements >> k) & 1;
+        snprintf(sub, n, "已得 %d / 7", got);
+        return "成就";
+    }
     case MI_SOUND:
         snprintf(sub, n, "%s · OK 切换", G->rec.e.muted ? "关" : "开");
         return "声音";
@@ -262,6 +268,7 @@ static void build_menu(void)
     G->menu[n++] = MI_BATTLE;
     G->menu[n++] = MI_STARS;
     G->menu[n++] = MI_PASSPORT;
+    G->menu[n++] = MI_ACH;
     G->menu[n++] = MI_DESK;
     G->menu[n++] = MI_SHOP;
     G->menu[n++] = MI_NEWPER;
@@ -288,6 +295,50 @@ static void free_session(void)
     G->sess = NULL;
 }
 
+/* ---------- 周报 ---------- */
+
+static void week_reset(void)
+{
+    nw_extra_t *e = &G->rec.e;
+    e->week_day = S()->day;
+    e->week_learned = (uint16_t)nw_learned(S());
+    e->week_mastered = (uint16_t)nw_mastered(S());
+    e->week_done = S()->done_day == S()->day;
+    memset(e->week_wrong, 0, sizeof(e->week_wrong));
+}
+
+static void week_wrong(uint16_t idx)
+{
+    uint16_t *w = G->rec.e.week_wrong, v = (uint16_t)(idx + 1);
+    int k = 0;
+    while (k < 3 && w[k] != v) k++;
+    memmove(w + 1, w, sizeof(uint16_t) * (size_t)k);   /* 挪到最前面（已有的去重） */
+    w[0] = v;
+}
+
+/* 满 7 个学习日：算好这一周的数据，返回 true 表示要弹周报 */
+static bool week_due(void)
+{
+    nw_extra_t *e = &G->rec.e;
+    if (!e->onboard) return false;
+    if (!e->week_day) {
+        week_reset();
+        return false;
+    }
+    if (S()->day < e->week_day + 7) return false;
+    G->wk.week = (e->week_day - 1) / 7 + 1;
+    G->wk.learned = nw_learned(S()) - e->week_learned;
+    G->wk.mastered = nw_mastered(S()) - e->week_mastered;
+    G->wk.done = e->week_done;
+    G->wk.streak = S()->streak;
+    G->wk.n_wrong = 0;
+    for (int k = 0; k < 4; k++) {
+        if (e->week_wrong[k]) G->wk.wrong[G->wk.n_wrong++] = (uint16_t)(e->week_wrong[k] - 1);
+    }
+    week_reset();
+    return true;
+}
+
 static void to_home(void)
 {
     if (G->vs) nw_vs_leave();
@@ -296,6 +347,12 @@ static void to_home(void)
     G->fb = false;
     if (nw_look_of(S()) != G->look) load_pack(nw_look_of(S()));
     build_menu();
+    if (week_due()) {
+        G->scene = SC_WEEK;
+        mark_dirty();
+        cue(NW_CUE_STAMP);
+        return;
+    }
     if (G->pending >= 0) {
         play(G->pending, NULL, false, -1, NULL, false);
         G->pending = -1;
@@ -446,6 +503,7 @@ static void finish_session(void)
         return;
     }
     nw_finish_session(s, sess, &res);
+    if (!res.exam && G->rec.e.week_done < 7) G->rec.e.week_done++;
     if (res.exam) {
         snprintf(G->title, sizeof(G->title), "%s", res.passed ? "结业考通过！" : "差一点，明天再考");
         if (res.passed) {
@@ -518,6 +576,8 @@ static void answer(bool ok, int pick)
     G->fb_ok = ok;
     G->fb_pick = (uint8_t)pick;
     G->fb_t = G->now;
+    const nw_question_t *q = cur_q();
+    if (!ok && (q->flags & NW_QF_FIRST) && !G->sess->exam) week_wrong(q->idx);
     nw_session_answer(S(), G->sess, ok, &G->rng);
     G->mood = ok ? 1 : 2;
     G->mood_t = G->now;
@@ -859,6 +919,7 @@ static void home_ok(void)
     case MI_CHALLENGE: challenge_start(); break;
     case MI_PLACE: place_start(); break;
     case MI_HOME: onboard_start(false); break;
+    case MI_ACH: G->scene = SC_ACH; break;
     case MI_BATTLE:
         if (nw_vs_enter()) G->scene = SC_BATTLE;
         else toast("内存不足，请重启工牌");
@@ -898,11 +959,13 @@ static void act(nw_key_t k)
     case SC_STUDY: study_key(k); break;
     case SC_SUMMARY:
     case SC_STARS:
+    case SC_ACH:
+    case SC_WEEK:
         if (k == NW_KEY_OK) to_home();
         break;
     case SC_BATTLE:
-        if (G->vs && G->vs->phase == VS_END) {
-            if (k == NW_KEY_OK) to_home();
+        if (G->vs && G->vs->phase == VS_END && k == NW_KEY_OK) {
+            to_home();
         } else if (G->vs) {
             nw_vs_key(k);
         }
@@ -981,13 +1044,15 @@ static void draw_scene(void)
     case SC_ONBOARD: nw_draw_onboard(); break;
     case SC_PLACE: nw_draw_place(); break;
     case SC_CHALLENGE: nw_draw_challenge(); break;
+    case SC_ACH: nw_draw_ach(); break;
+    case SC_WEEK: nw_draw_week(); break;
     }
     nw_draw_overlay();
 }
 
 const char *nw_game_scene_name(void)
 {
-    static const char *const N[] = {"home", "study", "summary", "stars", "passport", "desk", "shop", "battle", "onboard", "place", "challenge"};
+    static const char *const N[] = {"home", "study", "summary", "stars", "passport", "desk", "shop", "battle", "onboard", "place", "challenge", "ach", "week"};
     return G ? N[G->scene] : "";
 }
 
@@ -1181,6 +1246,29 @@ void nw_game_command(const char *line, char *out, size_t n, uint32_t now_ms, uin
             }
         }
         snprintf(out, n, "scene=%s", nw_game_scene_name());
+    } else if (!strcmp(word, "goto")) {
+        /* 直接打开主页菜单里的某一项（宿主测试和串口调试用）：study exam extra challenge place battle stars
+         * passport ach desk shop home */
+        static const struct { const char *name; int id; } M[] = {
+            {"study", MI_STUDY}, {"exam", MI_EXAM}, {"extra", MI_EXTRA}, {"challenge", MI_CHALLENGE},
+            {"place", MI_PLACE}, {"battle", MI_BATTLE}, {"stars", MI_STARS}, {"passport", MI_PASSPORT},
+            {"ach", MI_ACH}, {"desk", MI_DESK}, {"shop", MI_SHOP}, {"home", MI_HOME},
+        };
+        char what[16] = {0};
+        sscanf(line, "%*s %15s", what);
+        to_home();
+        int id = -1;
+        for (size_t k = 0; k < sizeof(M) / sizeof(M[0]); k++) {
+            if (!strcmp(M[k].name, what)) id = M[k].id;
+        }
+        for (int i = 0; i < G->menu_n; i++) {
+            if (G->menu[i] == id) {
+                G->menu_idx = (uint8_t)i;
+                home_ok();
+            }
+        }
+        nw_gfx_invalidate(&G->gfx);
+        snprintf(out, n, "scene=%s", nw_game_scene_name());
     } else if (!strcmp(word, "vs")) {
         to_home();
         if (nw_vs_enter()) G->scene = SC_BATTLE;
@@ -1212,7 +1300,7 @@ void nw_game_command(const char *line, char *out, size_t n, uint32_t now_ms, uin
         nw_game_save();
         snprintf(out, n, "saved=%u", (unsigned)G->rec.e.saves);
     } else {
-        snprintf(out, n, "commands: status | key up/down/ok/back | solve [N] | days N | sim N [pct] | coins N | wipe | save");
+        snprintf(out, n, "commands: status | key up/down/ok/back | goto <菜单项> | solve [N] | days N | sim N [pct] | coins N | wipe | save");
     }
 }
 

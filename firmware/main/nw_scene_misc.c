@@ -241,7 +241,7 @@ static void paint_ring(const nw_op_t *op, int y, int x0, int x1, uint16_t *row)
 void nw_draw_overlay(void)
 {
     nw_gfx_t *g = &G->gfx;
-    if (G->toast[0] && G->scene != SC_DESK && G->scene != SC_SHOP) {
+    if (G->toast[0] && G->scene != SC_DESK && G->scene != SC_SHOP && G->scene != SC_WEEK) {
         nw_rect_a(g, 20, 34, 200, 26, 13, RGB(0x121829), 235);
         nw_text_fit(g, F_12, 1, G->toast, 120, 47, 186, NW_CENTER, RGB(C_GOLD));
     }
