@@ -4,14 +4,16 @@
 function lookFor(s) { return LOOK[Math.min(s.stage, 6)]; }
 function curUnitCity(s) { return unitInfo(Math.min(unitOf(Math.min(s.next, TOTAL_WORDS - 1)), TOTAL_UNITS - 1)).city; }
 
-function iconFlame(x, y, col) { ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(x, y - 7); ctx.quadraticCurveTo(x + 7, y, x + 4, y + 5); ctx.quadraticCurveTo(x, y + 8, x - 4, y + 5); ctx.quadraticCurveTo(x - 6, y, x, y - 7); ctx.fill(); }
-function iconCoin(x, y) { circle(x, y, 6, C.gold); circle(x, y, 3.5, '#C9952E'); }
+// 有美术图标就用图标（ui_flame 亮 / ui_flame_dim 暗），没有就程序画
+function iconFlame(x, y, col, lit = true) { if (drawArt(lit ? 'ui_flame' : 'ui_flame_dim', x, y)) return; ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(x, y - 7); ctx.quadraticCurveTo(x + 7, y, x + 4, y + 5); ctx.quadraticCurveTo(x, y + 8, x - 4, y + 5); ctx.quadraticCurveTo(x - 6, y, x, y - 7); ctx.fill(); }
+function iconCoin(x, y) { if (drawArt('ui_coin', x, y)) return; circle(x, y, 6, C.gold); circle(x, y, 3.5, '#C9952E'); }
 
 function drawTopBar(s) {
   rect(0, 0, 240, 24, 'rgba(18,24,41,.82)');
   const st = STAGES[Math.min(s.stage, STAGES.length - 1)];
-  text(allDone(s) ? '环游完成' : `${st.name} · ${curUnitCity(s)}`, 8, 12, 12, '#FFFFFF', 'left', F_BODY, 700);
-  iconFlame(160, 12, s.doneDay === s.day ? '#FF8A3D' : '#6B7287');
+  fitText(allDone(s) ? '环游完成' : `${st.name} · ${curUnitCity(s)}`, 8, 12, 12, 120, '#FFFFFF', 'left', F_BODY, 700);
+  iconFlame(160, 12, s.doneDay === s.day ? '#FF8A3D' : '#6B7287', s.doneDay === s.day);
+  if (s.freezes) { drawArt('ui_freeze', 136, 12); text(String(s.freezes), 143, 12, 11, '#FFFFFF', 'left', F_MONO, 700); }
   text(String(s.streak), 168, 12, 11, '#FFFFFF', 'left', F_MONO, 700);
   iconCoin(198, 12); text(String(s.coins), 207, 12, 11, '#FFFFFF', 'left', F_MONO, 700);
 }
@@ -214,7 +216,9 @@ function drawShop(s, G) {
   items.slice(top, top + 8).forEach((it, k) => {
     const i = top + k, y = 104 + k * 24;
     if (i === G.sel) rrect(8, y, 224, 22, 6, '#26304D');
-    fitText(it.label, 16, y + 11, 13, 120, '#FFFFFF', 'left');
+    const icon = it.kind === 'freeze' ? 'ui_freeze' : it.kind === 'box' ? 'toy_' + TOY_SLUGS[BOX_TOYS.indexOf(toyPool(s)[0] || BOX_TOYS[0])] : '';
+    if (icon && hasArt(icon)) { drawArt(icon, 20, y + 11 + (icon.startsWith('toy_') ? 6 : 0)); fitText(it.label, 32, y + 11, 13, 104, '#FFFFFF', 'left'); }
+    else fitText(it.label, 16, y + 11, 13, 120, '#FFFFFF', 'left');
     text(it.right, 224, y + 11, 11, it.right === '戴着' ? C.teal : C.muted, 'right');
   });
   if (G.toast) fitText(G.toast, 120, 306, 12, 220, C.gold, 'center', F_BODY, 700);

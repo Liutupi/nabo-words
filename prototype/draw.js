@@ -21,6 +21,7 @@ const LOOK = [
   { wall: '#24324F', trim: '#33466E', desk: '#4A3A30', top: '#5B483B', body: '#B08A5A', acc: '#22252C', kind: 'trench' },
   { wall: '#2A2440', trim: '#3E3560', desk: '#4A3A30', top: '#5B483B', body: '#1C1C24', acc: '#E8B84A', kind: 'gown' },
 ];
+const SPRITE_KEYS = ['doudou', 'paopao', 'xingxing', 'huohuo', 'langlang', 'jiguang'];   // 美术文件名
 const SPRITE_COL = ['#7BC86C', '#5AA9E6', '#9B7BE0', '#F08A3C', '#3CC2C8', '#F07EB5'];
 
 let ctx;
@@ -161,7 +162,7 @@ function drawNabo(stageLook, mood, t, play) {
 // acc：戴的饰品 id（ACCESSORIES），null 表示不戴
 function drawSprite(stageIdx, form, x, y, t, scale = 1, acc = null) {
   const col = SPRITE_COL[Math.min(stageIdx, 5)], bob = Math.sin(t * 3 + stageIdx) * 2 * scale;
-  const artName = stageIdx === 0 ? 'doudou_' + ['egg', 'baby', 'teen', 'final'][form] : '';
+  const artName = SPRITE_KEYS[Math.min(stageIdx, 5)] + '_' + ['egg', 'baby', 'teen', 'final'][form];
   const art = artName && hasArt(artName) ? ART_IMG[artName] : null;
   const r = [0, 11, 13, 15][form];
   // 饰品按形态的高度和半宽定位（原点在精灵底部中点）
@@ -222,33 +223,36 @@ function drawAccessory(id, form, h, hw) {
 // ---------- 书桌道具 ----------
 const PROP_DRAW = {
   clock(t) { if (!drawArt('clock', 34, 52)) { circle(34, 52, 13, '#FFFFFF'); ctx.strokeStyle = '#333'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(34, 52, 13, 0, Math.PI * 2); ctx.stroke(); } ctx.strokeStyle = '#2A3A44'; ctx.lineWidth = 1.5; const a = t * 0.5; ctx.beginPath(); ctx.moveTo(34, 53); ctx.lineTo(34 + Math.sin(a) * 6, 53 - Math.cos(a) * 6); ctx.moveTo(34, 53); ctx.lineTo(34, 49); ctx.stroke(); },
-  cert() { rect(18, 78, 34, 26, '#FFF6D8'); ctx.strokeStyle = C.gold; ctx.lineWidth = 2; ctx.strokeRect(18, 78, 34, 26); circle(35, 98, 4, C.red); },
-  map() { rect(172, 22, 58, 36, '#BFE0F0'); ctx.fillStyle = '#7FBF6A'; ctx.beginPath(); ctx.ellipse(186, 36, 8, 6, 0, 0, 7); ctx.ellipse(208, 42, 11, 7, 0.4, 0, 7); ctx.ellipse(222, 30, 5, 4, 0, 0, 7); ctx.fill(); ctx.strokeStyle = '#6B4B2E'; ctx.lineWidth = 2; ctx.strokeRect(172, 22, 58, 36); },
-  shelf() { rect(170, 100, 66, 4, '#7A5434'); },
-  plant() { rrect(206, 86, 14, 14, 2, '#C8693A'); ctx.fillStyle = '#4FA35A'; ctx.beginPath(); ctx.ellipse(209, 80, 4, 9, -0.4, 0, 7); ctx.ellipse(217, 80, 4, 9, 0.4, 0, 7); ctx.fill(); },
+  cert() { if (drawArt('cert', 35, 91)) return; rect(18, 78, 34, 26, '#FFF6D8'); ctx.strokeStyle = C.gold; ctx.lineWidth = 2; ctx.strokeRect(18, 78, 34, 26); circle(35, 98, 4, C.red); },
+  map() { if (drawArt('map', 201, 40)) return; rect(172, 22, 58, 36, '#BFE0F0'); ctx.fillStyle = '#7FBF6A'; ctx.beginPath(); ctx.ellipse(186, 36, 8, 6, 0, 0, 7); ctx.ellipse(208, 42, 11, 7, 0.4, 0, 7); ctx.ellipse(222, 30, 5, 4, 0, 0, 7); ctx.fill(); ctx.strokeStyle = '#6B4B2E'; ctx.lineWidth = 2; ctx.strokeRect(172, 22, 58, 36); },
+  shelf() { if (!drawArt('shelf', 203, 104)) rect(170, 100, 66, 4, '#7A5434'); },
+  // 有书架放书架右端；书架（800 词）之前放在桌面右端，奖杯（6000 词）比书架晚得多，不会冲突
+  plant(t, onShelf) { if (drawArt('plant', onShelf ? 226 : 229, onShelf ? 97 : 176)) return; rrect(206, 86, 14, 14, 2, '#C8693A'); ctx.fillStyle = '#4FA35A'; ctx.beginPath(); ctx.ellipse(209, 80, 4, 9, -0.4, 0, 7); ctx.ellipse(217, 80, 4, 9, 0.4, 0, 7); ctx.fill(); },
   lamp() { if (drawArt('lamp', 28, 176)) return; rect(20, 172, 16, 4, '#444'); rect(26, 140, 3, 32, '#555'); ctx.fillStyle = '#F2A93B'; ctx.beginPath(); ctx.moveTo(18, 146); ctx.lineTo(40, 146); ctx.lineTo(34, 132); ctx.lineTo(24, 132); ctx.fill(); },
-  globe() { rect(52, 172, 14, 4, '#6B4B2E'); circle(59, 158, 11, '#5AA9E6'); ctx.fillStyle = '#7FBF6A'; ctx.beginPath(); ctx.ellipse(55, 155, 4, 5, 0.3, 0, 7); ctx.ellipse(63, 162, 3, 3, 0, 0, 7); ctx.fill(); },
+  globe() { if (drawArt('globe', 59, 176)) return; rect(52, 172, 14, 4, '#6B4B2E'); circle(59, 158, 11, '#5AA9E6'); ctx.fillStyle = '#7FBF6A'; ctx.beginPath(); ctx.ellipse(55, 155, 4, 5, 0.3, 0, 7); ctx.ellipse(63, 162, 3, 3, 0, 0, 7); ctx.fill(); },
   pencilcase() { if (drawArt('pencilcase', 87, 197)) return; rrect(70, 186, 34, 10, 4, '#E05A7A'); rect(94, 182, 3, 6, '#F2C230'); },
-  laptop() { rrect(98, 150, 44, 26, 2, '#C9CDD6'); rect(101, 153, 38, 20, C.screen); rect(92, 176, 56, 3, '#AEB3BE'); },
-  mug() { rrect(150, 162, 14, 14, 2, '#FFFFFF'); ctx.strokeStyle = '#FFFFFF'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(165, 169, 4, -1.4, 1.4); ctx.stroke(); rect(152, 164, 10, 3, '#6B3E26'); },
-  phones() { ctx.strokeStyle = '#2B2F38'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(160, 196, 9, Math.PI, 0); ctx.stroke(); rrect(149, 194, 6, 8, 2, '#2B2F38'); rrect(165, 194, 6, 8, 2, '#2B2F38'); },
-  trophy() { ctx.fillStyle = C.gold; ctx.beginPath(); ctx.moveTo(222, 146); ctx.lineTo(236, 146); ctx.lineTo(232, 160); ctx.lineTo(226, 160); ctx.fill(); rect(227, 160, 4, 8, C.gold); rect(222, 168, 14, 6, '#8A6A2A'); },
+  laptop() { if (drawArt('laptop', 120, 178)) return; rrect(98, 150, 44, 26, 2, '#C9CDD6'); rect(101, 153, 38, 20, C.screen); rect(92, 176, 56, 3, '#AEB3BE'); },
+  mug() { if (drawArt('mug', 157, 177)) return; rrect(150, 162, 14, 14, 2, '#FFFFFF'); ctx.strokeStyle = '#FFFFFF'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(165, 169, 4, -1.4, 1.4); ctx.stroke(); rect(152, 164, 10, 3, '#6B3E26'); },
+  phones() { if (drawArt('phones', 160, 204)) return; ctx.strokeStyle = '#2B2F38'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(160, 196, 9, Math.PI, 0); ctx.stroke(); rrect(149, 194, 6, 8, 2, '#2B2F38'); rrect(165, 194, 6, 8, 2, '#2B2F38'); },
+  trophy() { if (drawArt('trophy', 229, 176)) return; ctx.fillStyle = C.gold; ctx.beginPath(); ctx.moveTo(222, 146); ctx.lineTo(236, 146); ctx.lineTo(232, 160); ctx.lineTo(226, 160); ctx.fill(); rect(227, 160, 4, 8, C.gold); rect(222, 168, 14, 6, '#8A6A2A'); },
 };
 const TOY_COL = ['#F2D23A', '#E0564F', '#4FA35A', '#BFE0F0', '#5AA9E6', '#7BC86C', '#FFFFFF', '#E8B84A', '#F0B8A0', '#9B7BE0'];
 
-const WALL_PROPS = new Set(['clock', 'cert', 'map', 'shelf', 'plant']);
+const WALL_PROPS = new Set(['clock', 'cert', 'map', 'shelf']);
+function isWallProp(id, s, m) { return WALL_PROPS.has(id) || (id === 'plant' && m >= 800 && !s.hidden.includes('shelf')); }
 // layer：'wall' 画在 NABO 后面，'desk' 画在桌面之后
 function drawProps(s, t, layer) {
   const m = mastered(s);
   for (const p of PROPS) {
-    if (m < p.need || s.hidden.includes(p.id) || WALL_PROPS.has(p.id) !== (layer === 'wall')) continue;
-    PROP_DRAW[p.id](t);
+    if (m < p.need || s.hidden.includes(p.id) || isWallProp(p.id, s, m) !== (layer === 'wall')) continue;
+    PROP_DRAW[p.id](t, m >= 800 && !s.hidden.includes('shelf'));
   }
   // 盲盒摆件：有书架放书架上，没有就放桌角
   const onShelf = m >= 800 && !s.hidden.includes('shelf');
   if (onShelf !== (layer === 'wall')) return;
-  s.toys.slice(0, 5).forEach((name, i) => {
-    const k = BOX_TOYS.indexOf(name), x = onShelf ? 176 + i * 7 : 8 + i * 8, y = onShelf ? 100 : 200;
-    rrect(x, y - 6, 6, 6, 2, TOY_COL[k % TOY_COL.length]);
+  // 书架上放最近开到的 4 个（右端留给绿植），没有书架就放桌沿前
+  s.toys.slice(-4).forEach((name, i) => {
+    const k = BOX_TOYS.indexOf(name), x = onShelf ? 180 + i * 11 : 10 + i * 13, y = onShelf ? 97 : 211;
+    if (!drawArt('toy_' + TOY_SLUGS[k], x, y)) rrect(x - 3, y - 6, 6, 6, 2, TOY_COL[k % TOY_COL.length]);
   });
 }

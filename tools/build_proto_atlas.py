@@ -52,7 +52,8 @@ def _nabo_entries(manifest: Dict) -> list[Entry]:
 def _static_entries(manifest: Dict) -> list[Entry]:
     """manifest.json 里登记了 target_px 的道具和精灵。"""
     entries = []
-    for group in ("props", "companion", "companion_designs"):
+    # 顺序有意义：后面的同名条目覆盖前面的（第 4 轮的 companion/ 覆盖第 1 轮的豆豆设计稿）
+    for group in ("props", "companion_designs", "companion", "toys", "ui"):
         for rel, info in manifest.get(group, {}).items():
             path = ART / rel
             if not path.exists():
@@ -61,7 +62,9 @@ def _static_entries(manifest: Dict) -> list[Entry]:
             cw, ch = info["canvas_px"]
             tw, th = info["target_px"]
             ax, ay = info.get("anchor_px", (cw / 2, ch))
-            entries.append(Entry(path.stem, path, (tw, th), (ax, ay), tw / cw))
+            name = info.get("id") or path.stem
+            prefix = {"toys": "toy_", "ui": "ui_"}.get(group, "")
+            entries.append(Entry(prefix + name, path, (tw, th), (ax, ay), tw / cw))
     return entries
 
 

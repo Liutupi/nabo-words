@@ -158,6 +158,15 @@ const TOY_SETS = [
   ['企鹅', '北极熊', '极光瓶', '冰屋', '帆船', '热气球', '望远镜', '宇航员', '化石', '指南针'],
 ];
 const BOX_TOYS = TOY_SETS.flat();
+// 摆件的美术文件名（ART_BRIEF 第 7 节），和 TOY_SETS 一一对应
+const TOY_SLUGS = [
+  ['duck', 'rocket', 'cactus', 'snowglobe', 'cube', 'dino', 'plane', 'hourglass', 'shell', 'windmill'],
+  ['panda', 'tumbler', 'sakura', 'lantern', 'coconut', 'elephant', 'dragonfly', 'fan', 'koinobori', 'camel'],
+  ['eiffel', 'bigben', 'tulip', 'violin', 'football', 'castle', 'phonebox', 'matryoshka', 'pisa', 'swan'],
+  ['liberty', 'baseball', 'surfboard', 'schoolbus', 'maple', 'mayamask', 'alpaca', 'cowboyhat', 'burger', 'flamingo'],
+  ['koala', 'kangaroo', 'boomerang', 'pyramid', 'giraffe', 'drum', 'lion', 'coral', 'operahouse', 'baobab'],
+  ['penguin', 'polarbear', 'aurorajar', 'igloo', 'sailboat', 'balloon', 'telescope', 'astronaut', 'fossil', 'compass'],
+].flat();
 const TOY_PRICE = [5, 8, 12, 15, 20, 25];      // 按学段，越往后越贵
 // 精灵饰品：所有精灵共用，一次戴一件
 const ACCESSORIES = [
