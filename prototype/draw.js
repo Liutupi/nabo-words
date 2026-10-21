@@ -158,25 +158,65 @@ function drawNabo(stageLook, mood, t, play) {
 }
 
 // ---------- 单词精灵 ----------
-function drawSprite(stageIdx, form, x, y, t, scale = 1) {
+// acc：戴的饰品 id（ACCESSORIES），null 表示不戴
+function drawSprite(stageIdx, form, x, y, t, scale = 1, acc = null) {
   const col = SPRITE_COL[Math.min(stageIdx, 5)], bob = Math.sin(t * 3 + stageIdx) * 2 * scale;
   const artName = stageIdx === 0 ? 'doudou_' + ['egg', 'baby', 'teen', 'final'][form] : '';
+  const art = artName && hasArt(artName) ? ART_IMG[artName] : null;
+  const r = [0, 11, 13, 15][form];
+  // 饰品按形态的高度和半宽定位（原点在精灵底部中点）
+  const h = art ? art.h : form === 0 ? 28 : 2 * r, hw = art ? art.w / 2 : form === 0 ? 11 : r;
   ctx.save(); ctx.translate(x, y + bob); ctx.scale(scale, scale);
-  if (artName && drawArt(artName, 0, 0)) { ctx.restore(); return; }
-  if (form === 0) {
-    ctx.fillStyle = '#FBF4E6'; ctx.beginPath(); ctx.ellipse(0, -14, 11, 14, 0, 0, Math.PI * 2); ctx.fill();
-    circle(-4, -18, 2.5, col); circle(4, -10, 2, col); circle(3, -22, 1.6, col);
-    ctx.strokeStyle = 'rgba(0,0,0,.25)'; ctx.lineWidth = 1; ctx.beginPath(); ctx.ellipse(0, -14, 11, 14, 0, 0, Math.PI * 2); ctx.stroke();
-  } else {
-    const r = [0, 11, 13, 15][form];
-    if (form >= 2) { ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(-r + 3, -r - 2); ctx.lineTo(-r + 1, -r * 2 - 4); ctx.lineTo(-2, -r * 1.6); ctx.fill(); ctx.beginPath(); ctx.moveTo(r - 3, -r - 2); ctx.lineTo(r - 1, -r * 2 - 4); ctx.lineTo(2, -r * 1.6); ctx.fill(); }
-    if (form === 3) { ctx.fillStyle = 'rgba(255,255,255,.7)'; ctx.beginPath(); ctx.ellipse(-r - 4, -r, 7, 4, -0.5, 0, Math.PI * 2); ctx.ellipse(r + 4, -r, 7, 4, 0.5, 0, Math.PI * 2); ctx.fill(); }
-    ctx.fillStyle = col; ctx.beginPath(); ctx.ellipse(0, -r, r, r * 0.92, 0, 0, Math.PI * 2); ctx.fill();
-    circle(-4, -r - 1, 2.2, '#1A1A22'); circle(4, -r - 1, 2.2, '#1A1A22'); circle(-3.4, -r - 1.8, 0.8, '#fff'); circle(4.6, -r - 1.8, 0.8, '#fff');
-    circle(-7, -r + 3, 1.8, 'rgba(255,120,140,.5)'); circle(7, -r + 3, 1.8, 'rgba(255,120,140,.5)');
-    if (form === 3) { ctx.fillStyle = C.gold; ctx.beginPath(); ctx.moveTo(-6, -2 * r + 1); ctx.lineTo(-6, -2 * r - 6); ctx.lineTo(-2, -2 * r - 2); ctx.lineTo(0, -2 * r - 8); ctx.lineTo(2, -2 * r - 2); ctx.lineTo(6, -2 * r - 6); ctx.lineTo(6, -2 * r + 1); ctx.fill(); }
+  if (acc === 'cape') drawAccessory('cape', form, h, hw);
+  if (art) drawArt(artName, 0, 0);
+  else {
+    if (form === 0) {
+      ctx.fillStyle = '#FBF4E6'; ctx.beginPath(); ctx.ellipse(0, -14, 11, 14, 0, 0, Math.PI * 2); ctx.fill();
+      circle(-4, -18, 2.5, col); circle(4, -10, 2, col); circle(3, -22, 1.6, col);
+      ctx.strokeStyle = 'rgba(0,0,0,.25)'; ctx.lineWidth = 1; ctx.beginPath(); ctx.ellipse(0, -14, 11, 14, 0, 0, Math.PI * 2); ctx.stroke();
+    } else {
+      const r = [0, 11, 13, 15][form];
+      if (form >= 2) { ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(-r + 3, -r - 2); ctx.lineTo(-r + 1, -r * 2 - 4); ctx.lineTo(-2, -r * 1.6); ctx.fill(); ctx.beginPath(); ctx.moveTo(r - 3, -r - 2); ctx.lineTo(r - 1, -r * 2 - 4); ctx.lineTo(2, -r * 1.6); ctx.fill(); }
+      if (form === 3) { ctx.fillStyle = 'rgba(255,255,255,.7)'; ctx.beginPath(); ctx.ellipse(-r - 4, -r, 7, 4, -0.5, 0, Math.PI * 2); ctx.ellipse(r + 4, -r, 7, 4, 0.5, 0, Math.PI * 2); ctx.fill(); }
+      ctx.fillStyle = col; ctx.beginPath(); ctx.ellipse(0, -r, r, r * 0.92, 0, 0, Math.PI * 2); ctx.fill();
+      circle(-4, -r - 1, 2.2, '#1A1A22'); circle(4, -r - 1, 2.2, '#1A1A22'); circle(-3.4, -r - 1.8, 0.8, '#fff'); circle(4.6, -r - 1.8, 0.8, '#fff');
+      circle(-7, -r + 3, 1.8, 'rgba(255,120,140,.5)'); circle(7, -r + 3, 1.8, 'rgba(255,120,140,.5)');
+      if (form === 3) { ctx.fillStyle = C.gold; ctx.beginPath(); ctx.moveTo(-6, -2 * r + 1); ctx.lineTo(-6, -2 * r - 6); ctx.lineTo(-2, -2 * r - 2); ctx.lineTo(0, -2 * r - 8); ctx.lineTo(2, -2 * r - 2); ctx.lineTo(6, -2 * r - 6); ctx.lineTo(6, -2 * r + 1); ctx.fill(); }
+    }
   }
+  if (acc && acc !== 'cape') drawAccessory(acc, form, h, hw);
   ctx.restore();
+}
+
+function drawAccessory(id, form, h, hw) {
+  if (form === 0 && (id === 'shades' || id === 'scarf')) return;   // 蛋没有眼睛和脖子
+  const top = -h, ey = top + h * 0.55;   // 眼睛大约在身高一半略下（豆豆头顶有豆芽）
+  switch (id) {
+    case 'flower':
+      for (let k = 0; k < 5; k++) circle(-hw * 0.55 + Math.cos(k * 1.26) * 2.6, top + 4 + Math.sin(k * 1.26) * 2.6, 2, '#F0607A');
+      circle(-hw * 0.55, top + 4, 1.6, '#FFD84A'); break;
+    case 'bow':
+      ctx.fillStyle = '#E0466A'; ctx.beginPath(); ctx.moveTo(0, top + 2); ctx.lineTo(-6, top - 2); ctx.lineTo(-6, top + 6); ctx.closePath();
+      ctx.moveTo(0, top + 2); ctx.lineTo(6, top - 2); ctx.lineTo(6, top + 6); ctx.closePath(); ctx.fill(); circle(0, top + 2, 1.8, '#B8304F'); break;
+    case 'scarf':
+      rrect(-hw * 0.85, top + h * 0.8, hw * 1.7, 4, 2, '#D9423B'); rect(hw * 0.3, top + h * 0.8 + 3, 3.5, 5, '#D9423B'); break;
+    case 'star': {
+      ctx.fillStyle = '#FFD84A'; ctx.beginPath();
+      for (let k = 0; k < 10; k++) { const rr = k % 2 ? 1.8 : 4.2, a = -Math.PI / 2 + k * Math.PI / 5; ctx.lineTo(hw * 0.55 + Math.cos(a) * rr, top + 4 + Math.sin(a) * rr); }
+      ctx.fill(); break;
+    }
+    case 'shades':
+      rrect(-hw * 0.62, ey - 2, hw * 0.55, 4, 1.5, '#1A1A22'); rrect(hw * 0.07, ey - 2, hw * 0.55, 4, 1.5, '#1A1A22'); rect(-hw * 0.1, ey - 1, hw * 0.2, 1.2, '#1A1A22'); break;
+    case 'cape':
+      ctx.fillStyle = '#C0392B'; ctx.beginPath(); ctx.moveTo(-hw * 0.7, top + h * 0.45); ctx.lineTo(hw * 0.7, top + h * 0.45);
+      ctx.lineTo(hw * 1.1, 0); ctx.lineTo(-hw * 1.1, 0); ctx.closePath(); ctx.fill(); break;
+    case 'phones':
+      ctx.strokeStyle = '#2B2F38'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(0, top + h * 0.3, hw * 0.95, Math.PI * 1.1, Math.PI * 1.9); ctx.stroke();
+      rrect(-hw - 2, top + h * 0.28, 4, 7, 2, '#2B2F38'); rrect(hw - 2, top + h * 0.28, 4, 7, 2, '#2B2F38'); break;
+    case 'gradcap':
+      ctx.fillStyle = '#1C1C24'; ctx.beginPath(); ctx.moveTo(0, top - 6); ctx.lineTo(9, top - 2); ctx.lineTo(0, top + 2); ctx.lineTo(-9, top - 2); ctx.closePath(); ctx.fill();
+      rect(-4, top - 1, 8, 3, '#1C1C24'); ctx.strokeStyle = C.gold; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(0, top - 2); ctx.lineTo(7, top + 3); ctx.stroke(); break;
+  }
 }
 
 // ---------- 书桌道具 ----------
@@ -209,6 +249,6 @@ function drawProps(s, t, layer) {
   if (onShelf !== (layer === 'wall')) return;
   s.toys.slice(0, 5).forEach((name, i) => {
     const k = BOX_TOYS.indexOf(name), x = onShelf ? 176 + i * 7 : 8 + i * 8, y = onShelf ? 100 : 200;
-    rrect(x, y - 6, 6, 6, 2, TOY_COL[k]);
+    rrect(x, y - 6, 6, 6, 2, TOY_COL[k % TOY_COL.length]);
   });
 }

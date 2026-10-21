@@ -24,7 +24,8 @@ function buildMenu() {
   items.push({ id: 'battle', label: '对战', sub: `${rankOf(S.rating)} · 积分 ${S.rating}` });
   items.push({ id: 'stars', label: '星图', sub: `已掌握 ${mastered(S)} / ${TOTAL_WORDS}` });
   items.push({ id: 'passport', label: '护照', sub: `已盖 ${stampCount(S)} 枚章` });
-  items.push({ id: 'desk', label: '书桌', sub: `金币 ${S.coins} · 盲盒 5 枚一次` });
+  items.push({ id: 'desk', label: '书桌', sub: `摆放道具 · 摆件 ${S.toys.length} 个` });
+  items.push({ id: 'shop', label: '小卖部', sub: `金币 ${S.coins} · 盲盒 ${toyPrice(S)} 枚一次` });
   items.push({ id: 'newper', label: '每日新词', sub: `${S.newPerDay} 个 · 复习最多 ${reviewBudget(S) / 60} 分钟 · OK 切换` });
   const keep = G.menu[G.menuIdx] && G.menu[G.menuIdx].id;
   G.menu = items;
@@ -66,6 +67,7 @@ function homeOk() {
     case 'stars': G.scene = 'stars'; break;
     case 'passport': G.scene = 'passport'; G.page = Math.min(S.stage, STAGES.length - 1); break;
     case 'desk': G.scene = 'desk'; G.sel = 0; break;
+    case 'shop': G.scene = 'shop'; G.sel = 0; break;
     case 'newper': S.newPerDay = NEW_CHOICES[(NEW_CHOICES.indexOf(S.newPerDay) + 1) % NEW_CHOICES.length]; saveState(S); buildMenu(); break;
   }
 }
@@ -157,6 +159,7 @@ function act(k) {
       else G.page = (G.page + (k === 'up' ? STAGES.length - 1 : 1)) % STAGES.length;
       break;
     case 'desk': deskKey(k); break;
+    case 'shop': shopKey(k); break;
   }
 }
 function deskKey(k) {
@@ -165,12 +168,19 @@ function deskKey(k) {
   if (k === 'down') { G.sel = (G.sel + 1) % items.length; return; }
   const it = items[G.sel];
   if (it.kind === 'back') return toHome();
-  if (it.kind === 'box') {
-    const r = openToyBox(S, rnd);
-    toast(r === null ? '金币不够，需要 5 枚' : r.includes('退回') ? r : `开到了：${r}`);
-  } else if (it.locked) toast(`再掌握 ${it.need - mastered(S)} 个词解锁`);
+  if (it.locked) toast(`再掌握 ${it.need - mastered(S)} 个词解锁`);
   else S.hidden = it.on ? [...S.hidden, it.id] : S.hidden.filter(x => x !== it.id);
   saveState(S);
+}
+function shopKey(k) {
+  const items = shopItems(S);
+  if (k === 'up') { G.sel = (G.sel + items.length - 1) % items.length; return; }
+  if (k === 'down') { G.sel = (G.sel + 1) % items.length; return; }
+  const it = items[G.sel];
+  if (it.kind === 'back') return toHome();
+  const r = it.kind === 'box' ? openToyBox(S, rnd) : it.kind === 'freeze' ? buyFreeze(S) : useAccessory(S, it.id);
+  toast(r.msg);
+  if (r.ok) { SFX.right(); saveState(S); } else SFX.wrong();
 }
 function back() {
   if (G.scene === 'battle') Battle.abort();
@@ -223,9 +233,10 @@ function draw() {
     case 'stars': drawStars(S, G); break;
     case 'passport': drawPassport(S, G); break;
     case 'desk': drawDeskMenu(S, G); break;
+    case 'shop': drawShop(S, G); break;
     case 'battle': Battle.drawA(); break;
   }
-  if (G.toast && G.scene !== 'desk') { rrect(20, 34, 200, 26, 13, 'rgba(18,24,41,.92)'); fitText(G.toast, 120, 47, 12, 186, C.gold, 'center', F_BODY, 700); }
+  if (G.toast && G.scene !== 'desk' && G.scene !== 'shop') { rrect(20, 34, 200, 26, 13, 'rgba(18,24,41,.92)'); fitText(G.toast, 120, 47, 12, 186, C.gold, 'center', F_BODY, 700); }
   if (held.up !== null && !upLong && G.t - held.up > 0.25 && G.scene !== 'home') {
     const f = Math.min(1, (G.t - held.up) / 1);
     c2d.lineWidth = 3; c2d.strokeStyle = C.gold; c2d.beginPath(); c2d.arc(W - 16, 16, 8, -Math.PI / 2, -Math.PI / 2 + f * Math.PI * 2); c2d.stroke();

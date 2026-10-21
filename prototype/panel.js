@@ -105,7 +105,7 @@ const Panel = (() => {
       ['词汇', `已掌握 ${mastered(S)} · 学过 ${learned(S)} / ${TOTAL_WORDS}`],
       ['今日', `复习 ${plan.reviews.length} · 新词 ${plan.fresh.length} · 约 ${(plan.seconds / 60).toFixed(1)} 分钟${plan.backlog ? ` · 积压 ${plan.backlog}` : ''}`],
       ['打卡', `连续 ${S.streak} 天 · 最长 ${S.bestStreak} · 补签卡 ${S.freezes}`],
-      ['金币', `${S.coins} · 摆件 ${S.toys.length}/${BOX_TOYS.length}`],
+      ['金币', `${S.coins} · 已花 ${S.spent} · 摆件 ${S.toys.length}/${BOX_TOYS.length} · 饰品 ${S.accs.length}/${ACCESSORIES.length}`],
       ['护照', `${stampCount(S)} / ${TOTAL_UNITS} 枚`],
       ['对战', `${rankOf(S.rating)} ${S.rating} · ${S.wins} 胜 ${S.losses} 负`],
       ['精灵', STAGES.map((s2, i) => `${s2.sprite}${['蛋', '幼崽', '少年', '完全体'][spriteForm(S, i)]}`).slice(0, Math.min(S.stage, 5) + 1).join(' · ')],

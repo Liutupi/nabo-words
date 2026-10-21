@@ -24,7 +24,7 @@ function drawHome(s, G) {
   else { drawNabo(look, G.mood, t); drawDesk(look); }
   drawProps(s, t, 'desk');
   const si = Math.min(s.stage, 5);
-  drawSprite(si, spriteForm(s, si), 196, 176, t);
+  drawSprite(si, spriteForm(s, si), 196, 176, t, 1, s.acc);
   drawTopBar(s);
   // 底部：词汇量 + 学段进度 + 菜单
   rect(0, 214, 240, 106, C.ink);
@@ -168,7 +168,6 @@ function drawPassport(s, G) {
 function deskItems(s) {
   const m = mastered(s);
   const items = PROPS.map(p => ({ kind: 'prop', id: p.id, label: p.name, locked: m < p.need, need: p.need, on: !s.hidden.includes(p.id) }));
-  items.push({ kind: 'box', label: `开盲盒（5 金币）· 已有 ${s.toys.length}/${BOX_TOYS.length}` });
   items.push({ kind: 'back', label: '返回' });
   return items;
 }
@@ -187,4 +186,37 @@ function drawDeskMenu(s, G) {
   });
   if (G.toast) fitText(G.toast, 120, 306, 12, 220, C.gold, 'center', F_BODY, 700);
   else text('OK 摆放 / 收起', 12, 306, 11, C.muted);
+}
+
+// ---------- 小卖部 ----------
+function shopItems(s) {
+  const unlocked = TOY_SETS.slice(0, toyStage(s) + 1).flat().length, owned = s.toys.length;
+  const items = [
+    { kind: 'box', label: '开盲盒', right: toyPool(s).length ? `${toyPrice(s)} 金币 · ${owned}/${unlocked}` : `已集齐 ${owned}/${unlocked}` },
+    { kind: 'freeze', label: '补签卡', right: s.freezes >= FREEZE_MAX ? `已有 ${s.freezes} 张（满）` : `${FREEZE_PRICE} 金币 · 已有 ${s.freezes}` },
+  ];
+  for (const a of ACCESSORIES) {
+    const own = s.accs.includes(a.id);
+    items.push({ kind: 'acc', id: a.id, label: `精灵饰品 · ${a.name}`, right: !own ? `${ACC_PRICE} 金币` : s.acc === a.id ? '戴着' : '已有' });
+  }
+  items.push({ kind: 'back', label: '返回', right: '' });
+  return items;
+}
+function drawShop(s, G) {
+  rect(0, 0, 240, 320, C.ink);
+  text('小卖部', 12, 18, 14, '#FFFFFF', 'left', F_BODY, 700);
+  iconCoin(200, 18); text(String(s.coins), 210, 18, 12, '#FFFFFF', 'left', F_MONO, 700);
+  // 右上角预览当前精灵戴着的饰品
+  const si = Math.min(s.stage, 5), items = shopItems(s), top = Math.max(0, Math.min(G.sel - 4, items.length - 8));
+  const sel = items[G.sel], preview = sel && sel.kind === 'acc' ? sel.id : s.acc;
+  rrect(150, 30, 82, 66, 8, '#1E2740');
+  drawSprite(si, Math.max(1, spriteForm(s, si)), 191, 90, G.t, 1, preview);
+  items.slice(top, top + 8).forEach((it, k) => {
+    const i = top + k, y = 104 + k * 24;
+    if (i === G.sel) rrect(8, y, 224, 22, 6, '#26304D');
+    fitText(it.label, 16, y + 11, 13, 120, '#FFFFFF', 'left');
+    text(it.right, 224, y + 11, 11, it.right === '戴着' ? C.teal : C.muted, 'right');
+  });
+  if (G.toast) fitText(G.toast, 120, 306, 12, 220, C.gold, 'center', F_BODY, 700);
+  else text('OK 购买 / 戴上', 12, 306, 11, C.muted);
 }

@@ -103,7 +103,7 @@ like|laɪk|喜欢
 play|pleɪ|玩
 eat|iːt|吃
 sleep|sliːp|睡觉`.trim().split('\n').map(l => { const [w, p, m] = l.split('|'); return { w, p, pos: '', m, real: true }; });
-// 有 tools/build_wordlist.py 生成的词库（assets/words_data.js，小学 + 初中 1600 词）就用它，上面 100 词只是兜底
+// 有 tools/build_wordlist.py 生成的词库（assets/words_data.js，全部 7500 词）就用它，上面 100 词只是兜底
 const REAL_WORDS = window.NABO_WORDS ? window.NABO_WORDS.map(([w, p, pos, m]) => ({ w, p, pos, m, real: true })) : FALLBACK_WORDS;
 
 const UNIT_SIZE = 50;
@@ -148,7 +148,24 @@ const PROPS = [
   { id: 'laptop', name: '笔记本电脑', need: 2500 }, { id: 'mug', name: '咖啡杯', need: 3500 },
   { id: 'map', name: '世界地图', need: 4500 }, { id: 'trophy', name: '奖杯', need: 6000 },
 ];
-const BOX_TOYS = ['小黄鸭', '小火箭', '仙人掌', '雪花球', '魔方', '小恐龙', '纸飞机', '沙漏', '贝壳', '风车'];
+// 盲盒摆件：每个学段解锁新一批 10 个，主题跟着旅行地区走
+const TOY_SETS = [
+  ['小黄鸭', '小火箭', '仙人掌', '雪花球', '魔方', '小恐龙', '纸飞机', '沙漏', '贝壳', '风车'],
+  ['熊猫公仔', '不倒翁', '樱花盆栽', '小灯笼', '椰子', '大象木雕', '竹蜻蜓', '折扇', '鲤鱼旗', '骆驼'],
+  ['埃菲尔铁塔', '大本钟', '郁金香', '小提琴', '足球', '城堡', '红色电话亭', '套娃', '比萨斜塔', '天鹅'],
+  ['自由女神', '棒球', '冲浪板', '校车', '枫叶', '玛雅面具', '羊驼', '牛仔帽', '汉堡', '火烈鸟'],
+  ['考拉', '袋鼠', '回旋镖', '金字塔', '长颈鹿', '非洲鼓', '小狮子', '珊瑚', '歌剧院', '猴面包树'],
+  ['企鹅', '北极熊', '极光瓶', '冰屋', '帆船', '热气球', '望远镜', '宇航员', '化石', '指南针'],
+];
+const BOX_TOYS = TOY_SETS.flat();
+const TOY_PRICE = [5, 8, 12, 15, 20, 25];      // 按学段，越往后越贵
+// 精灵饰品：所有精灵共用，一次戴一件
+const ACCESSORIES = [
+  { id: 'flower', name: '小红花' }, { id: 'bow', name: '蝴蝶结' }, { id: 'scarf', name: '小围巾' },
+  { id: 'star', name: '星星发卡' }, { id: 'shades', name: '墨镜' }, { id: 'cape', name: '小披风' },
+  { id: 'phones', name: '小耳机' }, { id: 'gradcap', name: '学士帽' },
+];
+const ACC_PRICE = 40, FREEZE_PRICE = 20;
 
 // 科举段位
 const RANKS = [[0, '童生'], [1100, '秀才'], [1200, '举人'], [1350, '贡士'], [1500, '进士'], [1700, '探花'], [1850, '榜眼'], [2000, '状元']];

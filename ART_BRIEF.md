@@ -109,7 +109,19 @@
 | 世界地图 | `props/map.png` | 60×38 | 右墙上方 |
 | 奖杯 | `props/trophy.png` | 16×30 | 桌面最右 |
 
-盲盒摆件 10 个，放在书架上，每个约 **12×12 px**：`toys/` 下 `duck` 小黄鸭、`rocket` 小火箭、`cactus` 仙人掌、`snowglobe` 雪花球、`cube` 魔方、`dino` 小恐龙、`plane` 纸飞机、`hourglass` 沙漏、`shell` 贝壳、`windmill` 风车。12 px 下要靠剪影认出来。
+盲盒摆件 60 个，每个学段一批 10 个，放在书架上，每个约 **12×12 px**，12 px 下要靠剪影认出来。文件放 `toys/<学段>/<名字>.png`：
+
+| 学段 | 摆件（文件名 中文名） |
+|---|---|
+| 小学 | duck 小黄鸭、rocket 小火箭、cactus 仙人掌、snowglobe 雪花球、cube 魔方、dino 小恐龙、plane 纸飞机、hourglass 沙漏、shell 贝壳、windmill 风车 |
+| 初中 | panda 熊猫公仔、tumbler 不倒翁、sakura 樱花盆栽、lantern 小灯笼、coconut 椰子、elephant 大象木雕、dragonfly 竹蜻蜓、fan 折扇、koinobori 鲤鱼旗、camel 骆驼 |
+| 高中 | eiffel 埃菲尔铁塔、bigben 大本钟、tulip 郁金香、violin 小提琴、football 足球、castle 城堡、phonebox 红色电话亭、matryoshka 套娃、pisa 比萨斜塔、swan 天鹅 |
+| 四级 | liberty 自由女神、baseball 棒球、surfboard 冲浪板、schoolbus 校车、maple 枫叶、mayamask 玛雅面具、alpaca 羊驼、cowboyhat 牛仔帽、burger 汉堡、flamingo 火烈鸟 |
+| 六级 | koala 考拉、kangaroo 袋鼠、boomerang 回旋镖、pyramid 金字塔、giraffe 长颈鹿、drum 非洲鼓、lion 小狮子、coral 珊瑚、operahouse 歌剧院、baobab 猴面包树 |
+| 进阶 | penguin 企鹅、polarbear 北极熊、aurorajar 极光瓶、igloo 冰屋、sailboat 帆船、balloon 热气球、telescope 望远镜、astronaut 宇航员、fossil 化石、compass 指南针 |
+
+精灵饰品 8 件，放 `accessories/<名字>.png`，约 **12×10 px**，透明背景，正面视角：`flower` 小红花、`bow` 蝴蝶结、`scarf` 小围巾、`star` 星星发卡、`shades` 墨镜、`cape` 小披风、`phones` 小耳机、`gradcap` 学士帽。
+同一件饰品要能戴在 6 只精灵的各个形态上（游戏按精灵高度和宽度摆放），所以只画饰品本身，在 `manifest.json` 里写明它的锚点（帽子类是底边中点，围巾、墨镜是中心）。
 
 界面图标 `ui/`：金币 `coin.png`、打卡火苗 `flame.png`（亮、暗两版）、补签卡 `freeze.png`，都是 12×12 px。
 

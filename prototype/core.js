@@ -39,7 +39,7 @@ function newState() {
     next: 0,              // 下一个新词的序号（按词库顺序学）
     stage: 0,             // 已解锁的学段
     newPerDay: 10, doneDay: 0, streak: 0, bestStreak: 0, freezes: 0,
-    coins: 0, toys: [], hidden: [], rating: 1000, wins: 0, losses: 0, winStreak: 0,
+    coins: 0, toys: [], hidden: [], accs: [], acc: null, spent: 0, rating: 1000, wins: 0, losses: 0, winStreak: 0,
     examTried: 0, examLog: [], achievements: [], history: [], vsToday: {},
   };
 }
@@ -167,14 +167,38 @@ function checkAchievements(s) {
   return got;
 }
 
+// ---------- 小卖部 ----------
+// 返回 { ok, msg }，ok 为 false 时不扣金币
+function spend(s, price) { s.coins -= price; s.spent += price; }
+function toyStage(s) { return Math.min(s.stage, TOY_SETS.length - 1); }
+function toyPrice(s) { return TOY_PRICE[toyStage(s)]; }
+// 盲盒只开已解锁学段里还没有的摆件，价格按当前学段
+function toyPool(s) { return TOY_SETS.slice(0, toyStage(s) + 1).flat().filter(t => !s.toys.includes(t)); }
 function openToyBox(s, rnd) {
-  if (s.coins < 5) return null;
-  const left = BOX_TOYS.filter(t => !s.toys.includes(t));
-  s.coins -= 5;
-  if (!left.length) { s.coins += 2; return '摆件已集齐，退回 2 枚金币'; }
+  const left = toyPool(s), price = toyPrice(s);
+  if (!left.length) return { ok: false, msg: s.stage < TOY_SETS.length - 1 ? '这批摆件已集齐，升学段解锁新一批' : '摆件全部集齐' };
+  if (s.coins < price) return { ok: false, msg: `金币不够，需要 ${price} 枚` };
+  spend(s, price);
   const t = left[Math.floor(rnd() * left.length)];
   s.toys.push(t);
-  return t;
+  return { ok: true, msg: `开到了：${t}` };
+}
+function buyFreeze(s) {
+  if (s.freezes >= FREEZE_MAX) return { ok: false, msg: `补签卡最多存 ${FREEZE_MAX} 张` };
+  if (s.coins < FREEZE_PRICE) return { ok: false, msg: `金币不够，需要 ${FREEZE_PRICE} 枚` };
+  spend(s, FREEZE_PRICE); s.freezes++;
+  return { ok: true, msg: '买到 1 张补签卡' };
+}
+// 没有的饰品先买再戴；有的就戴上 / 摘下
+function useAccessory(s, id) {
+  const a = ACCESSORIES.find(x => x.id === id);
+  if (!s.accs.includes(id)) {
+    if (s.coins < ACC_PRICE) return { ok: false, msg: `金币不够，需要 ${ACC_PRICE} 枚` };
+    spend(s, ACC_PRICE); s.accs.push(id); s.acc = id;
+    return { ok: true, msg: `买下并戴上：${a.name}` };
+  }
+  s.acc = s.acc === id ? null : id;
+  return { ok: true, msg: s.acc ? `戴上：${a.name}` : `摘下：${a.name}` };
 }
 
 // ---------- 时间快进模拟 ----------
