@@ -1,2 +1,4 @@
 ._*
 .DS_Store
+third_party/ecdict/ecdict.csv
+__pycache__/

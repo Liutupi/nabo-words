@@ -1,0 +1,117 @@
+# 小学词表（近似）：标题末尾的 [v] / [adj] 表示这一组优先取动词 / 形容词释义。
+# 按人教版小学教材常见主题整理，顺序就是学习顺序，每 50 词一个单元。
+# 待用《义务教育英语课程标准》附录词表核对。每行一个词，# 开头是注释；不在 ECDICT 里的词会被跳过并报出来。
+# 超过 700 个时，多出来的词留给初中。
+
+# 问候与人
+hello hi goodbye bye yes no OK thanks please sorry
+name I me my you your he him his she her it we us our they them their
+this that these those
+boy girl man woman friend teacher student classmate baby child children kid people
+morning afternoon evening night good fine nice great welcome meet
+
+# 学校与文具
+school class classroom lesson book pen pencil ruler eraser crayon bag schoolbag
+desk chair door window blackboard light wall floor computer picture map
+library playground homework music art science maths Chinese English subject test
+
+# 颜色与形状
+red blue green yellow black white orange pink purple brown grey colour circle square
+
+# 数字
+one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen
+sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred
+first second third number
+
+# 身体
+head face eye ear nose mouth hair tooth teeth hand arm leg foot feet finger body neck shoulder knee
+
+# 动物
+cat dog bird fish duck pig rabbit panda monkey tiger lion elephant bear horse cow sheep goat
+chicken hen mouse snake zebra giraffe kangaroo fox wolf frog ant bee butterfly animal zoo farm
+
+# 家庭
+family mother mum father dad sister brother grandmother grandma grandfather grandpa aunt uncle cousin parent son daughter
+
+# 食物与饮料
+food apple banana pear grape peach watermelon strawberry lemon fruit vegetable tomato potato carrot onion
+egg milk water juice tea coffee rice bread cake noodle meat beef pork soup salad sandwich hamburger pizza
+candy chocolate sugar salt breakfast lunch dinner meal hungry thirsty
+
+# 衣服
+clothes coat shirt skirt dress sweater jacket jeans pants shorts sock shoe hat cap glove scarf umbrella
+
+# 家与房间
+home house room bedroom bathroom kitchen garden bed sofa table lamp phone television fridge
+key box clock photo mirror toy ball doll kite
+
+# 天气与季节
+weather sunny rainy cloudy windy snowy hot cold warm cool spring summer autumn winter season
+sun moon star sky cloud rain snow wind
+
+# 星期、月份与时间
+Monday Tuesday Wednesday Thursday Friday Saturday Sunday week weekend day today tomorrow yesterday
+January February March April May June July August September October November December
+month year time hour minute birthday holiday party festival
+
+# 职业与地点
+doctor nurse driver farmer worker cook policeman artist singer dancer writer scientist pilot postman job
+park shop supermarket hospital cinema museum bank restaurant hotel station street road city town village country world
+
+# 交通
+bus car bike bicycle train plane ship boat taxi subway
+
+# 动作 [v]
+run jump swim sing dance read write draw play eat drink sleep sit stand walk go come see look watch
+listen hear speak say talk tell ask answer open close help like love want need have do make take give
+get put find buy wash clean live work study learn know think fly climb catch ride drive
+
+# 形容词 [adj]
+big small long short tall high low fat thin old new young happy sad angry tired
+bad beautiful pretty cute funny kind clever strong busy free easy difficult hard fast slow
+early late right wrong same different full clean dirty quiet heavy
+
+# 方位与小词
+in on under near behind between front left up down here there where when why how what which who
+and but or with to from for of at by about
+a an the is am are be can will must may should very too also not all some many much more every other
+
+# 运动与爱好
+sport football basketball volleyball tennis game hobby film song story piano guitar violin picnic trip
+
+# 自然
+tree flower grass river lake sea mountain hill beach island forest
+
+# 常用副词
+again only just now then often always usually sometimes never
+
+
+# 补充：学校与学习
+paper card letter word sentence page question idea notebook grade team club rule example
+problem mistake note diary dictionary sticker
+
+# 补充：家与日常
+cup bowl plate spoon chopsticks knife fork bottle glass basket 
+shower towel soap toothbrush brush comb money gift present 
+
+# 补充：食物
+ice dumpling cookie pie jam honey butter cheese corn bean nut fries
+
+# 补充：动物与自然
+dolphin whale shark penguin owl parrot turtle spider insect pet leaf plant seed rock stone field
+sand earth air rainbow storm
+
+# 补充：动作 [v]
+begin finish start stop wait try show teach carry pick hold keep leave arrive visit move turn
+cry laugh smile shout feel smell taste touch call send bring borrow return share use grow pass
+
+# 补充：形容词 [adj]
+interesting boring wonderful excellent lovely friendly lucky healthy ill sick hurt afraid
+careful dangerous safe favourite famous special important poor rich proud ready sure true real
+round smart brave shy lazy wet dry soft sweet sour salty delicious
+
+# 补充：时间与频率
+o'clock half quarter past ago before after soon later tonight
+
+# 补充：地点与方向
+place countryside north south east west way bridge corner building hall

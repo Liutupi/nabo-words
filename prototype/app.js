@@ -6,7 +6,7 @@ const cv = document.getElementById('screen'), c2d = cv.getContext('2d');
 c2d.setTransform(2, 0, 0, 2, 0, 0);
 
 let S = loadState();
-const G = { scene: 'home', t: 0, mood: 'idle', moodT: 0, menu: [], menuIdx: 0, sess: null, sel: 0, fb: null, fbT: 0, flipped: false, summary: null, page: 0, toast: '', toastT: 0 };
+const G = { np: { name: 'idle', loop: true, t0: 0 }, pending: null, awake: false, scene: 'home', t: 0, mood: 'idle', moodT: 0, menu: [], menuIdx: 0, sess: null, sel: 0, fb: null, fbT: 0, flipped: false, summary: null, page: 0, toast: '', toastT: 0 };
 const NEW_CHOICES = [5, 10, 15, 20];
 
 function sessionRng() { return mulberry32((S.day * 2654435761 + S.next * 97 + S.box.length) >>> 0); }
@@ -31,7 +31,29 @@ function buildMenu() {
   const k = items.findIndex(it => it.id === keep);
   G.menuIdx = k >= 0 ? k : 0;
 }
-function toHome() { G.scene = 'home'; G.sess = null; G.fb = null; buildMenu(); }
+// ---------- 主页上 NABO 的动画 ----------
+// next：非循环动作放完后接什么；默认回到待机
+function npPlay(name, seg, loop, next) { G.np = { name, seg, loop, t0: G.t, next: next || null }; }
+function npIdle() { npPlay('idle', null, true); }
+// 至少整整一天没学（昨天没完成）就算睡着
+function isSleepy() { return S.doneDay !== S.day && S.day - S.doneDay >= 2 && S.doneDay > 0; }
+function npUpdate() {
+  const p = G.np;
+  if (p.loop || !animDone(lookFor(S), p, G.t)) return;
+  if (p.next) npPlay(...p.next); else npIdle();
+}
+function toHome() {
+  G.scene = 'home'; G.sess = null; G.fb = null; buildMenu();
+  if (G.pending) { npPlay(...G.pending); G.pending = null; }
+  else if (isSleepy() && !G.awake) { if (G.np.name !== 'sleep') npPlay('sleep', 'in', false, ['sleep', 'loop', true]); }
+  else if (G.np.name === 'sleep') npIdle();
+}
+// 睡着时按任何键先叫醒，这一下不操作菜单
+function wakeIfSleeping() {
+  if (G.np.name !== 'sleep' || G.np.seg === 'out') return false;
+  G.awake = true; npPlay('sleep', 'out', false); SFX.done();
+  return true;
+}
 
 function homeOk() {
   const it = G.menu[G.menuIdx];
@@ -49,8 +71,14 @@ function homeOk() {
 }
 
 // ---------- 学习 ----------
+function curStampCity() {
+  let last = -1;
+  for (let u = 0; u < TOTAL_UNITS; u++) if (unitStamped(S, u)) last = u;
+  return last >= 0 ? unitInfo(last).city : '';
+}
 function startSession(sess) {
   if (!sess.queue.length) { toast('今天没有要学的词'); return; }
+  sess.stampsBefore = stampCount(S);
   G.sess = sess; G.scene = 'study'; prepQ();
 }
 function prepQ() { G.sel = 0; G.fb = null; G.flipped = false; }
@@ -72,7 +100,7 @@ function nextQ() {
   if (sess.pos >= sess.queue.length) finishSession(); else prepQ();
 }
 function finishSession() {
-  const sess = G.sess;
+  const sess = G.sess, stampsBefore = sess.stampsBefore;
   const acc = sess.right + sess.wrong ? Math.round(sess.right / (sess.right + sess.wrong) * 100) : 100;
   let notes, title;
   if (sess.exam) {
@@ -80,10 +108,14 @@ function finishSession() {
     title = pass ? '结业考通过！' : '差一点，明天再考';
     notes = pass ? passExam(S) : (failExam(S, [...sess.wrongSet]), ['错题已放回复习盒子']);
     setMood(pass ? 'happy' : 'sad', 3);
+    G.pending = pass ? ['cheer', null, false] : ['sad', null, false];
   } else {
     title = '今日学习完成';
     notes = finishDay(S, sess.wrong === 0);
     setMood('happy', 2);
+    const gained = stampCount(S) - stampsBefore;
+    if (gained > 0) notes.unshift(`护照盖章：${curStampCity()}`);
+    G.pending = gained > 0 ? ['cheer', null, false] : ['happy', null, false];
   }
   saveState(S);
   G.summary = { title, notes, rows: sess.exam
@@ -112,6 +144,7 @@ function act(k) {
   if (G.scene === 'battle') return Battle.key(k);
   switch (G.scene) {
     case 'home':
+      if (wakeIfSleeping()) break;
       if (k === 'up') G.menuIdx = (G.menuIdx + G.menu.length - 1) % G.menu.length;
       else if (k === 'down') G.menuIdx = (G.menuIdx + 1) % G.menu.length;
       else homeOk();
@@ -175,6 +208,7 @@ for (const [k, el] of Object.entries(KEYBTN)) {
 function update(dt) {
   G.t += dt;
   if (G.moodT > 0 && (G.moodT -= dt) <= 0) G.mood = 'idle';
+  if (G.scene === 'home') npUpdate();
   if (G.toastT > 0 && (G.toastT -= dt) <= 0) G.toast = '';
   if (held.up !== null && !upLong && G.t - held.up >= 1) { upLong = true; back(); }
   if (G.scene === 'study' && G.fb && G.fb.ok && (G.fbT += dt) > 0.7) nextQ();

@@ -40,12 +40,14 @@ const Panel = (() => {
   function simulate(n) {
     const acc = $('sAcc').value / 100, lazy = $('sLazy').value / 100;
     for (let i = 0; i < n; i++) simulateDay(S, simRnd, acc, lazy);
+    G.awake = false;
     saveState(S);
     if (G.scene !== 'battle') toHome(); else buildMenu();
     render(true);
   }
   function nextDay() {
     const msg = advanceDay(S);
+    G.awake = false;
     saveState(S); if (G.scene !== 'battle') toHome();
     toast(msg || `第 ${S.day} 个学习日`);
     render(true);

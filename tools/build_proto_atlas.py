@@ -20,6 +20,8 @@ logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[1]
 ART = ROOT / "art"
 OUT = ROOT / "prototype" / "assets" / "art_atlas.js"
+OUT_ANIMS = ROOT / "prototype" / "assets" / "nabo_anims.js"
+SPRITES = ROOT / "sprites"
 NABO_CAP_TO_DESK_PX = 110   # ART_BRIEF 第 5 节：主页大图帽顶到桌沿
 
 
@@ -95,6 +97,40 @@ def _encode(entry: Entry) -> Optional[Dict]:
     }
 
 
+def _png_uri(im: Image.Image) -> str:
+    """256 色带透明的 PNG，原型里够用，体积比 RGBA 小得多。"""
+    buf = io.BytesIO()
+    im.quantize(256, method=Image.Quantize.FASTOCTREE).save(buf, "PNG", optimize=True)
+    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+def build_anims() -> Dict[str, Dict]:
+    """sprites/<stage>/anims.json 里的每个动作拼成一条横向帧条，裁到所有帧的并集包围盒。"""
+    out: Dict[str, Dict] = {}
+    for meta_path in sorted(SPRITES.glob("*/anims.json")):
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        ax, ay = meta["anchor"]
+        stage = meta_path.parent.name
+        for name, info in meta["anims"].items():
+            frames = [Image.open(p).convert("RGBA") for p in sorted((meta_path.parent / name).glob("[0-9]*.png"))]
+            if not frames:
+                logger.warning("%s/%s 没有帧", stage, name)
+                continue
+            boxes = [f.getbbox() for f in frames if f.getbbox()]
+            x0, y0 = min(b[0] for b in boxes), min(b[1] for b in boxes)
+            x1, y1 = max(b[2] for b in boxes), max(b[3] for b in boxes)
+            fw, fh = x1 - x0, y1 - y0
+            strip = Image.new("RGBA", (fw * len(frames), fh))
+            for i, f in enumerate(frames):
+                strip.paste(f.crop((x0, y0, x1, y1)), (i * fw, 0))
+            out.setdefault(stage, {})[name] = {
+                "src": _png_uri(strip), "fw": fw, "fh": fh, "n": len(frames), "ax": ax - x0, "ay": ay - y0,
+                "fps": info["fps"], "loop": info["loop"], "segments": info.get("segments", {}),
+            }
+            logger.info("动画 %s/%-6s %2d 帧 %d×%d", stage, name, len(frames), fw, fh)
+    return out
+
+
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     manifest = json.loads((ART / "manifest.json").read_text(encoding="utf-8"))
@@ -107,6 +143,9 @@ def main() -> None:
     for name, a in atlas.items():
         logger.info("%-16s %3d×%-3d 锚点 (%s, %s)  ← %s", name, a["w"], a["h"], a["ax"], a["ay"], a["from"])
     logger.info("写入 %s（%.0f KB）", OUT.relative_to(ROOT), OUT.stat().st_size / 1024)
+    anims = build_anims()
+    OUT_ANIMS.write_text("// 由 tools/build_proto_atlas.py 从 sprites/ 生成，不要手改\nwindow.NABO_ANIMS = " + json.dumps(anims, ensure_ascii=False) + ";\n", encoding="utf-8")
+    logger.info("写入 %s（%.0f KB）", OUT_ANIMS.relative_to(ROOT), OUT_ANIMS.stat().st_size / 1024)
 
 
 if __name__ == "__main__":

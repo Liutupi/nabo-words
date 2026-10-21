@@ -39,7 +39,43 @@ function drawArt(name, x, y) {
   return true;
 }
 const NABO_ART_BY_LOOK = ['nabo_primary'];
-function naboArtFor(look) { const n = NABO_ART_BY_LOOK[LOOK.indexOf(look)]; return n && hasArt(n) ? n : null; }
+const STAGE_KEYS = ['primary', 'junior', 'senior', 'cet4', 'cet6', 'adv', 'grad'];
+// 视频抽出的动画（sprites/ → tools/build_proto_atlas.py → assets/nabo_anims.js）
+const ANIMS = {};
+for (const [stage, set] of Object.entries(window.NABO_ANIMS || {})) {
+  ANIMS[stage] = {};
+  for (const [name, a] of Object.entries(set)) { const im = new Image(); im.src = a.src; ANIMS[stage][name] = { im, ...a }; }
+}
+function animsFor(look) {
+  const set = ANIMS[STAGE_KEYS[LOOK.indexOf(look)]];
+  return set && set.idle && set.idle.im.complete && set.idle.im.naturalWidth ? set : null;
+}
+function naboArtFor(look) {
+  if (animsFor(look)) return 'anim';
+  const n = NABO_ART_BY_LOOK[LOOK.indexOf(look)]; return n && hasArt(n) ? n : null;
+}
+// 播放状态 play = { name, seg, t0, loop }；返回第几帧，以及非循环时是否已播完
+function animFrame(a, play, t) {
+  const [lo, hi] = (play.seg && a.segments[play.seg]) || [0, a.n];
+  const k = Math.max(0, Math.floor((t - play.t0) * a.fps));
+  if (play.loop) return { i: lo + k % (hi - lo), done: false };
+  return { i: Math.min(lo + k, hi - 1), done: k >= hi - lo };
+}
+// 某学段还没做的动作，退回同学段的相近动作（不借别的学段，服装会对不上）
+const ANIM_FALLBACK = { cheer: 'happy', sleep: 'idle' };
+function resolveAnim(set, play) {
+  if (set[play.name]) return { a: set[play.name], play };
+  const alt = set[ANIM_FALLBACK[play.name]] || set.idle;
+  return { a: alt, play: { ...play, seg: null } };   // 片段名是原动作的，退回后整段播放
+}
+function animDone(look, play, t) {
+  const set = animsFor(look);
+  if (!set) return true;
+  const r = resolveAnim(set, play);
+  return animFrame(r.a, r.play, t).done;
+}
+// 表情 → 默认播放：答题角标用高潮段循环
+const MOOD_PLAY = { idle: { name: 'idle', loop: true }, happy: { name: 'happy', seg: 'peak', loop: true }, sad: { name: 'sad', seg: 'peak', loop: true } };
 
 function rect(x, y, w, h, col) { ctx.fillStyle = col; ctx.fillRect(x, y, w, h); }
 function rrect(x, y, w, h, r, col) { ctx.fillStyle = col; ctx.beginPath(); ctx.roundRect(x, y, w, h, r); ctx.fill(); }
@@ -69,9 +105,17 @@ function drawDesk(look) {
 }
 
 // ---------- 占位 NABO：脸、眼镜、白帽身份固定，只换衣服 ----------
-function drawNabo(stageLook, mood, t) {
+function drawNabo(stageLook, mood, t, play) {
   const bob = mood === 'happy' ? -Math.abs(Math.sin(t * 9)) * 5 : Math.sin(t * 2) * 1.2;
   const cx = 120, hy = 104 + bob, L = stageLook;
+  const set = animsFor(stageLook);
+  if (set) {
+    const p = play || { ...MOOD_PLAY[mood] || MOOD_PLAY.idle, t0: 0 };
+    const r = resolveAnim(set, p), a = r.a, { i } = animFrame(a, r.play, t);
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(a.im, i * a.fw, 0, a.fw, a.fh, Math.round(cx - a.ax), Math.round(176 - a.ay), a.fw, a.fh);
+    return;
+  }
   const art = naboArtFor(stageLook);
   if (art) {   // 视频帧到之前先用起始图；开心 / 沮丧只做位移和汗滴
     drawArt(art, cx, 176 + (mood === 'happy' ? bob : mood === 'sad' ? 2 : 0));

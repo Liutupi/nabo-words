@@ -1,8 +1,8 @@
-// 词库与学段定义。前 100 个是真实小学词（北京、上海两个单元），其余位置是样例词占位，
+// 词库与学段定义。小学 + 初中用 ECDICT 生成的真实词库（没有时退回下面 100 个手写词），其余位置是样例词占位，
 // 让时间快进能跑完整条成长曲线。固件里这部分由打包脚本从词表生成。
 'use strict';
 
-const REAL_WORDS = `
+const FALLBACK_WORDS = `
 hello|həˈləʊ|你好
 goodbye|ˌɡʊdˈbaɪ|再见
 yes|jes|是；对
@@ -102,7 +102,9 @@ write|raɪt|写
 like|laɪk|喜欢
 play|pleɪ|玩
 eat|iːt|吃
-sleep|sliːp|睡觉`.trim().split('\n').map(l => { const [w, p, m] = l.split('|'); return { w, p, m, real: true }; });
+sleep|sliːp|睡觉`.trim().split('\n').map(l => { const [w, p, m] = l.split('|'); return { w, p, pos: '', m, real: true }; });
+// 有 tools/build_wordlist.py 生成的词库（assets/words_data.js，小学 + 初中 1600 词）就用它，上面 100 词只是兜底
+const REAL_WORDS = window.NABO_WORDS ? window.NABO_WORDS.map(([w, p, pos, m]) => ({ w, p, pos, m, real: true })) : FALLBACK_WORDS;
 
 const UNIT_SIZE = 50;
 

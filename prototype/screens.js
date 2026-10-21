@@ -20,7 +20,7 @@ function drawHome(s, G) {
   const look = lookFor(s), t = G.t;
   drawRoom(look, t); drawProps(s, t, 'wall');
   // 美术版 NABO 的双手搭在桌沿上，所以画在桌子之后；占位版身体要被桌子挡住
-  if (naboArtFor(look)) { drawDesk(look); drawNabo(look, G.mood, t); }
+  if (naboArtFor(look)) { drawDesk(look); drawNabo(look, G.mood, t, G.np); }
   else { drawNabo(look, G.mood, t); drawDesk(look); }
   drawProps(s, t, 'desk');
   const si = Math.min(s.stage, 5);
@@ -29,10 +29,13 @@ function drawHome(s, G) {
   // 底部：词汇量 + 学段进度 + 菜单
   rect(0, 214, 240, 106, C.ink);
   const m = mastered(s), st = STAGES[si], n = st.end - st.start;
-  text('已掌握', 12, 230, 11, C.muted);
-  text(String(m), 52, 230, 18, '#FFFFFF', 'left', F_MONO, 700);
-  text('词', 54 + ctx.measureText(String(m)).width + 2, 231, 11, C.muted);
-  const p = stageProgress(s, st).mastered;
+  // 掌握要过 3 次间隔复习（约 11 天），开头几天先看“已学”，不会一直是 0
+  const l = learned(s);
+  text('已学', 12, 230, 11, C.muted);
+  text(String(l), 38, 230, 18, '#FFFFFF', 'left', F_MONO, 700);
+  const lw = ctx.measureText(String(l)).width;
+  text(`词 · 掌握 ${m}`, 40 + lw + 2, 231, 11, C.muted);
+  const p = countBox(s, st.start, st.end, 1) / n;   // 学段进度按“已学”算，和左边的数字一致
   text(`${st.name} ${Math.round(p * 100)}%`, 228, 230, 11, C.gold, 'right');
   rrect(12, 242, 216, 5, 3, '#2A3350'); rrect(12, 242, Math.max(5, 216 * p), 5, 3, C.gold);
   drawMenu(G);
@@ -63,12 +66,13 @@ function drawStudy(s, G) {
   if (q.type === 'intro') {
     fitText(w.w, 120, 96, 36, 210, C.ink, 'center', F_WORD, 600);
     if (w.p) text(`/${w.p}/`, 120, 130, 14, '#7A6F5A', 'center', F_IPA);
-    fitText(w.m, 120, 172, 22, 210, C.ink, 'center', F_BODY, 700);
+    if (w.pos) text(w.pos, 120, 152, 12, '#9A8F78', 'center', F_IPA);
+    fitText(w.m, 120, 176, 22, 210, C.ink, 'center', F_BODY, 700);
     hint('OK 记住了');
   } else if (q.type === 'flash') {
     fitText(w.w, 120, 100, 36, 210, C.ink, 'center', F_WORD, 600);
     if (w.p) text(`/${w.p}/`, 120, 134, 14, '#7A6F5A', 'center', F_IPA);
-    if (G.flipped) { fitText(w.m, 120, 180, 22, 210, C.ink, 'center', F_BODY, 700); hint(fb ? 'OK 继续' : 'UP 认识 · DOWN 不认识'); }
+    if (G.flipped) { if (w.pos) text(w.pos, 120, 158, 12, '#9A8F78', 'center', F_IPA); fitText(w.m, 120, 182, 22, 210, C.ink, 'center', F_BODY, 700); hint(fb ? 'OK 继续' : 'UP 认识 · DOWN 不认识'); }
     else hint('OK 翻面');
     if (fb) text(fb.ok ? '✓' : '再看一眼', 120, 222, 16, fb.ok ? C.green : C.red, 'center', F_BODY, 700);
   } else {

@@ -1,0 +1,165 @@
+{
+  "out_dir": "sprites",
+  "clips": [
+    {
+      "name": "idle",
+      "stage": "primary",
+      "source": "art/video/primary/primary_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {}
+    },
+    {
+      "name": "happy",
+      "stage": "primary",
+      "source": "art/video/primary/primary_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.0,
+      "segments": {
+        "peak": [
+          12,
+          26
+        ]
+      }
+    },
+    {
+      "name": "sad",
+      "stage": "primary",
+      "source": "art/video/primary/primary_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.0,
+      "segments": {
+        "peak": [
+          17,
+          29
+        ]
+      }
+    },
+    {
+      "name": "sleep",
+      "stage": "primary",
+      "source": "art/video/primary/primary_04_sleep_v2.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "in": [
+          0,
+          17
+        ],
+        "loop": [
+          17,
+          35
+        ],
+        "out": [
+          35,
+          48
+        ]
+      }
+    },
+    {
+      "name": "cheer",
+      "stage": "primary",
+      "source": "art/video/primary/primary_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.5,
+      "segments": {}
+    },
+    {
+      "name": "idle",
+      "stage": "junior",
+      "source": "art/video/junior/junior_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {}
+    },
+    {
+      "name": "happy",
+      "stage": "junior",
+      "source": "art/video/junior/junior_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          13,
+          35
+        ]
+      },
+      "end": 3.3
+    },
+    {
+      "name": "sad",
+      "stage": "junior",
+      "source": "art/video/junior/junior_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          18,
+          31
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "idle",
+      "stage": "senior",
+      "source": "art/video/senior/senior_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {}
+    },
+    {
+      "name": "happy",
+      "stage": "senior",
+      "source": "art/video/senior/senior_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          17,
+          31
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "sad",
+      "stage": "senior",
+      "source": "art/video/senior/senior_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          18,
+          31
+        ]
+      },
+      "end": 3.0
+    }
+  ]
+}

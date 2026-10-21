@@ -1,0 +1,12811 @@
+{
+"meta": {
+"source": "ECDICT (MIT) https://github.com/skywind3000/ECDICT",
+"ecdict_sha256": "1a6947e04785db63613a92e14903cdae7954f7e84860b10e68e5c7cbb3f9c3cf",
+"primary": 700,
+"junior_end": 1600,
+"count": 1600
+},
+"words": [
+{
+"w": "hello",
+"p": "həˈləʊ",
+"pos": "interj.",
+"m": "你好",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hi",
+"p": "haɪ",
+"pos": "interj.",
+"m": "嗨",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "goodbye",
+"p": "ɡʊdˈbaɪ",
+"pos": "interj.",
+"m": "再见",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bye",
+"p": "baɪ",
+"pos": "interj.",
+"m": "再见",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "yes",
+"p": "jes",
+"pos": "adv.",
+"m": "是；对",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "no",
+"p": "nəʊ",
+"pos": "adv.",
+"m": "不；没有",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "OK",
+"p": "ˈəʊˈkeɪ",
+"pos": "adj.",
+"m": "好；可以",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "thanks",
+"p": "θæŋks",
+"pos": "n.",
+"m": "感谢",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "please",
+"p": "pliːz",
+"pos": "adv.",
+"m": "请",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sorry",
+"p": "ˈsɒri",
+"pos": "adj.",
+"m": "对不起",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "name",
+"p": "neɪm",
+"pos": "n.",
+"m": "名字",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "I",
+"p": "aɪ",
+"pos": "pron.",
+"m": "我",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "me",
+"p": "miː",
+"pos": "pron.",
+"m": "我（宾格）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "my",
+"p": "maɪ",
+"pos": "pron.",
+"m": "我的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "you",
+"p": "juː",
+"pos": "pron.",
+"m": "你",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "your",
+"p": "jʊə",
+"pos": "pron.",
+"m": "你的；你们的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "he",
+"p": "hiː",
+"pos": "pron.",
+"m": "他",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "him",
+"p": "hɪm",
+"pos": "pron.",
+"m": "他（宾格）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "his",
+"p": "hɪz",
+"pos": "pron.",
+"m": "他的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "she",
+"p": "ʃiː",
+"pos": "pron.",
+"m": "她",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "her",
+"p": "hɜː",
+"pos": "pron.",
+"m": "她；她的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "it",
+"p": "ɪt",
+"pos": "pron.",
+"m": "它",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "we",
+"p": "wiː",
+"pos": "pron.",
+"m": "我们",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "us",
+"p": "ʌs",
+"pos": "pron.",
+"m": "我们（宾格）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "our",
+"p": "ˈaʊə",
+"pos": "pron.",
+"m": "我们的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "they",
+"p": "ðeɪ",
+"pos": "pron.",
+"m": "他们",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "them",
+"p": "ðem",
+"pos": "pron.",
+"m": "他们（宾格）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "their",
+"p": "ðeə",
+"pos": "pron.",
+"m": "他们的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "this",
+"p": "θɪs",
+"pos": "pron.",
+"m": "这；这个",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "that",
+"p": "ðæt",
+"pos": "pron.",
+"m": "那；那个",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "these",
+"p": "ðiːz",
+"pos": "pron.",
+"m": "这些",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "those",
+"p": "ðəʊz",
+"pos": "pron.",
+"m": "那些",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "boy",
+"p": "bɒi",
+"pos": "n.",
+"m": "男孩",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "girl",
+"p": "ɡɜːl",
+"pos": "n.",
+"m": "女孩",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "man",
+"p": "mæn",
+"pos": "n.",
+"m": "男人",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "woman",
+"p": "ˈwʊmən",
+"pos": "n.",
+"m": "女人",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "friend",
+"p": "frend",
+"pos": "n.",
+"m": "朋友",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "teacher",
+"p": "ˈtiːtʃə",
+"pos": "n.",
+"m": "教师",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "student",
+"p": "ˈstjuːdnt",
+"pos": "n.",
+"m": "学生",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "classmate",
+"p": "ˈklɑːsmeɪt",
+"pos": "n.",
+"m": "同班同学",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "baby",
+"p": "ˈbeɪbi",
+"pos": "n.",
+"m": "婴孩",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "child",
+"p": "tʃaɪld",
+"pos": "n.",
+"m": "孩子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "children",
+"p": "ˈtʃɪldrən",
+"pos": "n.",
+"m": "孩子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "kid",
+"p": "kɪd",
+"pos": "n.",
+"m": "小孩",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "people",
+"p": "ˈpiːpl",
+"pos": "n.",
+"m": "人",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "morning",
+"p": "ˈmɒnɪŋ",
+"pos": "n.",
+"m": "早晨",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "afternoon",
+"p": "ˈɑːftəˈnuːn",
+"pos": "n.",
+"m": "午后",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "evening",
+"p": "ˈiːvnɪŋ",
+"pos": "n.",
+"m": "傍晚",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "night",
+"p": "naɪt",
+"pos": "n.",
+"m": "夜晚",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "good",
+"p": "ɡʊd",
+"pos": "adj.",
+"m": "好的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fine",
+"p": "faɪn",
+"pos": "adj.",
+"m": "好的；晴朗的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "nice",
+"p": "naɪs",
+"pos": "adj.",
+"m": "美好的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "great",
+"p": "ɡreɪt",
+"pos": "adj.",
+"m": "大的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "welcome",
+"p": "ˈwelkəm",
+"pos": "n.",
+"m": "欢迎",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "meet",
+"p": "miːt",
+"pos": "v.",
+"m": "遇见；见面",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "school",
+"p": "skuːl",
+"pos": "n.",
+"m": "学校",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "class",
+"p": "klɑːs",
+"pos": "n.",
+"m": "班级",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "classroom",
+"p": "ˈklɑːsruːm",
+"pos": "n.",
+"m": "教室",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lesson",
+"p": "ˈlesn",
+"pos": "n.",
+"m": "课",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "book",
+"p": "bʊk",
+"pos": "n.",
+"m": "书",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pen",
+"p": "pen",
+"pos": "n.",
+"m": "钢笔",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pencil",
+"p": "ˈpensl",
+"pos": "n.",
+"m": "铅笔",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ruler",
+"p": "ˈruːlə",
+"pos": "n.",
+"m": "统治者",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "eraser",
+"p": "ɪˈreɪsə",
+"pos": "n.",
+"m": "橡皮",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "crayon",
+"p": "ˈkreɪən",
+"pos": "n.",
+"m": "蜡笔",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bag",
+"p": "bæɡ",
+"pos": "n.",
+"m": "袋子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "schoolbag",
+"p": "ˈskuːlbæɡ",
+"pos": "n.",
+"m": "书包",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "desk",
+"p": "desk",
+"pos": "n.",
+"m": "书桌",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "chair",
+"p": "tʃeə",
+"pos": "n.",
+"m": "椅子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "door",
+"p": "dɒ",
+"pos": "n.",
+"m": "门",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "window",
+"p": "ˈwɪndəʊ",
+"pos": "n.",
+"m": "窗户",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "blackboard",
+"p": "ˈblækbɒd",
+"pos": "n.",
+"m": "黑板",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "light",
+"p": "laɪt",
+"pos": "n.",
+"m": "灯；光",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "wall",
+"p": "wɒl",
+"pos": "n.",
+"m": "墙",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "floor",
+"p": "flɒ",
+"pos": "n.",
+"m": "地板",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "computer",
+"p": "kəmˈpjuːtə",
+"pos": "n.",
+"m": "电脑",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "picture",
+"p": "ˈpɪktʃə",
+"pos": "n.",
+"m": "图画",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "map",
+"p": "mæp",
+"pos": "n.",
+"m": "地图",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "library",
+"p": "ˈlaɪbrəri",
+"pos": "n.",
+"m": "图书馆",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "playground",
+"p": "ˈpleɪɡraʊnd",
+"pos": "n.",
+"m": "运动场",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "homework",
+"p": "ˈhəʊmwɜːk",
+"pos": "n.",
+"m": "家庭作业",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "music",
+"p": "ˈmjuːzɪk",
+"pos": "n.",
+"m": "音乐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "art",
+"p": "ɑːt",
+"pos": "n.",
+"m": "艺术",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "science",
+"p": "ˈsaɪəns",
+"pos": "n.",
+"m": "科学",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "maths",
+"p": "mæθs",
+"pos": "n.",
+"m": "数学",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Chinese",
+"p": "tʃaɪˈniːz",
+"pos": "n.",
+"m": "中文；中国人",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "English",
+"p": "ˈɪŋɡlɪʃ",
+"pos": "n.",
+"m": "英语",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "subject",
+"p": "ˈsʌbdʒekt",
+"pos": "n.",
+"m": "学科；科目",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "test",
+"p": "test",
+"pos": "n.",
+"m": "测试",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "red",
+"p": "red",
+"pos": "adj.",
+"m": "红的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "blue",
+"p": "bluː",
+"pos": "n.",
+"m": "蓝色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "green",
+"p": "ɡriːn",
+"pos": "n.",
+"m": "绿色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "yellow",
+"p": "ˈjeləʊ",
+"pos": "n.",
+"m": "黄色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "black",
+"p": "blæk",
+"pos": "n.",
+"m": "黑色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "white",
+"p": "hwaɪt",
+"pos": "n.",
+"m": "白色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "orange",
+"p": "ˈɒrɪndʒ",
+"pos": "n.",
+"m": "橙子；橙色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pink",
+"p": "pɪŋk",
+"pos": "n.",
+"m": "粉红色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "purple",
+"p": "ˈpɜːpl",
+"pos": "n.",
+"m": "紫色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "brown",
+"p": "braʊn",
+"pos": "n.",
+"m": "褐色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grey",
+"p": "ɡreɪ",
+"pos": "n.",
+"m": "灰色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "colour",
+"p": "ˈkʌlə",
+"pos": "n.",
+"m": "颜色",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "circle",
+"p": "ˈsɜːkl",
+"pos": "n.",
+"m": "圆圈",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "square",
+"p": "skweə",
+"pos": "n.",
+"m": "正方形",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "one",
+"p": "wʌn",
+"pos": "num.",
+"m": "一",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "two",
+"p": "tuː",
+"pos": "num.",
+"m": "二",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "three",
+"p": "θriː",
+"pos": "num.",
+"m": "三",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "four",
+"p": "fɒ",
+"pos": "num.",
+"m": "四",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "five",
+"p": "faɪv",
+"pos": "num.",
+"m": "五",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "six",
+"p": "sɪks",
+"pos": "num.",
+"m": "六",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "seven",
+"p": "ˈsevn",
+"pos": "num.",
+"m": "七",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "eight",
+"p": "eɪt",
+"pos": "num.",
+"m": "八",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "nine",
+"p": "naɪn",
+"pos": "num.",
+"m": "九",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ten",
+"p": "ten",
+"pos": "num.",
+"m": "十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "eleven",
+"p": "ɪˈlevn",
+"pos": "num.",
+"m": "十一",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "twelve",
+"p": "twelv",
+"pos": "num.",
+"m": "十二",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "thirteen",
+"p": "ˈθɜːˈtiːn",
+"pos": "num.",
+"m": "十三",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fourteen",
+"p": "ˈfɒˈtiːn",
+"pos": "num.",
+"m": "十四",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fifteen",
+"p": "ˈfɪfˈtiːn",
+"pos": "num.",
+"m": "十五",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sixteen",
+"p": "ˈsɪksˈtiːn",
+"pos": "num.",
+"m": "十六",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "seventeen",
+"p": "sevnˈtiːn",
+"pos": "num.",
+"m": "十七",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "eighteen",
+"p": "ˈeɪˈtiːn",
+"pos": "num.",
+"m": "十八",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "nineteen",
+"p": "ˌnaɪnˈtiːn",
+"pos": "num.",
+"m": "十九",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "twenty",
+"p": "ˈtwenti",
+"pos": "num.",
+"m": "二十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "thirty",
+"p": "ˈθɜːti",
+"pos": "num.",
+"m": "三十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "forty",
+"p": "ˈfɒti",
+"pos": "num.",
+"m": "四十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fifty",
+"p": "ˈfɪfti",
+"pos": "num.",
+"m": "五十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sixty",
+"p": "ˈsɪksti",
+"pos": "num.",
+"m": "六十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "seventy",
+"p": "ˈsevnti",
+"pos": "num.",
+"m": "七十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "eighty",
+"p": "ˈeɪti",
+"pos": "num.",
+"m": "八十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ninety",
+"p": "ˈnaɪnti",
+"pos": "num.",
+"m": "九十",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hundred",
+"p": "ˈhʌndrəd",
+"pos": "n.",
+"m": "百",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "first",
+"p": "fɜːst",
+"pos": "num.",
+"m": "第一",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "second",
+"p": "ˈsekənd",
+"pos": "num.",
+"m": "第二",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "third",
+"p": "θɜːd",
+"pos": "num.",
+"m": "第三",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "number",
+"p": "ˈnʌmbə",
+"pos": "n.",
+"m": "数字",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "head",
+"p": "hed",
+"pos": "n.",
+"m": "头",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "face",
+"p": "feɪs",
+"pos": "n.",
+"m": "脸",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "eye",
+"p": "aɪ",
+"pos": "n.",
+"m": "眼睛",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ear",
+"p": "ɪə",
+"pos": "n.",
+"m": "耳朵",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "nose",
+"p": "nəʊz",
+"pos": "n.",
+"m": "鼻子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "mouth",
+"p": "maʊθ",
+"pos": "n.",
+"m": "嘴",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hair",
+"p": "heə",
+"pos": "n.",
+"m": "头发",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tooth",
+"p": "tuːθ",
+"pos": "n.",
+"m": "牙齿",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "teeth",
+"p": "tiːθ",
+"pos": "n.",
+"m": "牙齿（复数）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hand",
+"p": "hænd",
+"pos": "n.",
+"m": "手",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "arm",
+"p": "ɑːm",
+"pos": "n.",
+"m": "手臂",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "leg",
+"p": "leɡ",
+"pos": "n.",
+"m": "腿",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "foot",
+"p": "fʊt",
+"pos": "n.",
+"m": "脚",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "feet",
+"p": "fiːt",
+"pos": "n.",
+"m": "脚（复数）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "finger",
+"p": "ˈfɪŋɡə",
+"pos": "n.",
+"m": "手指",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "body",
+"p": "ˈbɒdi",
+"pos": "n.",
+"m": "身体",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "neck",
+"p": "nek",
+"pos": "n.",
+"m": "脖子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shoulder",
+"p": "ˈʃəʊldə",
+"pos": "n.",
+"m": "肩膀",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "knee",
+"p": "niː",
+"pos": "n.",
+"m": "膝盖",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cat",
+"p": "kæt",
+"pos": "n.",
+"m": "猫",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dog",
+"p": "dɒɡ",
+"pos": "n.",
+"m": "狗",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bird",
+"p": "bɜːd",
+"pos": "n.",
+"m": "鸟",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fish",
+"p": "fɪʃ",
+"pos": "n.",
+"m": "鱼",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "duck",
+"p": "dʌk",
+"pos": "n.",
+"m": "鸭子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pig",
+"p": "pɪɡ",
+"pos": "n.",
+"m": "猪",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rabbit",
+"p": "ˈræbɪt",
+"pos": "n.",
+"m": "兔子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "panda",
+"p": "ˈpændə",
+"pos": "n.",
+"m": "大熊猫",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "monkey",
+"p": "ˈmʌŋki",
+"pos": "n.",
+"m": "猴子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tiger",
+"p": "ˈtaɪɡə",
+"pos": "n.",
+"m": "老虎",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lion",
+"p": "ˈlaɪən",
+"pos": "n.",
+"m": "狮子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "elephant",
+"p": "ˈelɪfənt",
+"pos": "n.",
+"m": "大象",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bear",
+"p": "beə",
+"pos": "n.",
+"m": "熊",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "horse",
+"p": "hɒs",
+"pos": "n.",
+"m": "马",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cow",
+"p": "kaʊ",
+"pos": "n.",
+"m": "母牛",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sheep",
+"p": "ʃiːp",
+"pos": "n.",
+"m": "羊",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "goat",
+"p": "ɡəʊt",
+"pos": "n.",
+"m": "山羊",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "chicken",
+"p": "ˈtʃɪkɪn",
+"pos": "n.",
+"m": "小鸡",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hen",
+"p": "hen",
+"pos": "n.",
+"m": "母鸡",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "mouse",
+"p": "maʊs",
+"pos": "n.",
+"m": "老鼠",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "snake",
+"p": "sneɪk",
+"pos": "n.",
+"m": "蛇",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "zebra",
+"p": "ˈziːbrə",
+"pos": "n.",
+"m": "斑马",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "giraffe",
+"p": "dʒɪˈrɑːf",
+"pos": "n.",
+"m": "长颈鹿",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "kangaroo",
+"p": "ˌkæŋɡəˈruː",
+"pos": "n.",
+"m": "袋鼠",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fox",
+"p": "fɒks",
+"pos": "n.",
+"m": "狐狸",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "wolf",
+"p": "wʊlf",
+"pos": "n.",
+"m": "狼",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "frog",
+"p": "frɒɡ",
+"pos": "n.",
+"m": "青蛙",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ant",
+"p": "ænt",
+"pos": "n.",
+"m": "蚂蚁",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bee",
+"p": "biː",
+"pos": "n.",
+"m": "蜜蜂",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "butterfly",
+"p": "ˈbʌtəflaɪ",
+"pos": "n.",
+"m": "蝴蝶",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "animal",
+"p": "ˈænɪməl",
+"pos": "n.",
+"m": "动物",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "zoo",
+"p": "zuː",
+"pos": "n.",
+"m": "动物园",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "farm",
+"p": "fɑːm",
+"pos": "n.",
+"m": "农场",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "family",
+"p": "ˈfæməli",
+"pos": "n.",
+"m": "家庭",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "mother",
+"p": "ˈmʌðə",
+"pos": "n.",
+"m": "母亲",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "mum",
+"p": "mʌm",
+"pos": "n.",
+"m": "妈妈",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "father",
+"p": "ˈfɑːðə",
+"pos": "n.",
+"m": "父亲",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dad",
+"p": "dæd",
+"pos": "n.",
+"m": "爸爸",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sister",
+"p": "ˈsɪstə",
+"pos": "n.",
+"m": "姐妹",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "brother",
+"p": "ˈbrʌðə",
+"pos": "n.",
+"m": "兄弟",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grandmother",
+"p": "ˈɡrændmʌðə",
+"pos": "n.",
+"m": "祖母",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grandma",
+"p": "ˈɡrændmɑː",
+"pos": "n.",
+"m": "奶奶",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grandfather",
+"p": "ˈɡrændfɑːðə",
+"pos": "n.",
+"m": "祖父",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grandpa",
+"p": "ˈɡrænpɑː",
+"pos": "",
+"m": "爷爷",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "aunt",
+"p": "ɑːnt",
+"pos": "n.",
+"m": "阿姨",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "uncle",
+"p": "ʌŋkl",
+"pos": "n.",
+"m": "叔父",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cousin",
+"p": "ˈkʌzən",
+"pos": "n.",
+"m": "堂兄弟姊妹",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "parent",
+"p": "ˈperənt",
+"pos": "n.",
+"m": "父母",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "son",
+"p": "sʌn",
+"pos": "n.",
+"m": "儿子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "daughter",
+"p": "ˈdɒtə",
+"pos": "n.",
+"m": "女儿",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "food",
+"p": "fuːd",
+"pos": "n.",
+"m": "食物",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "apple",
+"p": "ˈæpl",
+"pos": "n.",
+"m": "苹果",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "banana",
+"p": "bəˈnɑːnə",
+"pos": "n.",
+"m": "香蕉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pear",
+"p": "peə",
+"pos": "n.",
+"m": "梨子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grape",
+"p": "ɡreɪp",
+"pos": "n.",
+"m": "葡萄",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "peach",
+"p": "piːtʃ",
+"pos": "n.",
+"m": "桃子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "watermelon",
+"p": "ˈwɒtəˌmelən",
+"pos": "n.",
+"m": "西瓜",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "strawberry",
+"p": "ˈstrɒbəri",
+"pos": "n.",
+"m": "草莓",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lemon",
+"p": "ˈlemən",
+"pos": "n.",
+"m": "柠檬",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fruit",
+"p": "fruːt",
+"pos": "n.",
+"m": "水果",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "vegetable",
+"p": "ˈvedʒətəbl",
+"pos": "n.",
+"m": "蔬菜",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tomato",
+"p": "təˈmɑːtəʊ",
+"pos": "n.",
+"m": "番茄",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "potato",
+"p": "pəˈteɪtəʊ",
+"pos": "n.",
+"m": "马铃薯",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "carrot",
+"p": "ˈkærət",
+"pos": "n.",
+"m": "胡萝卜",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "onion",
+"p": "ˈʌnjən",
+"pos": "n.",
+"m": "洋葱",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "egg",
+"p": "eɡ",
+"pos": "n.",
+"m": "鸡蛋",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "milk",
+"p": "mɪlk",
+"pos": "n.",
+"m": "牛奶",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "water",
+"p": "ˈwɒtə",
+"pos": "n.",
+"m": "水",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "juice",
+"p": "dʒuːs",
+"pos": "n.",
+"m": "果汁",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tea",
+"p": "tiː",
+"pos": "n.",
+"m": "茶",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "coffee",
+"p": "ˈkɒfi",
+"pos": "n.",
+"m": "咖啡",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rice",
+"p": "raɪs",
+"pos": "n.",
+"m": "米饭",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bread",
+"p": "bred",
+"pos": "n.",
+"m": "面包",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cake",
+"p": "keɪk",
+"pos": "n.",
+"m": "蛋糕",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "noodle",
+"p": "ˈnuːdl",
+"pos": "n.",
+"m": "面条",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "meat",
+"p": "miːt",
+"pos": "n.",
+"m": "肉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "beef",
+"p": "biːf",
+"pos": "n.",
+"m": "牛肉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pork",
+"p": "pɒk",
+"pos": "n.",
+"m": "猪肉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "soup",
+"p": "suːp",
+"pos": "n.",
+"m": "汤",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "salad",
+"p": "ˈsæləd",
+"pos": "n.",
+"m": "色拉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sandwich",
+"p": "ˈsændwɪtʃ",
+"pos": "n.",
+"m": "三明治",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hamburger",
+"p": "ˈhæmbɜːɡə",
+"pos": "n.",
+"m": "汉堡",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pizza",
+"p": "ˈpiːtsə",
+"pos": "n.",
+"m": "比萨饼",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "candy",
+"p": "ˈkændi",
+"pos": "n.",
+"m": "糖果",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "chocolate",
+"p": "ˈtʃɒkəlɪt",
+"pos": "n.",
+"m": "巧克力",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sugar",
+"p": "ˈʃʊɡə",
+"pos": "n.",
+"m": "糖",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "salt",
+"p": "sɒlt",
+"pos": "n.",
+"m": "盐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "breakfast",
+"p": "ˈbrekfəst",
+"pos": "n.",
+"m": "早餐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lunch",
+"p": "lʌntʃ",
+"pos": "n.",
+"m": "午餐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dinner",
+"p": "ˈdɪnə",
+"pos": "n.",
+"m": "晚餐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "meal",
+"p": "miːl",
+"pos": "n.",
+"m": "一餐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hungry",
+"p": "ˈhʌŋɡi",
+"pos": "adj.",
+"m": "饥饿的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "thirsty",
+"p": "ˈθɜːsti",
+"pos": "adj.",
+"m": "口渴的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "clothes",
+"p": "kləʊðz",
+"pos": "n.",
+"m": "衣服",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "coat",
+"p": "kəʊt",
+"pos": "n.",
+"m": "外套",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shirt",
+"p": "ʃɜːt",
+"pos": "n.",
+"m": "衬衫",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "skirt",
+"p": "skɜːt",
+"pos": "n.",
+"m": "裙子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dress",
+"p": "dres",
+"pos": "n.",
+"m": "服装",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sweater",
+"p": "ˈswetə",
+"pos": "n.",
+"m": "毛衣",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "jacket",
+"p": "ˈdʒækɪt",
+"pos": "n.",
+"m": "夹克",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "jeans",
+"p": "dʒiːnz",
+"pos": "n.",
+"m": "工装裤",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pants",
+"p": "pænts",
+"pos": "n.",
+"m": "裤子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shorts",
+"p": "ʃɔːts",
+"pos": "n.",
+"m": "短裤",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sock",
+"p": "sɒk",
+"pos": "n.",
+"m": "短袜",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shoe",
+"p": "ʃuː",
+"pos": "n.",
+"m": "鞋",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hat",
+"p": "hæt",
+"pos": "n.",
+"m": "帽子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cap",
+"p": "kæp",
+"pos": "n.",
+"m": "盖子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "glove",
+"p": "ɡlʌv",
+"pos": "n.",
+"m": "手套",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "scarf",
+"p": "skɑːf",
+"pos": "n.",
+"m": "围巾",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "umbrella",
+"p": "ʌmˈbrelə",
+"pos": "n.",
+"m": "伞",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "home",
+"p": "həʊm",
+"pos": "n.",
+"m": "家",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "house",
+"p": "haʊs",
+"pos": "n.",
+"m": "房子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "room",
+"p": "ruːm",
+"pos": "n.",
+"m": "房间",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bedroom",
+"p": "ˈbedrʊm",
+"pos": "n.",
+"m": "卧室",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bathroom",
+"p": "ˈbɑːθruːm",
+"pos": "n.",
+"m": "浴室",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "kitchen",
+"p": "ˈkɪtʃɪn",
+"pos": "n.",
+"m": "厨房",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "garden",
+"p": "ˈɡɑːdn",
+"pos": "n.",
+"m": "花园",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bed",
+"p": "bed",
+"pos": "n.",
+"m": "床",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sofa",
+"p": "ˈsəʊfə",
+"pos": "n.",
+"m": "沙发",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "table",
+"p": "ˈteɪbl",
+"pos": "n.",
+"m": "桌子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lamp",
+"p": "læmp",
+"pos": "n.",
+"m": "台灯",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "phone",
+"p": "fəʊn",
+"pos": "n.",
+"m": "电话",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "television",
+"p": "ˈtelɪˌvɪʒən",
+"pos": "n.",
+"m": "电视",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fridge",
+"p": "frɪdʒ",
+"pos": "n.",
+"m": "电冰箱",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "key",
+"p": "kiː",
+"pos": "n.",
+"m": "钥匙",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "box",
+"p": "bɒks",
+"pos": "n.",
+"m": "盒子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "clock",
+"p": "klɒk",
+"pos": "n.",
+"m": "时钟",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "photo",
+"p": "ˈfəʊtəʊ",
+"pos": "n.",
+"m": "相片",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "mirror",
+"p": "ˈmɪrə",
+"pos": "n.",
+"m": "镜子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "toy",
+"p": "tɒi",
+"pos": "n.",
+"m": "玩具",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ball",
+"p": "bɒl",
+"pos": "n.",
+"m": "球",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "doll",
+"p": "dɒl",
+"pos": "n.",
+"m": "洋娃娃",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "kite",
+"p": "kaɪt",
+"pos": "n.",
+"m": "风筝",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "weather",
+"p": "ˈweðə",
+"pos": "n.",
+"m": "天气",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sunny",
+"p": "ˈsʌni",
+"pos": "adj.",
+"m": "阳光充足的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rainy",
+"p": "ˈreɪni",
+"pos": "adj.",
+"m": "下雨的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cloudy",
+"p": "ˈklaʊdi",
+"pos": "adj.",
+"m": "多云的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "windy",
+"p": "ˈwɪndi",
+"pos": "adj.",
+"m": "多风的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "snowy",
+"p": "ˈsnəʊi",
+"pos": "adj.",
+"m": "多雪的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hot",
+"p": "hɒt",
+"pos": "adj.",
+"m": "热的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cold",
+"p": "kəʊld",
+"pos": "adj.",
+"m": "冷的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "warm",
+"p": "wɒm",
+"pos": "adj.",
+"m": "暖和的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cool",
+"p": "kuːl",
+"pos": "adj.",
+"m": "凉爽的；酷",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "spring",
+"p": "sprɪŋ",
+"pos": "n.",
+"m": "春天",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "summer",
+"p": "ˈsʌmə",
+"pos": "n.",
+"m": "夏季",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "autumn",
+"p": "ˈɒtəm",
+"pos": "n.",
+"m": "秋天",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "winter",
+"p": "ˈwɪntə",
+"pos": "n.",
+"m": "冬季",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "season",
+"p": "ˈsiːzn",
+"pos": "n.",
+"m": "季节",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sun",
+"p": "sʌn",
+"pos": "n.",
+"m": "太阳",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "moon",
+"p": "muːn",
+"pos": "n.",
+"m": "月亮",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "star",
+"p": "stɑː",
+"pos": "n.",
+"m": "星星",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sky",
+"p": "skaɪ",
+"pos": "n.",
+"m": "天空",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cloud",
+"p": "klaʊd",
+"pos": "n.",
+"m": "云",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rain",
+"p": "reɪn",
+"pos": "n.",
+"m": "雨",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "snow",
+"p": "snəʊ",
+"pos": "n.",
+"m": "雪",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "wind",
+"p": "wɪnd",
+"pos": "n.",
+"m": "风",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Monday",
+"p": "ˈmʌndi",
+"pos": "n.",
+"m": "星期一",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Tuesday",
+"p": "ˈtjuːzdi",
+"pos": "n.",
+"m": "星期二",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Wednesday",
+"p": "ˈwenzdi",
+"pos": "n.",
+"m": "星期三",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Thursday",
+"p": "ˈθɜːzdi",
+"pos": "n.",
+"m": "星期四",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Friday",
+"p": "ˈfraɪdi",
+"pos": "n.",
+"m": "星期五",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Saturday",
+"p": "ˈsætədi",
+"pos": "n.",
+"m": "星期六",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "Sunday",
+"p": "ˈsʌndi",
+"pos": "n.",
+"m": "星期日",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "week",
+"p": "wiːk",
+"pos": "n.",
+"m": "星期",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "weekend",
+"p": "ˈwiːkend",
+"pos": "n.",
+"m": "周末",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "day",
+"p": "deɪ",
+"pos": "n.",
+"m": "天",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "today",
+"p": "təˈdeɪ",
+"pos": "n.",
+"m": "今天",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tomorrow",
+"p": "təˈmɒrəʊ",
+"pos": "n.",
+"m": "明天",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "yesterday",
+"p": "ˈjestədi",
+"pos": "n.",
+"m": "昨天",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "January",
+"p": "ˈdʒænjʊəri",
+"pos": "n.",
+"m": "一月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "February",
+"p": "ˈfebrʊəri",
+"pos": "n.",
+"m": "二月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "March",
+"p": "mɑːtʃ",
+"pos": "n.",
+"m": "三月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "April",
+"p": "ˈeɪprəl",
+"pos": "n.",
+"m": "四月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "May",
+"p": "meɪ",
+"pos": "n.",
+"m": "五月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "June",
+"p": "dʒuːn",
+"pos": "n.",
+"m": "六月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "July",
+"p": "dʒuːˈlaɪ",
+"pos": "n.",
+"m": "七月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "August",
+"p": "ɒˈɡʌst",
+"pos": "n.",
+"m": "八月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "September",
+"p": "sepˈtembə",
+"pos": "n.",
+"m": "九月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "October",
+"p": "ɒkˈtəʊbə",
+"pos": "n.",
+"m": "十月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "November",
+"p": "nəʊˈvembə",
+"pos": "n.",
+"m": "十一月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "December",
+"p": "dɪˈsembə",
+"pos": "n.",
+"m": "十二月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "month",
+"p": "mʌnθ",
+"pos": "n.",
+"m": "月",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "year",
+"p": "jɪə",
+"pos": "n.",
+"m": "年",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "time",
+"p": "taɪm",
+"pos": "n.",
+"m": "时间",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hour",
+"p": "aʊə",
+"pos": "n.",
+"m": "小时",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "minute",
+"p": "ˈmɪnɪt",
+"pos": "n.",
+"m": "分钟",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "birthday",
+"p": "ˈbɜːθdeɪ",
+"pos": "n.",
+"m": "生日",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "holiday",
+"p": "ˈhɒlədi",
+"pos": "n.",
+"m": "假日",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "party",
+"p": "ˈpɑːti",
+"pos": "n.",
+"m": "宴会",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "festival",
+"p": "ˈfestəvəl",
+"pos": "n.",
+"m": "节日",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "doctor",
+"p": "ˈdɒktə",
+"pos": "n.",
+"m": "医生",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "nurse",
+"p": "nɜːs",
+"pos": "n.",
+"m": "护士",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "driver",
+"p": "ˈdraɪvə",
+"pos": "n.",
+"m": "驾驶员",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "farmer",
+"p": "ˈfɑːmə",
+"pos": "n.",
+"m": "农夫",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "worker",
+"p": "ˈwɜːkə",
+"pos": "n.",
+"m": "工人",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cook",
+"p": "kʊk",
+"pos": "n.",
+"m": "厨师",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "policeman",
+"p": "pəˈliːsmən",
+"pos": "n.",
+"m": "警察",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "artist",
+"p": "ˈɑːtɪst",
+"pos": "n.",
+"m": "艺术家",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "singer",
+"p": "ˈsɪŋə",
+"pos": "n.",
+"m": "歌手",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dancer",
+"p": "ˈdɑːnsə",
+"pos": "n.",
+"m": "舞蹈演员",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "writer",
+"p": "ˈraɪtə",
+"pos": "n.",
+"m": "作家",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "scientist",
+"p": "ˈsaɪəntɪst",
+"pos": "n.",
+"m": "科学家",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pilot",
+"p": "ˈpaɪlət",
+"pos": "n.",
+"m": "飞行员",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "postman",
+"p": "ˈpəʊstmən",
+"pos": "n.",
+"m": "邮递员",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "job",
+"p": "dʒɒb",
+"pos": "n.",
+"m": "工作",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "park",
+"p": "pɑːk",
+"pos": "n.",
+"m": "公园",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shop",
+"p": "ʃɒp",
+"pos": "n.",
+"m": "商店",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "supermarket",
+"p": "ˈsjuːpəmɑːkɪt",
+"pos": "n.",
+"m": "超级市场",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hospital",
+"p": "ˈhɒspɪtəl",
+"pos": "n.",
+"m": "医院",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cinema",
+"p": "ˈsɪnəmə",
+"pos": "n.",
+"m": "电影院",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "museum",
+"p": "mjuːˈzɪəm",
+"pos": "n.",
+"m": "博物馆",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bank",
+"p": "bæŋk",
+"pos": "n.",
+"m": "银行",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "restaurant",
+"p": "ˈrestərɒŋ",
+"pos": "n.",
+"m": "餐馆",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hotel",
+"p": "həʊˈtel",
+"pos": "n.",
+"m": "旅馆",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "station",
+"p": "ˈsteɪʃən",
+"pos": "n.",
+"m": "车站",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "street",
+"p": "striːt",
+"pos": "n.",
+"m": "街道",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "road",
+"p": "rəʊd",
+"pos": "n.",
+"m": "路",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "city",
+"p": "ˈsɪti",
+"pos": "n.",
+"m": "城市",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "town",
+"p": "taʊn",
+"pos": "n.",
+"m": "城镇",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "village",
+"p": "ˈvɪlɪdʒ",
+"pos": "n.",
+"m": "村庄",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "country",
+"p": "ˈkʌntri",
+"pos": "n.",
+"m": "国家",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "world",
+"p": "wɜːld",
+"pos": "n.",
+"m": "世界",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bus",
+"p": "bʌs",
+"pos": "n.",
+"m": "公共汽车",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "car",
+"p": "kɑː",
+"pos": "n.",
+"m": "汽车",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bike",
+"p": "baɪk",
+"pos": "n.",
+"m": "自行车",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bicycle",
+"p": "ˈbaɪsɪkl",
+"pos": "n.",
+"m": "自行车",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "train",
+"p": "treɪn",
+"pos": "n.",
+"m": "火车",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "plane",
+"p": "pleɪn",
+"pos": "n.",
+"m": "飞机",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ship",
+"p": "ʃɪp",
+"pos": "n.",
+"m": "船",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "boat",
+"p": "bəʊt",
+"pos": "n.",
+"m": "船",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "taxi",
+"p": "ˈtæksi",
+"pos": "n.",
+"m": "出租车",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "subway",
+"p": "ˈsʌbweɪ",
+"pos": "n.",
+"m": "地铁",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "run",
+"p": "rʌn",
+"pos": "v.",
+"m": "跑",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "jump",
+"p": "dʒʌmp",
+"pos": "v.",
+"m": "跳跃",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "swim",
+"p": "swɪm",
+"pos": "v.",
+"m": "游泳",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sing",
+"p": "sɪŋ",
+"pos": "v.",
+"m": "唱",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dance",
+"p": "dæns",
+"pos": "v.",
+"m": "跳舞",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "read",
+"p": "riːd",
+"pos": "v.",
+"m": "读",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "write",
+"p": "raɪt",
+"pos": "v.",
+"m": "写",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "draw",
+"p": "drɒ",
+"pos": "v.",
+"m": "画",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "play",
+"p": "pleɪ",
+"pos": "v.",
+"m": "玩；打（球）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "eat",
+"p": "iːt",
+"pos": "v.",
+"m": "吃",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "drink",
+"p": "drɪŋk",
+"pos": "v.",
+"m": "喝",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sleep",
+"p": "sliːp",
+"pos": "v.",
+"m": "睡觉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sit",
+"p": "sɪt",
+"pos": "v.",
+"m": "坐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "stand",
+"p": "stænd",
+"pos": "v.",
+"m": "站",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "walk",
+"p": "wɒk",
+"pos": "v.",
+"m": "走路",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "go",
+"p": "ɡoʊ",
+"pos": "v.",
+"m": "去",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "come",
+"p": "kʌm",
+"pos": "v.",
+"m": "来",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "see",
+"p": "siː",
+"pos": "v.",
+"m": "看见",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "look",
+"p": "lʊk",
+"pos": "v.",
+"m": "看",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "watch",
+"p": "wɒtʃ",
+"pos": "v.",
+"m": "观看；手表",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "listen",
+"p": "ˈlɪsn",
+"pos": "v.",
+"m": "听",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hear",
+"p": "hɪə",
+"pos": "v.",
+"m": "听见",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "speak",
+"p": "spiːk",
+"pos": "v.",
+"m": "说",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "say",
+"p": "seɪ",
+"pos": "v.",
+"m": "说",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "talk",
+"p": "tɒk",
+"pos": "v.",
+"m": "讲话",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tell",
+"p": "tel",
+"pos": "v.",
+"m": "讲述",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ask",
+"p": "ɑːsk",
+"pos": "v.",
+"m": "问",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "answer",
+"p": "ˈɑːnsə",
+"pos": "v.",
+"m": "回答",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "open",
+"p": "ˈəʊpən",
+"pos": "v.",
+"m": "打开",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "close",
+"p": "kləʊz",
+"pos": "v.",
+"m": "关上",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "help",
+"p": "help",
+"pos": "v.",
+"m": "帮助",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "like",
+"p": "laɪk",
+"pos": "v.",
+"m": "喜欢",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "love",
+"p": "lʌv",
+"pos": "v.",
+"m": "爱",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "want",
+"p": "wɒnt",
+"pos": "v.",
+"m": "生活困苦",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "need",
+"p": "niːd",
+"pos": "v.",
+"m": "贫困",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "have",
+"p": "hæv",
+"pos": "v.",
+"m": "有",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "do",
+"p": "duː",
+"pos": "v.",
+"m": "做",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "make",
+"p": "meɪk",
+"pos": "v.",
+"m": "做；制作",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "take",
+"p": "teɪk",
+"pos": "v.",
+"m": "拿；带走",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "give",
+"p": "ɡɪv",
+"pos": "v.",
+"m": "给",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "get",
+"p": "ɡet",
+"pos": "v.",
+"m": "得到；到达",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "put",
+"p": "pʊt",
+"pos": "v.",
+"m": "放",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "find",
+"p": "faɪnd",
+"pos": "v.",
+"m": "裁决",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "buy",
+"p": "baɪ",
+"pos": "v.",
+"m": "买",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "wash",
+"p": "wɒʃ",
+"pos": "v.",
+"m": "洗涤",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "clean",
+"p": "kliːn",
+"pos": "v.",
+"m": "打扫；弄干净",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "live",
+"p": "lɪvˌlaɪv",
+"pos": "v.",
+"m": "居住",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "work",
+"p": "wɜːk",
+"pos": "v.",
+"m": "工作",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "study",
+"p": "ˈstʌdi",
+"pos": "v.",
+"m": "学习",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "learn",
+"p": "lɜːn",
+"pos": "v.",
+"m": "学习",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "know",
+"p": "nəʊ",
+"pos": "v.",
+"m": "知道",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "think",
+"p": "θɪŋk",
+"pos": "v.",
+"m": "思考",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fly",
+"p": "flaɪ",
+"pos": "v.",
+"m": "飞",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "climb",
+"p": "klaɪm",
+"pos": "v.",
+"m": "攀登",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "catch",
+"p": "kætʃ",
+"pos": "v.",
+"m": "抓住",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ride",
+"p": "raɪd",
+"pos": "v.",
+"m": "骑马",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "drive",
+"p": "draɪv",
+"pos": "v.",
+"m": "开车",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "big",
+"p": "bɪɡ",
+"pos": "adj.",
+"m": "大的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "small",
+"p": "smɒl",
+"pos": "adj.",
+"m": "小的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "long",
+"p": "lɒŋ",
+"pos": "adj.",
+"m": "长的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "short",
+"p": "ʃɒt",
+"pos": "adj.",
+"m": "短的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tall",
+"p": "tɒl",
+"pos": "adj.",
+"m": "高的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "high",
+"p": "haɪ",
+"pos": "adj.",
+"m": "高的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "low",
+"p": "ləʊ",
+"pos": "adj.",
+"m": "低的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fat",
+"p": "fæt",
+"pos": "adj.",
+"m": "肥的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "thin",
+"p": "θɪn",
+"pos": "adj.",
+"m": "薄的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "old",
+"p": "əʊld",
+"pos": "adj.",
+"m": "老的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "new",
+"p": "njuː",
+"pos": "adj.",
+"m": "新的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "young",
+"p": "jʌŋ",
+"pos": "adj.",
+"m": "年轻的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "happy",
+"p": "ˈhæpi",
+"pos": "adj.",
+"m": "快乐的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sad",
+"p": "sæd",
+"pos": "adj.",
+"m": "忧愁的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "angry",
+"p": "ˈæŋɡri",
+"pos": "adj.",
+"m": "生气的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tired",
+"p": "taɪəd",
+"pos": "adj.",
+"m": "疲累的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bad",
+"p": "bæd",
+"pos": "adj.",
+"m": "坏的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "beautiful",
+"p": "ˈbjuːtɪfʊl",
+"pos": "adj.",
+"m": "美丽的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pretty",
+"p": "ˈprɪti",
+"pos": "adj.",
+"m": "漂亮的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cute",
+"p": "kjuːt",
+"pos": "adj.",
+"m": "可爱的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "funny",
+"p": "ˈfʌni",
+"pos": "adj.",
+"m": "好笑的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "kind",
+"p": "kaɪnd",
+"pos": "adj.",
+"m": "友好的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "clever",
+"p": "ˈklevə",
+"pos": "adj.",
+"m": "聪明的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "strong",
+"p": "strɒŋ",
+"pos": "adj.",
+"m": "强壮的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "busy",
+"p": "ˈbɪzi",
+"pos": "adj.",
+"m": "忙碌的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "free",
+"p": "friː",
+"pos": "adj.",
+"m": "空闲的；免费的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "easy",
+"p": "ˈiːzi",
+"pos": "adj.",
+"m": "容易的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "difficult",
+"p": "ˈdɪfɪkəlt",
+"pos": "adj.",
+"m": "困难的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hard",
+"p": "hɑːd",
+"pos": "adj.",
+"m": "硬的；难的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fast",
+"p": "fɑːst",
+"pos": "adj.",
+"m": "快速的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "slow",
+"p": "sləʊ",
+"pos": "adj.",
+"m": "慢的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "early",
+"p": "ˈɜːli",
+"pos": "adj.",
+"m": "早的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "late",
+"p": "leɪt",
+"pos": "adj.",
+"m": "迟的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "right",
+"p": "raɪt",
+"pos": "adj.",
+"m": "对的；右边的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "wrong",
+"p": "rɒŋ",
+"pos": "adj.",
+"m": "错误的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "same",
+"p": "seɪm",
+"pos": "adj.",
+"m": "相同的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "different",
+"p": "ˈdɪfərənt",
+"pos": "adj.",
+"m": "不同的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "full",
+"p": "fʊl",
+"pos": "adj.",
+"m": "充满的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dirty",
+"p": "ˈdɜːti",
+"pos": "adj.",
+"m": "肮脏的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "quiet",
+"p": "ˈkwaɪət",
+"pos": "adj.",
+"m": "安静的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "heavy",
+"p": "ˈhevi",
+"pos": "adj.",
+"m": "重的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "in",
+"p": "ɪn",
+"pos": "prep.",
+"m": "在…里",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "on",
+"p": "ɒn",
+"pos": "prep.",
+"m": "在…上",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "under",
+"p": "ˈʌndə",
+"pos": "prep.",
+"m": "在…下面",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "near",
+"p": "nɪə",
+"pos": "prep.",
+"m": "在…附近",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "behind",
+"p": "bɪˈhaɪnd",
+"pos": "prep.",
+"m": "在…后面",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "between",
+"p": "bɪˈtwiːn",
+"pos": "prep.",
+"m": "在…之间",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "front",
+"p": "frʌnt",
+"pos": "n.",
+"m": "前面",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "left",
+"p": "left",
+"pos": "adj.",
+"m": "左边的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "up",
+"p": "ʌp",
+"pos": "adv.",
+"m": "向上",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "down",
+"p": "daʊn",
+"pos": "adv.",
+"m": "向下",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "here",
+"p": "hɪə",
+"pos": "adv.",
+"m": "这里",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "there",
+"p": "ðeə",
+"pos": "adv.",
+"m": "那里",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "where",
+"p": "hweə",
+"pos": "adv.",
+"m": "在哪里",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "when",
+"p": "hwen",
+"pos": "adv.",
+"m": "什么时候",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "why",
+"p": "hwaɪ",
+"pos": "adv.",
+"m": "为什么",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "how",
+"p": "haʊ",
+"pos": "adv.",
+"m": "怎样",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "what",
+"p": "hwɒt",
+"pos": "pron.",
+"m": "什么",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "which",
+"p": "hwɪtʃ",
+"pos": "pron.",
+"m": "哪一个",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "who",
+"p": "huː",
+"pos": "pron.",
+"m": "谁",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "and",
+"p": "ænd",
+"pos": "conj.",
+"m": "和",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "but",
+"p": "bʌt",
+"pos": "conj.",
+"m": "但是",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "or",
+"p": "ɒ",
+"pos": "conj.",
+"m": "或者",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "with",
+"p": "wɪð",
+"pos": "prep.",
+"m": "和；用",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "to",
+"p": "tuː",
+"pos": "prep.",
+"m": "到；向",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "from",
+"p": "frɒm",
+"pos": "prep.",
+"m": "从；来自",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "for",
+"p": "fɒ",
+"pos": "prep.",
+"m": "为了；给",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "of",
+"p": "ɒv",
+"pos": "prep.",
+"m": "…的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "at",
+"p": "æt",
+"pos": "prep.",
+"m": "在（某处）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "by",
+"p": "baɪ",
+"pos": "prep.",
+"m": "在…旁；通过",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "about",
+"p": "əˈbaʊt",
+"pos": "prep.",
+"m": "关于；大约",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "a",
+"p": "eɪ",
+"pos": "art.",
+"m": "一（个）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "an",
+"p": "æn",
+"pos": "art.",
+"m": "一（个）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "the",
+"p": "ðə",
+"pos": "art.",
+"m": "这；那",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "is",
+"p": "ɪz",
+"pos": "v.",
+"m": "是（三单）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "am",
+"p": "æm",
+"pos": "v.",
+"m": "是（和 I 连用）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "are",
+"p": "ɑː",
+"pos": "v.",
+"m": "是（复数、你）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "be",
+"p": "biː",
+"pos": "v.",
+"m": "是",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "can",
+"p": "kæn",
+"pos": "aux.",
+"m": "能；会",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "will",
+"p": "wɪl",
+"pos": "aux.",
+"m": "将；会",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "must",
+"p": "mʌst",
+"pos": "aux.",
+"m": "必须",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "should",
+"p": "ʃʊd",
+"pos": "aux.",
+"m": "应该",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "very",
+"p": "ˈveri",
+"pos": "adv.",
+"m": "非常",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "too",
+"p": "tuː",
+"pos": "adv.",
+"m": "也；太",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "also",
+"p": "ˈɒlsəʊ",
+"pos": "adv.",
+"m": "也",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "not",
+"p": "nɒt",
+"pos": "adv.",
+"m": "不",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "all",
+"p": "ɒl",
+"pos": "adj.",
+"m": "所有的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "some",
+"p": "sʌm",
+"pos": "adj.",
+"m": "一些",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "many",
+"p": "ˈmeni",
+"pos": "adj.",
+"m": "许多（可数）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "much",
+"p": "mʌtʃ",
+"pos": "adj.",
+"m": "许多（不可数）",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "more",
+"p": "mɒ",
+"pos": "adj.",
+"m": "更多的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "every",
+"p": "ˈevri",
+"pos": "adj.",
+"m": "每个",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "other",
+"p": "ˈʌðə",
+"pos": "adj.",
+"m": "其他的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sport",
+"p": "spɒt",
+"pos": "n.",
+"m": "运动",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "football",
+"p": "ˈfʊtbɒl",
+"pos": "n.",
+"m": "足球",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "basketball",
+"p": "ˈbɑːskɪtbɒl",
+"pos": "n.",
+"m": "篮球",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "volleyball",
+"p": "ˈvɒlɪbɒl",
+"pos": "n.",
+"m": "排球",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tennis",
+"p": "ˈtenɪs",
+"pos": "n.",
+"m": "网球",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "game",
+"p": "ɡeɪm",
+"pos": "n.",
+"m": "比赛",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hobby",
+"p": "ˈhɒbi",
+"pos": "n.",
+"m": "嗜好",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "film",
+"p": "fɪlm",
+"pos": "n.",
+"m": "电影",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "song",
+"p": "sɒŋ",
+"pos": "n.",
+"m": "歌",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "story",
+"p": "ˈstɒri",
+"pos": "n.",
+"m": "故事",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "piano",
+"p": "pɪˈɑːnəʊ",
+"pos": "n.",
+"m": "钢琴",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "guitar",
+"p": "ɡɪˈtɑː",
+"pos": "n.",
+"m": "吉他",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "violin",
+"p": "ˌvaɪəˈlɪn",
+"pos": "n.",
+"m": "小提琴",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "picnic",
+"p": "ˈpɪknɪk",
+"pos": "n.",
+"m": "野餐",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "trip",
+"p": "trɪp",
+"pos": "n.",
+"m": "旅行",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "tree",
+"p": "triː",
+"pos": "n.",
+"m": "树",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "flower",
+"p": "ˈflaʊə",
+"pos": "n.",
+"m": "花",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grass",
+"p": "ɡræs",
+"pos": "n.",
+"m": "草",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "river",
+"p": "ˈrɪvə",
+"pos": "n.",
+"m": "河",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lake",
+"p": "leɪk",
+"pos": "n.",
+"m": "湖",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sea",
+"p": "siː",
+"pos": "n.",
+"m": "海",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "mountain",
+"p": "ˈmaʊntɪn",
+"pos": "n.",
+"m": "山",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hill",
+"p": "hɪl",
+"pos": "n.",
+"m": "小山",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "beach",
+"p": "biːtʃ",
+"pos": "n.",
+"m": "海滩",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "island",
+"p": "ˈaɪlənd",
+"pos": "n.",
+"m": "岛",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "forest",
+"p": "ˈfɒrɪst",
+"pos": "n.",
+"m": "森林",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "again",
+"p": "əˈɡeɪn",
+"pos": "adv.",
+"m": "再一次",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "only",
+"p": "ˈəʊnli",
+"pos": "adv.",
+"m": "只；仅仅",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "just",
+"p": "dʒʌst",
+"pos": "adv.",
+"m": "刚刚；只是",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "now",
+"p": "naʊ",
+"pos": "adv.",
+"m": "现在",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "then",
+"p": "ðen",
+"pos": "adv.",
+"m": "然后",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "often",
+"p": "ˈɒfn",
+"pos": "adv.",
+"m": "时常",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "always",
+"p": "ˈɒlweɪz",
+"pos": "adv.",
+"m": "总是",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "usually",
+"p": "ˈjuːʒʊəli",
+"pos": "adv.",
+"m": "通常",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sometimes",
+"p": "ˈsʌmtaɪmz",
+"pos": "adv.",
+"m": "有时",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "never",
+"p": "ˈnevə",
+"pos": "adv.",
+"m": "从不",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "paper",
+"p": "ˈpeɪpə",
+"pos": "n.",
+"m": "纸",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "card",
+"p": "kɑːd",
+"pos": "n.",
+"m": "卡片",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "letter",
+"p": "ˈletə",
+"pos": "n.",
+"m": "信",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "word",
+"p": "wɜːd",
+"pos": "n.",
+"m": "单词",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sentence",
+"p": "ˈsentəns",
+"pos": "n.",
+"m": "句子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "page",
+"p": "peɪdʒ",
+"pos": "n.",
+"m": "页",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "question",
+"p": "ˈkwestʃən",
+"pos": "n.",
+"m": "问题",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "idea",
+"p": "aɪˈdɪə",
+"pos": "n.",
+"m": "主意",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "notebook",
+"p": "ˈnəʊtbʊk",
+"pos": "n.",
+"m": "笔记本",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grade",
+"p": "ɡreɪd",
+"pos": "n.",
+"m": "等级",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "team",
+"p": "tiːm",
+"pos": "n.",
+"m": "队",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "club",
+"p": "klʌb",
+"pos": "n.",
+"m": "俱乐部",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rule",
+"p": "ruːl",
+"pos": "n.",
+"m": "规则",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "example",
+"p": "ɪɡˈzæmpl",
+"pos": "n.",
+"m": "例子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "problem",
+"p": "ˈprɒbləm",
+"pos": "n.",
+"m": "问题",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "mistake",
+"p": "mɪsˈteɪk",
+"pos": "n.",
+"m": "错误",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "note",
+"p": "nəʊt",
+"pos": "n.",
+"m": "笔记",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "diary",
+"p": "ˈdaɪəri",
+"pos": "n.",
+"m": "日记",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dictionary",
+"p": "ˈdɪkʃənəri",
+"pos": "n.",
+"m": "字典",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sticker",
+"p": "ˈstɪkə",
+"pos": "n.",
+"m": "屠夫",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cup",
+"p": "kʌp",
+"pos": "n.",
+"m": "杯子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bowl",
+"p": "bəʊl",
+"pos": "n.",
+"m": "碗",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "plate",
+"p": "pleɪt",
+"pos": "n.",
+"m": "盘子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "spoon",
+"p": "spuːn",
+"pos": "n.",
+"m": "勺子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "chopsticks",
+"p": "ˈtʃɒpstɪks",
+"pos": "n.",
+"m": "筷子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "knife",
+"p": "naɪf",
+"pos": "n.",
+"m": "小刀",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fork",
+"p": "fɒk",
+"pos": "n.",
+"m": "叉子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bottle",
+"p": "ˈbɒtl",
+"pos": "n.",
+"m": "瓶子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "glass",
+"p": "ɡlɑːs",
+"pos": "n.",
+"m": "玻璃",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "basket",
+"p": "ˈbɑːskɪt",
+"pos": "n.",
+"m": "篮子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shower",
+"p": "ˈʃaʊə",
+"pos": "n.",
+"m": "淋浴",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "towel",
+"p": "ˈtaʊəl",
+"pos": "n.",
+"m": "毛巾",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "soap",
+"p": "səʊp",
+"pos": "n.",
+"m": "肥皂",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "toothbrush",
+"p": "ˈtuːθbrʌʃ",
+"pos": "n.",
+"m": "牙刷",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "brush",
+"p": "brʌʃ",
+"pos": "n.",
+"m": "刷子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "comb",
+"p": "kəʊm",
+"pos": "n.",
+"m": "梳子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "money",
+"p": "ˈmʌni",
+"pos": "n.",
+"m": "金钱",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "gift",
+"p": "ɡɪft",
+"pos": "n.",
+"m": "礼物",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "present",
+"p": "ˈpreznt",
+"pos": "n.",
+"m": "礼物",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ice",
+"p": "aɪs",
+"pos": "n.",
+"m": "冰",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dumpling",
+"p": "ˈdʌmplɪŋ",
+"pos": "n.",
+"m": "面团布丁",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cookie",
+"p": "ˈkʊki",
+"pos": "n.",
+"m": "饼干",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pie",
+"p": "paɪ",
+"pos": "n.",
+"m": "馅饼",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "jam",
+"p": "dʒæm",
+"pos": "n.",
+"m": "果酱",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "honey",
+"p": "ˈhʌni",
+"pos": "n.",
+"m": "蜂蜜",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "butter",
+"p": "ˈbʌtə",
+"pos": "n.",
+"m": "奶油",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cheese",
+"p": "tʃiːz",
+"pos": "n.",
+"m": "乳酪",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "corn",
+"p": "kɒn",
+"pos": "n.",
+"m": "玉米",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bean",
+"p": "biːn",
+"pos": "n.",
+"m": "豆子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "nut",
+"p": "nʌt",
+"pos": "n.",
+"m": "坚果",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "fries",
+"p": "fraɪz",
+"pos": "n.",
+"m": "炸薯条",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dolphin",
+"p": "ˈdɒlfɪn",
+"pos": "n.",
+"m": "海豚",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "whale",
+"p": "hweɪl",
+"pos": "n.",
+"m": "鲸鱼",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shark",
+"p": "ʃɑːk",
+"pos": "n.",
+"m": "鲨鱼",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "penguin",
+"p": "ˈpenɡwɪn",
+"pos": "n.",
+"m": "企鹅",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "owl",
+"p": "aʊl",
+"pos": "n.",
+"m": "猫头鹰",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "parrot",
+"p": "ˈpærət",
+"pos": "n.",
+"m": "鹦鹉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "turtle",
+"p": "ˈtɜːtl",
+"pos": "n.",
+"m": "海龟",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "spider",
+"p": "ˈspaɪdə",
+"pos": "n.",
+"m": "蜘蛛",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "insect",
+"p": "ˈɪnsekt",
+"pos": "n.",
+"m": "昆虫",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pet",
+"p": "pet",
+"pos": "n.",
+"m": "宠物",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "leaf",
+"p": "liːf",
+"pos": "n.",
+"m": "叶子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "plant",
+"p": "plænt",
+"pos": "n.",
+"m": "植物",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "seed",
+"p": "siːd",
+"pos": "n.",
+"m": "种子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rock",
+"p": "rɒk",
+"pos": "n.",
+"m": "岩石",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "stone",
+"p": "stəʊn",
+"pos": "n.",
+"m": "石头",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "field",
+"p": "fiːld",
+"pos": "n.",
+"m": "田野",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sand",
+"p": "sænd",
+"pos": "n.",
+"m": "沙子",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "earth",
+"p": "ɜːθ",
+"pos": "n.",
+"m": "地球",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "air",
+"p": "eə",
+"pos": "n.",
+"m": "空气",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rainbow",
+"p": "ˈreɪnbəʊ",
+"pos": "n.",
+"m": "彩虹",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "storm",
+"p": "stɒm",
+"pos": "n.",
+"m": "暴风雨",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "begin",
+"p": "bɪˈɡɪn",
+"pos": "v.",
+"m": "开始",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "finish",
+"p": "ˈfɪnɪʃ",
+"pos": "v.",
+"m": "结束",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "start",
+"p": "stɑːt",
+"pos": "v.",
+"m": "开始",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "stop",
+"p": "stɒp",
+"pos": "v.",
+"m": "停止",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "wait",
+"p": "weɪt",
+"pos": "v.",
+"m": "等待",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "try",
+"p": "traɪ",
+"pos": "v.",
+"m": "尝试",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "show",
+"p": "ʃəʊ",
+"pos": "v.",
+"m": "露面",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "teach",
+"p": "tiːtʃ",
+"pos": "v.",
+"m": "教书",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "carry",
+"p": "ˈkæri",
+"pos": "v.",
+"m": "被携带",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pick",
+"p": "pɪk",
+"pos": "v.",
+"m": "摘",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hold",
+"p": "həʊld",
+"pos": "v.",
+"m": "支持",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "keep",
+"p": "kiːp",
+"pos": "v.",
+"m": "保持",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "leave",
+"p": "liːv",
+"pos": "v.",
+"m": "出发",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "arrive",
+"p": "əˈraɪv",
+"pos": "v.",
+"m": "到达",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "visit",
+"p": "ˈvɪzɪt",
+"pos": "v.",
+"m": "访问",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "move",
+"p": "muːv",
+"pos": "v.",
+"m": "移动",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "turn",
+"p": "tɜːn",
+"pos": "v.",
+"m": "转动",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "cry",
+"p": "kraɪ",
+"pos": "v.",
+"m": "哭",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "laugh",
+"p": "lɑːf",
+"pos": "v.",
+"m": "笑",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "smile",
+"p": "smaɪl",
+"pos": "v.",
+"m": "微笑",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "shout",
+"p": "ʃaʊt",
+"pos": "v.",
+"m": "呼喊",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "feel",
+"p": "fiːl",
+"pos": "v.",
+"m": "有知觉",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "smell",
+"p": "smel",
+"pos": "v.",
+"m": "闻",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "taste",
+"p": "teɪst",
+"pos": "v.",
+"m": "品尝",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "touch",
+"p": "tʌtʃ",
+"pos": "v.",
+"m": "触摸",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "call",
+"p": "kɒl",
+"pos": "v.",
+"m": "叫喊",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "send",
+"p": "send",
+"pos": "v.",
+"m": "寄信",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "bring",
+"p": "brɪŋ",
+"pos": "v.",
+"m": "生产",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "borrow",
+"p": "ˈbɒrəʊ",
+"pos": "v.",
+"m": "借",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "return",
+"p": "rɪˈtɜːn",
+"pos": "v.",
+"m": "返回",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "share",
+"p": "ʃeə",
+"pos": "v.",
+"m": "分享",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "use",
+"p": "juːs",
+"pos": "v.",
+"m": "惯常",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "grow",
+"p": "ɡrəʊ",
+"pos": "v.",
+"m": "生长",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "pass",
+"p": "pæs",
+"pos": "v.",
+"m": "经过",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "interesting",
+"p": "ˈɪntrɪstɪŋ",
+"pos": "adj.",
+"m": "有趣的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "boring",
+"p": "ˈbɒrɪŋ",
+"pos": "adj.",
+"m": "烦人的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "wonderful",
+"p": "ˈwʌndəfʊl",
+"pos": "adj.",
+"m": "令人惊奇的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "excellent",
+"p": "ˈekslənt",
+"pos": "adj.",
+"m": "优良的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lovely",
+"p": "ˈlʌvli",
+"pos": "adj.",
+"m": "可爱的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "friendly",
+"p": "ˈfrendli",
+"pos": "adj.",
+"m": "友好的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "lucky",
+"p": "ˈlʌki",
+"pos": "adj.",
+"m": "幸运的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "healthy",
+"p": "ˈhelθi",
+"pos": "adj.",
+"m": "健康的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "ill",
+"p": "ɪl",
+"pos": "adj.",
+"m": "生病的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "sick",
+"p": "sɪk",
+"pos": "adj.",
+"m": "不舒服",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "hurt",
+"p": "hɜːt",
+"pos": "n.",
+"m": "伤害",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "afraid",
+"p": "əˈfreɪd",
+"pos": "adj.",
+"m": "害怕的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "careful",
+"p": "ˈkeəfʊl",
+"pos": "adj.",
+"m": "小心的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "dangerous",
+"p": "ˈdeɪndʒərəs",
+"pos": "adj.",
+"m": "危险的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "safe",
+"p": "seɪf",
+"pos": "adj.",
+"m": "安全的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "favourite",
+"p": "ˈfeɪvərɪt",
+"pos": "adj.",
+"m": "最喜欢的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "famous",
+"p": "ˈfeɪməs",
+"pos": "adj.",
+"m": "出名的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "special",
+"p": "ˈspeʃəl",
+"pos": "adj.",
+"m": "特别的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "important",
+"p": "ɪmˈpɒtənt",
+"pos": "adj.",
+"m": "重要的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "poor",
+"p": "pʊə",
+"pos": "adj.",
+"m": "贫穷的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "rich",
+"p": "riːtʃ",
+"pos": "adj.",
+"m": "富裕的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "proud",
+"p": "praʊd",
+"pos": "adj.",
+"m": "骄傲的",
+"stage": "primary",
+"src": "list"
+},
+{
+"w": "as",
+"p": "æz",
+"pos": "adv.",
+"m": "同样地",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "if",
+"p": "ɪf",
+"pos": "conj.",
+"m": "如果",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "would",
+"p": "wʊd",
+"pos": "aux.",
+"m": "将",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "so",
+"p": "səʊ",
+"pos": "adv.",
+"m": "如此",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "out",
+"p": "aʊt",
+"pos": "adj.",
+"m": "外面的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "into",
+"p": "ˈɪntuː",
+"pos": "prep.",
+"m": "进入…之内",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "could",
+"p": "kʊd",
+"pos": "aux.",
+"m": "可以",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "than",
+"p": "ðæn",
+"pos": "conj.",
+"m": "比",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "its",
+"p": "ɪts",
+"pos": "pron.",
+"m": "它的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "way",
+"p": "weɪ",
+"pos": "n.",
+"m": "路",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "because",
+"p": "bɪˈkɒz",
+"pos": "conj.",
+"m": "因为",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "thing",
+"p": "θɪŋ",
+"pos": "n.",
+"m": "事物",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "well",
+"p": "wel",
+"pos": "v.",
+"m": "涌出",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "even",
+"p": "ˈiːvən",
+"pos": "v.",
+"m": "变平",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "back",
+"p": "bæk",
+"pos": "v.",
+"m": "倒退",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "any",
+"p": "ˈeni",
+"pos": "adj.",
+"m": "任何的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "through",
+"p": "θruː",
+"pos": "adv.",
+"m": "穿越",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "life",
+"p": "laɪf",
+"pos": "n.",
+"m": "生活",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "after",
+"p": "ˈɑːftə",
+"pos": "prep.",
+"m": "在…之后",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "over",
+"p": "ˈəʊvə",
+"pos": "adv.",
+"m": "结束",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "still",
+"p": "stɪl",
+"pos": "v.",
+"m": "蒸馏",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "state",
+"p": "steɪt",
+"pos": "v.",
+"m": "说明",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "become",
+"p": "bɪˈkʌm",
+"pos": "v.",
+"m": "变成",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "something",
+"p": "ˈsʌmθɪŋ",
+"pos": "pron.",
+"m": "某事",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "really",
+"p": "ˈrɪəli",
+"pos": "adv.",
+"m": "实际上",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "most",
+"p": "məʊst",
+"pos": "n.",
+"m": "最多",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "another",
+"p": "əˈnʌðə",
+"pos": "adj.",
+"m": "另外的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "own",
+"p": "əʊn",
+"pos": "v.",
+"m": "承认",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "while",
+"p": "hwaɪl",
+"pos": "n.",
+"m": "一会儿",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mean",
+"p": "miːn",
+"pos": "v.",
+"m": "用意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "let",
+"p": "let",
+"pos": "v.",
+"m": "出租",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "group",
+"p": "ɡruːp",
+"pos": "v.",
+"m": "聚合",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "seem",
+"p": "siːm",
+"pos": "v.",
+"m": "象是",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "might",
+"p": "maɪt",
+"pos": "n.",
+"m": "力量",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "American",
+"p": "əˈmerɪkən",
+"pos": "n.",
+"m": "美国人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "part",
+"p": "pɑːt",
+"pos": "v.",
+"m": "分开",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "against",
+"p": "əˈɡeɪnst",
+"pos": "prep.",
+"m": "反对",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "place",
+"p": "pleɪs",
+"pos": "v.",
+"m": "名次列前",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "such",
+"p": "sʌtʃ",
+"pos": "adj.",
+"m": "如此的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "few",
+"p": "fjuː",
+"pos": "adj.",
+"m": "很少的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "company",
+"p": "ˈkʌmpəni",
+"pos": "v.",
+"m": "交往",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "each",
+"p": "iːtʃ",
+"pos": "adj.",
+"m": "每个",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "during",
+"p": "ˈdjʊərɪŋ",
+"pos": "prep.",
+"m": "在…的时候",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "government",
+"p": "ˈɡʌvənmənt",
+"pos": "n.",
+"m": "政府",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "off",
+"p": "ɒf",
+"pos": "v.",
+"m": "离开",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "point",
+"p": "pɒɪnt",
+"pos": "v.",
+"m": "指",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "believe",
+"p": "bɪˈliːv",
+"pos": "v.",
+"m": "相信",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "happen",
+"p": "ˈhæpən",
+"pos": "v.",
+"m": "发生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "next",
+"p": "ˈnekst",
+"pos": "n.",
+"m": "下一个",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "without",
+"p": "wɪˈðaʊt",
+"pos": "prep.",
+"m": "没有",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "before",
+"p": "bɪˈfɒ",
+"pos": "prep.",
+"m": "在…之前",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "large",
+"p": "lɑːdʒ",
+"pos": "adj.",
+"m": "大的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "area",
+"p": "ˈeərɪə",
+"pos": "n.",
+"m": "区域",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "national",
+"p": "ˈnæʃənəl",
+"pos": "adj.",
+"m": "国家的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fact",
+"p": "fækt",
+"pos": "n.",
+"m": "事实",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lot",
+"p": "lɒt",
+"pos": "v.",
+"m": "抽签",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "though",
+"p": "ðəʊ",
+"pos": "adv.",
+"m": "然而",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "business",
+"p": "ˈbɪznɪs",
+"pos": "n.",
+"m": "生意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "London",
+"p": "ˈlʌndən",
+"pos": "n.",
+"m": "伦敦",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "side",
+"p": "saɪd",
+"pos": "v.",
+"m": "支持",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "far",
+"p": "fɑː",
+"pos": "adj.",
+"m": "远的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "both",
+"p": "bəʊθ",
+"pos": "adj.",
+"m": "两者的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "little",
+"p": "ˈlɪtl",
+"pos": "n.",
+"m": "一点点",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "since",
+"p": "sɪns",
+"pos": "prep.",
+"m": "自…以后",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "provide",
+"p": "prəˈvaɪd",
+"pos": "v.",
+"m": "作准备",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "service",
+"p": "ˈsɜːvɪs",
+"pos": "v.",
+"m": "保养",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "around",
+"p": "əˈraʊnd",
+"pos": "prep.",
+"m": "包围",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "away",
+"p": "əˈweɪ",
+"pos": "adv.",
+"m": "离去",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "until",
+"p": "ənˈtɪl",
+"pos": "prep.",
+"m": "直到",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "yet",
+"p": "jet",
+"pos": "adv.",
+"m": "还",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "line",
+"p": "laɪn",
+"pos": "v.",
+"m": "排队",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "end",
+"p": "end",
+"pos": "v.",
+"m": "结束",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "among",
+"p": "əˈmʌŋ",
+"pos": "prep.",
+"m": "在…之中",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ever",
+"p": "ˈevə",
+"pos": "adv.",
+"m": "曾经",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lose",
+"p": "luːz",
+"pos": "v.",
+"m": "受损失",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "however",
+"p": "haʊˈevə",
+"pos": "adv.",
+"m": "然而",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "member",
+"p": "ˈmembə",
+"pos": "n.",
+"m": "成员",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pay",
+"p": "peɪ",
+"pos": "v.",
+"m": "付款",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "law",
+"p": "lɒ",
+"pos": "n.",
+"m": "法律",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "almost",
+"p": "ˈɒlməʊst",
+"pos": "adv.",
+"m": "几乎",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "include",
+"p": "ɪnˈkluːd",
+"pos": "v.",
+"m": "包括",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "continue",
+"p": "kənˈtɪnjuː",
+"pos": "v.",
+"m": "继续",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "set",
+"p": "set",
+"pos": "v.",
+"m": "日落",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "once",
+"p": "wʌns",
+"pos": "adv.",
+"m": "一次",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "least",
+"p": "liːst",
+"pos": "n.",
+"m": "最少",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "president",
+"p": "ˈprezɪdənt",
+"pos": "n.",
+"m": "总统",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "real",
+"p": "ˈrɪəl",
+"pos": "adj.",
+"m": "真的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "change",
+"p": "tʃeɪndʒ",
+"pos": "v.",
+"m": "改变",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "several",
+"p": "ˈsevərəl",
+"pos": "adj.",
+"m": "几个的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "information",
+"p": "ˌɪnfəˈmeɪʃən",
+"pos": "n.",
+"m": "消息",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "nothing",
+"p": "ˈnʌθɪŋ",
+"pos": "n.",
+"m": "无",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ago",
+"p": "əˈɡəʊ",
+"pos": "adv.",
+"m": "以前",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lead",
+"p": "liːd",
+"pos": "v.",
+"m": "领导",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "social",
+"p": "ˈsəʊʃəl",
+"pos": "adj.",
+"m": "社会的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "understand",
+"p": "ˌʌndəˈstænd",
+"pos": "v.",
+"m": "懂得",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "whether",
+"p": "ˈhweðə",
+"pos": "conj.",
+"m": "是否",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "together",
+"p": "təˈɡeðə",
+"pos": "adv.",
+"m": "一起",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "follow",
+"p": "ˈfɒləʊ",
+"pos": "v.",
+"m": "跟随",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "centre",
+"p": "ˈsentə",
+"pos": "v.",
+"m": "居中",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "anything",
+"p": "ˈenɪθɪŋ",
+"pos": "pron.",
+"m": "任何事",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "create",
+"p": "kriːˈeɪt",
+"pos": "v.",
+"m": "创造",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "public",
+"p": "ˈpʌblɪk",
+"pos": "n.",
+"m": "公众",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "already",
+"p": "ɒlˈredi",
+"pos": "adv.",
+"m": "已经",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "level",
+"p": "ˈlevl",
+"pos": "v.",
+"m": "变平",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "allow",
+"p": "əˈlaʊ",
+"pos": "v.",
+"m": "容许",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "add",
+"p": "æd",
+"pos": "v.",
+"m": "做加法",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "office",
+"p": "ˈɒfɪs",
+"pos": "n.",
+"m": "办公室",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "spend",
+"p": "spend",
+"pos": "v.",
+"m": "花费",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "health",
+"p": "ˈhelθ",
+"pos": "n.",
+"m": "健康",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "person",
+"p": "ˈpɜːsn",
+"pos": "n.",
+"m": "人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sure",
+"p": "ʃʊə",
+"pos": "adj.",
+"m": "确信",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "war",
+"p": "wɒ",
+"pos": "v.",
+"m": "进行战争",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "history",
+"p": "ˈhɪstəri",
+"pos": "n.",
+"m": "历史",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "result",
+"p": "rɪˈzʌlt",
+"pos": "v.",
+"m": "产生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "reason",
+"p": "ˈriːzn",
+"pos": "v.",
+"m": "推论",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "programme",
+"p": "ˈprəʊɡræm",
+"pos": "v.",
+"m": "安排节目",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "win",
+"p": "wɪn",
+"pos": "v.",
+"m": "获胜",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "research",
+"p": "rɪˈsɜːtʃ",
+"pos": "v.",
+"m": "研究",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "himself",
+"p": "hɪmˈself",
+"pos": "pron.",
+"m": "他自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "moment",
+"p": "ˈməʊmənt",
+"pos": "n.",
+"m": "片刻",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "force",
+"p": "fɒs",
+"pos": "v.",
+"m": "强迫",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "offer",
+"p": "ˈɒfə",
+"pos": "v.",
+"m": "出现",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "enough",
+"p": "ɪˈnʌf",
+"pos": "n.",
+"m": "充足",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "education",
+"p": "ˌedjʊˈkeɪʃən",
+"pos": "n.",
+"m": "教育",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "across",
+"p": "əˈkrɒs",
+"pos": "prep.",
+"m": "越过",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "although",
+"p": "ɒlˈðoʊ",
+"pos": "conj.",
+"m": "虽然",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "remember",
+"p": "rɪˈmembə",
+"pos": "v.",
+"m": "记得",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "maybe",
+"p": "ˈmeɪbiː",
+"pos": "adv.",
+"m": "也许",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "toward",
+"p": "təˈwɒd",
+"pos": "prep.",
+"m": "向",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "able",
+"p": "ˈeɪbl",
+"pos": "adj.",
+"m": "能干的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "age",
+"p": "eɪdʒ",
+"pos": "v.",
+"m": "变老",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "policy",
+"p": "ˈpɒlɪsi",
+"pos": "n.",
+"m": "政策",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "everything",
+"p": "ˈevrɪθɪŋ",
+"pos": "pron.",
+"m": "每件事物",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "consider",
+"p": "kənˈsɪdŋ",
+"pos": "v.",
+"m": "考虑",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "appear",
+"p": "əˈpɪə",
+"pos": "v.",
+"m": "出现",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "probably",
+"p": "ˈprɒbəbli",
+"pos": "adv.",
+"m": "大概",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "human",
+"p": "ˈhjuːmən",
+"pos": "n.",
+"m": "人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "serve",
+"p": "sɜːv",
+"pos": "v.",
+"m": "服务",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "market",
+"p": "ˈmɑːkɪt",
+"pos": "v.",
+"m": "在市场上买卖",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "die",
+"p": "daɪ",
+"pos": "v.",
+"m": "死亡",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "expect",
+"p": "ɪksˈpekt",
+"pos": "v.",
+"m": "预期",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sense",
+"p": "sens",
+"pos": "v.",
+"m": "感觉",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "build",
+"p": "bɪld",
+"pos": "v.",
+"m": "建立",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "stay",
+"p": "steɪ",
+"pos": "v.",
+"m": "停留",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fall",
+"p": "fɒl",
+"pos": "v.",
+"m": "落下；跌倒",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "England",
+"p": "ˈɪŋɡlənd",
+"pos": "n.",
+"m": "英格兰",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "plan",
+"p": "plæn",
+"pos": "v.",
+"m": "订计划",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cut",
+"p": "kʌt",
+"pos": "v.",
+"m": "切",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "college",
+"p": "ˈkɒlɪdʒ",
+"pos": "n.",
+"m": "学院",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "interest",
+"p": "ˈɪntrɪst",
+"pos": "v.",
+"m": "使感兴趣",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "death",
+"p": "deθ",
+"pos": "n.",
+"m": "死亡",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "course",
+"p": "kɒs",
+"pos": "v.",
+"m": "追",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "someone",
+"p": "ˈsʌmwʌn",
+"pos": "pron.",
+"m": "有人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "experience",
+"p": "ɪkˈspɪərɪəns",
+"pos": "v.",
+"m": "经历",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "reach",
+"p": "riːtʃ",
+"pos": "v.",
+"m": "达到",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "kill",
+"p": "kɪl",
+"pos": "v.",
+"m": "杀死",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "remain",
+"p": "rɪˈmeɪn",
+"pos": "v.",
+"m": "保持",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "suggest",
+"p": "səɡˈdʒest",
+"pos": "v.",
+"m": "提议",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "control",
+"p": "kənˈtrəʊl",
+"pos": "v.",
+"m": "控制",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "raise",
+"p": "reɪz",
+"pos": "v.",
+"m": "升起",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "care",
+"p": "keə",
+"pos": "v.",
+"m": "关心",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "perhaps",
+"p": "pəˈhæps",
+"pos": "adv.",
+"m": "也许",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "else",
+"p": "els",
+"pos": "adj.",
+"m": "别的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sell",
+"p": "sel",
+"pos": "v.",
+"m": "卖",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "require",
+"p": "rɪˈkwaɪə",
+"pos": "v.",
+"m": "需要",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "along",
+"p": "əˈlɒŋ",
+"pos": "adv.",
+"m": "平行地",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "development",
+"p": "dɪˈveləpmənt",
+"pos": "n.",
+"m": "发展",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "themselves",
+"p": "ðəmˈselvz",
+"pos": "pron.",
+"m": "他们自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "report",
+"p": "rɪˈpɒt",
+"pos": "v.",
+"m": "报告",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "role",
+"p": "rəʊl",
+"pos": "n.",
+"m": "角色",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "effort",
+"p": "ˈefət",
+"pos": "n.",
+"m": "努力",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "decide",
+"p": "dɪˈsaɪd",
+"pos": "v.",
+"m": "决定",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "possible",
+"p": "ˈpɒsəbl",
+"pos": "adj.",
+"m": "可能的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "heart",
+"p": "hɑːt",
+"pos": "n.",
+"m": "心",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "drug",
+"p": "drʌɡ",
+"pos": "v.",
+"m": "吸毒",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "leader",
+"p": "ˈliːdə",
+"pos": "n.",
+"m": "领导者",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "voice",
+"p": "vɒɪs",
+"pos": "v.",
+"m": "表达",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wife",
+"p": "waɪf",
+"pos": "n.",
+"m": "妻子",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "whole",
+"p": "həʊl",
+"pos": "n.",
+"m": "全部",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "police",
+"p": "pəˈliːs",
+"pos": "v.",
+"m": "维持治安",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mind",
+"p": "maɪnd",
+"pos": "v.",
+"m": "介意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pull",
+"p": "pʊl",
+"pos": "v.",
+"m": "拉",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "price",
+"p": "praɪs",
+"pos": "v.",
+"m": "定…的价格",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "decision",
+"p": "dɪˈsɪʒən",
+"pos": "n.",
+"m": "决定",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "explain",
+"p": "ɪkˈspleɪn",
+"pos": "v.",
+"m": "解释",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hope",
+"p": "həʊp",
+"pos": "v.",
+"m": "希望",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "develop",
+"p": "dɪˈveləp",
+"pos": "v.",
+"m": "发展",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "true",
+"p": "truː",
+"pos": "adj.",
+"m": "真实的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "break",
+"p": "breɪk",
+"pos": "v.",
+"m": "破碎",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "difference",
+"p": "ˈdɪfərəns",
+"pos": "n.",
+"m": "不同",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "receive",
+"p": "rɪˈsiːv",
+"pos": "v.",
+"m": "收到",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "thank",
+"p": "θæŋk",
+"pos": "v.",
+"m": "谢谢",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "value",
+"p": "ˈvæljuː",
+"pos": "v.",
+"m": "评价",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "international",
+"p": "ˌɪntəˈnæʃənəl",
+"pos": "adj.",
+"m": "国际的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "building",
+"p": "ˈbɪldɪŋ",
+"pos": "n.",
+"m": "建筑物",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "action",
+"p": "ˈækʃən",
+"pos": "v.",
+"m": "对…起诉",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "model",
+"p": "ˈmɒdəl",
+"pos": "v.",
+"m": "做模型",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "join",
+"p": "dʒɒɪn",
+"pos": "v.",
+"m": "参加",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "society",
+"p": "səˈsaɪəti",
+"pos": "n.",
+"m": "社会",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "director",
+"p": "dɪˈrektə",
+"pos": "n.",
+"m": "主管",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "position",
+"p": "pəˈzɪʃən",
+"pos": "v.",
+"m": "安置",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "agree",
+"p": "əˈɡriː",
+"pos": "v.",
+"m": "同意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "especially",
+"p": "ɪˈspeʃəli",
+"pos": "adv.",
+"m": "尤其",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "record",
+"p": "rɪˈkɒd",
+"pos": "v.",
+"m": "记录",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wear",
+"p": "weə",
+"pos": "v.",
+"m": "磨损",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "space",
+"p": "speɪs",
+"pos": "v.",
+"m": "留间隔",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ground",
+"p": "ɡraʊnd",
+"pos": "v.",
+"m": "搁浅",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "form",
+"p": "fɒm",
+"pos": "v.",
+"m": "形成",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "whose",
+"p": "huːz",
+"pos": "pron.",
+"m": "谁的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "everyone",
+"p": "ˈevrɪwʌn",
+"pos": "pron.",
+"m": "每个人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "couple",
+"p": "ˈkʌpl",
+"pos": "v.",
+"m": "结合",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hit",
+"p": "hɪt",
+"pos": "v.",
+"m": "打",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "activity",
+"p": "ækˈtɪvɪti",
+"pos": "n.",
+"m": "活动",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "produce",
+"p": "prəˈdjuːs",
+"pos": "v.",
+"m": "生产",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "oil",
+"p": "ɒɪl",
+"pos": "v.",
+"m": "加燃油",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "half",
+"p": "hɑːf",
+"pos": "n.",
+"m": "一半",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "situation",
+"p": "ˌsɪtjʊˈeɪʃən",
+"pos": "n.",
+"m": "情形",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cost",
+"p": "kɒst",
+"pos": "v.",
+"m": "花费",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "industry",
+"p": "ˈɪndəstri",
+"pos": "n.",
+"m": "勤劳",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "itself",
+"p": "ɪtˈself",
+"pos": "pron.",
+"m": "它本身",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Europe",
+"p": "ˈjʊərəp",
+"pos": "n.",
+"m": "欧洲",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "either",
+"p": "ˈiːðə",
+"pos": "adj.",
+"m": "任一的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cover",
+"p": "ˈkʌvə",
+"pos": "v.",
+"m": "覆盖",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "quite",
+"p": "kwaɪt",
+"pos": "adv.",
+"m": "相当",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "clear",
+"p": "klɪə",
+"pos": "v.",
+"m": "放晴",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "practice",
+"p": "ˈpræktɪs",
+"pos": "v.",
+"m": "实践",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "piece",
+"p": "piːs",
+"pos": "v.",
+"m": "吃零食",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "land",
+"p": "lænd",
+"pos": "v.",
+"m": "登陆",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "recent",
+"p": "ˈriːsnt",
+"pos": "adj.",
+"m": "最近的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "describe",
+"p": "dɪˈskraɪb",
+"pos": "v.",
+"m": "描述",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "patient",
+"p": "ˈpeɪʃənt",
+"pos": "n.",
+"m": "病人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "news",
+"p": "njuːz",
+"pos": "n.",
+"m": "新闻",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "movie",
+"p": "ˈmuːvi",
+"pos": "n.",
+"m": "电影",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "certain",
+"p": "ˈsɜːtən",
+"pos": "adj.",
+"m": "确定的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "North",
+"p": "nɒθ",
+"pos": "n.",
+"m": "北方",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "personal",
+"p": "ˈpɜːsnl",
+"pos": "adj.",
+"m": "私人的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "technology",
+"p": "tekˈnɒlədʒi",
+"pos": "n.",
+"m": "技术",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "step",
+"p": "step",
+"pos": "v.",
+"m": "跨步",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "attention",
+"p": "əˈtenʃən",
+"pos": "n.",
+"m": "注意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "nearly",
+"p": "ˈnɪəli",
+"pos": "adv.",
+"m": "几乎",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "choose",
+"p": "tʃuːz",
+"pos": "v.",
+"m": "作出选择",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cause",
+"p": "kɒz",
+"pos": "v.",
+"m": "引起",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "century",
+"p": "ˈsentʃʊri",
+"pos": "n.",
+"m": "世纪",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "soon",
+"p": "suːn",
+"pos": "adv.",
+"m": "不久",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "culture",
+"p": "ˈkʌltʃə",
+"pos": "n.",
+"m": "文化",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "chance",
+"p": "tʃæns",
+"pos": "v.",
+"m": "偶然发生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "energy",
+"p": "ˈenədʒi",
+"pos": "n.",
+"m": "精力",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "period",
+"p": "ˈpɪərɪəd",
+"pos": "n.",
+"m": "时期",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "available",
+"p": "əˈveɪləbl",
+"pos": "adj.",
+"m": "可利用的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "term",
+"p": "tɜːm",
+"pos": "v.",
+"m": "称",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "condition",
+"p": "kənˈdɪʃən",
+"pos": "v.",
+"m": "使健康",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "choice",
+"p": "tʃɒɪs",
+"pos": "n.",
+"m": "选择",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "single",
+"p": "ˈsɪŋɡl",
+"pos": "v.",
+"m": "击出一垒打",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "south",
+"p": "saʊθ",
+"pos": "n.",
+"m": "南方",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "husband",
+"p": "ˈhʌzbənd",
+"pos": "v.",
+"m": "节俭",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "population",
+"p": "ˌpɒpjʊˈleɪʃən",
+"pos": "n.",
+"m": "人口",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "medical",
+"p": "ˈmedɪkl",
+"pos": "n.",
+"m": "医生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "church",
+"p": "tʃɜːtʃ",
+"pos": "v.",
+"m": "使人接受宗教仪式",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "risk",
+"p": "rɪsk",
+"pos": "v.",
+"m": "冒…的危险",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "thousand",
+"p": "ˈθaʊznd",
+"pos": "num.",
+"m": "千",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fire",
+"p": "ˈfaɪə",
+"pos": "v.",
+"m": "着火",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "future",
+"p": "ˈfjuːtʃə",
+"pos": "n.",
+"m": "未来",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "anyone",
+"p": "ˈenɪwʌn",
+"pos": "pron.",
+"m": "任何人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "increase",
+"p": "ɪnˈkriːs",
+"pos": "v.",
+"m": "增加",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "myself",
+"p": "maɪˈself",
+"pos": "pron.",
+"m": "我自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "west",
+"p": "west",
+"pos": "n.",
+"m": "西方",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "board",
+"p": "bɒd",
+"pos": "v.",
+"m": "搭伙",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "officer",
+"p": "ˈɒfɪsə",
+"pos": "v.",
+"m": "指挥",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "private",
+"p": "ˈpraɪvɪt",
+"pos": "adj.",
+"m": "私人的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rest",
+"p": "rest",
+"pos": "v.",
+"m": "休息",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "deal",
+"p": "diːl",
+"pos": "v.",
+"m": "处理",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fight",
+"p": "faɪt",
+"pos": "v.",
+"m": "对抗",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "throw",
+"p": "θrəʊ",
+"pos": "v.",
+"m": "丢",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "top",
+"p": "tɒp",
+"pos": "v.",
+"m": "结束",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "past",
+"p": "pɑːst",
+"pos": "n.",
+"m": "过去",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "order",
+"p": "ˈɒdə",
+"pos": "v.",
+"m": "命令",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fill",
+"p": "fɪl",
+"pos": "v.",
+"m": "充满",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "foreign",
+"p": "ˈfɒrɪn",
+"pos": "adj.",
+"m": "外国的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "drop",
+"p": "drɒp",
+"pos": "v.",
+"m": "放下",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "blood",
+"p": "blʌd",
+"pos": "v.",
+"m": "使出血",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "upon",
+"p": "əˈpɒn",
+"pos": "prep.",
+"m": "在…之上",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "push",
+"p": "pʊʃ",
+"pos": "v.",
+"m": "推",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "nature",
+"p": "ˈneɪtʃə",
+"pos": "n.",
+"m": "自然",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "store",
+"p": "stɒ",
+"pos": "v.",
+"m": "贮藏",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sound",
+"p": "saʊnd",
+"pos": "v.",
+"m": "发出声音",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "enter",
+"p": "ˈentə",
+"pos": "v.",
+"m": "进去",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "common",
+"p": "ˈkɒmən",
+"pos": "adj.",
+"m": "通常的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "natural",
+"p": "ˈnætʃərəl",
+"pos": "n.",
+"m": "白痴",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "race",
+"p": "reɪs",
+"pos": "v.",
+"m": "赛跑",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "similar",
+"p": "ˈsɪmɪlə",
+"pos": "adj.",
+"m": "相似的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "language",
+"p": "ˈlæŋɡwɪdʒ",
+"pos": "n.",
+"m": "语言",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dead",
+"p": "ded",
+"pos": "adj.",
+"m": "死的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rise",
+"p": "raɪz",
+"pos": "v.",
+"m": "升起",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "TV",
+"p": "ˈtiːˈviː",
+"pos": "",
+"m": "电视",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "article",
+"p": "ˈɑːtɪkl",
+"pos": "n.",
+"m": "文章",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "east",
+"p": "iːst",
+"pos": "n.",
+"m": "东方",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "save",
+"p": "seɪv",
+"pos": "v.",
+"m": "挽救",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "treatment",
+"p": "ˈtriːtmənt",
+"pos": "n.",
+"m": "治疗",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "beyond",
+"p": "bɪˈjɒnd",
+"pos": "prep.",
+"m": "超过",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "protect",
+"p": "prəˈtekt",
+"pos": "v.",
+"m": "防卫",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lie",
+"p": "laɪ",
+"pos": "v.",
+"m": "躺着",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "size",
+"p": "saɪz",
+"pos": "v.",
+"m": "可比拟",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "serious",
+"p": "ˈsɪərɪəs",
+"pos": "adj.",
+"m": "严肃的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ready",
+"p": "ˈredi",
+"pos": "v.",
+"m": "使准备好",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "thought",
+"p": "θɒt",
+"pos": "n.",
+"m": "想法",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "list",
+"p": "lɪst",
+"pos": "v.",
+"m": "列于表上",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "simple",
+"p": "ˈsɪmpl",
+"pos": "adj.",
+"m": "简单的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "accept",
+"p": "əkˈsept",
+"pos": "v.",
+"m": "同意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "meeting",
+"p": "ˈmiːtɪŋ",
+"pos": "n.",
+"m": "会议",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mile",
+"p": "maɪl",
+"pos": "n.",
+"m": "英里",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "prepare",
+"p": "prɪˈpeə",
+"pos": "v.",
+"m": "预备",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "disease",
+"p": "dɪˈziːz",
+"pos": "n.",
+"m": "疾病",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "whatever",
+"p": "hwɒtˈevə",
+"pos": "pron.",
+"m": "无论什么",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "success",
+"p": "səkˈses",
+"pos": "n.",
+"m": "成功",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ability",
+"p": "əˈbɪlɪti",
+"pos": "n.",
+"m": "能力",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "degree",
+"p": "dɪˈɡriː",
+"pos": "n.",
+"m": "程度",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wonder",
+"p": "ˈwʌndə",
+"pos": "v.",
+"m": "惊讶",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "herself",
+"p": "hɜːˈself",
+"pos": "pron.",
+"m": "她自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "training",
+"p": "ˈtreɪnɪŋ",
+"pos": "n.",
+"m": "训练",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "everybody",
+"p": "ˈevrɪbɒdi",
+"pos": "pron.",
+"m": "每个人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "trade",
+"p": "treɪd",
+"pos": "v.",
+"m": "进行交易",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lay",
+"p": "leɪ",
+"pos": "v.",
+"m": "下蛋",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "general",
+"p": "ˈdʒenərəl",
+"pos": "n.",
+"m": "一般",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "feeling",
+"p": "ˈfiːlɪŋ",
+"pos": "n.",
+"m": "摸",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "standard",
+"p": "ˈstændəd",
+"pos": "n.",
+"m": "标准",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "message",
+"p": "ˈmesɪdʒ",
+"pos": "v.",
+"m": "通报",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fail",
+"p": "feɪl",
+"pos": "v.",
+"m": "失败",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "outside",
+"p": "ˈaʊtˈsaɪd",
+"pos": "n.",
+"m": "外面",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "forward",
+"p": "ˈfɒwəd",
+"pos": "v.",
+"m": "促进…的生长",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "skill",
+"p": "ˈskɪl",
+"pos": "n.",
+"m": "技术",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "operation",
+"p": "ˌɒpəˈreɪʃən",
+"pos": "n.",
+"m": "操作",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "compare",
+"p": "kəmˈpeə",
+"pos": "v.",
+"m": "相比",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "miss",
+"p": "mɪs",
+"pos": "v.",
+"m": "失败",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sort",
+"p": "sɒt",
+"pos": "v.",
+"m": "交往",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "act",
+"p": "ækt",
+"pos": "v.",
+"m": "行动",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "knowledge",
+"p": "ˈnɒlɪdʒ",
+"pos": "n.",
+"m": "知识",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "gun",
+"p": "ɡʌn",
+"pos": "n.",
+"m": "枪",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "discuss",
+"p": "dɪsˈkʌs",
+"pos": "v.",
+"m": "讨论",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "truth",
+"p": "truːθ",
+"pos": "n.",
+"m": "事实",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "check",
+"p": "tʃek",
+"pos": "v.",
+"m": "逐项相符",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "environment",
+"p": "ɪnˈvaɪrənmənt",
+"pos": "n.",
+"m": "环境",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dark",
+"p": "dɑːk",
+"pos": "adj.",
+"m": "黑暗的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rather",
+"p": "ˈræðə",
+"pos": "adv.",
+"m": "宁可",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "guess",
+"p": "ɡes",
+"pos": "v.",
+"m": "猜测",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "prove",
+"p": "pruːv",
+"pos": "v.",
+"m": "证明是",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hang",
+"p": "hæŋ",
+"pos": "v.",
+"m": "悬着",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "forget",
+"p": "fəˈɡet",
+"pos": "v.",
+"m": "忘记",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "manager",
+"p": "ˈmænɪdʒə",
+"pos": "n.",
+"m": "经理",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "enjoy",
+"p": "ɪnˈdʒɒi",
+"pos": "v.",
+"m": "享受",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "final",
+"p": "ˈfaɪnl",
+"pos": "n.",
+"m": "期末考试",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "main",
+"p": "meɪn",
+"pos": "n.",
+"m": "主要部分",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "memory",
+"p": "ˈmeməri",
+"pos": "n.",
+"m": "记忆",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "above",
+"p": "əˈbʌv",
+"pos": "prep.",
+"m": "在上方",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "seat",
+"p": "siːt",
+"pos": "v.",
+"m": "安装在底座上",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "radio",
+"p": "ˈreɪdɪəʊ",
+"pos": "v.",
+"m": "用无线电发送",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "avoid",
+"p": "əˈvɒɪd",
+"pos": "v.",
+"m": "避免",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "imagine",
+"p": "ɪˈmædʒɪn",
+"pos": "v.",
+"m": "想像起来",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tonight",
+"p": "təˈnaɪt",
+"pos": "n.",
+"m": "今晚",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "huge",
+"p": "hjuːdʒ",
+"pos": "adj.",
+"m": "极大的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "yourself",
+"p": "jʊəˈself",
+"pos": "pron.",
+"m": "你自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "popular",
+"p": "ˈpɒpjʊlə",
+"pos": "adj.",
+"m": "通俗的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "traditional",
+"p": "trəˈdɪʃənl",
+"pos": "adj.",
+"m": "传统的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "direction",
+"p": "dɪˈrekʃən",
+"pos": "n.",
+"m": "方向",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "peace",
+"p": "piːs",
+"pos": "n.",
+"m": "和平",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wide",
+"p": "waɪd",
+"pos": "adj.",
+"m": "宽的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shake",
+"p": "ʃeɪk",
+"pos": "v.",
+"m": "震动",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "interview",
+"p": "ˈɪntəvjuː",
+"pos": "v.",
+"m": "接见",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "manage",
+"p": "ˈmænɪdʒ",
+"pos": "v.",
+"m": "处理",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "camera",
+"p": "ˈkæmərə",
+"pos": "n.",
+"m": "照相机",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bit",
+"p": "bɪt",
+"pos": "n.",
+"m": "少量",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "weight",
+"p": "weɪt",
+"pos": "v.",
+"m": "加重量于",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "discover",
+"p": "dɪsˈkʌvə",
+"pos": "v.",
+"m": "发现",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "inside",
+"p": "ˈɪnˈsaɪd",
+"pos": "n.",
+"m": "内部",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "conference",
+"p": "ˈkɒnfərəns",
+"pos": "n.",
+"m": "会议",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "unit",
+"p": "ˈjuːnɪt",
+"pos": "n.",
+"m": "单位",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "worry",
+"p": "ˈwʌri",
+"pos": "v.",
+"m": "烦恼",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mention",
+"p": "ˈmenʃən",
+"pos": "v.",
+"m": "提到",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "America",
+"p": "əˈmerɪkə",
+"pos": "n.",
+"m": "美洲",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "deep",
+"p": "diːp",
+"pos": "adj.",
+"m": "深的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "edge",
+"p": "edʒ",
+"pos": "v.",
+"m": "缓缓移动",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "trouble",
+"p": "ˈtrʌbl",
+"pos": "v.",
+"m": "烦恼",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "necessary",
+"p": "ˈnesɪsəri",
+"pos": "adj.",
+"m": "必要的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fear",
+"p": "fɪə",
+"pos": "v.",
+"m": "害怕",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "middle",
+"p": "ˈmɪdl",
+"pos": "n.",
+"m": "中央",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dream",
+"p": "driːm",
+"pos": "v.",
+"m": "做梦",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "instead",
+"p": "ɪnˈsted",
+"pos": "adv.",
+"m": "作为替代",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "improve",
+"p": "ɪmˈpruːv",
+"pos": "v.",
+"m": "变得更好",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "method",
+"p": "ˈmeθəd",
+"pos": "n.",
+"m": "方法",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "somebody",
+"p": "ˈsʌmbɒdi",
+"pos": "n.",
+"m": "了不起的人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "magazine",
+"p": "ˌmæɡəˈziːn",
+"pos": "n.",
+"m": "杂志",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "soldier",
+"p": "ˈsəʊldʒə",
+"pos": "v.",
+"m": "从军",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "heat",
+"p": "hiːt",
+"pos": "v.",
+"m": "加热",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "marriage",
+"p": "ˈmærɪdʒ",
+"pos": "n.",
+"m": "婚姻",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "purpose",
+"p": "ˈpɜːpəs",
+"pos": "v.",
+"m": "意欲",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "surface",
+"p": "ˈsɜːfɪs",
+"pos": "v.",
+"m": "浮出水面",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "realise",
+"p": "ˈrɪəlaɪzˌˈriː-",
+"pos": "v.",
+"m": "实现",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "whom",
+"p": "huːm",
+"pos": "pron.",
+"m": "谁",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "owner",
+"p": "ˈəʊnə",
+"pos": "n.",
+"m": "拥有者",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "machine",
+"p": "məˈʃiːn",
+"pos": "v.",
+"m": "以机器制造",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "address",
+"p": "əˈdres",
+"pos": "v.",
+"m": "发表",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cancer",
+"p": "ˈkænsə",
+"pos": "n.",
+"m": "癌",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "coach",
+"p": "kəʊtʃ",
+"pos": "v.",
+"m": "坐马车旅行",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "yard",
+"p": "jɑːd",
+"pos": "n.",
+"m": "码",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "beat",
+"p": "biːt",
+"pos": "v.",
+"m": "打",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "total",
+"p": "ˈtəʊtl",
+"pos": "v.",
+"m": "合计",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "discussion",
+"p": "dɪsˈkʌʃən",
+"pos": "n.",
+"m": "讨论",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "notice",
+"p": "ˈnəʊtɪs",
+"pos": "v.",
+"m": "注意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "modern",
+"p": "ˈmɒdən",
+"pos": "n.",
+"m": "现代人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "task",
+"p": "tɑːsk",
+"pos": "v.",
+"m": "派给…工作",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wish",
+"p": "wɪʃ",
+"pos": "v.",
+"m": "希望",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "agreement",
+"p": "əˈɡriːmənt",
+"pos": "n.",
+"m": "同意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "capital",
+"p": "ˈkæpɪtəl",
+"pos": "n.",
+"m": "首都",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "nor",
+"p": "nɒ",
+"pos": "conj.",
+"m": "也不",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "newspaper",
+"p": "ˈnjuːzˌpeɪpə",
+"pos": "n.",
+"m": "报纸",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "score",
+"p": "skɒ",
+"pos": "v.",
+"m": "刻痕",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "western",
+"p": "ˈwestən",
+"pos": "n.",
+"m": "西方人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "travel",
+"p": "ˈtrævl",
+"pos": "v.",
+"m": "旅行",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "prevent",
+"p": "prɪˈvent",
+"pos": "v.",
+"m": "预防",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "none",
+"p": "nʌn",
+"pos": "adv.",
+"m": "一点也不",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "born",
+"p": "bɒn",
+"pos": "adj.",
+"m": "天生的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "alone",
+"p": "əˈləʊn",
+"pos": "adj.",
+"m": "孤独的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "speech",
+"p": "spiːtʃ",
+"pos": "n.",
+"m": "演讲",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "successful",
+"p": "səkˈsesfʊl",
+"pos": "adj.",
+"m": "成功的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "southern",
+"p": "ˈsʌðən",
+"pos": "n.",
+"m": "南方人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "university",
+"p": "ˌjuːnɪˈvɜːsɪti",
+"pos": "n.",
+"m": "大学",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fresh",
+"p": "freʃ",
+"pos": "adj.",
+"m": "新鲜的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "video",
+"p": "ˈvɪdɪəʊ",
+"pos": "n.",
+"m": "影像",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "relation",
+"p": "rɪˈleɪʃən",
+"pos": "n.",
+"m": "关系",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "corner",
+"p": "ˈkɒnə",
+"pos": "v.",
+"m": "相交成角",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "safety",
+"p": "ˈseɪfti",
+"pos": "n.",
+"m": "安全",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "immediately",
+"p": "ɪˈmiːdɪətli",
+"pos": "adv.",
+"m": "直接地",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "basic",
+"p": "ˈbeɪsɪk",
+"pos": "n.",
+"m": "基本原理",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "nobody",
+"p": "ˈnəʊbɒdi",
+"pos": "n.",
+"m": "小人物",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "achieve",
+"p": "əˈtʃiːv",
+"pos": "v.",
+"m": "如愿以偿",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "object",
+"p": "ˈɒbdʒekt",
+"pos": "v.",
+"m": "反对",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "perfect",
+"p": "ˈpɜːfɪkt",
+"pos": "v.",
+"m": "使完美",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "conversation",
+"p": "ˌkɒnvəˈseɪʃən",
+"pos": "n.",
+"m": "会话",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "examine",
+"p": "ɪɡˈzæmɪn",
+"pos": "v.",
+"m": "检查",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "spirit",
+"p": "ˈspɪrɪt",
+"pos": "v.",
+"m": "诱拐",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "encourage",
+"p": "ɪnˈkʌrɪdʒ",
+"pos": "v.",
+"m": "鼓励",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "camp",
+"p": "kæmp",
+"pos": "v.",
+"m": "露营",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "brain",
+"p": "breɪn",
+"pos": "v.",
+"m": "打碎脑部",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dozen",
+"p": "ˈdʌzn",
+"pos": "n.",
+"m": "打",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "date",
+"p": "deɪt",
+"pos": "v.",
+"m": "注明日期",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "complete",
+"p": "kəmˈpliːt",
+"pos": "v.",
+"m": "完成",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fan",
+"p": "fæn",
+"pos": "v.",
+"m": "飘动",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "stick",
+"p": "stɪk",
+"pos": "v.",
+"m": "粘住",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hole",
+"p": "həʊl",
+"pos": "v.",
+"m": "进洞",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "normal",
+"p": "ˈnɒml",
+"pos": "n.",
+"m": "常态",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "introduce",
+"p": "ˌɪntrəˈdjuːs",
+"pos": "v.",
+"m": "介绍",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Christmas",
+"p": "ˈkrɪsməs",
+"pos": "n.",
+"m": "圣诞节",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wood",
+"p": "wʊd",
+"pos": "n.",
+"m": "木材",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "truck",
+"p": "trʌk",
+"pos": "v.",
+"m": "驾驶卡车",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "refuse",
+"p": "rɪˈfjuːz",
+"pos": "v.",
+"m": "拒绝",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "communication",
+"p": "kəˌmjuːnɪˈkeɪʃən",
+"pos": "n.",
+"m": "交流",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "screen",
+"p": "skriːn",
+"pos": "v.",
+"m": "拍电影",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hide",
+"p": "haɪd",
+"pos": "v.",
+"m": "躲藏",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "gold",
+"p": "ɡəʊld",
+"pos": "n.",
+"m": "黄金",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "European",
+"p": "ˌjʊərəˈpiːən",
+"pos": "n.",
+"m": "欧洲人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shape",
+"p": "ʃeɪp",
+"pos": "v.",
+"m": "成形",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "express",
+"p": "ɪkˈspres",
+"pos": "v.",
+"m": "表达",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "prison",
+"p": "ˈprɪzn",
+"pos": "n.",
+"m": "监狱",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "guard",
+"p": "ɡɑːd",
+"pos": "v.",
+"m": "防止",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "text",
+"p": "tekst",
+"pos": "n.",
+"m": "文本",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tool",
+"p": "tuːl",
+"pos": "v.",
+"m": "使用工具",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "vehicle",
+"p": "ˈviːɪkl",
+"pos": "n.",
+"m": "交通工具",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "advantage",
+"p": "ədˈvɑːntɪdʒ",
+"pos": "v.",
+"m": "有助于",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "quick",
+"p": "kwɪk",
+"pos": "adj.",
+"m": "快的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pound",
+"p": "paʊnd",
+"pos": "v.",
+"m": "连续重击",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bright",
+"p": "braɪt",
+"pos": "adj.",
+"m": "明亮的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "guest",
+"p": "ɡest",
+"pos": "n.",
+"m": "客人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tiny",
+"p": "ˈtaɪni",
+"pos": "adj.",
+"m": "很少的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "feed",
+"p": "fiːd",
+"pos": "v.",
+"m": "吃东西",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "collect",
+"p": "kəˈlekt",
+"pos": "v.",
+"m": "收集",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "count",
+"p": "kaʊnt",
+"pos": "v.",
+"m": "计数",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "unless",
+"p": "ˌʌnˈles",
+"pos": "conj.",
+"m": "除非",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "marry",
+"p": "ˈmæri",
+"pos": "v.",
+"m": "结婚",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "path",
+"p": "pɑːθ",
+"pos": "n.",
+"m": "路径",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lift",
+"p": "lɪft",
+"pos": "v.",
+"m": "升起",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "competition",
+"p": "ˌkɒmpɪˈtɪʃən",
+"pos": "n.",
+"m": "竞争",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fit",
+"p": "fɪt",
+"pos": "v.",
+"m": "适合",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "worth",
+"p": "wɜːθ",
+"pos": "n.",
+"m": "价值",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "insist",
+"p": "ɪnˈsɪst",
+"pos": "v.",
+"m": "坚持",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "spread",
+"p": "spred",
+"pos": "v.",
+"m": "展开",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "chairman",
+"p": "ˈtʃeəmən",
+"pos": "n.",
+"m": "主席",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "baseball",
+"p": "ˈbeɪsbɒl",
+"pos": "n.",
+"m": "棒球",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "soft",
+"p": "sɒft",
+"pos": "adj.",
+"m": "软的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "anybody",
+"p": "ˈenɪbɒdi",
+"pos": "pron.",
+"m": "任何人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "murder",
+"p": "ˈmɜːdə",
+"pos": "v.",
+"m": "犯杀人罪",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "review",
+"p": "rɪˈvjuː",
+"pos": "v.",
+"m": "复习功课",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "speed",
+"p": "spiːd",
+"pos": "v.",
+"m": "加速",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cross",
+"p": "krɒs",
+"pos": "v.",
+"m": "交叉",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "influence",
+"p": "ˈɪnflʊəns",
+"pos": "v.",
+"m": "影响",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "anyway",
+"p": "ˈenɪweɪ",
+"pos": "adv.",
+"m": "无论如何",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "quarter",
+"p": "ˈkwɒtə",
+"pos": "v.",
+"m": "驻扎",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "background",
+"p": "ˈbækɡraʊnd",
+"pos": "n.",
+"m": "背景",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "twice",
+"p": "twaɪs",
+"pos": "adv.",
+"m": "两次",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "blow",
+"p": "bləʊ",
+"pos": "v.",
+"m": "吹",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "burn",
+"p": "bɜːn",
+"pos": "v.",
+"m": "燃烧",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Indian",
+"p": "ˈɪndɪən",
+"pos": "n.",
+"m": "印度人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "promise",
+"p": "ˈprɒmɪs",
+"pos": "v.",
+"m": "允诺",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "active",
+"p": "ˈæktɪv",
+"pos": "adj.",
+"m": "活跃的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wine",
+"p": "waɪn",
+"pos": "v.",
+"m": "喝酒",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "below",
+"p": "bɪˈləʊ",
+"pos": "prep.",
+"m": "在下面",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "victory",
+"p": "ˈvɪktəri",
+"pos": "n.",
+"m": "胜利",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "theatre",
+"p": "ˈθɪətə",
+"pos": "n.",
+"m": "戏院",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Japan",
+"p": "dʒəˈpæn",
+"pos": "n.",
+"m": "日本",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "medicine",
+"p": "ˈmedɪsɪn",
+"pos": "n.",
+"m": "药",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tour",
+"p": "tʊə",
+"pos": "v.",
+"m": "旅行",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "depend",
+"p": "dɪˈpend",
+"pos": "v.",
+"m": "靠",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "direct",
+"p": "dɪˈrekt",
+"pos": "v.",
+"m": "指导",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "photograph",
+"p": "ˈfəʊtəɡrɑːf",
+"pos": "v.",
+"m": "照相",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "daily",
+"p": "ˈdeɪli",
+"pos": "adj.",
+"m": "每日的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fair",
+"p": "feə",
+"pos": "v.",
+"m": "转晴",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pair",
+"p": "peə",
+"pos": "v.",
+"m": "成对",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "exercise",
+"p": "ˈeksəsaɪz",
+"pos": "v.",
+"m": "练习",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tape",
+"p": "teɪp",
+"pos": "v.",
+"m": "以带子绑起",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "supply",
+"p": "səˈplaɪ",
+"pos": "v.",
+"m": "替代",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "birth",
+"p": "bɜːθ",
+"pos": "n.",
+"m": "出生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "search",
+"p": "sɜːtʃ",
+"pos": "v.",
+"m": "搜寻",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tie",
+"p": "taɪ",
+"pos": "v.",
+"m": "结合",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "primary",
+"p": "ˈpraɪməri",
+"pos": "n.",
+"m": "最主要者",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "progress",
+"p": "ˈprəʊɡres",
+"pos": "v.",
+"m": "进步",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bottom",
+"p": "ˈbɒtəm",
+"pos": "v.",
+"m": "到达底部",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lady",
+"p": "ˈleɪdi",
+"pos": "n.",
+"m": "淑女",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "plastic",
+"p": "ˈplæstɪk",
+"pos": "n.",
+"m": "塑料",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hate",
+"p": "heɪt",
+"pos": "v.",
+"m": "仇恨",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "alive",
+"p": "əˈlaɪv",
+"pos": "adj.",
+"m": "活着的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "army",
+"p": "ˈɑːmi",
+"pos": "n.",
+"m": "军队",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shut",
+"p": "ʃʌʃ",
+"pos": "v.",
+"m": "关上",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "danger",
+"p": "ˈdeɪndʒə",
+"pos": "n.",
+"m": "危险",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "paint",
+"p": "peɪnt",
+"pos": "v.",
+"m": "绘画",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "northern",
+"p": "ˈnɒðən",
+"pos": "n.",
+"m": "北方人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "nod",
+"p": "nɒd",
+"pos": "v.",
+"m": "点头",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dry",
+"p": "draɪ",
+"pos": "v.",
+"m": "变干",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Russian",
+"p": "ˈrʌʃən",
+"pos": "n.",
+"m": "俄国人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "instruction",
+"p": "ɪnˈstrʌkʃən",
+"pos": "n.",
+"m": "指令",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pool",
+"p": "puːl",
+"pos": "v.",
+"m": "汇合成塘",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sweet",
+"p": "swiːt",
+"pos": "adj.",
+"m": "甜的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fourth",
+"p": "fɒθ",
+"pos": "num.",
+"m": "第四",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "metal",
+"p": "ˈmetəl",
+"pos": "v.",
+"m": "以金属覆盖",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ticket",
+"p": "ˈtɪkɪt",
+"pos": "v.",
+"m": "加标签于",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "strange",
+"p": "streɪndʒ",
+"pos": "adj.",
+"m": "奇怪的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "somewhere",
+"p": "ˈsʌmhweə",
+"pos": "adv.",
+"m": "到某处",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "planet",
+"p": "ˈplænɪt",
+"pos": "n.",
+"m": "行星",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "enemy",
+"p": "ˈenɪmi",
+"pos": "n.",
+"m": "敌人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "invite",
+"p": "ɪnˈvaɪt",
+"pos": "v.",
+"m": "邀请",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "repeat",
+"p": "rɪˈpiːt",
+"pos": "v.",
+"m": "重复",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "impossible",
+"p": "ɪmˈpɒsəbl",
+"pos": "adj.",
+"m": "不可能的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "meaning",
+"p": "ˈmiːnɪŋ",
+"pos": "n.",
+"m": "意义",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mom",
+"p": "mʌm",
+"pos": "n.",
+"m": "妈妈",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pocket",
+"p": "ˈpɒkɪt",
+"pos": "v.",
+"m": "装…在口袋里",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "temperature",
+"p": "ˈtemprətʃə",
+"pos": "n.",
+"m": "温度",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "surprise",
+"p": "səˈpraɪz",
+"pos": "v.",
+"m": "使惊奇",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "breath",
+"p": "breθ",
+"pos": "n.",
+"m": "呼吸",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sight",
+"p": "saɪt",
+"pos": "v.",
+"m": "瞄准",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "connect",
+"p": "kəˈnekt",
+"pos": "v.",
+"m": "连接",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "advice",
+"p": "ədˈvaɪs",
+"pos": "n.",
+"m": "忠告",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "empty",
+"p": "ˈempti",
+"pos": "v.",
+"m": "流空",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "expensive",
+"p": "ɪkˈspensɪv",
+"pos": "adj.",
+"m": "贵的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ring",
+"p": "rɪŋ",
+"pos": "v.",
+"m": "成环形",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mark",
+"p": "mɑːk",
+"pos": "v.",
+"m": "作记号",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "package",
+"p": "ˈpækɪdʒ",
+"pos": "v.",
+"m": "包装",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "difficulty",
+"p": "ˈdɪfɪkəlti",
+"pos": "n.",
+"m": "困难",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bridge",
+"p": "brɪdʒ",
+"pos": "v.",
+"m": "架桥于",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "visitor",
+"p": "ˈvɪzɪtə",
+"pos": "n.",
+"m": "参观者",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "comfortable",
+"p": "ˈkʌmfətəbl",
+"pos": "adj.",
+"m": "舒服的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "accident",
+"p": "ˈæksɪdənt",
+"pos": "n.",
+"m": "意外事件",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "traffic",
+"p": "ˈtræfɪk",
+"pos": "v.",
+"m": "交易",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "chest",
+"p": "tʃest",
+"pos": "n.",
+"m": "胸",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Japanese",
+"p": "ˌdʒæpəˈniːz",
+"pos": "n.",
+"m": "日本人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "thick",
+"p": "θɪk",
+"pos": "adj.",
+"m": "厚的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hardly",
+"p": "ˈhɑːdli",
+"pos": "adv.",
+"m": "刚刚",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "duty",
+"p": "ˈdjuːti",
+"pos": "n.",
+"m": "责任",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wake",
+"p": "weɪk",
+"pos": "v.",
+"m": "醒来",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "airport",
+"p": "ˈeəpɒt",
+"pos": "n.",
+"m": "飞机场",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ourselves",
+"p": "ˌaʊəˈselvz",
+"pos": "pron.",
+"m": "我们自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "warn",
+"p": "wɒn",
+"pos": "v.",
+"m": "发出警告",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "steal",
+"p": "stiːl",
+"pos": "v.",
+"m": "剽窃",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "neither",
+"p": "ˈnaɪðə",
+"pos": "adv.",
+"m": "皆不",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "correct",
+"p": "kəˈrekt",
+"pos": "v.",
+"m": "改正",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "crazy",
+"p": "ˈkreɪzi",
+"pos": "adj.",
+"m": "发狂的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "kick",
+"p": "kɪk",
+"pos": "v.",
+"m": "踢",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ancient",
+"p": "ˈeɪnʃənt",
+"pos": "adj.",
+"m": "古代的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "silence",
+"p": "ˈsaɪləns",
+"pos": "v.",
+"m": "使缄默",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "golden",
+"p": "ˈɡəʊldn",
+"pos": "adj.",
+"m": "金的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "used",
+"p": "ˈjuːst",
+"pos": "adj.",
+"m": "使用过的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Australia",
+"p": "ɒˈstreɪljə",
+"pos": "n.",
+"m": "澳洲",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "except",
+"p": "ɪkˈsept",
+"pos": "v.",
+"m": "反对",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hall",
+"p": "hɒl",
+"pos": "n.",
+"m": "门厅",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "trust",
+"p": "trʌst",
+"pos": "v.",
+"m": "相信",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ocean",
+"p": "ˈəʊʃən",
+"pos": "n.",
+"m": "海洋",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "row",
+"p": "rəʊ",
+"pos": "v.",
+"m": "划船",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "afford",
+"p": "əˈfɒd",
+"pos": "v.",
+"m": "买得起",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "neighbour",
+"p": "ˈneɪbə",
+"pos": "v.",
+"m": "邻近",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fix",
+"p": "fɪks",
+"pos": "v.",
+"m": "固定",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "smart",
+"p": "smɑːt",
+"pos": "v.",
+"m": "刺痛",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "telephone",
+"p": "ˈtelɪfəʊn",
+"pos": "v.",
+"m": "打电话",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "secret",
+"p": "ˈsiːkrɪt",
+"pos": "n.",
+"m": "秘密",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "anywhere",
+"p": "ˈenɪhweə",
+"pos": "adv.",
+"m": "无论何处",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pleasure",
+"p": "ˈpleʒə",
+"pos": "n.",
+"m": "快乐",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "master",
+"p": "ˈmɑːstə",
+"pos": "v.",
+"m": "征服",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fun",
+"p": "fʌn",
+"pos": "n.",
+"m": "乐趣",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wing",
+"p": "wɪŋ",
+"pos": "v.",
+"m": "飞行",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "separate",
+"p": "ˈsepəreɪt",
+"pos": "v.",
+"m": "分开",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "doubt",
+"p": "daʊt",
+"pos": "v.",
+"m": "怀疑",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hero",
+"p": "ˈhɪərəʊ",
+"pos": "n.",
+"m": "英雄",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "winner",
+"p": "ˈwɪnə",
+"pos": "n.",
+"m": "胜利者",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "copy",
+"p": "ˈkɒpi",
+"pos": "v.",
+"m": "复印",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "India",
+"p": "ˈɪndjə",
+"pos": "n.",
+"m": "印度",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cheap",
+"p": "tʃiːp",
+"pos": "adj.",
+"m": "便宜的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dish",
+"p": "dɪʃ",
+"pos": "n.",
+"m": "盘子",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "everywhere",
+"p": "ˈevrɪhweə",
+"pos": "adv.",
+"m": "各处",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "divide",
+"p": "dɪˈvaɪd",
+"pos": "v.",
+"m": "分开",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "terrible",
+"p": "ˈterəbl",
+"pos": "adj.",
+"m": "可怕的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rush",
+"p": "rʌʃ",
+"pos": "v.",
+"m": "冲",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "match",
+"p": "mætʃ",
+"pos": "v.",
+"m": "结婚",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "beside",
+"p": "bɪˈsaɪd",
+"pos": "prep.",
+"m": "在旁边",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "waste",
+"p": "weɪst",
+"pos": "v.",
+"m": "浪费",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "experiment",
+"p": "ɪkˈsperɪmənt",
+"pos": "v.",
+"m": "实验",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "engineer",
+"p": "ˌendʒɪˈnɪə",
+"pos": "v.",
+"m": "设计",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wheel",
+"p": "hwiːl",
+"pos": "v.",
+"m": "旋转",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "secretary",
+"p": "ˈsekrətəri",
+"pos": "n.",
+"m": "秘书",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "gate",
+"p": "ɡeɪt",
+"pos": "v.",
+"m": "装门于",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "solid",
+"p": "ˈsɒlɪd",
+"pos": "n.",
+"m": "固体",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "noise",
+"p": "nɒɪz",
+"pos": "v.",
+"m": "喧闹",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "succeed",
+"p": "səkˈsiːd",
+"pos": "v.",
+"m": "成功",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "celebrate",
+"p": "ˈselɪbreɪt",
+"pos": "v.",
+"m": "庆祝",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "useful",
+"p": "ˈjuːsfʊl",
+"pos": "adj.",
+"m": "有用的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "height",
+"p": "haɪt",
+"pos": "n.",
+"m": "高度",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "plenty",
+"p": "ˈplenti",
+"pos": "n.",
+"m": "充分",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "proper",
+"p": "ˈprɒpə",
+"pos": "adj.",
+"m": "适当的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "weak",
+"p": "wiːk",
+"pos": "adj.",
+"m": "不牢固的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "king",
+"p": "kɪŋ",
+"pos": "n.",
+"m": "国王",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "passenger",
+"p": "ˈpæsɪndʒə",
+"pos": "n.",
+"m": "乘客",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "regard",
+"p": "rɪˈɡɑːd",
+"pos": "v.",
+"m": "注视",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "knock",
+"p": "nɒk",
+"pos": "v.",
+"m": "敲击",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lab",
+"p": "læb",
+"pos": "n.",
+"m": "实验室",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "metre",
+"p": "ˈmiːtə",
+"pos": "n.",
+"m": "公尺",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Russia",
+"p": "ˈrʌʃə",
+"pos": "n.",
+"m": "俄国",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sir",
+"p": "sɜː",
+"pos": "n.",
+"m": "先生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "airline",
+"p": "ˈeəlaɪn",
+"pos": "n.",
+"m": "航线",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "factory",
+"p": "ˈfæktəri",
+"pos": "n.",
+"m": "工厂",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "post",
+"p": "pəʊst",
+"pos": "v.",
+"m": "快速行进",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "steel",
+"p": "stiːl",
+"pos": "v.",
+"m": "使坚强",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "silent",
+"p": "ˈsaɪlənt",
+"pos": "adj.",
+"m": "沉默的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "suppose",
+"p": "səˈpəʊz",
+"pos": "v.",
+"m": "料想",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shall",
+"p": "ʃæl",
+"pos": "aux.",
+"m": "将",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "double",
+"p": "ˈdʌbl",
+"pos": "v.",
+"m": "加倍",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "print",
+"p": "prɪnt",
+"pos": "v.",
+"m": "打印",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "passage",
+"p": "ˈpæsɪdʒ",
+"pos": "n.",
+"m": "通道",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "reply",
+"p": "rɪˈplaɪ",
+"pos": "v.",
+"m": "答复",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lock",
+"p": "lɒk",
+"pos": "v.",
+"m": "锁住",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "discovery",
+"p": "dɪsˈkʌvəri",
+"pos": "n.",
+"m": "发现",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "stream",
+"p": "striːm",
+"pos": "v.",
+"m": "流",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sale",
+"p": "seɪl",
+"pos": "n.",
+"m": "出售",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tale",
+"p": "teɪl",
+"pos": "n.",
+"m": "故事",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "joke",
+"p": "dʒəʊk",
+"pos": "v.",
+"m": "开玩笑",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "breathe",
+"p": "briːð",
+"pos": "v.",
+"m": "呼吸",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "glad",
+"p": "ɡlæd",
+"pos": "adj.",
+"m": "高兴的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "iron",
+"p": "ˈaɪən",
+"pos": "v.",
+"m": "烫平",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "kiss",
+"p": "kɪs",
+"pos": "v.",
+"m": "接吻",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "illness",
+"p": "ˈɪlnɪs",
+"pos": "n.",
+"m": "疾病",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "habit",
+"p": "ˈhæbɪt",
+"pos": "v.",
+"m": "使穿衣",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "whenever",
+"p": "hwenˈevə",
+"pos": "conj.",
+"m": "每当",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "boss",
+"p": "bɒs",
+"pos": "v.",
+"m": "指挥",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dollar",
+"p": "ˈdɒlə",
+"pos": "n.",
+"m": "美元",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "symbol",
+"p": "ˈsɪmbl",
+"pos": "n.",
+"m": "符号",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "monitor",
+"p": "ˈmɒnɪtə",
+"pos": "v.",
+"m": "监视",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Asian",
+"p": "ˈeɪʃən",
+"pos": "n.",
+"m": "亚洲人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "usual",
+"p": "ˈjuːʒʊəl",
+"pos": "adj.",
+"m": "平常的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "round",
+"p": "raʊnd",
+"pos": "v.",
+"m": "变圆",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "luck",
+"p": "lʌk",
+"pos": "n.",
+"m": "运气",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "nervous",
+"p": "ˈnɜːvəs",
+"pos": "adj.",
+"m": "神经紧张的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tourist",
+"p": "ˈtʊərɪst",
+"pos": "n.",
+"m": "观光客",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tower",
+"p": "ˈtaʊə",
+"pos": "v.",
+"m": "高耸",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "smoke",
+"p": "sməʊk",
+"pos": "v.",
+"m": "吸烟",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "prisoner",
+"p": "ˈprɪznə",
+"pos": "n.",
+"m": "囚犯",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "smooth",
+"p": "smuːð",
+"pos": "v.",
+"m": "变平滑",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "coast",
+"p": "kəʊst",
+"pos": "v.",
+"m": "沿海岸而行",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "silver",
+"p": "ˈsɪlvə",
+"pos": "v.",
+"m": "变银白色",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "flag",
+"p": "flæɡ",
+"pos": "v.",
+"m": "无力地下垂",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "gentleman",
+"p": "ˈdʒentlmən",
+"pos": "n.",
+"m": "绅士",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "swing",
+"p": "swɪŋ",
+"pos": "v.",
+"m": "摇摆",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dig",
+"p": "dɪɡ",
+"pos": "v.",
+"m": "挖掘",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wet",
+"p": "wet",
+"pos": "v.",
+"m": "变湿",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "poem",
+"p": "ˈpəʊɪm",
+"pos": "n.",
+"m": "诗",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fifth",
+"p": "fɪfθ",
+"pos": "num.",
+"m": "第五",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "stomach",
+"p": "ˈstʌmək",
+"pos": "v.",
+"m": "吃下",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "weigh",
+"p": "weɪ",
+"pos": "v.",
+"m": "称分量",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "suggestion",
+"p": "səˈdʒestʃən",
+"pos": "n.",
+"m": "提议",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mail",
+"p": "meɪl",
+"pos": "v.",
+"m": "邮寄",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "concert",
+"p": "ˈkɒnsət",
+"pos": "n.",
+"m": "音乐会",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "intention",
+"p": "ɪnˈtenʃən",
+"pos": "n.",
+"m": "意图",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "honest",
+"p": "ˈɒnɪst",
+"pos": "adj.",
+"m": "诚实的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "speaker",
+"p": "ˈspiːkə",
+"pos": "n.",
+"m": "说话人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pop",
+"p": "pɒp",
+"pos": "v.",
+"m": "发出爆裂声",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "advise",
+"p": "ədˈvaɪz",
+"pos": "v.",
+"m": "提意见",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wealth",
+"p": "welθ",
+"pos": "n.",
+"m": "财富",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "flat",
+"p": "flæt",
+"pos": "adj.",
+"m": "平坦的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mad",
+"p": "mæd",
+"pos": "adj.",
+"m": "疯狂的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "vacation",
+"p": "veɪˈkeɪʃən",
+"pos": "n.",
+"m": "假期",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "heaven",
+"p": "ˈhevn",
+"pos": "n.",
+"m": "天堂",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sweep",
+"p": "swiːp",
+"pos": "v.",
+"m": "扫",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ceiling",
+"p": "ˈsiːlɪŋ",
+"pos": "n.",
+"m": "天花板",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bell",
+"p": "bel",
+"pos": "n.",
+"m": "铃",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "furniture",
+"p": "ˈfənɪtʃə",
+"pos": "n.",
+"m": "家具",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "communicate",
+"p": "kəˈmjuːnɪkeɪt",
+"pos": "v.",
+"m": "通讯",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "stranger",
+"p": "ˈstreɪndʒə",
+"pos": "n.",
+"m": "陌生人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "electric",
+"p": "ɪˈlektɪk",
+"pos": "adj.",
+"m": "电的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "stupid",
+"p": "ˈstjuːpɪd",
+"pos": "adj.",
+"m": "愚蠢的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "blind",
+"p": "blaɪnd",
+"pos": "v.",
+"m": "使失明",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Asia",
+"p": "ˈeɪʒə",
+"pos": "n.",
+"m": "亚洲",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "translate",
+"p": "trænsˈleɪt",
+"pos": "v.",
+"m": "翻译",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Canada",
+"p": "ˈkænədə",
+"pos": "n.",
+"m": "加拿大",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dialogue",
+"p": "ˈdaɪəlɒɡ",
+"pos": "n.",
+"m": "对话",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pride",
+"p": "praɪd",
+"pos": "v.",
+"m": "以…自豪",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dismiss",
+"p": "dɪsˈmɪs",
+"pos": "v.",
+"m": "解散",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "percent",
+"p": "pəˈsent",
+"pos": "n.",
+"m": "百分比",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "freeze",
+"p": "friːz",
+"pos": "v.",
+"m": "冻结",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "God",
+"p": "ɡɔd",
+"pos": "n.",
+"m": "上帝",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "joy",
+"p": "dʒɒi",
+"pos": "v.",
+"m": "欢喜",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "relax",
+"p": "rɪˈlæks",
+"pos": "v.",
+"m": "放松",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sudden",
+"p": "ˈsʌdn",
+"pos": "n.",
+"m": "突然",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tongue",
+"p": "tʌŋ",
+"pos": "v.",
+"m": "使用舌头",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "license",
+"p": "ˈlaɪsns",
+"pos": "v.",
+"m": "许可",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "introduction",
+"p": "ˌɪntrəˈdʌkʃən",
+"pos": "n.",
+"m": "介绍",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pale",
+"p": "peɪl",
+"pos": "v.",
+"m": "变苍白",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shelf",
+"p": "ʃelf",
+"pos": "n.",
+"m": "架子",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "gesture",
+"p": "ˈdʒestʃə",
+"pos": "v.",
+"m": "作手势",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "math",
+"p": "mæθ",
+"pos": "n.",
+"m": "数学",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tail",
+"p": "teɪl",
+"pos": "v.",
+"m": "跟踪",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "composition",
+"p": "kɒmpəˈzɪʃən",
+"pos": "n.",
+"m": "作文",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "satisfy",
+"p": "ˈsætɪsfaɪ",
+"pos": "v.",
+"m": "令人满意",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "besides",
+"p": "bɪˈsaɪdz",
+"pos": "prep.",
+"m": "除…之外",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rapid",
+"p": "ˈræpɪd",
+"pos": "adj.",
+"m": "迅速的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "friendship",
+"p": "ˈfrendʃɪp",
+"pos": "n.",
+"m": "友谊",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "helpful",
+"p": "ˈhelpfʊl",
+"pos": "adj.",
+"m": "有帮助的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "examination",
+"p": "ɪɡˌzæmɪˈneɪʃən",
+"pos": "n.",
+"m": "考试",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tent",
+"p": "tent",
+"pos": "v.",
+"m": "住帐蓬",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "asleep",
+"p": "əˈsliːp",
+"pos": "adj.",
+"m": "睡着的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "menu",
+"p": "ˈmenjuː",
+"pos": "n.",
+"m": "菜单",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "loud",
+"p": "laʊd",
+"pos": "adj.",
+"m": "大声的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "laboratory",
+"p": "ˈlæbrətəri",
+"pos": "n.",
+"m": "实验室",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cotton",
+"p": "ˈkɒtn",
+"pos": "v.",
+"m": "和谐",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "yours",
+"p": "jʊəz",
+"pos": "pron.",
+"m": "你的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wound",
+"p": "wuːnd",
+"pos": "v.",
+"m": "打伤",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wise",
+"p": "waɪz",
+"pos": "adj.",
+"m": "明智的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ugly",
+"p": "ˈʌɡli",
+"pos": "adj.",
+"m": "丑陋的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Atlantic",
+"p": "ətˈlæntɪk",
+"pos": "n.",
+"m": "大西洋",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "everyday",
+"p": "ˈevrɪˈdeɪ",
+"pos": "adj.",
+"m": "每天的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rope",
+"p": "rəʊp",
+"pos": "v.",
+"m": "拧成绳状",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "courage",
+"p": "ˈkʌrɪdʒ",
+"pos": "n.",
+"m": "勇气",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "coal",
+"p": "kəʊl",
+"pos": "v.",
+"m": "加煤",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dear",
+"p": "ˈdɪə",
+"pos": "adj.",
+"m": "亲爱的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "captain",
+"p": "ˈkæptɪn",
+"pos": "v.",
+"m": "率领",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dare",
+"p": "deə",
+"pos": "v.",
+"m": "敢",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "abroad",
+"p": "əˈbrɒd",
+"pos": "adv.",
+"m": "往国外",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shine",
+"p": "ʃaɪn",
+"pos": "v.",
+"m": "照耀",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "invent",
+"p": "ɪnˈvent",
+"pos": "v.",
+"m": "发明",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "magic",
+"p": "ˈmædʒɪk",
+"pos": "n.",
+"m": "魔术",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "physics",
+"p": "ˈfɪzɪks",
+"pos": "n.",
+"m": "物理学",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "excuse",
+"p": "ɪkˈskjuːz",
+"pos": "v.",
+"m": "原谅",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "airplane",
+"p": "ˈeəpleɪn",
+"pos": "n.",
+"m": "飞机",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sixth",
+"p": "sɪksθ",
+"pos": "num.",
+"m": "第六",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lend",
+"p": "lend",
+"pos": "v.",
+"m": "贷款",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "plain",
+"p": "pleɪn",
+"pos": "n.",
+"m": "平原",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "strict",
+"p": "strɪkt",
+"pos": "adj.",
+"m": "严厉的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rat",
+"p": "ræt",
+"pos": "v.",
+"m": "捕鼠",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bitter",
+"p": "ˈbɪtə",
+"pos": "v.",
+"m": "变苦",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hurry",
+"p": "ˈhʌri",
+"pos": "v.",
+"m": "匆忙",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pond",
+"p": "pɒnd",
+"pos": "n.",
+"m": "池塘",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "prize",
+"p": "praɪz",
+"pos": "v.",
+"m": "珍视",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "praise",
+"p": "preɪz",
+"pos": "v.",
+"m": "赞扬",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shame",
+"p": "ʃeɪm",
+"pos": "v.",
+"m": "使羞愧",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pleasant",
+"p": "ˈpleznt",
+"pos": "adj.",
+"m": "愉快的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "noon",
+"p": "nuːn",
+"pos": "n.",
+"m": "正午",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "handsome",
+"p": "ˈhænsəm",
+"pos": "adj.",
+"m": "英俊的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hers",
+"p": "hɜːz",
+"pos": "pron.",
+"m": "她的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "punish",
+"p": "ˈpʌnɪʃ",
+"pos": "v.",
+"m": "惩罚",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "repair",
+"p": "rɪˈpeə",
+"pos": "v.",
+"m": "修理",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "gym",
+"p": "dʒɪm",
+"pos": "n.",
+"m": "体育馆",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cancel",
+"p": "ˈkænsəl",
+"pos": "v.",
+"m": "相互抵销",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "candle",
+"p": "ˈkændl",
+"pos": "v.",
+"m": "对着光检查",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ton",
+"p": "tʌn",
+"pos": "n.",
+"m": "吨",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "servant",
+"p": "ˈsɜːvənt",
+"pos": "n.",
+"m": "仆人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "silk",
+"p": "sɪlk",
+"pos": "n.",
+"m": "丝",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "toilet",
+"p": "ˈtɒɪlɪt",
+"pos": "n.",
+"m": "厕所",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lonely",
+"p": "ˈləʊnli",
+"pos": "adj.",
+"m": "孤单的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "silly",
+"p": "ˈsɪli",
+"pos": "adj.",
+"m": "愚蠢的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "elder",
+"p": "ˈeldə",
+"pos": "adj.",
+"m": "年长的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "treasure",
+"p": "ˈtreʒə",
+"pos": "v.",
+"m": "珍爱",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ours",
+"p": "ˈaʊəz",
+"pos": "pron.",
+"m": "我们的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "seventh",
+"p": "ˈsevnθ",
+"pos": "num.",
+"m": "第七",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "drum",
+"p": "drʌm",
+"pos": "v.",
+"m": "击鼓",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sail",
+"p": "seɪl",
+"pos": "v.",
+"m": "航行",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "accent",
+"p": "ˈæksənt",
+"pos": "v.",
+"m": "重读",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "drawer",
+"p": "ˈdrɒə",
+"pos": "n.",
+"m": "抽屉",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "exam",
+"p": "ɪɡˈzæm",
+"pos": "n.",
+"m": "考试",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "mathematics",
+"p": "ˌmæθəˈmætɪks",
+"pos": "n.",
+"m": "数学",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fisherman",
+"p": "ˈfɪʃəmən",
+"pos": "n.",
+"m": "渔夫",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "spell",
+"p": "spel",
+"pos": "v.",
+"m": "轮换",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "penny",
+"p": "ˈpeni",
+"pos": "n.",
+"m": "便士",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "purse",
+"p": "pɜːs",
+"pos": "v.",
+"m": "缩拢",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cheat",
+"p": "tʃiːt",
+"pos": "v.",
+"m": "欺骗",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fever",
+"p": "ˈfiːvə",
+"pos": "n.",
+"m": "发烧",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "coin",
+"p": "kɒɪn",
+"pos": "v.",
+"m": "铸币",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "upstairs",
+"p": "ˈʌpˈsteəz",
+"pos": "adj.",
+"m": "楼上的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "grandchild",
+"p": "ˈɡrændtʃaɪld",
+"pos": "n.",
+"m": "孙",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "shy",
+"p": "ʃaɪ",
+"pos": "v.",
+"m": "惊退",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "eighth",
+"p": "eɪtθ",
+"pos": "num.",
+"m": "第八",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "swimming",
+"p": "ˈswɪmɪŋ",
+"pos": "n.",
+"m": "游泳",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pioneer",
+"p": "ˌpaɪəˈnɪə",
+"pos": "v.",
+"m": "作先驱",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "wheat",
+"p": "hwiːt",
+"pos": "n.",
+"m": "小麦",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "robot",
+"p": "ˈrəʊbət",
+"pos": "n.",
+"m": "机械人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "disturb",
+"p": "dɪsˈtɜːb",
+"pos": "v.",
+"m": "扰乱",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "kilometre",
+"p": "ˈkɪləmiːtə",
+"pos": "n.",
+"m": "公里",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "spare",
+"p": "speə",
+"pos": "v.",
+"m": "节约",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "regret",
+"p": "rɪˈɡret",
+"pos": "v.",
+"m": "感到抱歉",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cheer",
+"p": "tʃɪə",
+"pos": "v.",
+"m": "欢呼",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "awake",
+"p": "əˈweɪk",
+"pos": "v.",
+"m": "醒来",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "palace",
+"p": "ˈpælɪs",
+"pos": "n.",
+"m": "宫",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "grandparent",
+"p": "ˈɡrændperənt",
+"pos": "n.",
+"m": "祖父母",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "thread",
+"p": "θred",
+"pos": "v.",
+"m": "穿过",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "chemistry",
+"p": "ˈkemɪstri",
+"pos": "n.",
+"m": "化学",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "headache",
+"p": "ˈhedeɪk",
+"pos": "n.",
+"m": "头痛",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fantastic",
+"p": "fænˈtæstɪk",
+"pos": "adj.",
+"m": "奇妙的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cruel",
+"p": "ˈkruːəl",
+"pos": "adj.",
+"m": "残酷的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "invention",
+"p": "ɪnˈvenʃən",
+"pos": "n.",
+"m": "发明",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "balloon",
+"p": "bəˈluːn",
+"pos": "v.",
+"m": "膨胀如气球",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "rubber",
+"p": "ˈrʌbə",
+"pos": "v.",
+"m": "用橡胶制造",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pence",
+"p": "pens",
+"pos": "n.",
+"m": "便士",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "brave",
+"p": "breɪv",
+"pos": "v.",
+"m": "勇敢地面对",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "seldom",
+"p": "ˈseldəm",
+"pos": "adj.",
+"m": "不常的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "zero",
+"p": "ˈzɪərəʊ",
+"pos": "v.",
+"m": "调零",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "foreigner",
+"p": "ˈfɒrɪnə",
+"pos": "n.",
+"m": "外国人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "twentieth",
+"p": "ˈtwentɪɪθ",
+"pos": "num.",
+"m": "第二十",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "till",
+"p": "tɪl",
+"pos": "v.",
+"m": "耕种",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "website",
+"p": "ˈwebsaɪt",
+"pos": "n.",
+"m": "网站",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "delicious",
+"p": "dɪˈlɪʃəs",
+"pos": "adj.",
+"m": "美味的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pupil",
+"p": "ˈpjuːpl",
+"pos": "n.",
+"m": "学生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ninth",
+"p": "naɪnθ",
+"pos": "num.",
+"m": "第九",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "stamp",
+"p": "stæmp",
+"pos": "v.",
+"m": "捣碎",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "geography",
+"p": "dʒɪˈɒɡrəfi",
+"pos": "n.",
+"m": "地理学",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "Australian",
+"p": "ɒˈstreɪljən",
+"pos": "n.",
+"m": "澳大利亚人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ink",
+"p": "ɪŋk",
+"pos": "v.",
+"m": "涂墨水于",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sour",
+"p": "ˈsaʊə",
+"pos": "v.",
+"m": "变酸",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "countryside",
+"p": "ˈkʌntrɪsaɪd",
+"pos": "n.",
+"m": "乡下地方",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "excite",
+"p": "ɪkˈsaɪt",
+"pos": "v.",
+"m": "刺激",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pronounce",
+"p": "prəˈnaʊns",
+"pos": "v.",
+"m": "发音",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "underground",
+"p": "ˈʌndəɡraʊnd",
+"pos": "n.",
+"m": "地下",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "theirs",
+"p": "ðeəz",
+"pos": "pron.",
+"m": "他们的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "downstairs",
+"p": "ˈdaʊnˈsteəz",
+"pos": "n.",
+"m": "楼下",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "hometown",
+"p": "həʊmˈtaʊn",
+"pos": "n.",
+"m": "故乡",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "polite",
+"p": "pəˈlaɪt",
+"pos": "adj.",
+"m": "有礼貌的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "supper",
+"p": "ˈsʌpə",
+"pos": "n.",
+"m": "晚餐",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "absent",
+"p": "ˈæbsənt",
+"pos": "v.",
+"m": "使缺席",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "goose",
+"p": "ɡuːs",
+"pos": "v.",
+"m": "与…性交",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "keyboard",
+"p": "ˈkiːbɒd",
+"pos": "n.",
+"m": "键盘",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lamb",
+"p": "læm",
+"pos": "v.",
+"m": "产羊羔",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "flu",
+"p": "fluː",
+"pos": "n.",
+"m": "流感",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "aloud",
+"p": "əˈlaʊd",
+"pos": "adv.",
+"m": "出声地",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "skate",
+"p": "skeɪt",
+"pos": "v.",
+"m": "滑冰",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lively",
+"p": "ˈlaɪvli",
+"pos": "adj.",
+"m": "活泼的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "advertisement",
+"p": "ˌædvəˈtaɪzmənt",
+"pos": "n.",
+"m": "广告",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "recorder",
+"p": "rɪˈkɒdə",
+"pos": "n.",
+"m": "记录员",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "motorcycle",
+"p": "ˈməʊtəsaɪkl",
+"pos": "n.",
+"m": "摩托车",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cough",
+"p": "kɒf",
+"pos": "v.",
+"m": "咳嗽",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ham",
+"p": "hæm",
+"pos": "v.",
+"m": "演得过火",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sausage",
+"p": "ˈsɒsɪdʒ",
+"pos": "n.",
+"m": "香肠",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "lazy",
+"p": "ˈleɪzi",
+"pos": "adj.",
+"m": "懒惰的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "passport",
+"p": "ˈpæspɒt",
+"pos": "n.",
+"m": "护照",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "dentist",
+"p": "ˈdentɪst",
+"pos": "n.",
+"m": "牙科医生",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "greeting",
+"p": "ˈɡriːtɪŋ",
+"pos": "n.",
+"m": "祝贺",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "recite",
+"p": "rɪˈsaɪt",
+"pos": "v.",
+"m": "背诵",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "grandson",
+"p": "ˈɡrændsʌn",
+"pos": "n.",
+"m": "孙子",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "clap",
+"p": "klæp",
+"pos": "v.",
+"m": "鼓掌",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "fetch",
+"p": "fetʃ",
+"pos": "v.",
+"m": "取物",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "deaf",
+"p": "def",
+"pos": "adj.",
+"m": "聋的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "chant",
+"p": "tʃænt",
+"pos": "v.",
+"m": "吟唱",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "postcard",
+"p": "ˈpəʊstkɑːd",
+"pos": "n.",
+"m": "明信片",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pity",
+"p": "ˈpɪti",
+"pos": "v.",
+"m": "觉得可怜",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "chess",
+"p": "tʃes",
+"pos": "n.",
+"m": "国际象棋",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "camel",
+"p": "ˈkæml",
+"pos": "n.",
+"m": "骆驼",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "cabbage",
+"p": "ˈkæbɪdʒ",
+"pos": "n.",
+"m": "卷心菜",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "trousers",
+"p": "ˈtraʊzəz",
+"pos": "n.",
+"m": "裤子",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pancake",
+"p": "ˈpænkeɪk",
+"pos": "n.",
+"m": "薄烤饼",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "madame",
+"p": "ˈmædəm",
+"pos": "n.",
+"m": "夫人",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "sleepy",
+"p": "ˈsliːpi",
+"pos": "adj.",
+"m": "困乏的",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "tenth",
+"p": "tenθ",
+"pos": "num.",
+"m": "第十",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "oneself",
+"p": "wʌnˈself",
+"pos": "pron.",
+"m": "自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "ache",
+"p": "eɪk",
+"pos": "v.",
+"m": "痛",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "pardon",
+"p": "ˈpɑːdn",
+"pos": "v.",
+"m": "宽恕",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "yourselves",
+"p": "jɔːˈselvzˌjjə-ˌjə-",
+"pos": "pron.",
+"m": "你们自己",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "China",
+"p": "ˈtʃaɪnə",
+"pos": "n.",
+"m": "中国",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bill",
+"p": "bɪl",
+"pos": "v.",
+"m": "开帐单",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "biscuit",
+"p": "ˈbɪskɪt",
+"pos": "n.",
+"m": "饼干",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "litter",
+"p": "ˈlɪtə",
+"pos": "v.",
+"m": "产仔",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "inch",
+"p": "ɪntʃ",
+"pos": "v.",
+"m": "慢慢前进",
+"stage": "junior",
+"src": "zk"
+},
+{
+"w": "bamboo",
+"p": "bæmˈbuː",
+"pos": "n.",
+"m": "竹子",
+"stage": "junior",
+"src": "zk"
+}
+]
+}
