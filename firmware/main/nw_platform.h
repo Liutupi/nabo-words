@@ -26,3 +26,13 @@ bool nw_plat_record_read(int slot, void *data, size_t size);
 void nw_plat_cue(int cue);
 
 uint32_t nw_plat_random(void);
+
+/* ---------- 无线（对战用 ESP-NOW，只在对战画面打开） ---------- */
+#define NW_RADIO_MAX 250
+bool nw_plat_radio_on(void);
+void nw_plat_radio_off(void);
+/* mac 为 NULL 时广播。单播会等对方的链路层确认，失败重试几次；返回是否送达（广播总是 true） */
+bool nw_plat_radio_send(const uint8_t *mac, const void *data, int len);
+/* 取一个收到的包，没有返回 0 */
+int nw_plat_radio_recv(uint8_t mac[6], void *buf, int max);
+void nw_plat_mac(uint8_t mac[6]);

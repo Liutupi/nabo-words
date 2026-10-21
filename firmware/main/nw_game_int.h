@@ -7,6 +7,7 @@
 #include "nw_gfx.h"
 #include "nw_sprite.h"
 #include "nw_store.h"
+#include "nw_vs.h"
 #include "words/nabo_words_extra.h"
 #include "words/nabo_words_quiz.h"
 
@@ -99,6 +100,8 @@ typedef struct {
     int c_coins;
     bool c_best, c_first;
 
+    nw_vs_t *vs;                    /* 对战（只在对战画面分配） */
+
     /* 其它画面 */
     int page_unit;                  /* 护照：选中的单元 */
     int list_sel;                   /* 书桌 / 小卖部 */
@@ -127,7 +130,6 @@ void nw_draw_stars(void);
 void nw_draw_passport(void);
 void nw_draw_desk(void);
 void nw_draw_shop(void);
-void nw_draw_battle(void);
 void nw_draw_overlay(void);
 void nw_draw_onboard(void);
 void nw_draw_place(void);

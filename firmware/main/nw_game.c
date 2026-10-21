@@ -290,6 +290,7 @@ static void free_session(void)
 
 static void to_home(void)
 {
+    if (G->vs) nw_vs_leave();
     G->scene = SC_HOME;
     free_session();
     G->fb = false;
@@ -858,7 +859,10 @@ static void home_ok(void)
     case MI_CHALLENGE: challenge_start(); break;
     case MI_PLACE: place_start(); break;
     case MI_HOME: onboard_start(false); break;
-    case MI_BATTLE: G->scene = SC_BATTLE; break;
+    case MI_BATTLE:
+        if (nw_vs_enter()) G->scene = SC_BATTLE;
+        else toast("内存不足，请重启工牌");
+        break;
     case MI_STARS: G->scene = SC_STARS; break;
     case MI_PASSPORT: G->scene = SC_PASSPORT; G->page_unit = nw_cur_unit(s); break;
     case MI_DESK: G->scene = SC_DESK; G->list_sel = 0; break;
@@ -894,8 +898,14 @@ static void act(nw_key_t k)
     case SC_STUDY: study_key(k); break;
     case SC_SUMMARY:
     case SC_STARS:
-    case SC_BATTLE:
         if (k == NW_KEY_OK) to_home();
+        break;
+    case SC_BATTLE:
+        if (G->vs && G->vs->phase == VS_END) {
+            if (k == NW_KEY_OK) to_home();
+        } else if (G->vs) {
+            nw_vs_key(k);
+        }
         break;
     case SC_PASSPORT:
         if (k == NW_KEY_OK) to_home();
@@ -967,7 +977,7 @@ static void draw_scene(void)
     case SC_PASSPORT: nw_draw_passport(); break;
     case SC_DESK: nw_draw_desk(); break;
     case SC_SHOP: nw_draw_shop(); break;
-    case SC_BATTLE: nw_draw_battle(); break;
+    case SC_BATTLE: nw_draw_vs(); break;
     case SC_ONBOARD: nw_draw_onboard(); break;
     case SC_PLACE: nw_draw_place(); break;
     case SC_CHALLENGE: nw_draw_challenge(); break;
@@ -1000,11 +1010,14 @@ void nw_game_frame(uint32_t now_ms, uint32_t rtc_s)
     if (G->scene == SC_HOME && G->pack_ok) np_update();
     if (G->scene == SC_STUDY && G->fb && G->fb_ok && now_ms - G->fb_t > 700) next_q();
     if (G->scene == SC_CHALLENGE) challenge_update();
+    if (G->scene == SC_BATTLE) nw_vs_update();
     if (G->mood && now_ms - G->mood_t > 1000) G->mood = 0;
 
     /* 保存：学习中每 25 题存一次，其它画面改动 3 秒后存 */
     if (G->dirty) {
-        if (G->scene == SC_STUDY ? G->answers_since_save >= 25 && !G->fb : now_ms - G->dirty_since > 3000) {
+        /* 对战中不存（写 Flash 会卡住几百毫秒），回主页再存 */
+        if (G->scene == SC_BATTLE) {
+        } else if (G->scene == SC_STUDY ? G->answers_since_save >= 25 && !G->fb : now_ms - G->dirty_since > 3000) {
             nw_game_save();
         }
     }
@@ -1168,6 +1181,16 @@ void nw_game_command(const char *line, char *out, size_t n, uint32_t now_ms, uin
             }
         }
         snprintf(out, n, "scene=%s", nw_game_scene_name());
+    } else if (!strcmp(word, "vs")) {
+        to_home();
+        if (nw_vs_enter()) G->scene = SC_BATTLE;
+        nw_gfx_invalidate(&G->gfx);
+        snprintf(out, n, "scene=%s radio=%d", nw_game_scene_name(), G->vs ? G->vs->radio_ok : -1);
+    } else if (!strcmp(word, "vstat")) {
+        if (G->vs) snprintf(out, n, "phase=%d peers=%d qi=%d score=%d:%d counted=%d msg=%s rating=%d coins=%u", G->vs->phase,
+                            G->vs->n_peers, G->vs->qi, G->vs->score[0], G->vs->score[1], G->vs->counted, G->vs->msg,
+                            S()->rating, (unsigned)S()->coins);
+        else snprintf(out, n, "no battle");
     } else if (!strcmp(word, "coins") && got >= 2) {
         s->coins = (uint32_t)a;
         mark_dirty();

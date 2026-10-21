@@ -6,6 +6,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <arpa/inet.h>
+#include <fcntl.h>
+#include <sys/socket.h>
+#include <unistd.h>
 
 #include "nw_assets.h"
 #include "nw_game.h"
@@ -40,6 +44,66 @@ bool nw_plat_record_read(int slot, void *d, size_t n)
 void nw_plat_cue(int c) { nw_sound_cue((nw_cue_t)c); }
 uint32_t nw_plat_random(void) { rng = rng * 1103515245u + 12345u; return rng; }
 
+/* 无线：两个宿主进程用本机 UDP 互通（环境变量 NW_PORT / NW_PEER），MAC 由端口号生成 */
+static int s_sock = -1, s_port, s_peer;
+static void port_mac(int port, uint8_t mac[6])
+{
+    uint8_t m[6] = {0x02, 0, 0, 0, (uint8_t)(port >> 8), (uint8_t)port};
+    memcpy(mac, m, 6);
+}
+void nw_plat_mac(uint8_t mac[6]) { port_mac(s_port, mac); }
+bool nw_plat_radio_on(void)
+{
+    const char *p = getenv("NW_PORT"), *q = getenv("NW_PEER");
+    if (!p || !q) return false;
+    s_port = atoi(p);
+    s_peer = atoi(q);
+    s_sock = socket(AF_INET, SOCK_DGRAM, 0);
+    struct sockaddr_in a = {0};
+    a.sin_family = AF_INET;
+    a.sin_port = htons((uint16_t)s_port);
+    a.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+    int one = 1;
+    setsockopt(s_sock, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(one));
+    if (bind(s_sock, (struct sockaddr *)&a, sizeof(a)) < 0) return false;
+    fcntl(s_sock, F_SETFL, O_NONBLOCK);
+    return true;
+}
+void nw_plat_radio_off(void)
+{
+    if (s_sock >= 0) close(s_sock);
+    s_sock = -1;
+}
+bool nw_plat_radio_send(const uint8_t *mac, const void *data, int len)
+{
+    uint8_t peer[6];
+    port_mac(s_peer, peer);
+    if (mac && memcmp(mac, peer, 6)) return false;
+    struct sockaddr_in a = {0};
+    a.sin_family = AF_INET;
+    a.sin_port = htons((uint16_t)s_peer);
+    a.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+    return sendto(s_sock, data, (size_t)len, 0, (struct sockaddr *)&a, sizeof(a)) == len || !mac;
+}
+int nw_plat_radio_recv(uint8_t mac[6], void *buf, int max)
+{
+    struct sockaddr_in a;
+    socklen_t al = sizeof(a);
+    if (s_sock < 0) return 0;
+    ssize_t n = recvfrom(s_sock, buf, (size_t)max, 0, (struct sockaddr *)&a, &al);
+    if (n <= 0) return 0;
+    port_mac(ntohs(a.sin_port), mac);
+    return (int)n;
+}
+
+static int s_realtime;
+static void tick(uint32_t *now, uint32_t rtc)
+{
+    *now += 33;
+    nw_game_frame(*now, rtc);
+    if (s_realtime) usleep(33000);
+}
+
 int main(int argc, char **argv)
 {
     if (argc < 2) return 2;
@@ -53,6 +117,7 @@ int main(int argc, char **argv)
     fclose(f);
     if (!nw_assets_open(a, (size_t)n)) { fprintf(stderr, "assets bad\n"); return 3; }
     uint32_t now = 1000, rtc = 100000;
+    s_realtime = getenv("NW_REALTIME") != NULL;
     if (!nw_game_open(now, rtc, true)) { fprintf(stderr, "open failed\n"); return 4; }
     char line[256], out[512];
     int bad = 0;
@@ -65,14 +130,13 @@ int main(int argc, char **argv)
             else if (!strcmp(k, "ok")) nw_game_key(NW_KEY_OK, now);
             else if (!strcmp(k, "back")) {
                 nw_game_key(NW_KEY_UP_PRESS, now);
-                for (int t = 0; t < 1100; t += 33) { now += 33; nw_game_frame(now, rtc); }
+                for (int t = 0; t < 1100; t += 33) tick(&now, rtc);
                 nw_game_key(NW_KEY_UP_RELEASE, now);
             }
-            now += 33;
-            nw_game_frame(now, rtc);
+            tick(&now, rtc);
         } else if (!strncmp(line, "wait ", 5)) {
             int ms = atoi(line + 5);
-            for (int t = 0; t < ms; t += 33) { now += 33; nw_game_frame(now, rtc); }
+            for (int t = 0; t < ms; t += 33) tick(&now, rtc);
         } else if (!strncmp(line, "rtc ", 4)) {
             rtc = (uint32_t)atol(line + 4);
         } else if (!strncmp(line, "cmd ", 4)) {

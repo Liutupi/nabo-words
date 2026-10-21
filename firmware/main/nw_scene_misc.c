@@ -217,24 +217,6 @@ void nw_draw_shop(void)
     footer("OK 购买 / 戴上");
 }
 
-/* ---------- 对战（ESP-NOW，下一版） ---------- */
-
-void nw_draw_battle(void)
-{
-    nw_gfx_t *g = &G->gfx;
-    const nw_state_t *s = &G->rec.s;
-    nw_rect(g, 0, 0, 240, 320, 0, RGB(C_INK));
-    title("对战", 0);
-    char t[64];
-    snprintf(t, sizeof(t), "%s", NW_RANK_NAME[nw_rank_of(s->rating)]);
-    nw_text(g, NW_F22, t, 120, 92, NW_CENTER, RGB(C_GOLD));
-    snprintf(t, sizeof(t), "积分 %d · 胜 %u 负 %u", s->rating, s->wins, s->losses);
-    nw_text(g, NW_F12, t, 120, 124, NW_CENTER, RGB(0xC5CADB));
-    nw_text(g, NW_F16, "两台工牌面对面抢答", 120, 176, NW_CENTER, RGB(C_WHITE));
-    nw_text(g, NW_F12, "无线对战正在做，下一版固件开放", 120, 204, NW_CENTER, RGB(C_MUTED));
-    nw_text(g, NW_F12, "OK 返回", 20, 302, NW_LEFT, RGB(C_MUTED));
-}
-
 /* ---------- 上层：提示条、长按返回的进度 ---------- */
 
 static void paint_ring(const nw_op_t *op, int y, int x0, int x1, uint16_t *row)

@@ -22,7 +22,11 @@
 #include "esp_heap_caps.h"
 #include "esp_lcd_panel_io.h"
 #include "esp_lcd_panel_ops.h"
+#include "esp_event.h"
 #include "esp_log.h"
+#include "esp_mac.h"
+#include "esp_now.h"
+#include "esp_wifi.h"
 #include "esp_partition.h"
 #include "esp_random.h"
 #include "esp_sleep.h"
@@ -127,6 +131,115 @@ bool nw_plat_record_read(int slot, void *data, size_t size)
 void nw_plat_cue(int cue) { nw_sound_cue((nw_cue_t)cue); }
 
 uint32_t nw_plat_random(void) { return esp_random(); }
+
+/* ---------- 无线：ESP-NOW，只在对战画面打开（Wi-Fi 要占 50 KB 以上内存） ---------- */
+
+#define RADIO_CHANNEL 1
+
+typedef struct {
+    uint8_t mac[6];
+    uint8_t len;
+    uint8_t data[NW_RADIO_MAX];
+} radio_pkt_t;
+
+static QueueHandle_t s_rx;
+static SemaphoreHandle_t s_tx_done;
+static volatile bool s_tx_ok;
+static bool s_radio;
+static const uint8_t BCAST[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+
+static void radio_rx(const esp_now_recv_info_t *info, const uint8_t *data, int len)
+{
+    if (len <= 0 || len > NW_RADIO_MAX) return;
+    radio_pkt_t p;
+    memcpy(p.mac, info->src_addr, 6);
+    p.len = (uint8_t)len;
+    memcpy(p.data, data, (size_t)len);
+    xQueueSend(s_rx, &p, 0);
+}
+
+static void radio_tx(const esp_now_send_info_t *info, esp_now_send_status_t status)
+{
+    s_tx_ok = status == ESP_NOW_SEND_SUCCESS;
+    xSemaphoreGive(s_tx_done);
+}
+
+bool nw_plat_radio_on(void)
+{
+    if (s_radio) return true;
+    static bool loop;
+    if (!loop) {
+        esp_err_t e = esp_event_loop_create_default();
+        loop = e == ESP_OK || e == ESP_ERR_INVALID_STATE;
+        s_rx = xQueueCreate(12, sizeof(radio_pkt_t));
+        s_tx_done = xSemaphoreCreateBinary();
+    }
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    if (esp_wifi_init(&cfg) != ESP_OK) return false;
+    bool ok = esp_wifi_set_storage(WIFI_STORAGE_RAM) == ESP_OK && esp_wifi_set_mode(WIFI_MODE_STA) == ESP_OK &&
+              esp_wifi_start() == ESP_OK && esp_wifi_set_channel(RADIO_CHANNEL, WIFI_SECOND_CHAN_NONE) == ESP_OK &&
+              esp_now_init() == ESP_OK;
+    if (ok) {
+        esp_now_register_recv_cb(radio_rx);
+        esp_now_register_send_cb(radio_tx);
+        esp_now_peer_info_t peer = {0};
+        memcpy(peer.peer_addr, BCAST, 6);
+        peer.channel = RADIO_CHANNEL;
+        peer.ifidx = WIFI_IF_STA;
+        ok = esp_now_add_peer(&peer) == ESP_OK;
+    }
+    if (!ok) {
+        esp_now_deinit();
+        esp_wifi_stop();
+        esp_wifi_deinit();
+        return false;
+    }
+    xQueueReset(s_rx);
+    s_radio = true;
+    ESP_LOGI(TAG, "radio on, free heap %u", (unsigned)esp_get_free_heap_size());
+    return true;
+}
+
+void nw_plat_radio_off(void)
+{
+    if (!s_radio) return;
+    esp_now_deinit();
+    esp_wifi_stop();
+    esp_wifi_deinit();
+    s_radio = false;
+    ESP_LOGI(TAG, "radio off, free heap %u", (unsigned)esp_get_free_heap_size());
+}
+
+bool nw_plat_radio_send(const uint8_t *mac, const void *data, int len)
+{
+    if (!s_radio || len > NW_RADIO_MAX) return false;
+    const uint8_t *to = mac ? mac : BCAST;
+    if (mac && !esp_now_is_peer_exist(mac)) {
+        esp_now_peer_info_t peer = {0};
+        memcpy(peer.peer_addr, mac, 6);
+        peer.channel = RADIO_CHANNEL;
+        peer.ifidx = WIFI_IF_STA;
+        if (esp_now_add_peer(&peer) != ESP_OK) return false;
+    }
+    for (int tries = 0; tries < (mac ? 4 : 1); tries++) {
+        xSemaphoreTake(s_tx_done, 0);
+        if (esp_now_send(to, data, (size_t)len) != ESP_OK) continue;
+        if (xSemaphoreTake(s_tx_done, pdMS_TO_TICKS(60)) == pdTRUE && (s_tx_ok || !mac)) return true;
+    }
+    return !mac;
+}
+
+int nw_plat_radio_recv(uint8_t mac[6], void *buf, int max)
+{
+    radio_pkt_t p;
+    if (!s_rx || xQueueReceive(s_rx, &p, 0) != pdTRUE) return 0;
+    memcpy(mac, p.mac, 6);
+    int n = p.len < max ? p.len : max;
+    memcpy(buf, p.data, (size_t)n);
+    return n;
+}
+
+void nw_plat_mac(uint8_t mac[6]) { esp_read_mac(mac, ESP_MAC_WIFI_STA); }
 
 /* ---------- 按键（esp_timer 任务里，只入队） ---------- */
 
