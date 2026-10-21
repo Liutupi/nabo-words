@@ -92,6 +92,37 @@ static void end_match(const char *msg)
     cue(NW_CUE_DONE);
 }
 
+/* 新的一局：清掉上一局的比分和结算 */
+static void reset_match(void)
+{
+    V->bitmap_parts = 0;
+    V->sync_tries = 0;
+    V->qi = 0;
+    memset(V->score, 0, sizeof(V->score));
+    memset(V->gain, 0, sizeof(V->gain));
+    V->n_missed = 0;
+    V->got_result = false;
+    V->counted = false;
+    memset(&V->res, 0, sizeof(V->res));
+    V->msg[0] = 0;
+    for (int k = 0; k < NW_BATTLE_Q; k++) V->op_pick[k] = -2;
+}
+
+static void invite(const nw_vs_peer_t *p)
+{
+    reset_match();
+    V->opp = *p;
+    V->opp_seen = G->now;
+    p_hello_t h;
+    phase(VS_INVITING);
+    my_hello(&h, P_INVITE);
+    if (!send_to(V->opp.mac, &h, sizeof(h))) {
+        snprintf(G->toast, sizeof(G->toast), "没连上，再试一次");
+        G->toast_until = G->now + 2200;
+        phase(VS_SEARCH);
+    }
+}
+
 /* ---------- 进出 ---------- */
 
 bool nw_vs_enter(void)
@@ -210,7 +241,9 @@ static void on_packet(const uint8_t *mac, const uint8_t *d, int n)
             p->seen = G->now;
         }
         if (type == P_INVITE) {
-            if (V->phase == VS_SEARCH && p) {
+            /* 搜索中，或者刚打完一局（对方要再来一局）都可以接受邀请 */
+            if ((V->phase == VS_SEARCH || V->phase == VS_END) && p) {
+                reset_match();
                 V->opp = *p;
                 V->opp_seen = G->now;
                 phase(VS_INVITED);
@@ -423,16 +456,7 @@ void nw_vs_key(int key)
             snprintf(G->toast, sizeof(G->toast), "对方正在对战");
             G->toast_until = G->now + 2200;
         } else {
-            V->opp = V->peers[V->sel];
-            V->opp_seen = G->now;
-            p_hello_t h;
-            phase(VS_INVITING);
-            my_hello(&h, P_INVITE);
-            if (!send_to(V->opp.mac, &h, sizeof(h))) {
-                snprintf(G->toast, sizeof(G->toast), "没连上，再试一次");
-                G->toast_until = G->now + 2200;
-                phase(VS_SEARCH);
-            }
+            invite(&V->peers[V->sel]);
         }
         break;
     case VS_INVITED:
@@ -449,6 +473,9 @@ void nw_vs_key(int key)
             send_simple(P_DECLINE);
             phase(VS_SEARCH);
         }
+        break;
+    case VS_END:
+        if (key == NW_KEY_DOWN) invite(&V->opp);   /* 再来一局：直接邀请同一个对手 */
         break;
     case VS_Q:
         if (V->my_pick >= 0) return;

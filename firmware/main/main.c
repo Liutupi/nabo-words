@@ -308,6 +308,9 @@ static void audio_task(void *arg)
 
 /* ---------- 游戏任务 ---------- */
 
+static uint32_t s_frames, s_frame_slow;
+static uint64_t s_frame_us, s_frame_max;
+
 static void console_poll(void)
 {
     static char line[96];
@@ -322,7 +325,15 @@ static void console_poll(void)
                 static char out[400];
                 const char *cmd = line[0] == '>' ? line + 1 : line;
                 if (!strncmp(cmd, "nw ", 3)) cmd += 3;
-                nw_game_command(cmd, out, sizeof(out), now_ms(), rtc_s());
+                if (!strcmp(cmd, "perf")) {
+                    /* 帧耗时（合成 + 送屏 + 逻辑），统计从上次 perf 起 */
+                    snprintf(out, sizeof(out), "frames=%u avg_ms=%u max_ms=%u over_33ms=%u", (unsigned)s_frames,
+                             (unsigned)(s_frames ? s_frame_us / s_frames / 1000 : 0), (unsigned)(s_frame_max / 1000),
+                             (unsigned)s_frame_slow);
+                    s_frames = s_frame_us = s_frame_max = s_frame_slow = 0;
+                } else {
+                    nw_game_command(cmd, out, sizeof(out), now_ms(), rtc_s());
+                }
                 printf("NW %s heap=%u largest=%u\n", out, (unsigned)esp_get_free_heap_size(),
                        (unsigned)heap_caps_get_largest_free_block(MALLOC_CAP_8BIT));
                 atomic_store(&s_last_input_us, esp_timer_get_time());
@@ -341,7 +352,13 @@ static void game_task(void *arg)
         key_ev_t ev;
         while (xQueueReceive(s_keys, &ev, 0) == pdTRUE) nw_game_key((nw_key_t)ev.key, ev.ms);
         console_poll();
+        int64_t t0 = esp_timer_get_time();
         nw_game_frame(now_ms(), rtc_s());
+        uint64_t dt = (uint64_t)(esp_timer_get_time() - t0);
+        s_frames++;
+        s_frame_us += dt;
+        if (dt > s_frame_max) s_frame_max = dt;
+        if (dt > FRAME_MS * 1000) s_frame_slow++;
         if (esp_timer_get_time() - atomic_load(&s_last_input_us) > IDLE_SLEEP_US) {
             nw_game_save();
             nw_plat_send_wait();

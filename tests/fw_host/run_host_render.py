@@ -22,45 +22,43 @@ key down
 key ok
 wait 1500
 shot home.rgb
-key ok
+cmd goto study
 shot intro.rgb
-key ok
-key ok
-key ok
-key ok
-key ok
+cmd solve 7
 shot quiz.rgb
-key ok
-wait 900
-key back
-key down
-key down
-key ok
+cmd solve
+shot summary.rgb
+cmd goto extra
+cmd solve 3
+shot extra.rgb
+cmd goto stars
 shot stars.rgb
-key ok
-key down
-key ok
+cmd goto passport
 shot passport.rgb
-key back
+cmd goto ach
+shot ach.rgb
 cmd sim 400 90
 wait 2500
+cmd goto home
+key back
+wait 1500
 shot home_cet4.rgb
-cmd coins 300
-key down
-key down
-key down
-key down
+cmd goto challenge
 key down
 key ok
+wait 400
+shot challenge.rgb
+cmd coins 300
+cmd goto shop
 key down
 key down
 key down
 key ok
 shot shop.rgb
-key back
-key down
-key ok
+cmd goto desk
 shot desk.rgb
+cmd goto battle
+shot battle.rgb
 """
 
 

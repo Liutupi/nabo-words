@@ -192,10 +192,10 @@ static void result(const nw_vs_t *V)
         nw_text(g, NW_F16, L[k], 34, 132 + k * 26, NW_LEFT, RGB(C_MUTED));
         nw_text(g, NW_F16, R[k], 206, 132 + k * 26, NW_RIGHT, RGB(C_WHITE));
     }
-    if (V->msg[0]) nw_text_fit(g, F_OPT + 1, 1, V->msg, 120, 250, 210, NW_CENTER, RGB(C_MUTED));
-    else if (V->res.gained & NW_ACH_VS10) nw_text(g, NW_F16, "成就：对战 10 连胜", 120, 250, NW_CENTER, RGB(C_GOLD));
-    sprite(120, 290);
-    nw_text(g, NW_F12, "OK 回主页", 222, 304, NW_RIGHT, RGB(C_MUTED));
+    if (V->msg[0]) nw_text_fit(g, F_OPT + 1, 1, V->msg, 120, 244, 210, NW_CENTER, RGB(C_MUTED));
+    else if (V->res.gained & NW_ACH_VS10) nw_text(g, NW_F16, "成就：对战 10 连胜", 120, 244, NW_CENTER, RGB(C_GOLD));
+    sprite(120, 292);
+    nw_text(g, NW_F12, "OK 回主页 · 下键 再来一局", 120, 304, NW_CENTER, RGB(C_MUTED));
 }
 
 void nw_draw_vs(void)
