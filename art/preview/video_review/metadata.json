@@ -1,0 +1,812 @@
+[
+  {
+    "file": "art/video/primary/primary_01_idle.mp4",
+    "sha256": "0020818bf03bfdab8a8a4dc858ec9d1507a1f70a5b63da301ebd314bfe0d15f0",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      58,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.027,
+    "successive_frame_rgb_abs_difference_range": [
+      0.055,
+      3.722
+    ],
+    "contact_sheet": "art/preview/video_review/primary_01_idle_contact.png",
+    "endpoint_sheet": "art/preview/video_review/primary_01_idle_endpoints.png"
+  },
+  {
+    "file": "art/video/primary/primary_02_happy.mp4",
+    "sha256": "28287a10ce5524c629695a7c39bae299ac7760d1232bf0a057f15fc14b8ea8a9",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.053,
+    "successive_frame_rgb_abs_difference_range": [
+      0.092,
+      13.692
+    ],
+    "contact_sheet": "art/preview/video_review/primary_02_happy_contact.png",
+    "endpoint_sheet": "art/preview/video_review/primary_02_happy_endpoints.png"
+  },
+  {
+    "file": "art/video/primary/primary_03_sad.mp4",
+    "sha256": "7bfddb82cf799faeea043363b7a571630617cda7b9ab1447adfb5d76775d3468",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.9,
+    "successive_frame_rgb_abs_difference_range": [
+      0.065,
+      4.845
+    ],
+    "contact_sheet": "art/preview/video_review/primary_03_sad_contact.png",
+    "endpoint_sheet": "art/preview/video_review/primary_03_sad_endpoints.png"
+  },
+  {
+    "file": "art/video/primary/primary_04_sleep.mp4",
+    "sha256": "57f0b4f26c95edfc5c8824110e3417d5084f1550b88b297deb6ce3fa8ddcdac8",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.041,
+    "successive_frame_rgb_abs_difference_range": [
+      0.14,
+      9.748
+    ],
+    "contact_sheet": "art/preview/video_review/primary_04_sleep_contact.png",
+    "endpoint_sheet": "art/preview/video_review/primary_04_sleep_endpoints.png"
+  },
+  {
+    "file": "art/video/primary/primary_05_cheer.mp4",
+    "sha256": "5837c2142100302cf2dd296ce20bc08d6110bb2e1cd838328d91ea7df34452bc",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.206,
+    "successive_frame_rgb_abs_difference_range": [
+      0.175,
+      14.002
+    ],
+    "contact_sheet": "art/preview/video_review/primary_05_cheer_contact.png",
+    "endpoint_sheet": "art/preview/video_review/primary_05_cheer_endpoints.png"
+  },
+  {
+    "file": "art/video/primary/primary_04_sleep_v2.mp4",
+    "sha256": "a565378edb0bc56706174e0252d31a1adb1790eb25ce75c2428b84ea483ec2d0",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      57,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.111,
+    "successive_frame_rgb_abs_difference_range": [
+      0.066,
+      8.967
+    ],
+    "contact_sheet": "art/preview/video_review/primary_04_sleep_v2_contact.png",
+    "endpoint_sheet": "art/preview/video_review/primary_04_sleep_v2_endpoints.png"
+  },
+  {
+    "file": "art/video/junior/junior_01_idle.mp4",
+    "sha256": "a928d72bdf68908256692126b609ff717f53d54b07b2a54e47294849495ba1ce",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "junior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.288,
+    "successive_frame_rgb_abs_difference_range": [
+      0.12,
+      4.137
+    ],
+    "contact_sheet": "art/preview/video_review/junior_01_idle_contact.png",
+    "endpoint_sheet": "art/preview/video_review/junior_01_idle_endpoints.png"
+  },
+  {
+    "file": "art/video/junior/junior_02_happy.mp4",
+    "sha256": "56ccc127d2e6b794f9c0939f04cce0d80e1756f8ba878df1b5e353467143cb43",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "junior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.049,
+    "successive_frame_rgb_abs_difference_range": [
+      0.058,
+      12.979
+    ],
+    "contact_sheet": "art/preview/video_review/junior_02_happy_contact.png",
+    "endpoint_sheet": "art/preview/video_review/junior_02_happy_endpoints.png"
+  },
+  {
+    "file": "art/video/junior/junior_03_sad.mp4",
+    "sha256": "3eb58f7aa794c6ba06d8f397557c89ade499524ca5b25735ec783a67d2066af8",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "junior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.948,
+    "successive_frame_rgb_abs_difference_range": [
+      0.063,
+      9.7
+    ],
+    "contact_sheet": "art/preview/video_review/junior_03_sad_contact.png",
+    "endpoint_sheet": "art/preview/video_review/junior_03_sad_endpoints.png"
+  },
+  {
+    "file": "art/video/senior/senior_01_idle.mp4",
+    "sha256": "d4ab5a7ee332b1459ff4df799094da366d6f4e9729512c2ed71df8fe4383586c",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "senior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.949,
+    "successive_frame_rgb_abs_difference_range": [
+      0.129,
+      4.373
+    ],
+    "contact_sheet": "art/preview/video_review/senior_01_idle_contact.png",
+    "endpoint_sheet": "art/preview/video_review/senior_01_idle_endpoints.png"
+  },
+  {
+    "file": "art/video/senior/senior_02_happy.mp4",
+    "sha256": "5e26b0c9a3b56a8d9d997b2e69bb4b11adba0f6a4e50f441b5e0337dc12b41ec",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "senior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.007,
+    "successive_frame_rgb_abs_difference_range": [
+      0.112,
+      10.112
+    ],
+    "contact_sheet": "art/preview/video_review/senior_02_happy_contact.png",
+    "endpoint_sheet": "art/preview/video_review/senior_02_happy_endpoints.png"
+  },
+  {
+    "file": "art/video/senior/senior_03_sad.mp4",
+    "sha256": "90f3362108286faa4298aefccdb0b123c664fda067f0e37b544cc0dc44ff4842",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "senior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.075,
+    "successive_frame_rgb_abs_difference_range": [
+      0.136,
+      7.705
+    ],
+    "contact_sheet": "art/preview/video_review/senior_03_sad_contact.png",
+    "endpoint_sheet": "art/preview/video_review/senior_03_sad_endpoints.png"
+  },
+  {
+    "file": "art/video/adv/adv_01_idle.mp4",
+    "sha256": "d5d09ea72861831847ba725199fb4658bd4e069c75a4a3b7eba0b09ac0becd89",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "adv",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      57,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.951,
+    "successive_frame_rgb_abs_difference_range": [
+      0.068,
+      4.402
+    ],
+    "contact_sheet": "art/preview/video_review/adv_01_idle_contact.png",
+    "endpoint_sheet": "art/preview/video_review/adv_01_idle_endpoints.png"
+  },
+  {
+    "file": "art/video/adv/adv_02_happy.mp4",
+    "sha256": "d798d331654a904d009a82f10bd4fea4f4aeee14b08befa7b555543c12f4af4d",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "adv",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      58,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.035,
+    "successive_frame_rgb_abs_difference_range": [
+      0.042,
+      5.345
+    ],
+    "contact_sheet": "art/preview/video_review/adv_02_happy_contact.png",
+    "endpoint_sheet": "art/preview/video_review/adv_02_happy_endpoints.png"
+  },
+  {
+    "file": "art/video/adv/adv_03_sad.mp4",
+    "sha256": "9e4c50f2e3276c6d9dfcfef1444053a59fc35c9d4ddd2d766e4c7fba4aeadb8f",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "adv",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.255,
+    "successive_frame_rgb_abs_difference_range": [
+      0.12,
+      6.876
+    ],
+    "contact_sheet": "art/preview/video_review/adv_03_sad_contact.png",
+    "endpoint_sheet": "art/preview/video_review/adv_03_sad_endpoints.png"
+  },
+  {
+    "file": "art/video/cet4/cet4_01_idle.mp4",
+    "sha256": "f8d675f8516fcc646e3d414c1cf83aa83e105b8e183712a436cbcdfe55f8f8c2",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet4",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      57,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.131,
+    "successive_frame_rgb_abs_difference_range": [
+      0.082,
+      6.215
+    ],
+    "contact_sheet": "art/preview/video_review/cet4_01_idle_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet4_01_idle_endpoints.png"
+  },
+  {
+    "file": "art/video/cet4/cet4_02_happy.mp4",
+    "sha256": "0a5c805a52ad1c01cffcf0f76a33e565df81b8339eda34e512718eebdd7d77ba",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet4",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.857,
+    "successive_frame_rgb_abs_difference_range": [
+      0.053,
+      7.555
+    ],
+    "contact_sheet": "art/preview/video_review/cet4_02_happy_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet4_02_happy_endpoints.png"
+  },
+  {
+    "file": "art/video/cet4/cet4_03_sad.mp4",
+    "sha256": "9dace9ae599eb13109541a592ba6c4ab373722ded131c71b496e8e0cd1e3393a",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet4",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.02,
+    "successive_frame_rgb_abs_difference_range": [
+      0.04,
+      6.578
+    ],
+    "contact_sheet": "art/preview/video_review/cet4_03_sad_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet4_03_sad_endpoints.png"
+  },
+  {
+    "file": "art/video/cet6/cet6_01_idle.mp4",
+    "sha256": "8625c84f3b02d4bb0be30892710e80e28cb5891a8ed3b029f465eb6785377cd1",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet6",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.921,
+    "successive_frame_rgb_abs_difference_range": [
+      0.049,
+      4.298
+    ],
+    "contact_sheet": "art/preview/video_review/cet6_01_idle_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet6_01_idle_endpoints.png"
+  },
+  {
+    "file": "art/video/cet6/cet6_02_happy.mp4",
+    "sha256": "cf1413a49d9a8f1edc352e1f85322f327036033ca25b5655b1b464feac05ac93",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet6",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.989,
+    "successive_frame_rgb_abs_difference_range": [
+      0.108,
+      8.026
+    ],
+    "contact_sheet": "art/preview/video_review/cet6_02_happy_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet6_02_happy_endpoints.png"
+  },
+  {
+    "file": "art/video/cet6/cet6_03_sad.mp4",
+    "sha256": "6d7ebeb54efeed8d5410159dd63243644e2282141c00e000fd4ee0ba12aae3a1",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet6",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.917,
+    "successive_frame_rgb_abs_difference_range": [
+      0.066,
+      6.554
+    ],
+    "contact_sheet": "art/preview/video_review/cet6_03_sad_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet6_03_sad_endpoints.png"
+  },
+  {
+    "file": "art/video/grad/grad_01_idle.mp4",
+    "sha256": "296a31c0c2c3671d15b3c6ab0c4a5f8a32dd9f7ec8af13ef172fe2a413d69a91",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "grad",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "character_bbox_last": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.061,
+    "successive_frame_rgb_abs_difference_range": [
+      0.113,
+      6.685
+    ],
+    "contact_sheet": "art/preview/video_review/grad_01_idle_contact.png",
+    "endpoint_sheet": "art/preview/video_review/grad_01_idle_endpoints.png"
+  },
+  {
+    "file": "art/video/grad/grad_02_happy.mp4",
+    "sha256": "c5f367e2710488a72973712b707d7ed876a9045ccb05281738a729432b0627f8",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "grad",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      49,
+      92,
+      189,
+      265
+    ],
+    "character_bbox_last": [
+      49,
+      92,
+      189,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.184,
+    "successive_frame_rgb_abs_difference_range": [
+      0.139,
+      1.942
+    ],
+    "contact_sheet": "art/preview/video_review/grad_02_happy_contact.png",
+    "endpoint_sheet": "art/preview/video_review/grad_02_happy_endpoints.png"
+  },
+  {
+    "file": "art/video/grad/grad_03_sad.mp4",
+    "sha256": "faa6f21fccb16e19747d26f6e2d60e969a7457765fe6389dbff9fe021eab1f1f",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "grad",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "character_bbox_first": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "character_bbox_last": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.017,
+    "successive_frame_rgb_abs_difference_range": [
+      0.088,
+      7.538
+    ],
+    "contact_sheet": "art/preview/video_review/grad_03_sad_contact.png",
+    "endpoint_sheet": "art/preview/video_review/grad_03_sad_endpoints.png"
+  }
+]

@@ -1,0 +1,420 @@
+{
+  "status": "PASS",
+  "canonical_static_assets": 50,
+  "groups": {
+    "companion": 24,
+    "props": 12,
+    "toys": 10,
+    "ui": 4
+  },
+  "native_source_images": 27,
+  "protected_existing_files_unchanged": 24,
+  "selection": "primary A; junior B; senior B",
+  "assets": {
+    "companion/doudou/egg.png": {
+      "target_px": [
+        25,
+        28
+      ],
+      "colors": 11,
+      "sha256": "ff82c28bd15b12d05ce9113ecc0d6a7312bbce298b5e1c28640d6636a8711831"
+    },
+    "companion/doudou/baby.png": {
+      "target_px": [
+        23,
+        32
+      ],
+      "colors": 16,
+      "sha256": "a9d85896bc6ccfe24f1be6dd4b8c17f8df1e67b4ba5f88593e2bb916e306cd3f"
+    },
+    "companion/doudou/teen.png": {
+      "target_px": [
+        29,
+        40
+      ],
+      "colors": 16,
+      "sha256": "72e2751a1d8457602abe707b38db051d2eccf73401f252d21f3743bd9df732c8"
+    },
+    "companion/doudou/final.png": {
+      "target_px": [
+        37,
+        48
+      ],
+      "colors": 16,
+      "sha256": "10a169dc598fd11f1ade4e368a73c0c4c4051284d1362edea6dc18d5021a1ef0"
+    },
+    "companion/paopao/egg.png": {
+      "target_px": [
+        25,
+        28
+      ],
+      "colors": 12,
+      "sha256": "54ccc5b477d066c1db98f45d6aa6e4cc63a22f73fe6bb786a7d8dd98b163ce61"
+    },
+    "companion/paopao/baby.png": {
+      "target_px": [
+        25,
+        32
+      ],
+      "colors": 16,
+      "sha256": "6d49878d4fa7c0e16b46c9b52dd732a65a20adc4b04cb60c4540caca914d5563"
+    },
+    "companion/paopao/teen.png": {
+      "target_px": [
+        34,
+        40
+      ],
+      "colors": 16,
+      "sha256": "c48f409362ff5cf1139358726af28679e4b7c44fc813120cd21d3912ba487f78"
+    },
+    "companion/paopao/final.png": {
+      "target_px": [
+        36,
+        48
+      ],
+      "colors": 16,
+      "sha256": "ae03591375561e592843a071afaeaa352d0f876eb216ef306935ab1217f00de3"
+    },
+    "companion/xingxing/egg.png": {
+      "target_px": [
+        25,
+        28
+      ],
+      "colors": 12,
+      "sha256": "e63513bcebf06b32c3853da0731cea5ded0f5c0172777e1d244e6fe41ad7829b"
+    },
+    "companion/xingxing/baby.png": {
+      "target_px": [
+        27,
+        32
+      ],
+      "colors": 14,
+      "sha256": "eb0f3a7ae6855fa561c9fabef498c8b8996984c92d5d4cdc4eaebab57281f738"
+    },
+    "companion/xingxing/teen.png": {
+      "target_px": [
+        40,
+        40
+      ],
+      "colors": 14,
+      "sha256": "bd350991857e04e1d026557b3681c5e406de9cb947fc75488eca8bb3805a4aec"
+    },
+    "companion/xingxing/final.png": {
+      "target_px": [
+        47,
+        48
+      ],
+      "colors": 16,
+      "sha256": "9ca8def1f62aeb65f6f11c31f6ebe4d7f87213fcd23537df3f55cb884cfa0d29"
+    },
+    "companion/huohuo/egg.png": {
+      "target_px": [
+        25,
+        28
+      ],
+      "colors": 14,
+      "sha256": "9ee9528f32c337d4e771231551716f2e7f97181d82be0fb64106856f00283633"
+    },
+    "companion/huohuo/baby.png": {
+      "target_px": [
+        25,
+        32
+      ],
+      "colors": 14,
+      "sha256": "2e7ee7deb3c9a1afb21fca8bbeec5f5da6745aa989492e1fae15341d5103b138"
+    },
+    "companion/huohuo/teen.png": {
+      "target_px": [
+        36,
+        40
+      ],
+      "colors": 16,
+      "sha256": "5df27326a77734a1da0be4d15f1ae592e634fcff09e8a61a4a3c20fcff42cb43"
+    },
+    "companion/huohuo/final.png": {
+      "target_px": [
+        40,
+        48
+      ],
+      "colors": 16,
+      "sha256": "a9a09bed223681e0ac8466484b3a56813efaa8d47fbd2a6516bdc926e46966e4"
+    },
+    "companion/langlang/egg.png": {
+      "target_px": [
+        25,
+        28
+      ],
+      "colors": 10,
+      "sha256": "80b49d7fa18d59ad4fea7758b34cc75cfc4aea53afde0d77e8b259dbb67912e8"
+    },
+    "companion/langlang/baby.png": {
+      "target_px": [
+        24,
+        32
+      ],
+      "colors": 16,
+      "sha256": "b4561473a1f1c2661bd173a042c0851741ed4b9e18ecd1ee81d9ee24c18f85ee"
+    },
+    "companion/langlang/teen.png": {
+      "target_px": [
+        31,
+        40
+      ],
+      "colors": 15,
+      "sha256": "66ff7bb274a7aa9cd28dd0b068ad129a433bad3098e7da19e0af2074342c173e"
+    },
+    "companion/langlang/final.png": {
+      "target_px": [
+        40,
+        48
+      ],
+      "colors": 16,
+      "sha256": "4ce4104ba25bef9bef1a7d75436cd7686b4fac16b7d09d33dc8f339eadfdd8e7"
+    },
+    "companion/jiguang/egg.png": {
+      "target_px": [
+        24,
+        28
+      ],
+      "colors": 12,
+      "sha256": "20bd48c9d16f2a8bb4e5a862617cf9a87b89acf455056b24708ca3a6bd04aa70"
+    },
+    "companion/jiguang/baby.png": {
+      "target_px": [
+        24,
+        32
+      ],
+      "colors": 15,
+      "sha256": "ae438a415c0ffa18f0303b5ca4b09d66be7af3e41688798853dfdebf8f72a4bf"
+    },
+    "companion/jiguang/teen.png": {
+      "target_px": [
+        34,
+        40
+      ],
+      "colors": 14,
+      "sha256": "222d371438b773bf5ac7b4897199c25454479c2bf64ed2da5cf9ada604c021a2"
+    },
+    "companion/jiguang/final.png": {
+      "target_px": [
+        46,
+        48
+      ],
+      "colors": 14,
+      "sha256": "abd9e2baa428f1a7ccb0024c93f204c609f9a0b4a150a673731f475ed8dfc952"
+    },
+    "props/pencilcase.png": {
+      "target_px": [
+        34,
+        12
+      ],
+      "colors": 12,
+      "sha256": "9ae20b555f093cdb2bce7350596a57b5c87aadf9b8da076cd491a2c14abd0735"
+    },
+    "props/clock.png": {
+      "target_px": [
+        28,
+        28
+      ],
+      "colors": 8,
+      "sha256": "cd9bc4bff256a622e506ad6812611b8b88ec9cc3ac9acc764c71f56bb6fb26cb"
+    },
+    "props/lamp.png": {
+      "target_px": [
+        24,
+        44
+      ],
+      "colors": 14,
+      "sha256": "443e0d694f61deaa30dc2e8cb258cb38fac5c017ac27e1e360329b44132aae2c"
+    },
+    "props/plant.png": {
+      "target_px": [
+        16,
+        24
+      ],
+      "colors": 14,
+      "sha256": "31f1fdcc80eee5e5302ba90efa8cddf1a51585010b0c232148c69a68f1889c20"
+    },
+    "props/globe.png": {
+      "target_px": [
+        24,
+        30
+      ],
+      "colors": 17,
+      "sha256": "3075ef1e8f1a8b876ccdc0a1f2e0c8dc8c9a04443be9e20c9d1f6df267a780bd"
+    },
+    "props/shelf.png": {
+      "target_px": [
+        66,
+        8
+      ],
+      "colors": 5,
+      "sha256": "01f064a6b6bd2d9b1b7b56643c2a07ebad9ababb390e4598aa4cef9bf0890846"
+    },
+    "props/cert.png": {
+      "target_px": [
+        36,
+        28
+      ],
+      "colors": 21,
+      "sha256": "852f63f2d34165b9ea3b9e3d4486251f9e6e2901fd6fdac9248718ac6dcd968f"
+    },
+    "props/phones.png": {
+      "target_px": [
+        24,
+        14
+      ],
+      "colors": 11,
+      "sha256": "c6412e85813b548b87925d35a2341bac7e7332f1a56d6c2a50cde4d80c1c9cb6"
+    },
+    "props/laptop.png": {
+      "target_px": [
+        56,
+        30
+      ],
+      "colors": 13,
+      "sha256": "f95b4510936cfdb8fcc43f9f89acfb22df4dc92acb8db7e7d98c719ae8bae5a4"
+    },
+    "props/mug.png": {
+      "target_px": [
+        18,
+        16
+      ],
+      "colors": 9,
+      "sha256": "75494515d60b29a65a466eaf5c4fbf73a7dc24e37b71c82b50ee32d17a8ce243"
+    },
+    "props/map.png": {
+      "target_px": [
+        60,
+        38
+      ],
+      "colors": 23,
+      "sha256": "8cad017d23027f5a93475290ab22675836124fb99a2e648de0d97cb741b4c7a7"
+    },
+    "props/trophy.png": {
+      "target_px": [
+        16,
+        30
+      ],
+      "colors": 8,
+      "sha256": "f7ada7241a2157576dfd1f396e122f982f1bf9b861ee95a0a54aed3c316028ad"
+    },
+    "toys/duck.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 7,
+      "sha256": "7c8f05a2116ac5a5ccb288a4c9525fd0f9d58d56e594f5746e173751cbc3e5c1"
+    },
+    "toys/rocket.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 17,
+      "sha256": "77112181d2b33a1272c1adf5460792c9a5275720b0f4c4be36ce54b157dd18c4"
+    },
+    "toys/cactus.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 10,
+      "sha256": "46d76ae8547e54de8a3e6bd535bf5b242380af2e6f80bd2705b6361abdf50828"
+    },
+    "toys/snowglobe.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 13,
+      "sha256": "aaa3c05da3b42c0bbe9f0e9e43cedb7e74b80db4fca1cf4e7e575f43041e2731"
+    },
+    "toys/cube.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 17,
+      "sha256": "37f416bfdcf771831262ac383be8f011efb3748fdb3064bd6d1c0f82d36eeafe"
+    },
+    "toys/dino.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 8,
+      "sha256": "e6247876aeeddfeb1373c799cffbc4cc31092293feff380df8445299700320b4"
+    },
+    "toys/plane.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 10,
+      "sha256": "5920bfe2c4f673ba000732c7ff12424c0cb6d38cc80f3a1f3611fefc8851ac60"
+    },
+    "toys/hourglass.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 14,
+      "sha256": "6d7e9c7e09bbceda4c78a29200344f8d5c05f7c7d0fb1ec7762c1135d2633330"
+    },
+    "toys/shell.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 7,
+      "sha256": "ed1b43a486aed629ea035ef0201bed9e2d3d5386f8a14a063bfd904b1593534e"
+    },
+    "toys/windmill.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 14,
+      "sha256": "2b0630af686816a62ed9e9ff51e7611267e45e1886936586970d0f1dcb2f6f90"
+    },
+    "ui/coin.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 6,
+      "sha256": "c6f87d24e81c89b7a15a97f53f260212e72c3d922e73697cf8b5447fb79b88bf"
+    },
+    "ui/flame.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 10,
+      "sha256": "db10e029b71e6d464db81131ce79db88b6092fa06371507518fad9ebbe9a0b44"
+    },
+    "ui/flame_dim.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 3,
+      "sha256": "ef732f33c1c490bf652d7bc73b80f9eab6baf4f96fd122972f697cd33b2ba568"
+    },
+    "ui/freeze.png": {
+      "target_px": [
+        12,
+        12
+      ],
+      "colors": 11,
+      "sha256": "2492528add1864a80448fb2f931ea615ce545d4002956bc2b1f8762925e077d7"
+    }
+  },
+  "unverified": [
+    "final animation loop seams and happy/sad readability at 48 px",
+    "runtime packing, RGB565 display and physical device appearance",
+    "owner approval of round-four designs"
+  ]
+}

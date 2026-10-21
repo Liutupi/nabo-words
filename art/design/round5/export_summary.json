@@ -1,0 +1,25 @@
+{
+  "new_static_assets_expected": 58,
+  "new_static_assets_exported": 58,
+  "total_toys": 60,
+  "accessories": 8,
+  "missing_sources": [],
+  "generator": "Codex built-in ImageGen",
+  "source_jobs": 62,
+  "prompts": "design/round5/prompts.json",
+  "qa": "QA.md",
+  "qa_zh_CN": "QA.zh_CN.md",
+  "toy_path_migration": {
+    "toys/duck.png": "toys/primary/duck.png",
+    "toys/rocket.png": "toys/primary/rocket.png",
+    "toys/cactus.png": "toys/primary/cactus.png",
+    "toys/snowglobe.png": "toys/primary/snowglobe.png",
+    "toys/cube.png": "toys/primary/cube.png",
+    "toys/dino.png": "toys/primary/dino.png",
+    "toys/plane.png": "toys/primary/plane.png",
+    "toys/hourglass.png": "toys/primary/hourglass.png",
+    "toys/shell.png": "toys/primary/shell.png",
+    "toys/windmill.png": "toys/primary/windmill.png"
+  },
+  "prototype_integration": "not changed; consume manifest and accessory placement suggestions"
+}

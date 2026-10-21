@@ -1,0 +1,355 @@
+{
+  "tool": "Codex built-in ImageGen",
+  "jobs": [
+    {
+      "id": "paopao_sheet",
+      "prompt": "Use case: stylized-concept. Create ONE transparent four-form evolution design sheet for a new companion in NABO Words. Input image is a STYLE/FAMILY REFERENCE ONLY: Doudou, the existing green bean/leaf mascot. Do not copy Doudou's leaves or its green color. New creature must look like Doudou's sibling: same round bean-shaped body proportions, huge dark oval eyes with ONE small cream highlight each, tiny curved smile, two peach cheek dots, two short rounded feet, dark local-color outline, clean solid flat fills with only one main cel shadow. Innocent cozy 2D cartoon. No soft3D, painterly texture, grain, gradient, sticker-white outline, scenery, cast shadow or text.\nExactly FOUR isolated forms left to right: closed decorated EGG with no face; round BABY; TEEN gaining identifying features and two short arms; FINAL keeping the same face/body but completed species features and one simple graduation motif. Shared eye design and anatomy in all three living stages. Heights approximately28:32:40:48. All share one bottom baseline. Landscape sheet with FOUR equal-width quarters; each form fully contained inside its quarter with generous transparent spacing; no overlapping, extra forms, loose decorative particles, captions, labels, panels or measurement marks. Small silhouette and broad shapes must remain legible at28/32/40/48px. Transparent alpha background. Finite color palette under24 colors, no thin detail. Species: PAOPAO, playful SKY-BLUE water-drop/bubble spirit. Outline dark desaturated blue. Egg is pale ice-blue shell with TWO broad blue water-drop markings. Baby is a light sky-blue round bean with one small rounded water-drop point on top. Teen gains a taller gently curling water-drop crest and two small droplet arms. Final keeps the same bean face and drop crest, with a compact bubble-ring HALO directly over its head (distinct graduation motif) and two small side droplet fins. Halo is one simple thick blue/cream oval ring, not a gold crown. Keep bubble motif opaque flat blues rather than glass transparency/gloss. No leaf features.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "group": "companion"
+    },
+    {
+      "id": "xingxing_sheet",
+      "prompt": "Use case: stylized-concept. Create ONE transparent four-form evolution design sheet for a new companion in NABO Words. Input image is a STYLE/FAMILY REFERENCE ONLY: Doudou, the existing green bean/leaf mascot. Do not copy Doudou's leaves or its green color. New creature must look like Doudou's sibling: same round bean-shaped body proportions, huge dark oval eyes with ONE small cream highlight each, tiny curved smile, two peach cheek dots, two short rounded feet, dark local-color outline, clean solid flat fills with only one main cel shadow. Innocent cozy 2D cartoon. No soft3D, painterly texture, grain, gradient, sticker-white outline, scenery, cast shadow or text.\nExactly FOUR isolated forms left to right: closed decorated EGG with no face; round BABY; TEEN gaining identifying features and two short arms; FINAL keeping the same face/body but completed species features and one simple graduation motif. Shared eye design and anatomy in all three living stages. Heights approximately28:32:40:48. All share one bottom baseline. Landscape sheet with FOUR equal-width quarters; each form fully contained inside its quarter with generous transparent spacing; no overlapping, extra forms, loose decorative particles, captions, labels, panels or measurement marks. Small silhouette and broad shapes must remain legible at28/32/40/48px. Transparent alpha background. Finite color palette under24 colors, no thin detail. Species: XINGXING, curious PURPLE star-and-book-page spirit. Outline deep purple, body soft lavender. Egg is pale lavender shell with one large purple four-point star and one broad cream folded-page patch. Baby is a lavender round bean with a tiny rounded star tuft on top. Teen gains two short folded BOOK-PAGE ear flaps, a small star tuft and stubby arms. Final retains same body/eyes, develops two compact cream page-shaped wing-arms like an open book and a SINGLE warm gold star centered above forehead as its graduation motif. No actual book held in hands, no writing, no leaves, no complex jewelry. Keep star and pages broad and rounded, no spiky monster anatomy.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "group": "companion"
+    },
+    {
+      "id": "huohuo_sheet",
+      "prompt": "Use case: stylized-concept. Create ONE transparent four-form evolution design sheet for a new companion in NABO Words. Input image is a STYLE/FAMILY REFERENCE ONLY: Doudou, the existing green bean/leaf mascot. Do not copy Doudou's leaves or its green color. New creature must look like Doudou's sibling: same round bean-shaped body proportions, huge dark oval eyes with ONE small cream highlight each, tiny curved smile, two peach cheek dots, two short rounded feet, dark local-color outline, clean solid flat fills with only one main cel shadow. Innocent cozy 2D cartoon. No soft3D, painterly texture, grain, gradient, sticker-white outline, scenery, cast shadow or text.\nExactly FOUR isolated forms left to right: closed decorated EGG with no face; round BABY; TEEN gaining identifying features and two short arms; FINAL keeping the same face/body but completed species features and one simple graduation motif. Shared eye design and anatomy in all three living stages. Heights approximately28:32:40:48. All share one bottom baseline. Landscape sheet with FOUR equal-width quarters; each form fully contained inside its quarter with generous transparent spacing; no overlapping, extra forms, loose decorative particles, captions, labels, panels or measurement marks. Small silhouette and broad shapes must remain legible at28/32/40/48px. Transparent alpha background. Finite color palette under24 colors, no thin detail. Species: HUOHUO, warmhearted energetic ORANGE flame spirit. Outline warm dark red-brown, body apricot-orange. Egg is pale peach shell with two broad orange flame markings. Baby is a round orange bean with one small rounded flame tuft. Teen gains a gently three-lobed flame crest and two stubby flame-shaped arms, same sweet face. Final keeps round bean body and friendly face, grows a broad soft flame crest and a short two-lobed FLAME CAPE around shoulders/back as graduation motif, with ONE tiny solid warm-gold seed medallion below chin. No crown or halo, no angry eyes, no sharp teeth, no smoke, no floating sparks or aura. Rounded flame silhouette, flat warm colors, no fire realism.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "group": "companion"
+    },
+    {
+      "id": "langlang_sheet",
+      "prompt": "Use case: stylized-concept. Create ONE transparent four-form evolution design sheet for a new companion in NABO Words. Input image is a STYLE/FAMILY REFERENCE ONLY: Doudou, the existing green bean/leaf mascot. Do not copy Doudou's leaves or its green color. New creature must look like Doudou's sibling: same round bean-shaped body proportions, huge dark oval eyes with ONE small cream highlight each, tiny curved smile, two peach cheek dots, two short rounded feet, dark local-color outline, clean solid flat fills with only one main cel shadow. Innocent cozy 2D cartoon. No soft3D, painterly texture, grain, gradient, sticker-white outline, scenery, cast shadow or text.\nExactly FOUR isolated forms left to right: closed decorated EGG with no face; round BABY; TEEN gaining identifying features and two short arms; FINAL keeping the same face/body but completed species features and one simple graduation motif. Shared eye design and anatomy in all three living stages. Heights approximately28:32:40:48. All share one bottom baseline. Landscape sheet with FOUR equal-width quarters; each form fully contained inside its quarter with generous transparent spacing; no overlapping, extra forms, loose decorative particles, captions, labels, panels or measurement marks. Small silhouette and broad shapes must remain legible at28/32/40/48px. Transparent alpha background. Finite color palette under24 colors, no thin detail. Species: LANGLANG, carefree TEAL sea-wave/seashell spirit. Outline dark blue-teal, body light turquoise. Egg pale aqua shell with one broad curling teal wave stripe and one simple scallop shell mark. Baby is a round turquoise bean with one tiny curling wave crest on head. Teen gains a larger curling wave crest, two small rounded shell-ear flaps and short arms. Final retains same round face/body, gets a compact cream SCALLOPED SHELL COLLAR/FAN behind shoulders with three broad shell panels and ONE small coral shell medallion on chest, its graduation motif. Not a crown, not a halo. No fish tail or mermaid humanoid, no leaves, no complex tiny ribs. Keep feet and family proportions like Doudou.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "group": "companion"
+    },
+    {
+      "id": "jiguang_sheet",
+      "group": "companion",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE transparent four-form evolution design sheet for a new companion in NABO Words. Input image is a STYLE/FAMILY REFERENCE ONLY: Doudou, the existing green bean/leaf mascot. Do not copy Doudou's leaves or its green color. New creature must look like Doudou's sibling: same round bean-shaped body proportions, huge dark oval eyes with ONE small cream highlight each, tiny curved smile, two peach cheek dots, two short rounded feet, dark local-color outline, clean solid flat fills with only one main cel shadow. Innocent cozy 2D cartoon. No soft3D, painterly texture, grain, gradient, sticker-white outline, scenery, cast shadow or text.\nExactly FOUR isolated forms left to right: closed decorated EGG with no face; round BABY; TEEN gaining identifying features and two short arms; FINAL keeping the same face/body but completed species features and one simple graduation motif. Shared eye design and anatomy in all three living stages. Heights approximately28:32:40:48. All share one bottom baseline. Landscape sheet with FOUR equal-width quarters; each form fully contained inside its quarter with generous transparent spacing; no overlapping, extra forms, loose decorative particles, captions, labels, panels or measurement marks. Small silhouette and broad shapes must remain legible at28/32/40/48px. Transparent alpha background. Finite color palette under24 colors, no thin detail. Species: JIGUANG, gentle mysterious PINK aurora-and-feather spirit. Outline deep plum, body light warm pink. Egg is cream-pink shell with TWO broad curved rosy aurora/feather bands. Baby is round pink bean with one tiny rounded feather tuft. Teen gains a small three-feather head tuft, tiny arms and one short feather tail. Final retains bean body/face and has TWO compact rounded feather WINGS, each with only three broad feathers colored in solid pink/lilac/coral bands, plus one small cream forehead feather marking as graduation motif. No crown, halo, leaf or realistic bird beak. Do not change the dark-oval eye family language. Keep wing silhouette broad but narrow enough to stay fully inside its sheet quarter, no long ribbons or detached sparkle particles. Four separate forms only, transparent."
+    },
+    {
+      "id": "props_plant",
+      "group": "props",
+      "target_px": [
+        16,
+        24
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 16x24 pixels. Small terracotta flowerpot with exactly three broad bright-green oval leaves on two short stems. Dark forest outlines on leaves and dark rusty pot outline. Pot rim one broad band, simple lighter face and one darker side. Leaves echo Doudou's rounded leaf vocabulary without a face. No soil texture, flowers or thin veins."
+    },
+    {
+      "id": "props_globe",
+      "group": "props",
+      "target_px": [
+        24,
+        30
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 24x30 pixels. Small desk globe: sky-blue round Earth, three or four broad green land masses, dark blue outline, one simple dark brass tilted meridian hoop, short dark wood stem and broad wood oval base. No map text, grids, tiny borders, realistic geography shading or reflections. Ball and base clearly separate in silhouette."
+    },
+    {
+      "id": "props_shelf",
+      "group": "props",
+      "target_px": [
+        66,
+        8
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 66x8 pixels. One VERY LONG THIN straight horizontal empty wooden wall shelf. Overall width:height ratio66:8. A solid medium warm wood plank with darker lower edge and two very short simple supports tucked underneath. No objects/books/plant, no wood grain, no perspective angled wall, no wall itself. Broad flat planes only."
+    },
+    {
+      "id": "props_cert",
+      "group": "props",
+      "target_px": [
+        36,
+        28
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 36x28 pixels. One small landscape award certificate in a plain thin warm gold/wood rectangular frame. Cream paper, TWO broad short muted-red horizontal rule strokes in upper half as abstract decoration, one simple red ribbon rosette centered near lower edge. No readable writing, symbols, signatures, fake microtext or fancy ornate corners."
+    },
+    {
+      "id": "props_phones",
+      "group": "props",
+      "target_px": [
+        24,
+        14
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 24x14 pixels. One pair of folded dark desaturated teal over-ear headphones RESTING FLAT on a desk, compact horizontal24:14 silhouette. Broad short arch headband, two chunky oval ear cups close together with simple warm cream inner pads. Dark local outlines, no cord, no logo, no stand, no shadows. Shape must read as headphones at24x14."
+    },
+    {
+      "id": "props_laptop",
+      "group": "props",
+      "target_px": [
+        56,
+        30
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 56x30 pixels. One open small laptop with a broad low horizontal56:30 silhouette, screen facing viewer straight on with slight top view of the base. Cool slate-gray casing, thick dark navy screen border, screen filled solid dark blue with TWO broad pale cyan rectangular blocks, no writing or icons. Silver keyboard base as one simple plane with a broad dark keyboard block and tiny broad trackpad. No tiny individual keys or text, no logo. Base visible, screen not floating."
+    },
+    {
+      "id": "props_mug",
+      "group": "props",
+      "target_px": [
+        18,
+        16
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 18x16 pixels. One small cream ceramic coffee mug with a large clear loop handle on viewer RIGHT, dark warm-brown local outlines, top shows a single flat dark coffee oval with cream rim. Broad simple cup body and two flat cel tones. No lettering, steam, spoon, saucer or cast shadow. Handle opening genuinely transparent."
+    },
+    {
+      "id": "props_map",
+      "group": "props",
+      "target_px": [
+        60,
+        38
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 60x38 pixels. One landscape world-map wall poster with a thin simple warm wood frame. Pale blue ocean and five/six broad green continent silhouettes arranged like a world map (Americas left, Europe/Africa middle, Asia/Australia right). No words, borders, grid, compass, pins, tiny islands or texture. Clean broad geography-like shapes at60x38."
+    },
+    {
+      "id": "props_trophy",
+      "group": "props",
+      "target_px": [
+        16,
+        30
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/lamp.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated production game sprite for NABO Words, matching the reference's clean flat 2D cartoon and dark local-color outlines. Reference images are STYLE ONLY; do not include NABO or any other character. True transparent alpha background, entire object visible with modest margin. Front/orthographic or minimally angled icon view. Bold readable silhouette at the stated SMALL final pixel size. Solid fills, two cel shadow levels maximum, fewer than20 colors, no grain/texture, fine gradients, soft3D, gloss, cast shadow, white sticker border, lettering, watermarks, scenery or extra props. Broad details only; intended PNG export is FOUR TIMES final size. Final display size 16x30 pixels. One slender small warm GOLD trophy cup, symmetrical front view. Broad simple cup bowl, TWO large rounded handles, short narrow stem and dark brown rectangular plinth. Three solid gold tones and dark ochre local outline, no text, emblem, ribbon or sparkling particles. Entire silhouette16:30 with base flat and handles distinct."
+    },
+    {
+      "id": "toys_duck",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A small yellow rubber duck toy with one rounded head, short thick orange beak facing viewer left, round pear-shaped body and a tiny raised tail on right. One dark dot eye, broad wing marking only. Immediately recognizable duck silhouette."
+    },
+    {
+      "id": "toys_rocket",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny upright toy rocket: white/cream short fat pointed capsule, red nose cone and TWO broad red fins, one broad blue circular window. No flames, smoke, exhaust particles, lettering or skinny antenna. Compact rocket silhouette."
+    },
+    {
+      "id": "toys_cactus",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny cactus toy in a terracotta pot: one thick upright green cactus trunk and TWO chunky raised side arms at different heights, dark green outline. Plain pot rim and body. No spines, flowers, face or tiny ridges. Cactus branching silhouette must be obvious."
+    },
+    {
+      "id": "toys_snowglobe",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny snow globe toy: rounded pale-blue glass dome on a broad short dark red/brown pedestal. Inside only ONE thick white snowflake/cross and two tiny white snow dots, no scene. Treat the glass as flat solid pale blue rather than realistic transparency. Clear round dome and flat pedestal silhouette."
+    },
+    {
+      "id": "toys_cube",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny Rubik-like colored puzzle cube toy: compact cubical silhouette in simple three-quarter view, three visible faces, a broad3x3 colored-square pattern on front face and only broad two-color blocks on top/right. Dark charcoal edges, saturated red/yellow/blue/green. No lettering, glossy lighting or tiny complex texture. Clearly a colored puzzle cube at12px."
+    },
+    {
+      "id": "toys_dino",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny friendly green dinosaur toy facing left: large rounded head and broad short snout, one dark dot eye, tiny forearm, TWO short thick feet and a broad raised tail to right, two or three rounded back bumps. No teeth, scales, spikes or detailed claws. Clearly a small dinosaur by silhouette."
+    },
+    {
+      "id": "toys_plane",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny ivory paper airplane toy pointing upper right in a simple three-quarter/top view. One triangular folded-paper silhouette with TWO broad wings and one clear dark navy central fold. Three flat paper tones, no dotted trails, hands, shadows or background."
+    },
+    {
+      "id": "toys_hourglass",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny hourglass toy upright and symmetrical: two broad dark wood end caps connected by a narrow waist glass outline, one gold sand triangle in upper bulb and one gold mound in lower bulb. Pale cream-blue glass planes, dark outlines, no thin grains or sparkle. Hourglass silhouette distinctly pinched."
+    },
+    {
+      "id": "toys_shell",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny peach/coral scallop seashell toy, front view: broad rounded fan silhouette with FIVE large scalloped lobes and three broad darker radial ribs converging at a short flat hinge. Flat cream highlight and coral shadow, no ocean, pearls or sand."
+    },
+    {
+      "id": "toys_windmill",
+      "group": "toys",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_sheet.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE isolated tiny collectible toy sprite for NABO Words. Final display size ONLY12x12 pixels; final PNG will be48x48. Design for recognizability by a CHUNKY DISTINCT SILHOUETTE at12px, not by fine internal detail. Match reference clean flat 2D cartoon, thick dark local-color outline, two flat fill tones, fewer than12 colors. Compact upright/front or simple three-quarter view, complete object fully inside image with margin. Transparent alpha background. No ground, cast shadows, words, watermarks, white sticker edges, soft3D, grain, texture, gradients, realistic tiny detail or other objects. Important features should be thick enough to occupy at least1-2 pixels at12px. A tiny toy pinwheel/windmill on a short dark brown stand: FOUR broad cream and blue paddle vanes around a warm red center, plus one short stem and flat base. Clearly radial windmill silhouette at12px. No landscape, house, thin spoke detail or text."
+    },
+    {
+      "id": "ui_coin",
+      "group": "ui",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE tiny game UI icon for NABO Words, final display12x12 pixels, intended48x48 PNG export. Bold compact silhouette, thick local dark outline, broad flat fills, at most10 colors, exact transparent alpha background. Clean cozy 2D cartoon matching the reference props. No words, numbers, watermark, grain, gradients, soft3D, tiny ornaments, cast shadow or white sticker outline. Fully inside canvas, centered with margin. No other objects. A single round warm gold coin seen front-on, broad dark ochre outer rim, bright golden face, and ONE simple darker centered diamond/seed emboss. Flat two/three gold tones, no letters, dollar signs or realistic shine."
+    },
+    {
+      "id": "ui_flame",
+      "group": "ui",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE tiny game UI icon for NABO Words, final display12x12 pixels, intended48x48 PNG export. Bold compact silhouette, thick local dark outline, broad flat fills, at most10 colors, exact transparent alpha background. Clean cozy 2D cartoon matching the reference props. No words, numbers, watermark, grain, gradients, soft3D, tiny ornaments, cast shadow or white sticker outline. Fully inside canvas, centered with margin. No other objects. A single bright orange/red streak/check-in flame icon with a rounded three-lobed flame silhouette and ONE broad warm cream/yellow inner flame. Short compact base, dark red-brown outline, no sparks or aura. Shape needs to be easy to map to a gray inactive version later."
+    },
+    {
+      "id": "ui_freeze",
+      "group": "ui",
+      "target_px": [
+        12,
+        12
+      ],
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/props/pencilcase.png"
+      ],
+      "prompt": "Use case: stylized-concept. ONE tiny game UI icon for NABO Words, final display12x12 pixels, intended48x48 PNG export. Bold compact silhouette, thick local dark outline, broad flat fills, at most10 colors, exact transparent alpha background. Clean cozy 2D cartoon matching the reference props. No words, numbers, watermark, grain, gradients, soft3D, tiny ornaments, cast shadow or white sticker outline. Fully inside canvas, centered with margin. No other objects. A single blue rounded rectangular make-up-check-in card icon, slightly taller than wide but fitting12x12. Dark navy card outline, pale ice-blue fill, ONE large bold white snowflake-like asterisk in center with broad arms, tiny dark blue header band. No letters, numbers, extra stars or tiny UI marks."
+    }
+  ]
+}

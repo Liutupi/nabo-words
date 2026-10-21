@@ -1,0 +1,985 @@
+{
+  "tool": "Codex built-in ImageGen",
+  "jobs": [
+    {
+      "id": "toy_junior_panda",
+      "group": "toys",
+      "stage": "junior",
+      "name": "panda",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: panda figurine, round white head, two black ears, bold black eye patches, squat body.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_tumbler",
+      "group": "toys",
+      "stage": "junior",
+      "name": "tumbler",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: red Japanese-style roly-poly daruma, pear-shaped oval body, flat base, cream face panel.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_sakura",
+      "group": "toys",
+      "stage": "junior",
+      "name": "sakura",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: tiny cherry blossom bonsai, one dark trunk, three broad pink blossom clusters, simple pot.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_lantern",
+      "group": "toys",
+      "stage": "junior",
+      "name": "lantern",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: red hanging lantern, broad round ribbed body, gold cap and one bold tassel.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_coconut",
+      "group": "toys",
+      "stage": "junior",
+      "name": "coconut",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: green tropical coconut with a short broad straw, dark opening, round silhouette.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_elephant",
+      "group": "toys",
+      "stage": "junior",
+      "name": "elephant",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: wooden elephant figurine in side profile, raised curved trunk, big ear and four block legs.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_dragonfly",
+      "group": "toys",
+      "stage": "junior",
+      "name": "dragonfly",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Japanese bamboo-copter toy, one wide horizontal propeller and long vertical wooden stem; not an insect.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_fan",
+      "group": "toys",
+      "stage": "junior",
+      "name": "fan",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: open folding fan with scalloped semicircle, cream panels and short dark handle.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_koinobori",
+      "group": "toys",
+      "stage": "junior",
+      "name": "koinobori",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Japanese carp windsock flying horizontally, fish head, one large eye, broad split tail, short pole.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_junior_camel",
+      "group": "toys",
+      "stage": "junior",
+      "name": "camel",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: camel in side profile, clearly two humps, raised long neck and broad simple feet.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_eiffel",
+      "group": "toys",
+      "stage": "senior",
+      "name": "eiffel",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Eiffel Tower miniature, unmistakable tapering A-shaped tower, broad open arch legs.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_bigben",
+      "group": "toys",
+      "stage": "senior",
+      "name": "bigben",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Big Ben clock tower miniature, tall rectangular stone tower, cream clock face and pointed roof.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_tulip",
+      "group": "toys",
+      "stage": "senior",
+      "name": "tulip",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: single red tulip flower, cupped three-point bloom, two bold green leaves and stem.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_violin",
+      "group": "toys",
+      "stage": "senior",
+      "name": "violin",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: brown violin miniature seen from front, pinched double-lobed body and long neck, omit bow.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_football",
+      "group": "toys",
+      "stage": "senior",
+      "name": "football",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: classic black and white soccer ball, circular silhouette with a few large black patches.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_castle",
+      "group": "toys",
+      "stage": "senior",
+      "name": "castle",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: fairytale stone castle, three crenellated towers and broad central gate.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_phonebox",
+      "group": "toys",
+      "stage": "senior",
+      "name": "phonebox",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: British red telephone box, tall rectangular red booth, arched roof and pale window.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_matryoshka",
+      "group": "toys",
+      "stage": "senior",
+      "name": "matryoshka",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Russian nesting doll, teardrop rounded red body, cream face and a single large yellow floral patch.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_pisa",
+      "group": "toys",
+      "stage": "senior",
+      "name": "pisa",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Leaning Tower of Pisa miniature, visibly leaning cream cylindrical tower, broad dark horizontal bands.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_senior_swan",
+      "group": "toys",
+      "stage": "senior",
+      "name": "swan",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: white swan in profile, arched S-shaped neck, orange beak, broad folded wing and waterline base.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_liberty",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "liberty",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Statue of Liberty miniature, pale teal robe and crown, one raised torch arm, solid plinth.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_baseball",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "baseball",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: white baseball with two bold curved red seam marks, round silhouette.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_surfboard",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "surfboard",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: upright coral surfboard, tall narrow rounded pointed board, one broad cream center stripe.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_schoolbus",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "schoolbus",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: American yellow school bus in side profile, black wheels, large pale blue windows, no letters.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_maple",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "maple",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: red maple leaf, unmistakable broad five pointed lobes and one short stem.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_mayamask",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "mayamask",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Maya stone ceremonial mask, turquoise front face, broad rectangular stepped crown, dark geometric eyes.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_alpaca",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "alpaca",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: cream alpaca miniature in profile, long upright neck, tall ears, fluffy wide body, short feet.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_cowboyhat",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "cowboyhat",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: brown cowboy hat, broad curled brim and pinched tall crown, one dark band.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_burger",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "burger",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: hamburger miniature, domed golden bun, one broad green lettuce strip and dark patty.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet4_flamingo",
+      "group": "toys",
+      "stage": "cet4",
+      "name": "flamingo",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: pink flamingo in side profile, curled S-shaped neck, one long supporting leg, broad pink body.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_koala",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "koala",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: gray koala figurine, huge round ears, cream ear centers, dark oval nose, round seated body.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_kangaroo",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "kangaroo",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: tan kangaroo in profile, tall pointed ears, large hind legs and long strong tail.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_boomerang",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "boomerang",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Australian wooden boomerang, bold bent V silhouette, ochre wood with one simple cream tip mark.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_pyramid",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "pyramid",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Egyptian golden pyramid miniature, triangular stepped outline, one broad shaded side, no scenery.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_giraffe",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "giraffe",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: giraffe figurine, very long upright neck, tiny horns, golden body with two bold brown patches.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_drum",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "drum",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: African djembe drum, broad cream drum skin, tapered wood bowl and flared pedestal foot.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_lion",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "lion",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: small lion in profile, round large orange mane, cream muzzle and short yellow body with tail.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_coral",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "coral",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: bright red branching coral, three thick uneven branches and a broad low base.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_operahouse",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "operahouse",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: Sydney Opera House miniature, three recognizable cream sail shells on a dark flat podium.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_cet6_baobab",
+      "group": "toys",
+      "stage": "cet6",
+      "name": "baobab",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: baobab tree miniature, exceptionally thick bottle trunk, stubby branches and flat green canopy.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_penguin",
+      "group": "toys",
+      "stage": "adv",
+      "name": "penguin",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: black-and-white penguin, upright oval body, side flippers, orange beak and feet.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_polarbear",
+      "group": "toys",
+      "stage": "adv",
+      "name": "polarbear",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: white polar bear figurine, side profile, small rounded ears, broad snout and four short feet.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_aurorajar",
+      "group": "toys",
+      "stage": "adv",
+      "name": "aurorajar",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: aurora souvenir jar, glass bottle with dark cork, two broad teal and pink aurora ribbons inside.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_igloo",
+      "group": "toys",
+      "stage": "adv",
+      "name": "igloo",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: white igloo, low semicircular dome, visible dark arched entrance and a few broad ice seams.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_sailboat",
+      "group": "toys",
+      "stage": "adv",
+      "name": "sailboat",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: small sailboat, one broad triangular cream sail, tall mast and warm brown curved hull.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_balloon",
+      "group": "toys",
+      "stage": "adv",
+      "name": "balloon",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: hot air balloon, round striped pink and cream canopy, two short supports and square basket.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_telescope",
+      "group": "toys",
+      "stage": "adv",
+      "name": "telescope",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: small telescope on tripod, bold slanted navy barrel, pale lens and three clear support legs.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_astronaut",
+      "group": "toys",
+      "stage": "adv",
+      "name": "astronaut",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: astronaut figurine, large round white helmet, dark blue faceplate, short white suit and two feet.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_fossil",
+      "group": "toys",
+      "stage": "adv",
+      "name": "fossil",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: ammonite fossil in warm stone, bold spiral shell on an irregular stone silhouette.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "toy_adv_compass",
+      "group": "toys",
+      "stage": "adv",
+      "name": "compass",
+      "target_px": [
+        12,
+        12
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one collectible toy sprite for the NABO English learning game. Input images are STYLE references only: the approved small toys and Doudou. Generate ONLY the requested object, centered and isolated, transparent background with real alpha, no ground, no shadow outside the object. Clean friendly 2D cartoon with flat fill and two discrete cel shade steps, bold dark local-color outlines, no white sticker border. This will be reduced to 12x12 pixels: use a strong simple silhouette, few large shape/color blocks, no tiny ornaments, no text, no labels, no gradients, no texture, no realistic rendering, no scene, no extra separate objects. Prefer front or clear side view as described, keep all extremities fully visible. Broad strokes, 6-10 main colors, do not draw a pixel grid or checkerboard. Subject: navigation compass, round brass ring with a bold red-and-cream diagonal needle, no lettering.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/toys/duck.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png"
+      ]
+    },
+    {
+      "id": "accessory_flower",
+      "group": "accessories",
+      "name": "flower",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "bottom_center",
+      "slot": "head",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one small red five-petal flower with yellow center, no stem. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "accessory_bow",
+      "group": "accessories",
+      "name": "bow",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "bottom_center",
+      "slot": "head",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one coral red ribbon bow, two broad loops and two short tails. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "accessory_scarf",
+      "group": "accessories",
+      "name": "scarf",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "center",
+      "slot": "neck",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one small warm red scarf, simple collar ring with two short ends, open central neck area. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "accessory_star",
+      "group": "accessories",
+      "name": "star",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "bottom_center",
+      "slot": "head",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one golden five-point star hair clip, simple solid star and no separate pin. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "accessory_shades",
+      "group": "accessories",
+      "name": "shades",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "center",
+      "slot": "eyes",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one pair of dark navy sunglasses, two lenses, one bridge, simple short temple tips, transparent lens centers are not required. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "accessory_cape",
+      "group": "accessories",
+      "name": "cape",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "center",
+      "slot": "back",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one small royal blue cape shown front-on spread to the sides, open neck hole, no body or fastening character, clear separated side wings. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "accessory_phones",
+      "group": "accessories",
+      "name": "phones",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "bottom_center",
+      "slot": "head",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one small pair of over-ear headphones, dark blue headband arc and two thick golden earcups, open transparent center. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "accessory_gradcap",
+      "group": "accessories",
+      "name": "gradcap",
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_type": "bottom_center",
+      "slot": "head",
+      "prompt": "Use case: stylized-concept. Asset type: isolated wearable accessory sprite for the approved Doudou companion in the reference. Reference shows STYLE, scale and wearer only. Draw ONLY one small black square academic cap viewed from front with top plane slightly visible, one simple golden tassel at side. Do not include any character, animal, body, mannequin, hands, stand, text, border or background. Actual transparent alpha. Front view, centered, all edges visible. Same clean flat 2D cartoon, bold dark local-color outline and two broad cel shadow steps as Doudou. The actual asset is just 12x10 game pixels: extremely simple recognizable silhouette, broad fill blocks, 4-8 main colors, no fine details, no soft rendering, no texture, no gradients. It must fit a small round companion without obscuring its eyes. Keep any interior opening genuinely transparent. This is a separate wearable layer, not a complete dressed character.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_baby.png",
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/design/doudou_final.png"
+      ]
+    },
+    {
+      "id": "outfit_cet4",
+      "group": "outfits",
+      "stage": "cet4",
+      "name": "cet4",
+      "prompt": "Use case: identity-preserve. Edit this selected NABO keyframe by changing ONLY the clothing region below the jaw. Keep the ENTIRE HEAD exactly identical to the reference: white baseball cap, forward blue NABO text and heartbeat emblem and side patch, tousled brown hair silhouette, round glasses, blue-gray eyes, peach face, ears and small neutral smile. Same NABO, no age change, no head shift, no scale change, no mirror. Canvas1024x1280, cap top y366, horizontal desk edge y1070, head/desk centered x512. Keep pure flat #00B140 green background and empty flat wood desk #C88A52. Fixed front view, seated half body, no legs. Keep both hands lightly resting at the same desk edge and same arm positions. Broad simple 2D shapes, flat colors plus two discrete cel shades, dark local-color outlines, no soft3D, gradients, textures, extra logos, labels, panels or collage. Remove primary vest and red backpack straps. CET4 outfit: medium gray hooded sweatshirt with a broad hood resting at shoulders, simple drawstrings omitted. A pair of dark charcoal headphones hangs around the NECK, two thick earcups on chest and one broad band, never over ears or on cap. No backpack, no tie, no yellow vest.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/start/primary.png"
+      ]
+    },
+    {
+      "id": "outfit_cet6",
+      "group": "outfits",
+      "stage": "cet6",
+      "name": "cet6",
+      "prompt": "Use case: identity-preserve. Edit this selected NABO keyframe by changing ONLY the clothing region below the jaw. Keep the ENTIRE HEAD exactly identical to the reference: white baseball cap, forward blue NABO text and heartbeat emblem and side patch, tousled brown hair silhouette, round glasses, blue-gray eyes, peach face, ears and small neutral smile. Same NABO, no age change, no head shift, no scale change, no mirror. Canvas1024x1280, cap top y366, horizontal desk edge y1070, head/desk centered x512. Keep pure flat #00B140 green background and empty flat wood desk #C88A52. Fixed front view, seated half body, no legs. Keep both hands lightly resting at the same desk edge and same arm positions. Broad simple 2D shapes, flat colors plus two discrete cel shades, dark local-color outlines, no soft3D, gradients, textures, extra logos, labels, panels or collage. Remove primary vest and red backpack straps. CET6 outfit: clean white pointed-collar shirt, two broad dark navy backpack shoulder straps. Plain mature shirt, no tie, no jacket, no logos. Backpack body stays behind the torso.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/start/primary.png"
+      ]
+    },
+    {
+      "id": "outfit_adv",
+      "group": "outfits",
+      "stage": "adv",
+      "name": "adv",
+      "prompt": "Use case: identity-preserve. Edit this selected NABO keyframe by changing ONLY the clothing region below the jaw. Keep the ENTIRE HEAD exactly identical to the reference: white baseball cap, forward blue NABO text and heartbeat emblem and side patch, tousled brown hair silhouette, round glasses, blue-gray eyes, peach face, ears and small neutral smile. Same NABO, no age change, no head shift, no scale change, no mirror. Canvas1024x1280, cap top y366, horizontal desk edge y1070, head/desk centered x512. Keep pure flat #00B140 green background and empty flat wood desk #C88A52. Fixed front view, seated half body, no legs. Keep both hands lightly resting at the same desk edge and same arm positions. Broad simple 2D shapes, flat colors plus two discrete cel shades, dark local-color outlines, no soft3D, gradients, textures, extra logos, labels, panels or collage. Remove primary vest and red backpack straps. ADVANCED outfit: mature camel/tan trench coat, two broad notched lapels and dark inner shirt. A small navy/charcoal camera hangs at center chest on one dark neck strap, large round lens, simple block body, no brand. No extra accessories.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/start/primary.png"
+      ]
+    },
+    {
+      "id": "outfit_grad",
+      "group": "outfits",
+      "stage": "grad",
+      "name": "grad",
+      "prompt": "Use case: identity-preserve. Edit this selected NABO keyframe by changing ONLY the clothing region below the jaw. Keep the ENTIRE HEAD exactly identical to the reference: white baseball cap, forward blue NABO text and heartbeat emblem and side patch, tousled brown hair silhouette, round glasses, blue-gray eyes, peach face, ears and small neutral smile. Same NABO, no age change, no head shift, no scale change, no mirror. Canvas1024x1280, cap top y366, horizontal desk edge y1070, head/desk centered x512. Keep pure flat #00B140 green background and empty flat wood desk #C88A52. Fixed front view, seated half body, no legs. Keep both hands lightly resting at the same desk edge and same arm positions. Broad simple 2D shapes, flat colors plus two discrete cel shades, dark local-color outlines, no soft3D, gradients, textures, extra logos, labels, panels or collage. Remove primary vest and red backpack straps. GRADUATION outfit: black academic gown with broad golden stole, white shirt underneath. KEEP ORIGINAL WHITE NABO BASEBALL CAP; absolutely NO academic mortarboard or other headwear. Hold one cream rolled diploma with a short red ribbon horizontally just ABOVE the table edge between the resting hands, one hand gently touching the roll. This diploma is held, never sitting on the desk; leave the rest of the desk empty. Use black, charcoal and gold broad fabric shapes; no printed diploma lettering.",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "/Volumes/liutupi/ai passport xiaozhi/nabo-words/art/start/primary.png"
+      ]
+    }
+  ]
+}

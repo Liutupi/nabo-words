@@ -1,0 +1,73 @@
+{
+  "anchor": [
+    128,
+    224
+  ],
+  "canvas": 256,
+  "nabo_px": 110,
+  "anims": {
+    "idle": {
+      "source": "art/video/primary/primary_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "frames": 49,
+      "segments": {},
+      "packed_bytes": 251253
+    },
+    "happy": {
+      "source": "art/video/primary/primary_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "frames": 36,
+      "segments": {
+        "peak": [
+          12,
+          26
+        ]
+      },
+      "packed_bytes": 189349
+    },
+    "sad": {
+      "source": "art/video/primary/primary_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "frames": 36,
+      "segments": {
+        "peak": [
+          17,
+          29
+        ]
+      },
+      "packed_bytes": 177536
+    },
+    "sleep": {
+      "source": "art/video/primary/primary_04_sleep_v2.mp4",
+      "fps": 12,
+      "loop": false,
+      "frames": 49,
+      "segments": {
+        "in": [
+          0,
+          17
+        ],
+        "loop": [
+          17,
+          35
+        ],
+        "out": [
+          35,
+          48
+        ]
+      },
+      "packed_bytes": 236907
+    },
+    "cheer": {
+      "source": "art/video/primary/primary_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "frames": 42,
+      "segments": {},
+      "packed_bytes": 247609
+    }
+  }
+}

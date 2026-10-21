@@ -1,0 +1,49 @@
+{
+  "tool": "Codex built-in ImageGen",
+  "purpose": "Round-one static design; production prompt set, with deterministic export constraints applied by art/tools/build_round1.py.",
+  "reference": "../ai-passport-nabo-xiaozhi/docs/images/nabo-idle.png, left open-eyed frame only",
+  "items": [
+    {
+      "id": "primary_a",
+      "intent": "identity-preserve",
+      "prompt": "Use the supplied NABO reference's LEFT open-eyed character. Preserve the white baseball cap, blue heartbeat/mountain emblem above readable uppercase NABO, blue side patch on viewer right, tousled dark brown hair, central forelock, large blue-gray eyes, round glasses, peach face, small smile and chibi proportions. Replace only the doctor's outfit with a warm yellow V-neck sleeveless vest over a white short-sleeved T-shirt and two muted brick-red backpack straps with broad rectangular buckles. Remove medical accessories. One character facing forward, seated behind an empty straight-on horizontal wood desk, both hands resting lightly on its edge, no legs. Portrait 1024x1280, pure #00B140 background, empty #C88A52 wood band. Center x512, cap top y366, desk edge y1070, cap-to-edge 704px/55% of image. Generous margins for future motion. Clean 2D cartoon, flat fills, two discrete cel-shadow levels, local dark outlines, no soft 3D, texture, grain, white sticker edges, mirror, props or extra text."
+    },
+    {
+      "id": "primary_b",
+      "intent": "identity-preserve",
+      "reference": "source/primary_a.png",
+      "prompt": "Minimal clothing-only edit of primary A. Keep the exact white cap, readable NABO lettering/emblem/side patch, hair silhouette, face, glasses, blue-gray eyes, smile, skin, ears, head position/scale, camera, green background, horizontal desk, hands, arms and pose. Change the vest to a sunny golden-yellow round-neck vest over the same white T-shirt, dark muted teal backpack straps with broad cream rectangular buckles, and one broad plain low patch pocket. No extra symbols, text or accessories. Clean flat 2D cartoon with local dark outlines and at most two discrete cel-shadow levels. No gradients, texture, 3D or white sticker outline. Same canvas and geometry."
+    },
+    {
+      "id": "doudou_sheet",
+      "intent": "stylized-concept",
+      "transparent_background": true,
+      "prompt": "Four isolated Doudou evolution forms, one horizontal row with generous separation, common bottom baseline, transparent alpha, no labels or cast shadows. Same compact green bean creature, dark forest outline, large forest-green eyes with one cream highlight each, tiny smile, warm peach cheeks, flat fills and few colors. Egg: pale pistachio shell, two broad green leaf/bean patches and leaf-shaped top marking, no face. Baby: round bean, huge eyes, two stubby feet, paired seed leaves on short stem, no arms. Teen: taller same bean, bigger paired leaves, two small arms and feet, same face. Final: same bean with three-leaf natural coronet and one gold seed jewel, little leaf arms, same friendly face; graduation without a hat. Shared style and proportion language, height ratios 28:32:40:48. Bold local outlines readable at those target heights, no gradients, texture, 3D, intricate costume or white sticker border."
+    },
+    {
+      "id": "lamp",
+      "intent": "stylized-concept",
+      "transparent_background": true,
+      "prompt": "One isolated cartoon desk lamp on true transparent alpha. Final 24x44px vertical silhouette, front-on/orthographic side silhouette aimed right. Broad mustard-yellow shade with cream underside, dark muted teal simple jointed support and broad oval base. Flat 2D cartoon, dark local outlines, two discrete cel-shadow levels, fewer than16 colors, robust target-size contour. Clear against #F6D7A7 wall and #C88A52 table. No light rays, glow, cast shadow, gradients, texture, text, scenery, person, desk or white sticker border. Export exact 96x176 canvas."
+    },
+    {
+      "id": "clock",
+      "intent": "stylized-concept",
+      "reference": "source/primary_a.png, style only",
+      "transparent_background": true,
+      "prompt": "One isolated wall alarm-clock sprite matching NABO's clean 2D cartoon. Muted dark teal round body, cream blank circular face, two chunky bells, two stubby feet, square overall silhouette. Four broad indices at12/3/6/9 only; absolutely no hands, pointer needles, center hub, numbers or letters. Thick local dark outlines, few flat colors, discrete cel shadows, no gradients, texture, gloss, cast shadow, background or white sticker outline. Legible on #F6D7A7 at28x28px. Export exact112x112 transparent PNG."
+    },
+    {
+      "id": "pencilcase",
+      "intent": "stylized-concept",
+      "reference": "source/primary_a.png, style only",
+      "transparent_background": true,
+      "prompt": "One isolated closed pencil case, true transparent alpha, final34x12px horizontal17:6 capsule silhouette. Muted coral/brick-red body, one broad darker red lower cel-shadow band, cream zipper track along upper third and one chunky gold zipper pull at right. Burgundy local outline robust at1px target. Plain front/slight-top orthographic view, few flat colors, no gradients, grain, realistic texture, shine, cast shadows, lettering, logos, extra pencils, scenery or sticker-white border. Export exact136x48 canvas."
+    }
+  ],
+  "export_notes": [
+    "Generated source illustrations remain untouched in design/source/; prompts are production specifications, not a guarantee of bit-for-bit regeneration.",
+    "Final green/wood fills, canvas geometry, limited palettes, alpha, exact4x exports and nearest-neighbor proof enlargements are deterministic exports from those sources.",
+    "No animation or video generation was requested or performed in round1."
+  ]
+}

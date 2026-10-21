@@ -1,0 +1,44 @@
+{
+  "anchor": [
+    128,
+    224
+  ],
+  "canvas": 256,
+  "nabo_px": 110,
+  "anims": {
+    "idle": {
+      "source": "art/video/adv/adv_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "frames": 49,
+      "segments": {},
+      "packed_bytes": 265101
+    },
+    "happy": {
+      "source": "art/video/adv/adv_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "frames": 36,
+      "segments": {
+        "peak": [
+          16,
+          28
+        ]
+      },
+      "packed_bytes": 194342
+    },
+    "sad": {
+      "source": "art/video/adv/adv_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "frames": 36,
+      "segments": {
+        "peak": [
+          18,
+          31
+        ]
+      },
+      "packed_bytes": 191562
+    }
+  }
+}

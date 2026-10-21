@@ -1,0 +1,68 @@
+{
+  "candidates": {
+    "junior_a": {
+      "head_max_pixel_difference": 0,
+      "table_and_lower_hands_max_pixel_difference": 0,
+      "restored_hands_max_pixel_difference": 0,
+      "opaque_rgb_colors": 30,
+      "differences_confined_to_clothing_band": true
+    },
+    "junior_b": {
+      "head_max_pixel_difference": 0,
+      "table_and_lower_hands_max_pixel_difference": 0,
+      "restored_hands_max_pixel_difference": 0,
+      "opaque_rgb_colors": 30,
+      "differences_confined_to_clothing_band": true
+    },
+    "senior_a": {
+      "head_max_pixel_difference": 0,
+      "table_and_lower_hands_max_pixel_difference": 0,
+      "restored_hands_max_pixel_difference": 0,
+      "opaque_rgb_colors": 32,
+      "differences_confined_to_clothing_band": true
+    },
+    "senior_b": {
+      "head_max_pixel_difference": 0,
+      "table_and_lower_hands_max_pixel_difference": 0,
+      "restored_hands_max_pixel_difference": 0,
+      "opaque_rgb_colors": 32,
+      "differences_confined_to_clothing_band": true
+    }
+  },
+  "selected_junior": "b",
+  "selected_senior": "b",
+  "pending": [
+    "Junior/senior frame processing: keying, alignment, palette and timing",
+    "Physical display"
+  ],
+  "export_checks": {
+    "junior_a": {
+      "size_and_exact_green_desk": "PASS",
+      "head_identity_and_alignment": "PASS",
+      "nearest_neighbor_4x": "PASS",
+      "sha256": "66ceda3516cafff0d5f72679698908fd11ca12fc1b021ebbb0314aa6838aa7bb"
+    },
+    "junior_b": {
+      "size_and_exact_green_desk": "PASS",
+      "head_identity_and_alignment": "PASS",
+      "nearest_neighbor_4x": "PASS",
+      "sha256": "b155c58014f958580766608be57f558de5177d98a59401af733993a6fdd3733b"
+    },
+    "senior_a": {
+      "size_and_exact_green_desk": "PASS",
+      "head_identity_and_alignment": "PASS",
+      "nearest_neighbor_4x": "PASS",
+      "sha256": "fe2450d095f6cd7d537ef0639b92d71684094d9a15be2db9abd8d4795fa54012"
+    },
+    "senior_b": {
+      "size_and_exact_green_desk": "PASS",
+      "head_identity_and_alignment": "PASS",
+      "nearest_neighbor_4x": "PASS",
+      "sha256": "5ba7b3c67f38a1899e68991588310da74dbdbd55d6b734ace82a7cb5f772b99f"
+    }
+  },
+  "all_six_source_videos_unchanged": "PASS",
+  "selected_starting_images_exact_copy": "PASS",
+  "new_stage_selection_complete": "PASS",
+  "junior_senior_video_sources": "PASS (six usable sources)"
+}

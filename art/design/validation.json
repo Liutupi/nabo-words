@@ -1,0 +1,32 @@
+{
+  "expected_png_dimensions": "PASS (16 final PNGs)",
+  "transparent_assets_and_visible_color_limit": {
+    "design/doudou_egg.png": 11,
+    "design/doudou_baby.png": 16,
+    "design/doudou_teen.png": 16,
+    "design/doudou_final.png": 16,
+    "props/lamp.png": 14,
+    "props/clock.png": 8,
+    "props/pencilcase.png": 12
+  },
+  "exact_chroma_desk_edge_and_55_percent_geometry": "PASS",
+  "nearest_neighbor_4x_proofs": "PASS",
+  "home_2x_exact_integer_enlargement": "PASS",
+  "evolution_sheet_not_clipped_at_sides": "PASS",
+  "only_art_directory_changed": "PASS",
+  "visual_review": [
+    "Neutral identity and forward NABO cap lettering reviewed against provided reference.",
+    "110px full-body and48px head proof reviewed.",
+    "Four Doudou stages share bean/leaf/eyes; source palette flattened.",
+    "Clock face contains no baked-in hands.",
+    "240x320 home reviewed for placement and occlusion."
+  ],
+  "pending": [
+    "Owner review of Doudou/prop designs",
+    "Happy/sad expressions and motion continuity (round2)",
+    "Physical RGB565 display"
+  ],
+  "selected_primary": "a",
+  "selected_candidate_matches_start_sha256": "PASS",
+  "start_sha256": "5752e4b548eb2af0dd6d3d2ee54f5b8a6d4d05c5906a8ea4a0d3fd533e02bf34"
+}

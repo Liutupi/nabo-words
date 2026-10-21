@@ -1,0 +1,94 @@
+{
+  "cet4": {
+    "file": "start/cet4.png",
+    "candidate": "design/cet4_a.png",
+    "canvas_px": [
+      1024,
+      1280
+    ],
+    "cap_top": [
+      512,
+      366
+    ],
+    "desk_anchor": [
+      512,
+      1070
+    ],
+    "head_to_desk_px": 704,
+    "head_max_pixel_difference": 0,
+    "opaque_rgb_colors": 31,
+    "owner_approved": false,
+    "sha256": "1f5869c794de056f35b7f7ec390adc80b0f7a19a41d385dc4bbacba320ed77db",
+    "hand_policy": "original hand pixels preserved",
+    "source": "design/round5/source/outfit_cet4.png"
+  },
+  "cet6": {
+    "file": "start/cet6.png",
+    "candidate": "design/cet6_a.png",
+    "canvas_px": [
+      1024,
+      1280
+    ],
+    "cap_top": [
+      512,
+      366
+    ],
+    "desk_anchor": [
+      512,
+      1070
+    ],
+    "head_to_desk_px": 704,
+    "head_max_pixel_difference": 0,
+    "opaque_rgb_colors": 30,
+    "owner_approved": false,
+    "sha256": "93a7afad06c5e47152d6d780e2e63a5558fd2f3014419e1413b0cd0cc6000168",
+    "hand_policy": "original hand pixels preserved",
+    "source": "design/round5/source/outfit_cet6.png"
+  },
+  "adv": {
+    "file": "start/adv.png",
+    "candidate": "design/adv_a.png",
+    "canvas_px": [
+      1024,
+      1280
+    ],
+    "cap_top": [
+      512,
+      366
+    ],
+    "desk_anchor": [
+      512,
+      1070
+    ],
+    "head_to_desk_px": 704,
+    "head_max_pixel_difference": 0,
+    "opaque_rgb_colors": 32,
+    "owner_approved": false,
+    "sha256": "57fae87113be63e9b713c1cecc31fb84f3b04989127a353122f54db805276a02",
+    "hand_policy": "original hand pixels preserved",
+    "source": "design/round5/source/outfit_adv.png"
+  },
+  "grad": {
+    "file": "start/grad.png",
+    "candidate": "design/grad_a.png",
+    "canvas_px": [
+      1024,
+      1280
+    ],
+    "cap_top": [
+      512,
+      366
+    ],
+    "desk_anchor": [
+      512,
+      1070
+    ],
+    "head_to_desk_px": 704,
+    "head_max_pixel_difference": 0,
+    "opaque_rgb_colors": 32,
+    "owner_approved": false,
+    "sha256": "40b877995dca949b0bc58b9f47bbd2cc6f9edbca97b0e1e561496a4737bb328b",
+    "hand_policy": "generated diploma grip",
+    "source": "design/round5/source/outfit_grad.png"
+  }
+}

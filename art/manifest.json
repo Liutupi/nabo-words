@@ -1,0 +1,5081 @@
+{
+  "round": 1,
+  "selected_primary": "a",
+  "generator": "Codex built-in ImageGen",
+  "start_candidates": {
+    "a": {
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "source_desk_y": 1189,
+      "head_crop_source": [
+        202,
+        201,
+        920,
+        843
+      ]
+    },
+    "b": {
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "source_desk_y": 1189,
+      "head_crop_source": [
+        201,
+        201,
+        920,
+        843
+      ]
+    }
+  },
+  "props": {
+    "props/lamp.png": {
+      "id": "lamp",
+      "name": "lamp",
+      "canvas_px": [
+        96,
+        176
+      ],
+      "target_px": [
+        24,
+        44
+      ],
+      "anchor_px": [
+        48.0,
+        176
+      ],
+      "target_anchor_px": [
+        12.0,
+        44.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#173342",
+        "#2c5260",
+        "#2d201c",
+        "#437c88",
+        "#571f27",
+        "#6aa0a6",
+        "#913b3b",
+        "#9ec1bf",
+        "#b07845",
+        "#c88a52",
+        "#e1a638",
+        "#f8dfb3",
+        "#ffd660",
+        "#fff1d2"
+      ],
+      "sha256": "443e0d694f61deaa30dc2e8cb258cb38fac5c017ac27e1e360329b44132aae2c"
+    },
+    "props/clock.png": {
+      "id": "clock",
+      "name": "clock",
+      "canvas_px": [
+        112,
+        112
+      ],
+      "target_px": [
+        28,
+        28
+      ],
+      "anchor_px": [
+        56.0,
+        56.0
+      ],
+      "target_anchor_px": [
+        14.0,
+        14.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#173342",
+        "#2c5260",
+        "#2d201c",
+        "#437c88",
+        "#6aa0a6",
+        "#9ec1bf",
+        "#f8dfb3",
+        "#fff1d2"
+      ],
+      "sha256": "cd9bc4bff256a622e506ad6812611b8b88ec9cc3ac9acc764c71f56bb6fb26cb"
+    },
+    "props/pencilcase.png": {
+      "id": "pencilcase",
+      "name": "pencilcase",
+      "canvas_px": [
+        136,
+        48
+      ],
+      "target_px": [
+        34,
+        12
+      ],
+      "anchor_px": [
+        68.0,
+        48
+      ],
+      "target_anchor_px": [
+        17.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#2d201c",
+        "#571f27",
+        "#913b3b",
+        "#9ec1bf",
+        "#b07845",
+        "#c88a52",
+        "#cb5850",
+        "#e1a638",
+        "#ed7867",
+        "#f8dfb3",
+        "#ffd660",
+        "#fff1d2"
+      ],
+      "sha256": "9ae20b555f093cdb2bce7350596a57b5c87aadf9b8da076cd491a2c14abd0735"
+    },
+    "props/plant.png": {
+      "id": "plant",
+      "name": "plant",
+      "canvas_px": [
+        64,
+        96
+      ],
+      "target_px": [
+        16,
+        24
+      ],
+      "anchor_px": [
+        32.0,
+        96
+      ],
+      "target_anchor_px": [
+        8.0,
+        24.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#2d201c",
+        "#315d2c",
+        "#57923d",
+        "#6d3b2d",
+        "#87b846",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#bdd66a",
+        "#c17d4a",
+        "#cc5952",
+        "#d99d62",
+        "#e97531",
+        "#f28d71"
+      ],
+      "sha256": "31f1fdcc80eee5e5302ba90efa8cddf1a51585010b0c232148c69a68f1889c20",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_plant.png"
+    },
+    "props/globe.png": {
+      "id": "globe",
+      "name": "globe",
+      "canvas_px": [
+        96,
+        120
+      ],
+      "target_px": [
+        24,
+        30
+      ],
+      "anchor_px": [
+        48.0,
+        120
+      ],
+      "target_anchor_px": [
+        12.0,
+        30.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 17,
+      "palette": [
+        "#173342",
+        "#1e3f43",
+        "#2787b8",
+        "#2d201c",
+        "#315d2c",
+        "#465d6c",
+        "#57923d",
+        "#63b9d9",
+        "#6d3b2d",
+        "#87b846",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#ffc76f"
+      ],
+      "sha256": "3075ef1e8f1a8b876ccdc0a1f2e0c8dc8c9a04443be9e20c9d1f6df267a780bd",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_globe.png"
+    },
+    "props/shelf.png": {
+      "id": "shelf",
+      "name": "shelf",
+      "canvas_px": [
+        264,
+        32
+      ],
+      "target_px": [
+        66,
+        8
+      ],
+      "anchor_px": [
+        132.0,
+        32
+      ],
+      "target_anchor_px": [
+        33.0,
+        8.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 5,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#c17d4a",
+        "#d99d62"
+      ],
+      "sha256": "01f064a6b6bd2d9b1b7b56643c2a07ebad9ababb390e4598aa4cef9bf0890846",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_shelf.png"
+    },
+    "props/cert.png": {
+      "id": "cert",
+      "name": "cert",
+      "canvas_px": [
+        144,
+        112
+      ],
+      "target_px": [
+        36,
+        28
+      ],
+      "anchor_px": [
+        72.0,
+        56.0
+      ],
+      "target_anchor_px": [
+        18.0,
+        14.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 21,
+      "palette": [
+        "#2d201c",
+        "#465d6c",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a28bc4",
+        "#a87328",
+        "#b6c4ca",
+        "#c17d4a",
+        "#cc5952",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab",
+        "#f28d71",
+        "#f4f5e9",
+        "#f7e891",
+        "#ffc76f",
+        "#ffd560",
+        "#fff1d2"
+      ],
+      "sha256": "852f63f2d34165b9ea3b9e3d4486251f9e6e2901fd6fdac9248718ac6dcd968f",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_cert.png"
+    },
+    "props/phones.png": {
+      "id": "phones",
+      "name": "phones",
+      "canvas_px": [
+        96,
+        56
+      ],
+      "target_px": [
+        24,
+        14
+      ],
+      "anchor_px": [
+        48.0,
+        56
+      ],
+      "target_anchor_px": [
+        12.0,
+        14.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#173342",
+        "#1e3f43",
+        "#2787b8",
+        "#2d201c",
+        "#465d6c",
+        "#6d3b2d",
+        "#945735",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab",
+        "#fff1d2"
+      ],
+      "sha256": "c6412e85813b548b87925d35a2341bac7e7332f1a56d6c2a50cde4d80c1c9cb6",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_phones.png"
+    },
+    "props/laptop.png": {
+      "id": "laptop",
+      "name": "laptop",
+      "canvas_px": [
+        224,
+        120
+      ],
+      "target_px": [
+        56,
+        30
+      ],
+      "anchor_px": [
+        112.0,
+        120
+      ],
+      "target_anchor_px": [
+        28.0,
+        30.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 13,
+      "palette": [
+        "#173342",
+        "#1e3f43",
+        "#2787b8",
+        "#2d201c",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#a9dce5",
+        "#b6c4ca",
+        "#e5dcf0",
+        "#f4f5e9"
+      ],
+      "sha256": "f95b4510936cfdb8fcc43f9f89acfb22df4dc92acb8db7e7d98c719ae8bae5a4",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_laptop.png"
+    },
+    "props/mug.png": {
+      "id": "mug",
+      "name": "mug",
+      "canvas_px": [
+        72,
+        64
+      ],
+      "target_px": [
+        18,
+        16
+      ],
+      "anchor_px": [
+        36.0,
+        64
+      ],
+      "target_anchor_px": [
+        9.0,
+        16.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 9,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#8197a3",
+        "#945735",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "75494515d60b29a65a466eaf5c4fbf73a7dc24e37b71c82b50ee32d17a8ce243",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_mug.png"
+    },
+    "props/map.png": {
+      "id": "map",
+      "name": "map",
+      "canvas_px": [
+        240,
+        152
+      ],
+      "target_px": [
+        60,
+        38
+      ],
+      "anchor_px": [
+        120.0,
+        76.0
+      ],
+      "target_anchor_px": [
+        30.0,
+        19.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 23,
+      "palette": [
+        "#1e3f43",
+        "#2d201c",
+        "#315d2c",
+        "#465d6c",
+        "#57923d",
+        "#63b9d9",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#87b846",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#a9dce5",
+        "#c17d4a",
+        "#d9a33d",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#e97531",
+        "#f4f5e9",
+        "#ffc76f",
+        "#ffd560",
+        "#fff1d2"
+      ],
+      "sha256": "8cad017d23027f5a93475290ab22675836124fb99a2e648de0d97cb741b4c7a7",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_map.png"
+    },
+    "props/trophy.png": {
+      "id": "trophy",
+      "name": "trophy",
+      "canvas_px": [
+        64,
+        120
+      ],
+      "target_px": [
+        16,
+        30
+      ],
+      "anchor_px": [
+        32.0,
+        120
+      ],
+      "target_anchor_px": [
+        8.0,
+        30.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d9a33d",
+        "#e97531",
+        "#ffd560"
+      ],
+      "sha256": "f7ada7241a2157576dfd1f396e122f982f1bf9b861ee95a0a54aed3c316028ad",
+      "pixel_grid_4x": false,
+      "source": "design/round4/source/props_trophy.png"
+    }
+  },
+  "companion_designs": {
+    "design/doudou_egg.png": {
+      "canvas_px": [
+        100,
+        112
+      ],
+      "target_px": [
+        25,
+        28
+      ],
+      "target_height_px": 28,
+      "anchor_px": [
+        50,
+        112
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11
+    },
+    "design/doudou_baby.png": {
+      "canvas_px": [
+        92,
+        128
+      ],
+      "target_px": [
+        23,
+        32
+      ],
+      "target_height_px": 32,
+      "anchor_px": [
+        46,
+        128
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16
+    },
+    "design/doudou_teen.png": {
+      "canvas_px": [
+        116,
+        160
+      ],
+      "target_px": [
+        29,
+        40
+      ],
+      "target_height_px": 40,
+      "anchor_px": [
+        58,
+        160
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16
+    },
+    "design/doudou_final.png": {
+      "canvas_px": [
+        148,
+        192
+      ],
+      "target_px": [
+        37,
+        48
+      ],
+      "target_height_px": 48,
+      "anchor_px": [
+        74,
+        192
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16
+    }
+  },
+  "previews": {
+    "home_primary.png": {
+      "size": [
+        240,
+        320
+      ],
+      "character_cap_y": 66,
+      "desk_y": 176,
+      "character_center_x": 120,
+      "clock_center": [
+        34,
+        52
+      ],
+      "lamp_base": [
+        29,
+        176
+      ],
+      "companion_base": [
+        196,
+        176
+      ],
+      "note": "Art composition only; menu/status text is program-drawn."
+    },
+    "companion_family.png": {
+      "file": "preview/companion_family.png",
+      "size": [
+        1440,
+        330
+      ],
+      "round": 4
+    },
+    "companion_growth.png": {
+      "file": "preview/companion_growth.png",
+      "size": [
+        1120,
+        1510
+      ],
+      "round": 4
+    },
+    "companion_size_check.png": {
+      "file": "preview/companion_size_check.png",
+      "size": [
+        1088,
+        2280
+      ],
+      "round": 4
+    },
+    "props_check.png": {
+      "file": "preview/props_check.png",
+      "size": [
+        960,
+        1088
+      ],
+      "round": 4
+    },
+    "toys_check.png": {
+      "file": "preview/toys_check.png",
+      "size": [
+        1200,
+        1480
+      ],
+      "round": 4
+    },
+    "toys_silhouette.png": {
+      "file": "preview/toys_silhouette.png",
+      "size": [
+        1000,
+        270
+      ],
+      "round": 4
+    },
+    "ui_check.png": {
+      "file": "preview/ui_check.png",
+      "size": [
+        320,
+        160
+      ],
+      "round": 4
+    },
+    "toys_all.png": {
+      "file": "preview/toys_all.png",
+      "size": [
+        1200,
+        2448
+      ],
+      "round": 5
+    },
+    "accessories.png": {
+      "file": "preview/accessories.png",
+      "size": [
+        2304,
+        1010
+      ],
+      "round": 5
+    },
+    "accessories_native.png": {
+      "file": "preview/accessories_native.png",
+      "size": [
+        576,
+        192
+      ],
+      "round": 5
+    },
+    "toys_primary.png": {
+      "file": "preview/toys_primary.png",
+      "size": [
+        1200,
+        560
+      ],
+      "round": 5
+    },
+    "toys_junior.png": {
+      "file": "preview/toys_junior.png",
+      "size": [
+        1200,
+        560
+      ],
+      "round": 5
+    },
+    "toys_senior.png": {
+      "file": "preview/toys_senior.png",
+      "size": [
+        1200,
+        560
+      ],
+      "round": 5
+    },
+    "toys_cet4.png": {
+      "file": "preview/toys_cet4.png",
+      "size": [
+        1200,
+        560
+      ],
+      "round": 5
+    },
+    "toys_cet6.png": {
+      "file": "preview/toys_cet6.png",
+      "size": [
+        1200,
+        560
+      ],
+      "round": 5
+    },
+    "toys_adv.png": {
+      "file": "preview/toys_adv.png",
+      "size": [
+        1200,
+        560
+      ],
+      "round": 5
+    },
+    "toys_primary_native.png": {
+      "file": "preview/toys_primary_native.png",
+      "size": [
+        300,
+        102
+      ],
+      "round": 5
+    },
+    "toys_junior_native.png": {
+      "file": "preview/toys_junior_native.png",
+      "size": [
+        300,
+        102
+      ],
+      "round": 5
+    },
+    "toys_senior_native.png": {
+      "file": "preview/toys_senior_native.png",
+      "size": [
+        300,
+        102
+      ],
+      "round": 5
+    },
+    "toys_cet4_native.png": {
+      "file": "preview/toys_cet4_native.png",
+      "size": [
+        300,
+        102
+      ],
+      "round": 5
+    },
+    "toys_cet6_native.png": {
+      "file": "preview/toys_cet6_native.png",
+      "size": [
+        300,
+        102
+      ],
+      "round": 5
+    },
+    "toys_adv_native.png": {
+      "file": "preview/toys_adv_native.png",
+      "size": [
+        300,
+        102
+      ],
+      "round": 5
+    }
+  },
+  "selection": {
+    "file": "start/primary.png",
+    "candidate": "design/primary_a.png",
+    "sha256": "5752e4b548eb2af0dd6d3d2ee54f5b8a6d4d05c5906a8ea4a0d3fd533e02bf34",
+    "selected_on": "2026-10-21"
+  },
+  "video_source_review": {
+    "report": "preview/video_review/REVIEW.md",
+    "report_zh_CN": "preview/video_review/REVIEW.zh_CN.md",
+    "date": "2026-10-21",
+    "items": [
+      {
+        "file": "video/primary/primary_01_idle.mp4",
+        "sha256": "0020818bf03bfdab8a8a4dc858ec9d1507a1f70a5b63da301ebd314bfe0d15f0",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing",
+        "final_game_frames_ready": false
+      },
+      {
+        "file": "video/primary/primary_02_happy.mp4",
+        "sha256": "28287a10ce5524c629695a7c39bae299ac7760d1232bf0a057f15fc14b8ea8a9",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing",
+        "final_game_frames_ready": false
+      },
+      {
+        "file": "video/primary/primary_03_sad.mp4",
+        "sha256": "7bfddb82cf799faeea043363b7a571630617cda7b9ab1447adfb5d76775d3468",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing",
+        "final_game_frames_ready": false
+      },
+      {
+        "file": "video/primary/primary_04_sleep.mp4",
+        "sha256": "57f0b4f26c95edfc5c8824110e3417d5084f1550b88b297deb6ce3fa8ddcdac8",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "superseded_by_v2",
+        "final_game_frames_ready": false
+      },
+      {
+        "file": "video/primary/primary_05_cheer.mp4",
+        "sha256": "5837c2142100302cf2dd296ce20bc08d6110bb2e1cd838328d91ea7df34452bc",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing",
+        "final_game_frames_ready": false
+      },
+      {
+        "file": "video/primary/primary_04_sleep_v2.mp4",
+        "sha256": "a565378edb0bc56706174e0252d31a1adb1790eb25ce75c2428b84ea483ec2d0",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing",
+        "candidate_sleep_window_s": [
+          1.4,
+          2.9
+        ],
+        "final_game_frames_ready": false
+      },
+      {
+        "file": "video/junior/junior_01_idle.mp4",
+        "stage": "junior",
+        "sha256": "a928d72bdf68908256692126b609ff717f53d54b07b2a54e47294849495ba1ce",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing"
+      },
+      {
+        "file": "video/junior/junior_02_happy.mp4",
+        "stage": "junior",
+        "sha256": "56ccc127d2e6b794f9c0939f04cce0d80e1756f8ba878df1b5e353467143cb43",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing"
+      },
+      {
+        "file": "video/junior/junior_03_sad.mp4",
+        "stage": "junior",
+        "sha256": "3eb58f7aa794c6ba06d8f397557c89ade499524ca5b25735ec783a67d2066af8",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing"
+      },
+      {
+        "file": "video/senior/senior_01_idle.mp4",
+        "stage": "senior",
+        "sha256": "d4ab5a7ee332b1459ff4df799094da366d6f4e9729512c2ed71df8fe4383586c",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing"
+      },
+      {
+        "file": "video/senior/senior_02_happy.mp4",
+        "stage": "senior",
+        "sha256": "5e26b0c9a3b56a8d9d997b2e69bb4b11adba0f6a4e50f441b5e0337dc12b41ec",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing"
+      },
+      {
+        "file": "video/senior/senior_03_sad.mp4",
+        "stage": "senior",
+        "sha256": "90f3362108286faa4298aefccdb0b123c664fda067f0e37b544cc0dc44ff4842",
+        "duration_s": 4.041667,
+        "frames": 97,
+        "fps": 24.0,
+        "source_review": "usable_for_frame_processing"
+      }
+    ],
+    "selected_sleep": "video/primary/primary_04_sleep_v2.mp4",
+    "all_five_sources_usable": true,
+    "junior_senior_report": "preview/video_review/JUNIOR_SENIOR_REVIEW.md",
+    "junior_senior_report_zh_CN": "preview/video_review/JUNIOR_SENIOR_REVIEW.zh_CN.md",
+    "all_junior_senior_sources_usable": true
+  },
+  "round3_candidates": {
+    "junior_a": {
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "identity_source": "start/primary.png",
+      "identical_upper_rows": [
+        0,
+        830
+      ],
+      "opaque_rgb_colors": 30,
+      "selected": false,
+      "clothing_difference_bbox": [
+        286,
+        831,
+        738,
+        1070
+      ]
+    },
+    "junior_b": {
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "identity_source": "start/primary.png",
+      "identical_upper_rows": [
+        0,
+        830
+      ],
+      "opaque_rgb_colors": 30,
+      "selected": true,
+      "clothing_difference_bbox": [
+        292,
+        831,
+        732,
+        1070
+      ]
+    },
+    "senior_a": {
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "identity_source": "start/primary.png",
+      "identical_upper_rows": [
+        0,
+        830
+      ],
+      "opaque_rgb_colors": 32,
+      "selected": false,
+      "clothing_difference_bbox": [
+        283,
+        831,
+        741,
+        1070
+      ]
+    },
+    "senior_b": {
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "identity_source": "start/primary.png",
+      "identical_upper_rows": [
+        0,
+        830
+      ],
+      "opaque_rgb_colors": 32,
+      "selected": true,
+      "clothing_difference_bbox": [
+        282,
+        831,
+        744,
+        1070
+      ]
+    }
+  },
+  "selected_junior": "b",
+  "selected_senior": "b",
+  "stage_selections": {
+    "junior": {
+      "file": "start/junior.png",
+      "candidate": "design/junior_b.png",
+      "sha256": "b155c58014f958580766608be57f558de5177d98a59401af733993a6fdd3733b",
+      "selected_on": "2026-10-21"
+    },
+    "senior": {
+      "file": "start/senior.png",
+      "candidate": "design/senior_b.png",
+      "sha256": "5ba7b3c67f38a1899e68991588310da74dbdbd55d6b734ace82a7cb5f772b99f",
+      "selected_on": "2026-10-21"
+    }
+  },
+  "companion": {
+    "companion/doudou/egg.png": {
+      "id": "doudou_egg",
+      "name": "doudou_egg",
+      "canvas_px": [
+        100,
+        112
+      ],
+      "target_px": [
+        25,
+        28
+      ],
+      "anchor_px": [
+        50.0,
+        112
+      ],
+      "target_anchor_px": [
+        12.5,
+        28.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#10291b",
+        "#1d431e",
+        "#426e27",
+        "#5a8a31",
+        "#68a132",
+        "#8abd38",
+        "#a4ce45",
+        "#c0e46c",
+        "#d4ed8a",
+        "#e7efac",
+        "#f7f3c9"
+      ],
+      "sha256": "ff82c28bd15b12d05ce9113ecc0d6a7312bbce298b5e1c28640d6636a8711831",
+      "species": "doudou",
+      "form": "egg",
+      "source": "design/doudou_egg.png"
+    },
+    "companion/doudou/baby.png": {
+      "id": "doudou_baby",
+      "name": "doudou_baby",
+      "canvas_px": [
+        92,
+        128
+      ],
+      "target_px": [
+        23,
+        32
+      ],
+      "anchor_px": [
+        46.0,
+        128
+      ],
+      "target_anchor_px": [
+        11.5,
+        32.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#10291b",
+        "#1d431e",
+        "#426e27",
+        "#5a8a31",
+        "#68a132",
+        "#8abd38",
+        "#a4ce45",
+        "#c0e46c",
+        "#d4ed8a",
+        "#d6ad38",
+        "#e7efac",
+        "#eca653",
+        "#f7f3c9",
+        "#ffbd77",
+        "#ffda65",
+        "#fff6dd"
+      ],
+      "sha256": "a9d85896bc6ccfe24f1be6dd4b8c17f8df1e67b4ba5f88593e2bb916e306cd3f",
+      "species": "doudou",
+      "form": "baby",
+      "source": "design/doudou_baby.png"
+    },
+    "companion/doudou/teen.png": {
+      "id": "doudou_teen",
+      "name": "doudou_teen",
+      "canvas_px": [
+        116,
+        160
+      ],
+      "target_px": [
+        29,
+        40
+      ],
+      "anchor_px": [
+        58.0,
+        160
+      ],
+      "target_anchor_px": [
+        14.5,
+        40.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#10291b",
+        "#1d431e",
+        "#426e27",
+        "#5a8a31",
+        "#68a132",
+        "#8abd38",
+        "#a4ce45",
+        "#c0e46c",
+        "#d4ed8a",
+        "#d6ad38",
+        "#e7efac",
+        "#eca653",
+        "#f7f3c9",
+        "#ffbd77",
+        "#ffda65",
+        "#fff6dd"
+      ],
+      "sha256": "72e2751a1d8457602abe707b38db051d2eccf73401f252d21f3743bd9df732c8",
+      "species": "doudou",
+      "form": "teen",
+      "source": "design/doudou_teen.png"
+    },
+    "companion/doudou/final.png": {
+      "id": "doudou_final",
+      "name": "doudou_final",
+      "canvas_px": [
+        148,
+        192
+      ],
+      "target_px": [
+        37,
+        48
+      ],
+      "anchor_px": [
+        74.0,
+        192
+      ],
+      "target_anchor_px": [
+        18.5,
+        48.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#10291b",
+        "#1d431e",
+        "#426e27",
+        "#5a8a31",
+        "#68a132",
+        "#8abd38",
+        "#a4ce45",
+        "#c0e46c",
+        "#d4ed8a",
+        "#d6ad38",
+        "#e7efac",
+        "#eca653",
+        "#f7f3c9",
+        "#ffbd77",
+        "#ffda65",
+        "#fff6dd"
+      ],
+      "sha256": "10a169dc598fd11f1ade4e368a73c0c4c4051284d1362edea6dc18d5021a1ef0",
+      "species": "doudou",
+      "form": "final",
+      "source": "design/doudou_final.png"
+    },
+    "companion/paopao/egg.png": {
+      "id": "paopao_egg",
+      "name": "paopao_egg",
+      "canvas_px": [
+        100,
+        112
+      ],
+      "target_px": [
+        25,
+        28
+      ],
+      "anchor_px": [
+        50.0,
+        112
+      ],
+      "target_anchor_px": [
+        12.5,
+        28.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#0b344a",
+        "#104c69",
+        "#1b567e",
+        "#237da0",
+        "#317ab3",
+        "#43b3e6",
+        "#5ca9d8",
+        "#75cef3",
+        "#ace5f5",
+        "#b9e8f5",
+        "#d4f2f4",
+        "#e9f9f2"
+      ],
+      "sha256": "54ccc5b477d066c1db98f45d6aa6e4cc63a22f73fe6bb786a7d8dd98b163ce61",
+      "species": "paopao",
+      "form": "egg",
+      "source": "design/round4/source/paopao_sheet.png"
+    },
+    "companion/paopao/baby.png": {
+      "id": "paopao_baby",
+      "name": "paopao_baby",
+      "canvas_px": [
+        100,
+        128
+      ],
+      "target_px": [
+        25,
+        32
+      ],
+      "anchor_px": [
+        50.0,
+        128
+      ],
+      "target_anchor_px": [
+        12.5,
+        32.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#0b344a",
+        "#104c69",
+        "#1b567e",
+        "#237da0",
+        "#317ab3",
+        "#43b3e6",
+        "#5ca9d8",
+        "#75cef3",
+        "#ace5f5",
+        "#b9e8f5",
+        "#d4f2f4",
+        "#e9a86c",
+        "#e9f9f2",
+        "#f9e8b4",
+        "#ffbe84",
+        "#fff5d8"
+      ],
+      "sha256": "6d49878d4fa7c0e16b46c9b52dd732a65a20adc4b04cb60c4540caca914d5563",
+      "species": "paopao",
+      "form": "baby",
+      "source": "design/round4/source/paopao_sheet.png"
+    },
+    "companion/paopao/teen.png": {
+      "id": "paopao_teen",
+      "name": "paopao_teen",
+      "canvas_px": [
+        136,
+        160
+      ],
+      "target_px": [
+        34,
+        40
+      ],
+      "anchor_px": [
+        68.0,
+        160
+      ],
+      "target_anchor_px": [
+        17.0,
+        40.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#0b344a",
+        "#104c69",
+        "#1b567e",
+        "#237da0",
+        "#317ab3",
+        "#43b3e6",
+        "#5ca9d8",
+        "#75cef3",
+        "#ace5f5",
+        "#b9e8f5",
+        "#d4f2f4",
+        "#e9a86c",
+        "#e9f9f2",
+        "#f9e8b4",
+        "#ffbe84",
+        "#fff5d8"
+      ],
+      "sha256": "c48f409362ff5cf1139358726af28679e4b7c44fc813120cd21d3912ba487f78",
+      "species": "paopao",
+      "form": "teen",
+      "source": "design/round4/source/paopao_sheet.png"
+    },
+    "companion/paopao/final.png": {
+      "id": "paopao_final",
+      "name": "paopao_final",
+      "canvas_px": [
+        144,
+        192
+      ],
+      "target_px": [
+        36,
+        48
+      ],
+      "anchor_px": [
+        72.0,
+        192
+      ],
+      "target_anchor_px": [
+        18.0,
+        48.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#0b344a",
+        "#104c69",
+        "#1b567e",
+        "#237da0",
+        "#317ab3",
+        "#43b3e6",
+        "#5ca9d8",
+        "#75cef3",
+        "#ace5f5",
+        "#b9e8f5",
+        "#d4f2f4",
+        "#e9a86c",
+        "#e9f9f2",
+        "#f9e8b4",
+        "#ffbe84",
+        "#fff5d8"
+      ],
+      "sha256": "ae03591375561e592843a071afaeaa352d0f876eb216ef306935ab1217f00de3",
+      "species": "paopao",
+      "form": "final",
+      "source": "design/round4/source/paopao_sheet.png"
+    },
+    "companion/xingxing/egg.png": {
+      "id": "xingxing_egg",
+      "name": "xingxing_egg",
+      "canvas_px": [
+        100,
+        112
+      ],
+      "target_px": [
+        25,
+        28
+      ],
+      "anchor_px": [
+        50.0,
+        112
+      ],
+      "target_anchor_px": [
+        12.5,
+        28.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#261431",
+        "#341a4d",
+        "#6b4590",
+        "#8857b2",
+        "#9d75ca",
+        "#b58bde",
+        "#c7a6ea",
+        "#dfc7f4",
+        "#e8d19e",
+        "#ebd8f5",
+        "#fff1cb",
+        "#fff8e4"
+      ],
+      "sha256": "e63513bcebf06b32c3853da0731cea5ded0f5c0172777e1d244e6fe41ad7829b",
+      "species": "xingxing",
+      "form": "egg",
+      "source": "design/round4/source/xingxing_sheet.png"
+    },
+    "companion/xingxing/baby.png": {
+      "id": "xingxing_baby",
+      "name": "xingxing_baby",
+      "canvas_px": [
+        108,
+        128
+      ],
+      "target_px": [
+        27,
+        32
+      ],
+      "anchor_px": [
+        54.0,
+        128
+      ],
+      "target_anchor_px": [
+        13.5,
+        32.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#261431",
+        "#341a4d",
+        "#6b4590",
+        "#8857b2",
+        "#9d75ca",
+        "#b58bde",
+        "#c7a6ea",
+        "#dfc7f4",
+        "#e89f73",
+        "#e8d19e",
+        "#ebd8f5",
+        "#ffc08d",
+        "#fff1cb",
+        "#fff8e4"
+      ],
+      "sha256": "eb0f3a7ae6855fa561c9fabef498c8b8996984c92d5d4cdc4eaebab57281f738",
+      "species": "xingxing",
+      "form": "baby",
+      "source": "design/round4/source/xingxing_sheet.png"
+    },
+    "companion/xingxing/teen.png": {
+      "id": "xingxing_teen",
+      "name": "xingxing_teen",
+      "canvas_px": [
+        160,
+        160
+      ],
+      "target_px": [
+        40,
+        40
+      ],
+      "anchor_px": [
+        80.0,
+        160
+      ],
+      "target_anchor_px": [
+        20.0,
+        40.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#261431",
+        "#341a4d",
+        "#6b4590",
+        "#8857b2",
+        "#9d75ca",
+        "#b58bde",
+        "#c7a6ea",
+        "#dfc7f4",
+        "#e89f73",
+        "#e8d19e",
+        "#ebd8f5",
+        "#ffc08d",
+        "#fff1cb",
+        "#fff8e4"
+      ],
+      "sha256": "bd350991857e04e1d026557b3681c5e406de9cb947fc75488eca8bb3805a4aec",
+      "species": "xingxing",
+      "form": "teen",
+      "source": "design/round4/source/xingxing_sheet.png"
+    },
+    "companion/xingxing/final.png": {
+      "id": "xingxing_final",
+      "name": "xingxing_final",
+      "canvas_px": [
+        188,
+        192
+      ],
+      "target_px": [
+        47,
+        48
+      ],
+      "anchor_px": [
+        94.0,
+        192
+      ],
+      "target_anchor_px": [
+        23.5,
+        48.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#261431",
+        "#341a4d",
+        "#6b4590",
+        "#8857b2",
+        "#9d75ca",
+        "#b58bde",
+        "#c7a6ea",
+        "#d29a2b",
+        "#dfc7f4",
+        "#e89f73",
+        "#e8d19e",
+        "#ebd8f5",
+        "#f8cd50",
+        "#ffc08d",
+        "#fff1cb",
+        "#fff8e4"
+      ],
+      "sha256": "9ca8def1f62aeb65f6f11c31f6ebe4d7f87213fcd23537df3f55cb884cfa0d29",
+      "species": "xingxing",
+      "form": "final",
+      "source": "design/round4/source/xingxing_sheet.png"
+    },
+    "companion/huohuo/egg.png": {
+      "id": "huohuo_egg",
+      "name": "huohuo_egg",
+      "canvas_px": [
+        100,
+        112
+      ],
+      "target_px": [
+        25,
+        28
+      ],
+      "anchor_px": [
+        50.0,
+        112
+      ],
+      "target_anchor_px": [
+        12.5,
+        28.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#401a17",
+        "#5c1d17",
+        "#8b3522",
+        "#a74e2e",
+        "#c89632",
+        "#df6b29",
+        "#e98b63",
+        "#f59a3e",
+        "#ff792a",
+        "#ffa63f",
+        "#ffba8f",
+        "#ffc46b",
+        "#ffe6af",
+        "#fff1c9"
+      ],
+      "sha256": "9ee9528f32c337d4e771231551716f2e7f97181d82be0fb64106856f00283633",
+      "species": "huohuo",
+      "form": "egg",
+      "source": "design/round4/source/huohuo_sheet.png"
+    },
+    "companion/huohuo/baby.png": {
+      "id": "huohuo_baby",
+      "name": "huohuo_baby",
+      "canvas_px": [
+        100,
+        128
+      ],
+      "target_px": [
+        25,
+        32
+      ],
+      "anchor_px": [
+        50.0,
+        128
+      ],
+      "target_anchor_px": [
+        12.5,
+        32.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#401a17",
+        "#5c1d17",
+        "#8b3522",
+        "#a74e2e",
+        "#c89632",
+        "#df6b29",
+        "#e98b63",
+        "#f59a3e",
+        "#ff792a",
+        "#ffa63f",
+        "#ffba8f",
+        "#ffc46b",
+        "#ffe6af",
+        "#fff1c9"
+      ],
+      "sha256": "2e7ee7deb3c9a1afb21fca8bbeec5f5da6745aa989492e1fae15341d5103b138",
+      "species": "huohuo",
+      "form": "baby",
+      "source": "design/round4/source/huohuo_sheet.png"
+    },
+    "companion/huohuo/teen.png": {
+      "id": "huohuo_teen",
+      "name": "huohuo_teen",
+      "canvas_px": [
+        144,
+        160
+      ],
+      "target_px": [
+        36,
+        40
+      ],
+      "anchor_px": [
+        72.0,
+        160
+      ],
+      "target_anchor_px": [
+        18.0,
+        40.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#401a17",
+        "#5c1d17",
+        "#8b3522",
+        "#a74e2e",
+        "#c89632",
+        "#df6b29",
+        "#e98b63",
+        "#f59a3e",
+        "#ff792a",
+        "#ffa63f",
+        "#ffba8f",
+        "#ffc46b",
+        "#ffd65a",
+        "#ffdd84",
+        "#ffe6af",
+        "#fff1c9"
+      ],
+      "sha256": "5df27326a77734a1da0be4d15f1ae592e634fcff09e8a61a4a3c20fcff42cb43",
+      "species": "huohuo",
+      "form": "teen",
+      "source": "design/round4/source/huohuo_sheet.png"
+    },
+    "companion/huohuo/final.png": {
+      "id": "huohuo_final",
+      "name": "huohuo_final",
+      "canvas_px": [
+        160,
+        192
+      ],
+      "target_px": [
+        40,
+        48
+      ],
+      "anchor_px": [
+        80.0,
+        192
+      ],
+      "target_anchor_px": [
+        20.0,
+        48.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#401a17",
+        "#5c1d17",
+        "#8b3522",
+        "#a74e2e",
+        "#c89632",
+        "#df6b29",
+        "#e98b63",
+        "#f59a3e",
+        "#ff792a",
+        "#ffa63f",
+        "#ffba8f",
+        "#ffc46b",
+        "#ffd65a",
+        "#ffdd84",
+        "#ffe6af",
+        "#fff1c9"
+      ],
+      "sha256": "a9a09bed223681e0ac8466484b3a56813efaa8d47fbd2a6516bdc926e46966e4",
+      "species": "huohuo",
+      "form": "final",
+      "source": "design/round4/source/huohuo_sheet.png"
+    },
+    "companion/langlang/egg.png": {
+      "id": "langlang_egg",
+      "name": "langlang_egg",
+      "canvas_px": [
+        100,
+        112
+      ],
+      "target_px": [
+        25,
+        28
+      ],
+      "anchor_px": [
+        50.0,
+        112
+      ],
+      "target_anchor_px": [
+        12.5,
+        28.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#0b2f3d",
+        "#0b7184",
+        "#123b47",
+        "#1999ae",
+        "#22929a",
+        "#3fc2c6",
+        "#78ddd6",
+        "#a4eae0",
+        "#d8f3e9",
+        "#fff8e2"
+      ],
+      "sha256": "80b49d7fa18d59ad4fea7758b34cc75cfc4aea53afde0d77e8b259dbb67912e8",
+      "species": "langlang",
+      "form": "egg",
+      "source": "design/round4/source/langlang_sheet.png"
+    },
+    "companion/langlang/baby.png": {
+      "id": "langlang_baby",
+      "name": "langlang_baby",
+      "canvas_px": [
+        96,
+        128
+      ],
+      "target_px": [
+        24,
+        32
+      ],
+      "anchor_px": [
+        48.0,
+        128
+      ],
+      "target_anchor_px": [
+        12.0,
+        32.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#0b2f3d",
+        "#0b7184",
+        "#123b47",
+        "#1999ae",
+        "#22929a",
+        "#3fc2c6",
+        "#78ddd6",
+        "#a4eae0",
+        "#d47c61",
+        "#d8f3e9",
+        "#e7ddaf",
+        "#f6a581",
+        "#ffc5a2",
+        "#ffc68c",
+        "#fff2cd",
+        "#fff8e2"
+      ],
+      "sha256": "b4561473a1f1c2661bd173a042c0851741ed4b9e18ecd1ee81d9ee24c18f85ee",
+      "species": "langlang",
+      "form": "baby",
+      "source": "design/round4/source/langlang_sheet.png"
+    },
+    "companion/langlang/teen.png": {
+      "id": "langlang_teen",
+      "name": "langlang_teen",
+      "canvas_px": [
+        124,
+        160
+      ],
+      "target_px": [
+        31,
+        40
+      ],
+      "anchor_px": [
+        62.0,
+        160
+      ],
+      "target_anchor_px": [
+        15.5,
+        40.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 15,
+      "palette": [
+        "#0b2f3d",
+        "#0b7184",
+        "#123b47",
+        "#1999ae",
+        "#22929a",
+        "#3fc2c6",
+        "#78ddd6",
+        "#a4eae0",
+        "#d47c61",
+        "#d8f3e9",
+        "#e7ddaf",
+        "#ffc5a2",
+        "#ffc68c",
+        "#fff2cd",
+        "#fff8e2"
+      ],
+      "sha256": "66ff7bb274a7aa9cd28dd0b068ad129a433bad3098e7da19e0af2074342c173e",
+      "species": "langlang",
+      "form": "teen",
+      "source": "design/round4/source/langlang_sheet.png"
+    },
+    "companion/langlang/final.png": {
+      "id": "langlang_final",
+      "name": "langlang_final",
+      "canvas_px": [
+        160,
+        192
+      ],
+      "target_px": [
+        40,
+        48
+      ],
+      "anchor_px": [
+        80.0,
+        192
+      ],
+      "target_anchor_px": [
+        20.0,
+        48.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 16,
+      "palette": [
+        "#0b2f3d",
+        "#0b7184",
+        "#123b47",
+        "#1999ae",
+        "#22929a",
+        "#3fc2c6",
+        "#78ddd6",
+        "#a4eae0",
+        "#d47c61",
+        "#d8f3e9",
+        "#e7ddaf",
+        "#f6a581",
+        "#ffc5a2",
+        "#ffc68c",
+        "#fff2cd",
+        "#fff8e2"
+      ],
+      "sha256": "4ce4104ba25bef9bef1a7d75436cd7686b4fac16b7d09d33dc8f339eadfdd8e7",
+      "species": "langlang",
+      "form": "final",
+      "source": "design/round4/source/langlang_sheet.png"
+    },
+    "companion/jiguang/egg.png": {
+      "id": "jiguang_egg",
+      "name": "jiguang_egg",
+      "canvas_px": [
+        96,
+        112
+      ],
+      "target_px": [
+        24,
+        28
+      ],
+      "anchor_px": [
+        48.0,
+        112
+      ],
+      "target_anchor_px": [
+        12.0,
+        28.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#35203e",
+        "#4d244b",
+        "#8a3f79",
+        "#b85c9d",
+        "#d981b6",
+        "#e98dbc",
+        "#f1abcf",
+        "#f2a18f",
+        "#f6c7e2",
+        "#fdc3cb",
+        "#ffe0e5",
+        "#fff0d2"
+      ],
+      "sha256": "20bd48c9d16f2a8bb4e5a862617cf9a87b89acf455056b24708ca3a6bd04aa70",
+      "species": "jiguang",
+      "form": "egg",
+      "source": "design/round4/source/jiguang_sheet.png"
+    },
+    "companion/jiguang/baby.png": {
+      "id": "jiguang_baby",
+      "name": "jiguang_baby",
+      "canvas_px": [
+        96,
+        128
+      ],
+      "target_px": [
+        24,
+        32
+      ],
+      "anchor_px": [
+        48.0,
+        128
+      ],
+      "target_anchor_px": [
+        12.0,
+        32.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 15,
+      "palette": [
+        "#35203e",
+        "#4d244b",
+        "#8a3f79",
+        "#967ac7",
+        "#b85c9d",
+        "#baa7e5",
+        "#d981b6",
+        "#e98dbc",
+        "#f1abcf",
+        "#f2a18f",
+        "#f6c7e2",
+        "#fdc3cb",
+        "#ffbea8",
+        "#ffe0e5",
+        "#fff0d2"
+      ],
+      "sha256": "ae438a415c0ffa18f0303b5ca4b09d66be7af3e41688798853dfdebf8f72a4bf",
+      "species": "jiguang",
+      "form": "baby",
+      "source": "design/round4/source/jiguang_sheet.png"
+    },
+    "companion/jiguang/teen.png": {
+      "id": "jiguang_teen",
+      "name": "jiguang_teen",
+      "canvas_px": [
+        136,
+        160
+      ],
+      "target_px": [
+        34,
+        40
+      ],
+      "anchor_px": [
+        68.0,
+        160
+      ],
+      "target_anchor_px": [
+        17.0,
+        40.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#35203e",
+        "#4d244b",
+        "#8a3f79",
+        "#b85c9d",
+        "#baa7e5",
+        "#d981b6",
+        "#e98dbc",
+        "#f1abcf",
+        "#f2a18f",
+        "#f6c7e2",
+        "#fdc3cb",
+        "#ffbea8",
+        "#ffe0e5",
+        "#fff0d2"
+      ],
+      "sha256": "222d371438b773bf5ac7b4897199c25454479c2bf64ed2da5cf9ada604c021a2",
+      "species": "jiguang",
+      "form": "teen",
+      "source": "design/round4/source/jiguang_sheet.png"
+    },
+    "companion/jiguang/final.png": {
+      "id": "jiguang_final",
+      "name": "jiguang_final",
+      "canvas_px": [
+        184,
+        192
+      ],
+      "target_px": [
+        46,
+        48
+      ],
+      "anchor_px": [
+        92.0,
+        192
+      ],
+      "target_anchor_px": [
+        23.0,
+        48.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#35203e",
+        "#4d244b",
+        "#8a3f79",
+        "#b85c9d",
+        "#baa7e5",
+        "#d981b6",
+        "#e98dbc",
+        "#f1abcf",
+        "#f2a18f",
+        "#f6c7e2",
+        "#fdc3cb",
+        "#ffbea8",
+        "#ffe0e5",
+        "#fff0d2"
+      ],
+      "sha256": "abd9e2baa428f1a7ccb0024c93f204c609f9a0b4a150a673731f475ed8dfc952",
+      "species": "jiguang",
+      "form": "final",
+      "source": "design/round4/source/jiguang_sheet.png"
+    }
+  },
+  "toys": {
+    "toys/primary/duck.png": {
+      "id": "duck",
+      "name": "duck",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 7,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#d9a33d",
+        "#e97531",
+        "#ffd560"
+      ],
+      "sha256": "7c8f05a2116ac5a5ccb288a4c9525fd0f9d58d56e594f5746e173751cbc3e5c1",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_duck.png",
+      "stage": "primary"
+    },
+    "toys/primary/rocket.png": {
+      "id": "rocket",
+      "name": "rocket",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 17,
+      "palette": [
+        "#2787b8",
+        "#2d201c",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a28bc4",
+        "#b6c4ca",
+        "#c17d4a",
+        "#cc5952",
+        "#d99d62",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "77112181d2b33a1272c1adf5460792c9a5275720b0f4c4be36ce54b157dd18c4",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_rocket.png",
+      "stage": "primary"
+    },
+    "toys/primary/cactus.png": {
+      "id": "cactus",
+      "name": "cactus",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#2d201c",
+        "#315d2c",
+        "#57923d",
+        "#6d3b2d",
+        "#87b846",
+        "#8c3338",
+        "#945735",
+        "#bdd66a",
+        "#cc5952",
+        "#e97531"
+      ],
+      "sha256": "46d76ae8547e54de8a3e6bd535bf5b242380af2e6f80bd2705b6361abdf50828",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_cactus.png",
+      "stage": "primary"
+    },
+    "toys/primary/snowglobe.png": {
+      "id": "snowglobe",
+      "name": "snowglobe",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 13,
+      "palette": [
+        "#1e3f43",
+        "#2d201c",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a9dce5",
+        "#cc5952",
+        "#e5dcf0",
+        "#f4f5e9"
+      ],
+      "sha256": "aaa3c05da3b42c0bbe9f0e9e43cedb7e74b80db4fca1cf4e7e575f43041e2731",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_snowglobe.png",
+      "stage": "primary"
+    },
+    "toys/primary/cube.png": {
+      "id": "cube",
+      "name": "cube",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 17,
+      "palette": [
+        "#173342",
+        "#1e3f43",
+        "#2787b8",
+        "#2d201c",
+        "#315d2c",
+        "#465d6c",
+        "#57923d",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#87b846",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#cc5952",
+        "#d9a33d",
+        "#e97531",
+        "#ffd560"
+      ],
+      "sha256": "37f416bfdcf771831262ac383be8f011efb3748fdb3064bd6d1c0f82d36eeafe",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_cube.png",
+      "stage": "primary"
+    },
+    "toys/primary/dino.png": {
+      "id": "dino",
+      "name": "dino",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#1e3f43",
+        "#2d201c",
+        "#315d2c",
+        "#57923d",
+        "#87b846",
+        "#bdd66a",
+        "#e3d2ab",
+        "#f7e891"
+      ],
+      "sha256": "e6247876aeeddfeb1373c799cffbc4cc31092293feff380df8445299700320b4",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_dino.png",
+      "stage": "primary"
+    },
+    "toys/primary/plane.png": {
+      "id": "plane",
+      "name": "plane",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#1e3f43",
+        "#465d6c",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#b6c4ca",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "5920bfe2c4f673ba000732c7ff12424c0cb6d38cc80f3a1f3611fefc8851ac60",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_plane.png",
+      "stage": "primary"
+    },
+    "toys/primary/hourglass.png": {
+      "id": "hourglass",
+      "name": "hourglass",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#2d201c",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#945735",
+        "#a87328",
+        "#b6c4ca",
+        "#cc5952",
+        "#d9a33d",
+        "#e5dcf0",
+        "#f4f5e9",
+        "#f7e891",
+        "#ffd560",
+        "#fff1d2"
+      ],
+      "sha256": "6d7e9c7e09bbceda4c78a29200344f8d5c05f7c7d0fb1ec7762c1135d2633330",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_hourglass.png",
+      "stage": "primary"
+    },
+    "toys/primary/shell.png": {
+      "id": "shell",
+      "name": "shell",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 7,
+      "palette": [
+        "#8c3338",
+        "#945735",
+        "#c17d4a",
+        "#cc5952",
+        "#d99d62",
+        "#e3d2ab",
+        "#f28d71"
+      ],
+      "sha256": "ed1b43a486aed629ea035ef0201bed9e2d3d5386f8a14a063bfd904b1593534e",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_shell.png",
+      "stage": "primary"
+    },
+    "toys/primary/windmill.png": {
+      "id": "windmill",
+      "name": "windmill",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#1e3f43",
+        "#2787b8",
+        "#2d201c",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#cc5952",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "2b0630af686816a62ed9e9ff51e7611267e45e1886936586970d0f1dcb2f6f90",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/toys_windmill.png",
+      "stage": "primary"
+    },
+    "toys/junior/panda.png": {
+      "id": "panda",
+      "name": "panda",
+      "slug": "panda",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 13,
+      "palette": [
+        "#101622",
+        "#173342",
+        "#1e3f43",
+        "#2d201c",
+        "#465d6c",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#b6c4ca",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "516cc76e46684e3aff3bdfcc6ab0a75379a47a8e8e18f11eb2371e207de41063",
+      "source": "design/round5/source/toy_junior_panda.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/tumbler.png": {
+      "id": "tumbler",
+      "name": "tumbler",
+      "slug": "tumbler",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 17,
+      "palette": [
+        "#2d201c",
+        "#465d6c",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#b6c4ca",
+        "#c17d4a",
+        "#cc5952",
+        "#d99d62",
+        "#e3d2ab",
+        "#e97531",
+        "#f28d71",
+        "#f4f5e9",
+        "#ffd560",
+        "#fff1d2"
+      ],
+      "sha256": "18900771ee8e29e2d02e591ffde46a56a8db8922e596dd4cf97b211ab6d83f87",
+      "source": "design/round5/source/toy_junior_tumbler.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/sakura.png": {
+      "id": "sakura",
+      "name": "sakura",
+      "slug": "sakura",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#2d201c",
+        "#315d2c",
+        "#57923d",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#87b846",
+        "#8c3338",
+        "#945735",
+        "#b85c9d",
+        "#d981b6",
+        "#e5dcf0",
+        "#f1abcf"
+      ],
+      "sha256": "646a2005035105cb2f6b492ddaa6b398809d8f4eb0862eda2bb863c6a2eca6a4",
+      "source": "design/round5/source/toy_junior_sakura.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/lantern.png": {
+      "id": "lantern",
+      "name": "lantern",
+      "slug": "lantern",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 6,
+      "palette": [
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#cc5952",
+        "#d9a33d",
+        "#e97531"
+      ],
+      "sha256": "4cee565aa18b44f70c6f360dcb9857aa9836d132262c163739f6bf294e8470e1",
+      "source": "design/round5/source/toy_junior_lantern.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/coconut.png": {
+      "id": "coconut",
+      "name": "coconut",
+      "slug": "coconut",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 13,
+      "palette": [
+        "#1e3f43",
+        "#315d2c",
+        "#57923d",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#87b846",
+        "#945735",
+        "#bdd66a",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab",
+        "#f7e891",
+        "#fff1d2"
+      ],
+      "sha256": "01b304659534f0c07da8977ccc3a4cf9f0f229e4f982252980bed4c5fdf3123c",
+      "source": "design/round5/source/toy_junior_coconut.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/elephant.png": {
+      "id": "elephant",
+      "name": "elephant",
+      "slug": "elephant",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#ffc76f"
+      ],
+      "sha256": "9aefd26a42c775af9b58483ce5bdb4eeb1ecb8e7acedec4b48319bc489388927",
+      "source": "design/round5/source/toy_junior_elephant.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/dragonfly.png": {
+      "id": "dragonfly",
+      "name": "dragonfly",
+      "slug": "dragonfly",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 4,
+      "palette": [
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62"
+      ],
+      "sha256": "03b8462c7bf138b5538cab6f59bfb6798bb374672c4eab05c7c6bc9c60e37eef",
+      "source": "design/round5/source/toy_junior_dragonfly.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/fan.png": {
+      "id": "fan",
+      "name": "fan",
+      "slug": "fan",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#bdd66a",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "72c215f0d5fb4257e781284e2f28cf853cc437b382e22face9dda9ac98104840",
+      "source": "design/round5/source/toy_junior_fan.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/koinobori.png": {
+      "id": "koinobori",
+      "name": "koinobori",
+      "slug": "koinobori",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#cc5952",
+        "#d981b6",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab",
+        "#f28d71"
+      ],
+      "sha256": "7d068d6cd960dfcb8d0e524f05ebabb710cb0dba89b8387028c13c8adead7243",
+      "source": "design/round5/source/toy_junior_koinobori.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/junior/camel.png": {
+      "id": "camel",
+      "name": "camel",
+      "slug": "camel",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#e97531",
+        "#f7e891",
+        "#ffc76f",
+        "#ffd560"
+      ],
+      "sha256": "1b9c486830e6ef438091927fab4729f49fbfaf521bc1aba7dd1ac2930b4a8bfa",
+      "source": "design/round5/source/toy_junior_camel.png",
+      "pixel_grid_4x": true,
+      "stage": "junior"
+    },
+    "toys/senior/eiffel.png": {
+      "id": "eiffel",
+      "name": "eiffel",
+      "slug": "eiffel",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 5,
+      "palette": [
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d9a33d"
+      ],
+      "sha256": "d9769296489f8afe092f83a51c6ddcbb058e2be59de029518cc0f302bd4c0e73",
+      "source": "design/round5/source/toy_senior_eiffel.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/bigben.png": {
+      "id": "bigben",
+      "name": "bigben",
+      "slug": "bigben",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#465d6c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab"
+      ],
+      "sha256": "d9b6cab0dc3bb695d8310f6bd1284a23f0bb822bd99bc9e85a420763c93b4218",
+      "source": "design/round5/source/toy_senior_bigben.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/tulip.png": {
+      "id": "tulip",
+      "name": "tulip",
+      "slug": "tulip",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#101622",
+        "#2d201c",
+        "#315d2c",
+        "#57923d",
+        "#6d3b2d",
+        "#87b846",
+        "#8c3338",
+        "#bdd66a",
+        "#cc5952",
+        "#e97531",
+        "#f28d71"
+      ],
+      "sha256": "a57611d3f4772fd0843386a8154377e580f5675ced9bde8520b74d7681b6e476",
+      "source": "design/round5/source/toy_senior_tulip.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/violin.png": {
+      "id": "violin",
+      "name": "violin",
+      "slug": "violin",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 7,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#e97531"
+      ],
+      "sha256": "e7f3ae46f854eac608b6625609667ced1a0882dee21b1c76c3e0025c1cb5e535",
+      "source": "design/round5/source/toy_senior_violin.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/football.png": {
+      "id": "football",
+      "name": "football",
+      "slug": "football",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#101622",
+        "#1e3f43",
+        "#2d201c",
+        "#315d2c",
+        "#465d6c",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#b6c4ca",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#f4f5e9"
+      ],
+      "sha256": "4e01fc7edb3a11ad33311aacb2d0a1e61501ca57539764b62f7fdbd6737cdb63",
+      "source": "design/round5/source/toy_senior_football.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/castle.png": {
+      "id": "castle",
+      "name": "castle",
+      "slug": "castle",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a28bc4",
+        "#a87328",
+        "#b6c4ca",
+        "#c17d4a",
+        "#cc5952",
+        "#d981b6",
+        "#d99d62",
+        "#e3d2ab",
+        "#e97531"
+      ],
+      "sha256": "3c996eeb07787df97b259ea7e0b008805128c4117242b6870de22094e69910d7",
+      "source": "design/round5/source/toy_senior_castle.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/phonebox.png": {
+      "id": "phonebox",
+      "name": "phonebox",
+      "slug": "phonebox",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#8c3338",
+        "#945735",
+        "#b6c4ca",
+        "#b85c9d",
+        "#cc5952",
+        "#d981b6",
+        "#e3d2ab",
+        "#f28d71"
+      ],
+      "sha256": "6b1081e5c22cef79c16f4d4382639828234e85dc163431ec15e934bee99416d6",
+      "source": "design/round5/source/toy_senior_phonebox.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/matryoshka.png": {
+      "id": "matryoshka",
+      "name": "matryoshka",
+      "slug": "matryoshka",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#cc5952",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab",
+        "#e97531",
+        "#ffd560",
+        "#fff1d2"
+      ],
+      "sha256": "6f80750105412f7ec349d6e15af41ede151627778a74c5211db61bd1863f9bcd",
+      "source": "design/round5/source/toy_senior_matryoshka.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/pisa.png": {
+      "id": "pisa",
+      "name": "pisa",
+      "slug": "pisa",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 6,
+      "palette": [
+        "#6d3b2d",
+        "#8197a3",
+        "#945735",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab"
+      ],
+      "sha256": "58fd0c7117df2ce731a95227cb9f7d746b2908627c3e2b9d8a736e5f72fcb151",
+      "source": "design/round5/source/toy_senior_pisa.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/senior/swan.png": {
+      "id": "swan",
+      "name": "swan",
+      "slug": "swan",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#2787b8",
+        "#63b9d9",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#a87328",
+        "#a9dce5",
+        "#b6c4ca",
+        "#c17d4a",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#f4f5e9"
+      ],
+      "sha256": "b515802a7eff6d12c5a61286ce641f3d81c0bf0edb624346c05320689206df52",
+      "source": "design/round5/source/toy_senior_swan.png",
+      "pixel_grid_4x": true,
+      "stage": "senior"
+    },
+    "toys/cet4/liberty.png": {
+      "id": "liberty",
+      "name": "liberty",
+      "slug": "liberty",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#0b7184",
+        "#1999ae",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#8197a3",
+        "#87b846",
+        "#a4eae0",
+        "#a87328",
+        "#b6c4ca",
+        "#c17d4a"
+      ],
+      "sha256": "c486545f7d6ab69ee3c43c52af6afcc8163fac897b6787e0400bdab954151b1c",
+      "source": "design/round5/source/toy_cet4_liberty.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/baseball.png": {
+      "id": "baseball",
+      "name": "baseball",
+      "slug": "baseball",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a28bc4",
+        "#cc5952",
+        "#d981b6",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#f1abcf",
+        "#f28d71",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "386e98af7afabed2ad575a1c827f35c74e49c9a5a09eaff1948357394bd55227",
+      "source": "design/round5/source/toy_cet4_baseball.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/surfboard.png": {
+      "id": "surfboard",
+      "name": "surfboard",
+      "slug": "surfboard",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 7,
+      "palette": [
+        "#8c3338",
+        "#945735",
+        "#c17d4a",
+        "#cc5952",
+        "#e3d2ab",
+        "#f28d71",
+        "#ffc76f"
+      ],
+      "sha256": "125faa485c6154d822a46015ea12b09c6de051a79b0db6d86a05d98906c3e327",
+      "source": "design/round5/source/toy_cet4_surfboard.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/schoolbus.png": {
+      "id": "schoolbus",
+      "name": "schoolbus",
+      "slug": "schoolbus",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#2d201c",
+        "#465d6c",
+        "#6d3b2d",
+        "#8197a3",
+        "#87b846",
+        "#945735",
+        "#a87328",
+        "#b6c4ca",
+        "#bdd66a",
+        "#d9a33d"
+      ],
+      "sha256": "d5e1514eb4244b7bd17765aacf31f24eea21c95651cdff6a5d6f4fcb071dfbc5",
+      "source": "design/round5/source/toy_cet4_schoolbus.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/maple.png": {
+      "id": "maple",
+      "name": "maple",
+      "slug": "maple",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 5,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#8c3338",
+        "#cc5952",
+        "#e97531"
+      ],
+      "sha256": "59f11dda9eff3b98ff8047c1db528f48c32ecbf196476da768723ed86e875457",
+      "source": "design/round5/source/toy_cet4_maple.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/mayamask.png": {
+      "id": "mayamask",
+      "name": "mayamask",
+      "slug": "mayamask",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#0b7184",
+        "#1999ae",
+        "#1e3f43",
+        "#315d2c",
+        "#465d6c",
+        "#57923d",
+        "#8197a3",
+        "#87b846",
+        "#a87328",
+        "#d9a33d"
+      ],
+      "sha256": "4bd5d3c2ebd555e3a3452a4f98147494dfebe413efe1916d25f6be1a4b5bf23d",
+      "source": "design/round5/source/toy_cet4_mayamask.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/alpaca.png": {
+      "id": "alpaca",
+      "name": "alpaca",
+      "slug": "alpaca",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 9,
+      "palette": [
+        "#6d3b2d",
+        "#8197a3",
+        "#945735",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab",
+        "#f28d71",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "5f610e9f1e8fffb3871c1cdeb5d28a98b26adc8f2fc3172d8890c34b347b95df",
+      "source": "design/round5/source/toy_cet4_alpaca.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/cowboyhat.png": {
+      "id": "cowboyhat",
+      "name": "cowboyhat",
+      "slug": "cowboyhat",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 6,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62"
+      ],
+      "sha256": "335be1b779dec3ada3d4f9ef710efa7bbea022e0a904f4bbc0a80e9c3b917e15",
+      "source": "design/round5/source/toy_cet4_cowboyhat.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/burger.png": {
+      "id": "burger",
+      "name": "burger",
+      "slug": "burger",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 14,
+      "palette": [
+        "#2d201c",
+        "#315d2c",
+        "#57923d",
+        "#6d3b2d",
+        "#87b846",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#e97531",
+        "#f7e891",
+        "#ffc76f",
+        "#ffd560"
+      ],
+      "sha256": "699d128f05301c5681b3a17dd52863065f42170906fe96f01d81c8acdbb6dbbb",
+      "source": "design/round5/source/toy_cet4_burger.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet4/flamingo.png": {
+      "id": "flamingo",
+      "name": "flamingo",
+      "slug": "flamingo",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#8c3338",
+        "#945735",
+        "#b85c9d",
+        "#cc5952",
+        "#d981b6",
+        "#d99d62",
+        "#f1abcf",
+        "#f28d71"
+      ],
+      "sha256": "dd8ab0f2fb6b1a112c5854406ff2d0b3c8e2db6ab2a3e97fefcc12968e5153da",
+      "source": "design/round5/source/toy_cet4_flamingo.png",
+      "pixel_grid_4x": true,
+      "stage": "cet4"
+    },
+    "toys/cet6/koala.png": {
+      "id": "koala",
+      "name": "koala",
+      "slug": "koala",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#465d6c",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#a28bc4",
+        "#b6c4ca",
+        "#e3d2ab",
+        "#fff1d2"
+      ],
+      "sha256": "81e11f53a36edd8b12533ff0e2955217ed108e96ea117ea4e5359d2eb3ed745a",
+      "source": "design/round5/source/toy_cet6_koala.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/kangaroo.png": {
+      "id": "kangaroo",
+      "name": "kangaroo",
+      "slug": "kangaroo",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab",
+        "#f28d71",
+        "#ffc76f"
+      ],
+      "sha256": "e51863ed7837ffcbcf98eb70cada5a7ea5940dbc3c30d3ab2654c9c52691679e",
+      "source": "design/round5/source/toy_cet6_kangaroo.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/boomerang.png": {
+      "id": "boomerang",
+      "name": "boomerang",
+      "slug": "boomerang",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 6,
+      "palette": [
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#e97531",
+        "#ffc76f"
+      ],
+      "sha256": "1aaaf54d89d16a53c05f8e2af73f633c28bacb7511638395033c41cf296d22ad",
+      "source": "design/round5/source/toy_cet6_boomerang.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/pyramid.png": {
+      "id": "pyramid",
+      "name": "pyramid",
+      "slug": "pyramid",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 7,
+      "palette": [
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d9a33d",
+        "#e97531",
+        "#ffd560"
+      ],
+      "sha256": "a5e93f7397d78bcd62699a5eb53bc6abc3f094003e6c40bfc22b7f929ec30e42",
+      "source": "design/round5/source/toy_cet6_pyramid.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/giraffe.png": {
+      "id": "giraffe",
+      "name": "giraffe",
+      "slug": "giraffe",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#d99d62",
+        "#d9a33d",
+        "#e97531",
+        "#f7e891",
+        "#ffd560"
+      ],
+      "sha256": "b59dbbfb0d472da3bc6ac63a8ca1010fc4b829f5fe2c7bec33df9746ac8d0d43",
+      "source": "design/round5/source/toy_cet6_giraffe.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/drum.png": {
+      "id": "drum",
+      "name": "drum",
+      "slug": "drum",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#b6c4ca",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "612327a0a38b886ea8ab3a2385f472c7aa01e28100f87eff5c8beda63e5e0b51",
+      "source": "design/round5/source/toy_cet6_drum.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/lion.png": {
+      "id": "lion",
+      "name": "lion",
+      "slug": "lion",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 13,
+      "palette": [
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#b6c4ca",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab",
+        "#e97531",
+        "#f7e891",
+        "#ffc76f",
+        "#ffd560"
+      ],
+      "sha256": "b8e7a771dd5ba2765fce0068e0fd8679bec71895bcec9dc3ea373a4a7462fdbc",
+      "source": "design/round5/source/toy_cet6_lion.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/coral.png": {
+      "id": "coral",
+      "name": "coral",
+      "slug": "coral",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 5,
+      "palette": [
+        "#8c3338",
+        "#945735",
+        "#cc5952",
+        "#e97531",
+        "#f28d71"
+      ],
+      "sha256": "bc03df0239d54c656c0e2765b695394b19b3c102528e380ce8928d63272cd2df",
+      "source": "design/round5/source/toy_cet6_coral.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/operahouse.png": {
+      "id": "operahouse",
+      "name": "operahouse",
+      "slug": "operahouse",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 15,
+      "palette": [
+        "#173342",
+        "#1e3f43",
+        "#2d201c",
+        "#315d2c",
+        "#465d6c",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#945735",
+        "#b6c4ca",
+        "#c17d4a",
+        "#d99d62",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "dfd70f9bb932d0d88e8b11a45a2d1b199e0dd3353f9766ed8d348357208c94e6",
+      "source": "design/round5/source/toy_cet6_operahouse.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/cet6/baobab.png": {
+      "id": "baobab",
+      "name": "baobab",
+      "slug": "baobab",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 9,
+      "palette": [
+        "#315d2c",
+        "#57923d",
+        "#6d3b2d",
+        "#87b846",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#ffc76f"
+      ],
+      "sha256": "b1f4c6d605d411359d0422777785b0b441f77a7432048fbbf3f64f3ae41376c5",
+      "source": "design/round5/source/toy_cet6_baobab.png",
+      "pixel_grid_4x": true,
+      "stage": "cet6"
+    },
+    "toys/adv/penguin.png": {
+      "id": "penguin",
+      "name": "penguin",
+      "slug": "penguin",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 15,
+      "palette": [
+        "#101622",
+        "#1e3f43",
+        "#2d201c",
+        "#465d6c",
+        "#6d3b2d",
+        "#8197a3",
+        "#945735",
+        "#a28bc4",
+        "#a87328",
+        "#b6c4ca",
+        "#d99d62",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#e97531",
+        "#f4f5e9"
+      ],
+      "sha256": "69cdad8e36a53cd924029361cd148971b8848ba00f5620b3c5bdbd8a2a8e2525",
+      "source": "design/round5/source/toy_adv_penguin.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/polarbear.png": {
+      "id": "polarbear",
+      "name": "polarbear",
+      "slug": "polarbear",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#465d6c",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#a28bc4",
+        "#a9dce5",
+        "#b6c4ca",
+        "#e3d2ab",
+        "#e5dcf0",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "cd023e54f507298d67c0bb897ae4675f482c6688997b9921d955b71c205f5fe5",
+      "source": "design/round5/source/toy_adv_polarbear.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/aurorajar.png": {
+      "id": "aurorajar",
+      "name": "aurorajar",
+      "slug": "aurorajar",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 17,
+      "palette": [
+        "#0b7184",
+        "#1999ae",
+        "#1e3f43",
+        "#2787b8",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#945735",
+        "#a28bc4",
+        "#a87328",
+        "#a9dce5",
+        "#b6c4ca",
+        "#b85c9d",
+        "#d981b6",
+        "#f1abcf"
+      ],
+      "sha256": "07b7892ee6f3da3f56786f597e5d8235f872df75ac7b455e4d3e0b2d61661142",
+      "source": "design/round5/source/toy_adv_aurorajar.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/igloo.png": {
+      "id": "igloo",
+      "name": "igloo",
+      "slug": "igloo",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#173342",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#a9dce5",
+        "#b6c4ca",
+        "#e5dcf0",
+        "#f4f5e9"
+      ],
+      "sha256": "603ed9a883853daaae4038f5380a40aa6195559c1c31be747698badb2b882e04",
+      "source": "design/round5/source/toy_adv_igloo.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/sailboat.png": {
+      "id": "sailboat",
+      "name": "sailboat",
+      "slug": "sailboat",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "6013c1b15f45783771647f934f78abfc638e7b766b8204f7c614a98d800ad024",
+      "source": "design/round5/source/toy_adv_sailboat.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/balloon.png": {
+      "id": "balloon",
+      "name": "balloon",
+      "slug": "balloon",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#cc5952",
+        "#d981b6",
+        "#d9a33d",
+        "#e3d2ab",
+        "#f1abcf",
+        "#f28d71",
+        "#ffd560",
+        "#fff1d2"
+      ],
+      "sha256": "eba83195e687cddd492878fa01d43d215e044c10faefd97ef78b9e2d0ffa1adb",
+      "source": "design/round5/source/toy_adv_balloon.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/telescope.png": {
+      "id": "telescope",
+      "name": "telescope",
+      "slug": "telescope",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 20,
+      "palette": [
+        "#0b7184",
+        "#101622",
+        "#173342",
+        "#1e3f43",
+        "#2787b8",
+        "#2d201c",
+        "#315d2c",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#6d3b2d",
+        "#8197a3",
+        "#87b846",
+        "#945735",
+        "#a87328",
+        "#a9dce5",
+        "#b6c4ca",
+        "#d99d62",
+        "#d9a33d",
+        "#ffd560"
+      ],
+      "sha256": "82f05456f79e752054cfeabe6c7ff958fe9e49b6086545fdfe9c4c783f804ac4",
+      "source": "design/round5/source/toy_adv_telescope.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/astronaut.png": {
+      "id": "astronaut",
+      "name": "astronaut",
+      "slug": "astronaut",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#0b7184",
+        "#173342",
+        "#2787b8",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#a9dce5",
+        "#b6c4ca",
+        "#e3d2ab",
+        "#e5dcf0"
+      ],
+      "sha256": "ddfd7c0565ecb690cc4677e58e858f7957b23306466e9c9f0d2fd12a0bdae511",
+      "source": "design/round5/source/toy_adv_astronaut.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/fossil.png": {
+      "id": "fossil",
+      "name": "fossil",
+      "slug": "fossil",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 8,
+      "palette": [
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab",
+        "#ffc76f"
+      ],
+      "sha256": "126bab6564c1a70b6baf7dd42b0518ac40b15bfce66e3ec9e1a152ac26f938f2",
+      "source": "design/round5/source/toy_adv_fossil.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    },
+    "toys/adv/compass.png": {
+      "id": "compass",
+      "name": "compass",
+      "slug": "compass",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24,
+        48
+      ],
+      "target_anchor_px": [
+        6.0,
+        12.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#6d3b2d",
+        "#8197a3",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#c17d4a",
+        "#d99d62",
+        "#d9a33d",
+        "#e3d2ab",
+        "#f4f5e9",
+        "#fff1d2"
+      ],
+      "sha256": "7b68ca28730606a0fe9c0bd0242bc895ae84792bedc1694d06efa4899fdc0a74",
+      "source": "design/round5/source/toy_adv_compass.png",
+      "pixel_grid_4x": true,
+      "stage": "adv"
+    }
+  },
+  "round4": {
+    "expected_static_assets": 50,
+    "exported_static_assets": 50,
+    "missing_sources": [],
+    "canonical_groups": [
+      "companion",
+      "props",
+      "toys",
+      "ui"
+    ],
+    "source_designs": "design/round4/source/",
+    "prompts": "design/round4/prompts.json",
+    "generator": "Codex built-in ImageGen",
+    "alpha_policy": "binary; edge premixing is deferred to packer",
+    "icons": "three icon types; flame includes active/inactive variants",
+    "scope": "Round 4 only. The 50 additional toys and 8 accessories added as round 5 are not included.",
+    "qa": "QA.md",
+    "qa_zh_CN": "QA.zh_CN.md",
+    "inventory": "design/round4/README.md",
+    "inventory_zh_CN": "design/round4/README.zh_CN.md"
+  },
+  "ui": {
+    "ui/coin.png": {
+      "id": "coin",
+      "name": "coin",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        24.0
+      ],
+      "target_anchor_px": [
+        6.0,
+        6.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 6,
+      "palette": [
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#d9a33d",
+        "#e97531",
+        "#ffd560"
+      ],
+      "sha256": "c6f87d24e81c89b7a15a97f53f260212e72c3d922e73697cf8b5447fb79b88bf",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/ui_coin.png"
+    },
+    "ui/flame.png": {
+      "id": "flame",
+      "name": "flame",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        24.0
+      ],
+      "target_anchor_px": [
+        6.0,
+        6.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#c17d4a",
+        "#cc5952",
+        "#d99d62",
+        "#e97531",
+        "#f28d71",
+        "#f7e891",
+        "#ffc76f"
+      ],
+      "sha256": "db10e029b71e6d464db81131ce79db88b6092fa06371507518fad9ebbe9a0b44",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/ui_flame.png"
+    },
+    "ui/freeze.png": {
+      "id": "freeze",
+      "name": "freeze",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        24.0
+      ],
+      "target_anchor_px": [
+        6.0,
+        6.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 11,
+      "palette": [
+        "#173342",
+        "#2787b8",
+        "#465d6c",
+        "#63b9d9",
+        "#6a5b8c",
+        "#8197a3",
+        "#a28bc4",
+        "#a9dce5",
+        "#b6c4ca",
+        "#e5dcf0",
+        "#f4f5e9"
+      ],
+      "sha256": "2492528add1864a80448fb2f931ea615ce545d4002956bc2b1f8762925e077d7",
+      "pixel_grid_4x": true,
+      "source": "design/round4/source/ui_freeze.png"
+    },
+    "ui/flame_dim.png": {
+      "id": "flame_dim",
+      "name": "flame_dim",
+      "canvas_px": [
+        48,
+        48
+      ],
+      "target_px": [
+        12,
+        12
+      ],
+      "anchor_px": [
+        24.0,
+        24.0
+      ],
+      "target_anchor_px": [
+        6.0,
+        6.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 3,
+      "palette": [
+        "#626d7e",
+        "#96a0ae",
+        "#c2c8cf"
+      ],
+      "sha256": "ef732f33c1c490bf652d7bc73b80f9eab6baf4f96fd122972f697cd33b2ba568",
+      "pixel_grid_4x": true,
+      "state": "inactive",
+      "derived_from": "ui/flame.png"
+    }
+  },
+  "remaining_outfits": {
+    "cet4": {
+      "file": "start/cet4.png",
+      "candidate": "design/cet4_a.png",
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "head_max_pixel_difference": 0,
+      "opaque_rgb_colors": 31,
+      "owner_approved": false,
+      "sha256": "1f5869c794de056f35b7f7ec390adc80b0f7a19a41d385dc4bbacba320ed77db",
+      "hand_policy": "original hand pixels preserved",
+      "source": "design/round5/source/outfit_cet4.png"
+    },
+    "cet6": {
+      "file": "start/cet6.png",
+      "candidate": "design/cet6_a.png",
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "head_max_pixel_difference": 0,
+      "opaque_rgb_colors": 30,
+      "owner_approved": false,
+      "sha256": "93a7afad06c5e47152d6d780e2e63a5558fd2f3014419e1413b0cd0cc6000168",
+      "hand_policy": "original hand pixels preserved",
+      "source": "design/round5/source/outfit_cet6.png"
+    },
+    "adv": {
+      "file": "start/adv.png",
+      "candidate": "design/adv_a.png",
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "head_max_pixel_difference": 0,
+      "opaque_rgb_colors": 32,
+      "owner_approved": false,
+      "sha256": "57fae87113be63e9b713c1cecc31fb84f3b04989127a353122f54db805276a02",
+      "hand_policy": "original hand pixels preserved",
+      "source": "design/round5/source/outfit_adv.png"
+    },
+    "grad": {
+      "file": "start/grad.png",
+      "candidate": "design/grad_a.png",
+      "canvas_px": [
+        1024,
+        1280
+      ],
+      "cap_top": [
+        512,
+        366
+      ],
+      "desk_anchor": [
+        512,
+        1070
+      ],
+      "head_to_desk_px": 704,
+      "head_max_pixel_difference": 0,
+      "opaque_rgb_colors": 32,
+      "owner_approved": false,
+      "sha256": "40b877995dca949b0bc58b9f47bbd2cc6f9edbca97b0e1e561496a4737bb328b",
+      "hand_policy": "generated diploma grip",
+      "source": "design/round5/source/outfit_grad.png"
+    }
+  },
+  "remaining_video_handoff": {
+    "file": "reference/GROK_REMAINING.zh_CN.md",
+    "stages": [
+      "cet4",
+      "cet6",
+      "adv",
+      "grad"
+    ],
+    "shots": [
+      "01_idle",
+      "02_happy",
+      "03_sad"
+    ],
+    "expected_videos": 12,
+    "videos_received": false,
+    "owner_outfit_approval_pending": true
+  },
+  "accessories": {
+    "accessories/flower.png": {
+      "id": "acc_flower",
+      "name": "acc_flower",
+      "slug": "flower",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        40
+      ],
+      "target_anchor_px": [
+        6.0,
+        10.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 12,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#a87328",
+        "#bdd66a",
+        "#cc5952",
+        "#d9a33d",
+        "#e97531",
+        "#f28d71",
+        "#f7e891",
+        "#ffd560"
+      ],
+      "sha256": "6675ae5979732e983a830ed3ebca851894667fcf3fc70de7ab4ca653cea9f474",
+      "source": "design/round5/source/accessory_flower.png",
+      "pixel_grid_4x": true,
+      "slot": "head",
+      "layer": "front",
+      "placement_suggestion": {
+        "width_ratio": 0.36,
+        "x_halfwidth": -0.55,
+        "y_height": 0.16
+      }
+    },
+    "accessories/bow.png": {
+      "id": "acc_bow",
+      "name": "acc_bow",
+      "slug": "bow",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        40
+      ],
+      "target_anchor_px": [
+        6.0,
+        10.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 7,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#cc5952",
+        "#e97531",
+        "#f28d71"
+      ],
+      "sha256": "0f2b7309a2c7ea3bec4515cad995d4c83a36f8044750280c7a5e5f0adc5c9577",
+      "source": "design/round5/source/accessory_bow.png",
+      "pixel_grid_4x": true,
+      "slot": "head",
+      "layer": "front",
+      "placement_suggestion": {
+        "width_ratio": 0.58,
+        "x_halfwidth": 0,
+        "y_height": 0.16
+      }
+    },
+    "accessories/scarf.png": {
+      "id": "acc_scarf",
+      "name": "acc_scarf",
+      "slug": "scarf",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        20
+      ],
+      "target_anchor_px": [
+        6.0,
+        5.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 6,
+      "palette": [
+        "#2d201c",
+        "#6d3b2d",
+        "#8c3338",
+        "#945735",
+        "#cc5952",
+        "#e97531"
+      ],
+      "sha256": "dc44ebcb224da68276447b436829d1bf6b349754ffb7662d329dec9cf3ca6cd4",
+      "source": "design/round5/source/accessory_scarf.png",
+      "pixel_grid_4x": true,
+      "slot": "neck",
+      "layer": "front",
+      "placement_suggestion": {
+        "width_ratio": 0.7,
+        "x_halfwidth": 0,
+        "y_height": 0.88
+      }
+    },
+    "accessories/star.png": {
+      "id": "acc_star",
+      "name": "acc_star",
+      "slug": "star",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        40
+      ],
+      "target_anchor_px": [
+        6.0,
+        10.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#2d201c",
+        "#315d2c",
+        "#57923d",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#d9a33d",
+        "#f7e891",
+        "#ffd560",
+        "#fff1d2"
+      ],
+      "sha256": "73b246d5616a015a74c80e07bcb39127f9979437fb315a7ebc4abaf53f6ae616",
+      "source": "design/round5/source/accessory_star.png",
+      "pixel_grid_4x": true,
+      "slot": "head",
+      "layer": "front",
+      "placement_suggestion": {
+        "width_ratio": 0.33,
+        "x_halfwidth": 0.55,
+        "y_height": 0.16
+      }
+    },
+    "accessories/shades.png": {
+      "id": "acc_shades",
+      "name": "acc_shades",
+      "slug": "shades",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        20
+      ],
+      "target_anchor_px": [
+        6.0,
+        5.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 4,
+      "palette": [
+        "#173342",
+        "#1e3f43",
+        "#465d6c",
+        "#6a5b8c"
+      ],
+      "sha256": "f0ce5c5be5342f7e95d852a7d611b359972d77c5b73811871dd5f16339c86206",
+      "source": "design/round5/source/accessory_shades.png",
+      "pixel_grid_4x": true,
+      "slot": "eyes",
+      "layer": "front",
+      "placement_suggestion": {
+        "width_ratio": 0.78,
+        "x_halfwidth": 0,
+        "y_height": 0.55,
+        "form_y_height": {
+          "baby": 0.56,
+          "final": 0.53
+        }
+      }
+    },
+    "accessories/cape.png": {
+      "id": "acc_cape",
+      "name": "acc_cape",
+      "slug": "cape",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        20
+      ],
+      "target_anchor_px": [
+        6.0,
+        5.0
+      ],
+      "anchor_type": "center",
+      "opaque_rgb_colors": 3,
+      "palette": [
+        "#0b7184",
+        "#173342",
+        "#2787b8"
+      ],
+      "sha256": "9f4eeb102313468551180ee53955f30d738a009cd0ea85f6a0d12ef60322535d",
+      "source": "design/round5/source/accessory_cape.png",
+      "pixel_grid_4x": true,
+      "slot": "back",
+      "layer": "behind",
+      "placement_suggestion": {
+        "width_ratio": 1.55,
+        "height_ratio": 0.55,
+        "x_halfwidth": 0,
+        "y_height": 0.7
+      }
+    },
+    "accessories/phones.png": {
+      "id": "acc_phones",
+      "name": "acc_phones",
+      "slug": "phones",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        40
+      ],
+      "target_anchor_px": [
+        6.0,
+        10.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#0b7184",
+        "#173342",
+        "#1e3f43",
+        "#465d6c",
+        "#57923d",
+        "#945735",
+        "#a87328",
+        "#d9a33d",
+        "#f7e891",
+        "#ffd560"
+      ],
+      "sha256": "1f29d647b8567c504bbb229716c9d1a8a9458a9a151f93fb40669c2d8575c8f9",
+      "source": "design/round5/source/accessory_phones.png",
+      "pixel_grid_4x": true,
+      "slot": "head",
+      "layer": "front",
+      "placement_suggestion": {
+        "width_ratio": 1.06,
+        "x_halfwidth": 0,
+        "y_height": 0.57
+      }
+    },
+    "accessories/gradcap.png": {
+      "id": "acc_gradcap",
+      "name": "acc_gradcap",
+      "slug": "gradcap",
+      "canvas_px": [
+        48,
+        40
+      ],
+      "target_px": [
+        12,
+        10
+      ],
+      "anchor_px": [
+        24,
+        40
+      ],
+      "target_anchor_px": [
+        6.0,
+        10.0
+      ],
+      "anchor_type": "bottom_center",
+      "opaque_rgb_colors": 10,
+      "palette": [
+        "#101622",
+        "#173342",
+        "#1e3f43",
+        "#2d201c",
+        "#315d2c",
+        "#465d6c",
+        "#6d3b2d",
+        "#945735",
+        "#a87328",
+        "#d9a33d"
+      ],
+      "sha256": "8d3eb2bc459f4457b4c5205f5906235cc0c9eeec764a9f0d8471ff66aca887ee",
+      "source": "design/round5/source/accessory_gradcap.png",
+      "pixel_grid_4x": true,
+      "slot": "head",
+      "layer": "front",
+      "placement_suggestion": {
+        "width_ratio": 0.75,
+        "x_halfwidth": 0,
+        "y_height": 0.1
+      }
+    }
+  },
+  "round5": {
+    "new_static_assets_expected": 58,
+    "new_static_assets_exported": 58,
+    "total_toys": 60,
+    "accessories": 8,
+    "missing_sources": [],
+    "generator": "Codex built-in ImageGen",
+    "source_jobs": 62,
+    "prompts": "design/round5/prompts.json",
+    "qa": "QA.md",
+    "qa_zh_CN": "QA.zh_CN.md",
+    "toy_path_migration": {
+      "toys/duck.png": "toys/primary/duck.png",
+      "toys/rocket.png": "toys/primary/rocket.png",
+      "toys/cactus.png": "toys/primary/cactus.png",
+      "toys/snowglobe.png": "toys/primary/snowglobe.png",
+      "toys/cube.png": "toys/primary/cube.png",
+      "toys/dino.png": "toys/primary/dino.png",
+      "toys/plane.png": "toys/primary/plane.png",
+      "toys/hourglass.png": "toys/primary/hourglass.png",
+      "toys/shell.png": "toys/primary/shell.png",
+      "toys/windmill.png": "toys/primary/windmill.png"
+    },
+    "prototype_integration": "not changed; consume manifest and accessory placement suggestions"
+  }
+}
