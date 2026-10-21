@@ -61,12 +61,31 @@ function buildSession(s, rnd) {
     for (const i of shuffle(group, rnd)) queue.push(makeQuestion('en2zh', i, rnd, { isNew: true }));
   }
   queue.push(...revQ);
-  return { queue, pos: 0, total: queue.length, right: 0, wrong: 0, wrongSet: new Set(), plan: { reviews: reviews.length, fresh: fresh.length } };
+  return { queue, pos: 0, total: queue.length, right: 0, wrong: 0, wrongSet: new Set(), stampsBefore: stampCount(s),
+    plan: { reviews: reviews.length, fresh: fresh.length } };
 }
 
 // 答错后在队尾加一道重问（不改盒子）
 function requeue(sess, q, rnd) {
   sess.queue.push(makeQuestion('en2zh', q.idx, rnd, { first: false, retry: true }));
+}
+
+// 当前题作答：记对错（只算第一次作答）、改盒子（新词检测和结业考不改）、答错时在队尾加一道重问
+function sessionAnswer(s, sess, ok, rnd) {
+  const q = sess.queue[sess.pos];
+  if (q.first) { if (ok) sess.right++; else { sess.wrong++; sess.wrongSet.add(q.idx); } }
+  if (!sess.exam && !q.isNew) grade(s, q.idx, ok, q.first);
+  if (!ok && !sess.exam) requeue(sess, q, rnd);
+}
+// 队列做完：普通学习记完成今日学习，结业考按答对数通过或不通过
+function sessionFinish(s, sess) {
+  if (sess.exam) {
+    const passed = sess.right >= EXAM_PASS;
+    const notes = passed ? passExam(s) : (failExam(s, [...sess.wrongSet]), ['错题已放回复习盒子']);
+    return { exam: true, passed, notes, stampsGained: 0 };
+  }
+  const notes = finishDay(s, sess.wrong === 0);
+  return { exam: false, passed: false, notes, stampsGained: stampCount(s) - sess.stampsBefore };
 }
 
 function buildExam(s, rnd) {

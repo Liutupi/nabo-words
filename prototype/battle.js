@@ -2,7 +2,7 @@
 'use strict';
 
 const Battle = (() => {
-  const Q_N = 10, Q_SEC = 8, ELO_K = 32, FARM_LIMIT = 3;
+  const Q_N = BATTLE_Q, Q_SEC = BATTLE_MS / 1000;
   const BOT_ID = 'b4:3a:45:12:9c:e1';
   const cvB = document.getElementById('screenB'), ctxB = cvB.getContext('2d');
   ctxB.setTransform(2, 0, 0, 2, 0, 0);
@@ -37,9 +37,7 @@ const Battle = (() => {
   }
   function points(k) {
     const q = M.qs[M.qi];
-    if (M.pick[k] !== q.answer) return 0;
-    const p = 100 + Math.floor(50 * Math.max(0, Q_SEC - M.at[k]) / Q_SEC);
-    return M.qi === Q_N - 1 ? p * 2 : p;
+    return battlePoints(M.pick[k] === q.answer, Math.round(M.at[k] * 1000), M.qi === Q_N - 1);
   }
   function reveal() {
     M.gain = [points(0), points(1)];
@@ -49,21 +47,14 @@ const Battle = (() => {
     SFX[M.gain[0] ? 'right' : 'wrong']();
   }
   function finish() {
-    const [a, b] = M.score, res = a > b ? 1 : a < b ? 0 : 0.5;
-    const exp = 1 / (1 + Math.pow(10, (bot.rating - S.rating) / 400));
-    const n = (S.vsToday[BOT_ID] || 0) + 1;
-    S.vsToday = { ...S.vsToday, [BOT_ID]: n };
-    const delta = n > FARM_LIMIT ? 0 : Math.round(ELO_K * (res - exp));
-    S.rating += delta; bot.rating -= delta;
-    const coins = res === 1 ? 3 : res === 0.5 ? 2 : 1;
-    S.coins += coins;
-    if (res === 1) { S.wins++; S.winStreak++; } else { S.winStreak = 0; if (res === 0) S.losses++; }
+    const [a, b] = M.score;
     const missed = M.picks.filter(p => !p.a).map(p => p.idx);
-    for (const i of missed) if (S.box[i] > 0) S.due[i] = Math.min(S.due[i], S.day + 1);
-    const notes = checkAchievements(S);
+    const r = battleFinish(S, BOT_ID, bot.rating, a, b, missed);
+    bot.rating -= r.delta;
+    const res = r.result / 1000, delta = r.delta, coins = r.coins, notes = r.notes;
     saveState(S);
     pkt('A→B', 'RESULT', 12, `${a} : ${b}`); pkt('B→A', 'RESULT', 12, '比分核对一致');
-    M.result = { res, delta, coins, missed: missed.length, farm: n > FARM_LIMIT, notes };
+    M.result = { res, delta, coins, missed: missed.length, farm: r.farm, notes };
     M.phase = 'end'; M.t = 0;
     SFX.done(); setMood(res === 1 ? 'happy' : res === 0 ? 'sad' : 'idle', 2);
   }

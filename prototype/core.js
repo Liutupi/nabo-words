@@ -1,4 +1,5 @@
 // 纯逻辑：随机数、存档、Leitner 记忆盒、学习日、奖励与成长。不碰画面，固件 model 层照此移植。
+// 固件没有浮点单元，规则里只用整数（时间用 0.1 秒为单位，比例用乘法比较），C 版本才能逐步对拍。
 'use strict';
 
 // ---------- 可复现随机数（mulberry32），固件用同一算法 ----------
@@ -25,10 +26,11 @@ const MAINT_PER_DAY = 3;                        // 每天从毕业词里抽查�
 const REVIEW_SEC_PER_NEW = 30, REVIEW_BUDGET_MIN_S = 300;
 function reviewBudget(s) { return Math.max(REVIEW_BUDGET_MIN_S, REVIEW_SEC_PER_NEW * s.newPerDay); }
 const BACKLOG_SOFT = 20;                        // 排不下的复习超过这个数，当天新词减半
-// 每道题的预计用时（秒）：新词卡、新词检测、按盒子决定的复习题型
-const SEC_INTRO = 4, SEC_CHECK = 4;
-function reviewSeconds(box) { return box <= 3 ? 4 : box === 4 ? 4.5 : 2.5; }
-const EXAM_UNLOCK = 0.9, EXAM_Q = 20, EXAM_PASS = 16;
+// 每道题的预计用时（0.1 秒）：新词卡、新词检测、按盒子决定的复习题型
+const TENTHS_INTRO = 40, TENTHS_CHECK = 40;
+function reviewTenths(box) { return box <= 3 ? 40 : box === 4 ? 45 : 25; }
+const EXAM_UNLOCK_PCT = 90, EXAM_Q = 20, EXAM_PASS = 16;
+const HATCH_PCT = 10, TEEN_PCT = 45;            // 精灵孵化 / 长成少年：学段词掌握的百分比
 const STREAK_FREEZE_EVERY = 7, FREEZE_MAX = 2;
 
 const SAVE_KEY = 'nabo.words.v1';
@@ -69,15 +71,15 @@ function stampCount(s) { let n = 0; for (let u = 0; u < TOTAL_UNITS; u++) if (un
 function examReady(s) {
   if (s.stage >= STAGES.length) return false;
   const st = STAGES[s.stage];
-  return s.next >= st.end && stageProgress(s, st).familiar >= EXAM_UNLOCK;
+  return s.next >= st.end && countBox(s, st.start, st.end, FAMILIAR) * 100 >= EXAM_UNLOCK_PCT * (st.end - st.start);
 }
 function allDone(s) { return s.stage >= STAGES.length; }
 
 // 精灵形态：0 蛋 1 幼崽 2 少年 3 完全体
 function spriteForm(s, stageIdx) {
   if (stageIdx < s.stage) return 3;
-  const m = stageProgress(s, STAGES[stageIdx]).mastered;
-  return m >= 0.45 ? 2 : m >= 0.10 ? 1 : 0;
+  const st = STAGES[stageIdx], m100 = countBox(s, st.start, st.end, MASTERED) * 100, n = st.end - st.start;
+  return m100 >= TEEN_PCT * n ? 2 : m100 >= HATCH_PCT * n ? 1 : 0;
 }
 
 // ---------- 今日学习的题单 ----------
@@ -90,11 +92,11 @@ function planToday(s) {
   for (let i = 0; i < s.next; i++) if (s.box[i] === GRADUATED) grads.push(i);
   const pick = mulberry32(s.day * 7919 + 13);
   const maint = grads.length ? shuffle(grads, pick).slice(0, MAINT_PER_DAY) : [];
-  const reviews = [], budget = reviewBudget(s); let sec = 0;
+  const reviews = [], budget = reviewBudget(s) * 10; let tenths = 0;
   for (const i of [...due, ...maint]) {
-    const t = reviewSeconds(s.box[i]);
-    if (sec + t > budget) break;
-    reviews.push(i); sec += t;
+    const t = reviewTenths(s.box[i]);
+    if (tenths + t > budget) break;
+    reviews.push(i); tenths += t;
   }
   const backlog = due.length + maint.length - reviews.length;
   let quota = s.newPerDay;
@@ -104,7 +106,7 @@ function planToday(s) {
     const limit = STAGES[s.stage].end;
     for (let i = s.next; i < limit && fresh.length < quota; i++) fresh.push(i);
   }
-  return { reviews, fresh, backlog, seconds: Math.round(sec + fresh.length * (SEC_INTRO + SEC_CHECK)) };
+  return { reviews, fresh, backlog, seconds: Math.floor((tenths + fresh.length * (TENTHS_INTRO + TENTHS_CHECK) + 5) / 10) };
 }
 
 // 答题结果写回记忆盒。first=true 表示本次学习里这个词第一次作答（重问不改盒子）
@@ -199,6 +201,40 @@ function useAccessory(s, id) {
   }
   s.acc = s.acc === id ? null : id;
   return { ok: true, msg: s.acc ? `戴上：${a.name}` : `摘下：${a.name}` };
+}
+
+// ---------- 对战计分（整数） ----------
+const BATTLE_Q = 10, BATTLE_MS = 8000, ELO_K = 32, FARM_LIMIT = 3;
+// 对手比我高 d 分时我的预期得分（千分比），d = -800..800 每 50 一档，中间线性插值
+const ELO_TABLE = [990, 987, 983, 977, 969, 960, 947, 930, 909, 882, 849, 808, 760, 703, 640, 571, 500,
+  429, 360, 297, 240, 192, 151, 118, 91, 70, 53, 40, 31, 23, 17, 13, 10];
+function eloExpected(mine, theirs) {
+  const d = Math.max(-800, Math.min(800, theirs - mine)) + 800, k = Math.floor(d / 50), r = d % 50;
+  if (k >= ELO_TABLE.length - 1) return ELO_TABLE[ELO_TABLE.length - 1];
+  return ELO_TABLE[k] + Math.trunc((ELO_TABLE[k + 1] - ELO_TABLE[k]) * r / 50);
+}
+// result：赢 1000、平 500、输 0。四舍五入（.5 向上），和 Math.round 一致
+function eloDelta(mine, theirs, result) { return Math.floor((ELO_K * (result - eloExpected(mine, theirs)) + 500) / 1000); }
+// 答对 100 分 + 速度分（剩余时间比例 × 50），最后一题翻倍；ms 是作答用时
+function battlePoints(correct, ms, last) {
+  if (!correct) return 0;
+  const p = 100 + Math.floor(50 * Math.max(0, BATTLE_MS - ms) / BATTLE_MS);
+  return last ? p * 2 : p;
+}
+
+// 结算一局：同一台徽章一个学习日内第 4 局起不改积分，只给金币；本机答错的词排进明天的复习
+function battleFinish(s, peerId, peerRating, myScore, theirScore, missed) {
+  const result = myScore > theirScore ? 1000 : myScore < theirScore ? 0 : 500;
+  const games = (s.vsToday[peerId] || 0) + 1;
+  s.vsToday = { ...s.vsToday, [peerId]: games };
+  const farm = games > FARM_LIMIT;
+  const delta = farm ? 0 : eloDelta(s.rating, peerRating, result);
+  s.rating += delta;
+  const coins = result === 1000 ? 3 : result === 500 ? 2 : 1;
+  s.coins += coins;
+  if (result === 1000) { s.wins++; s.winStreak++; } else { s.winStreak = 0; if (result === 0) s.losses++; }
+  for (const i of missed) if (s.box[i] > 0) s.due[i] = Math.min(s.due[i], s.day + 1);
+  return { result, delta, coins, missed: missed.length, farm, notes: checkAchievements(s) };
 }
 
 // ---------- 时间快进模拟 ----------

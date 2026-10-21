@@ -80,7 +80,6 @@ function curStampCity() {
 }
 function startSession(sess) {
   if (!sess.queue.length) { toast('今天没有要学的词'); return; }
-  sess.stampsBefore = stampCount(S);
   G.sess = sess; G.scene = 'study'; prepQ();
 }
 function prepQ() { G.sel = 0; G.fb = null; G.flipped = false; }
@@ -89,9 +88,7 @@ function curQ() { return G.sess.queue[G.sess.pos]; }
 function answer(ok, pick) {
   const sess = G.sess, q = curQ();
   G.fb = { ok, pick }; G.fbT = 0;
-  if (q.first) { if (ok) sess.right++; else { sess.wrong++; sess.wrongSet.add(q.idx); } }
-  if (!sess.exam && !q.isNew) grade(S, q.idx, ok, q.first);
-  if (!ok && !sess.exam) requeue(sess, q, rnd);
+  sessionAnswer(S, sess, ok, rnd);
   setMood(ok ? 'happy' : 'sad', 1);
   SFX[ok ? 'right' : 'wrong']();
   saveState(S);
@@ -102,22 +99,19 @@ function nextQ() {
   if (sess.pos >= sess.queue.length) finishSession(); else prepQ();
 }
 function finishSession() {
-  const sess = G.sess, stampsBefore = sess.stampsBefore;
+  const sess = G.sess;
   const acc = sess.right + sess.wrong ? Math.round(sess.right / (sess.right + sess.wrong) * 100) : 100;
-  let notes, title;
-  if (sess.exam) {
-    const pass = sess.right >= EXAM_PASS;
-    title = pass ? '结业考通过！' : '差一点，明天再考';
-    notes = pass ? passExam(S) : (failExam(S, [...sess.wrongSet]), ['错题已放回复习盒子']);
-    setMood(pass ? 'happy' : 'sad', 3);
-    G.pending = pass ? ['cheer', null, false] : ['sad', null, false];
+  const res = sessionFinish(S, sess), notes = res.notes;
+  let title;
+  if (res.exam) {
+    title = res.passed ? '结业考通过！' : '差一点，明天再考';
+    setMood(res.passed ? 'happy' : 'sad', 3);
+    G.pending = res.passed ? ['cheer', null, false] : ['sad', null, false];
   } else {
     title = '今日学习完成';
-    notes = finishDay(S, sess.wrong === 0);
     setMood('happy', 2);
-    const gained = stampCount(S) - stampsBefore;
-    if (gained > 0) notes.unshift(`护照盖章：${curStampCity()}`);
-    G.pending = gained > 0 ? ['cheer', null, false] : ['happy', null, false];
+    if (res.stampsGained > 0) notes.unshift(`护照盖章：${curStampCity()}`);
+    G.pending = res.stampsGained > 0 ? ['cheer', null, false] : ['happy', null, false];
   }
   saveState(S);
   G.summary = { title, notes, rows: sess.exam
