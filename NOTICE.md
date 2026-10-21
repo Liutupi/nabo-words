@@ -5,3 +5,5 @@
 - **词库数据**（`data/words.json`、`prototype/assets/words_data.js`）：音标、词性和释义取自 [ECDICT](https://github.com/skywind3000/ECDICT)（MIT，Copyright (c) 2025 Linwei，许可全文见 `third_party/ecdict/LICENSE`），经 `tools/build_wordlist.py` 清洗和人工修订；小学词表 `tools/wordlists/primary.txt` 为本项目整理。
 - 网页原型从 Google Fonts 加载 Fredoka、Noto Sans、Noto Sans SC、Space Mono（均为 OFL 1.1），仓库中不包含字体文件。
 - 本项目与 FoloToy 官方无关联。AI Passport 是 FoloToy 的产品。
+- 固件的 `assets.bin`（既作为发布文件提供，也包含在 `nabo-words-merged.bin` 中）内含 Noto Sans SC、Noto Sans、Fredoka、Space Mono 四款字体的位图子集（OFL 1.1，由 `firmware/tools/pack_assets.py` 生成）以及 NABO 美术；NABO 美术不随 MIT 授权。
+- `firmware/components/bsp/` 来自 FoloToy 官方 ai-passport（MIT，见 `firmware/LICENSE.FoloToy`）。
