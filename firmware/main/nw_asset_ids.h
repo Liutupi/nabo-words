@@ -144,9 +144,9 @@ typedef struct { const char *stage, *anim, *seg; unsigned char lo, hi; } nw_seg_
 static const nw_seg_t NW_SEGS[] = {
     {"primary", "happy", "peak", 12, 26},
     {"primary", "sad", "peak", 17, 29},
-    {"primary", "sleep", "in", 0, 8},
-    {"primary", "sleep", "loop", 8, 17},
-    {"primary", "sleep", "out", 17, 24},
+    {"primary", "sleep", "in", 0, 17},
+    {"primary", "sleep", "loop", 17, 35},
+    {"primary", "sleep", "out", 35, 48},
     {"junior", "happy", "peak", 13, 35},
     {"junior", "sad", "peak", 18, 31},
     {"senior", "happy", "peak", 17, 31},

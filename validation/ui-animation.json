@@ -1,0 +1,145 @@
+{
+  "status": "development candidate; not flashed or released",
+  "date": "2026-10-21",
+  "source_base": "a150b5a5a69906cde219022ee7acfa450e4c400d",
+  "source_files_sha256": {
+    "firmware/main/nw_asset_ids.h": "49b552ecb3f23cd6862602030e22238ca501278fd0cd3e01312db099cd38adfb",
+    "firmware/main/nw_game.c": "8fd0e7eb8751ec129e9d7ed3a1f0a8f3c5ee8e4a107d2e141a32ca6de39fbc1c",
+    "firmware/main/nw_game_int.h": "5db21ff3b83cccebdcbac0481d177794c33515623b7e2419b26ceed08977089a",
+    "firmware/main/nw_gfx.c": "859a5f77e568a032526c8186461ecd96dfd557c1f1bf215b68269894aa04de01",
+    "firmware/main/nw_gfx.h": "e351ed40a316ab8e4910f26d67a4a43abd662c78ac3b6617536c33141c09ac64",
+    "firmware/main/nw_scene_home.c": "cf26a7ba344552d90a73634877ebbf0b00689b3e5f623b0fbf89f42f6c2367f2",
+    "firmware/sdkconfig.defaults": "6a59d5d8353e5eca8e5b945f25c1476697f271afd5301f7dc7de372053e66139",
+    "firmware/tools/pack_assets.py": "51b56497b939d75e81d22cfc3e3a5b4c5ef0007270c1e87b1d3076a586f4d181"
+  },
+  "application_version": "0.3.1-dev",
+  "build": {
+    "target": "esp32c3",
+    "esp_idf": "v5.5.3",
+    "esp_idf_commit": "2c211b236707889e8400c4dc5644dd5c4ee071e0",
+    "compiler": "riscv32-esp-elf-gcc 14.2.0 (esp-14.2.0_20251107)",
+    "result": "PASS",
+    "merged_layout": "PASS",
+    "app_partition_bytes": 2031616,
+    "assets_partition_bytes": 6225920,
+    "dependency_versions": {
+      "espressif/button": "4.2.0",
+      "espressif/cmake_utilities": "1.1.1",
+      "espressif/esp_codec_dev": "1.6.2",
+      "espressif/esp_lvgl_port": "2.9.0",
+      "lvgl/lvgl": "9.6.0~1"
+    },
+    "dependency_lock_sha256": "6620132fd412e3def82b147a35a1f0715719695fa1607c5c50bb750ed4d8cb04",
+    "warnings": [
+      "Third-party LVGL Kconfig deprecates LV_MEM_SIZE_KILOBYTES; this standalone renderer does not initialize LVGL.",
+      "Initial build environment omitted ESP_IDF_VERSION for codec Kconfig; codec backward compatibility remains disabled."
+    ]
+  },
+  "images": {
+    "bootloader.bin": {
+      "bytes": 21024,
+      "sha256": "c054def06bcdd9eb986bca61ab559a16231dd233b9ec719ffe2f7b220324ebe2"
+    },
+    "partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "34373abb6cd1b5c1f6de2bde0a3f7eb457fe21c3ee3a7c83a9af1fcc30d06088"
+    },
+    "nabo-words-passport.bin": {
+      "bytes": 914512,
+      "sha256": "784a3089a7645aaa2223a155cbd9fb236941bd1040e8ef7b351f2acb0af9a42c"
+    },
+    "assets.bin": {
+      "bytes": 4658019,
+      "sha256": "5abc46e61f9ae1fe960d205018d0fdc6c6b6c4a382f919363db248bd0918ac6d"
+    },
+    "nabo-words-merged.bin": {
+      "bytes": 6820707,
+      "sha256": "a152a5c933af6cda85dd62884f47fffe85baa7617608846a3b71adcfe05841be"
+    }
+  },
+  "host_ui": {
+    "checks": 27149,
+    "failures": 0,
+    "max_ops": 56,
+    "ops_limit": 96,
+    "max_glyphs": 101,
+    "glyph_limit": 360,
+    "incremental_matches_full": true,
+    "vocabulary_entries": 7500,
+    "outfits": 7,
+    "baseline_checks": 26986,
+    "baseline_failures": 97
+  },
+  "rules": {
+    "golden_replay_steps": 16317,
+    "golden_replay": "PASS",
+    "extra_rules": "PASS",
+    "windows_runner": "Zig 0.14.1 cc adapter for the existing POSIX-style test commands; UTF-8 mode"
+  },
+  "assets": {
+    "base_release": "v0.3.0",
+    "static_chunks_unchanged": [
+      "words.bin",
+      "font_f12.bin",
+      "font_f16.bin",
+      "font_f22.bin",
+      "font_w36.bin",
+      "font_w28.bin",
+      "font_w20.bin",
+      "font_w16.bin",
+      "font_ipa.bin",
+      "font_m11.bin",
+      "font_m18.bin",
+      "art.bin"
+    ],
+    "assets_bytes": 4658019,
+    "assets_partition_bytes": 6225920,
+    "assets_sha256": "5abc46e61f9ae1fe960d205018d0fdc6c6b6c4a382f919363db248bd0918ac6d",
+    "animation_cadence": {
+      "nabo_primary.bin": {
+        "before_fps": 6,
+        "after_fps": 12,
+        "after_idle_frames": 49
+      },
+      "nabo_junior.bin": {
+        "before_fps": 6,
+        "after_fps": 12,
+        "after_idle_frames": 49
+      },
+      "nabo_senior.bin": {
+        "before_fps": 6,
+        "after_fps": 12,
+        "after_idle_frames": 49
+      },
+      "nabo_cet4.bin": {
+        "before_fps": 6,
+        "after_fps": 12,
+        "after_idle_frames": 49
+      },
+      "nabo_cet6.bin": {
+        "before_fps": 6,
+        "after_fps": 12,
+        "after_idle_frames": 49
+      },
+      "nabo_adv.bin": {
+        "before_fps": 6,
+        "after_fps": 12,
+        "after_idle_frames": 49
+      },
+      "nabo_grad.bin": {
+        "before_fps": 6,
+        "after_fps": 12,
+        "after_idle_frames": 49
+      }
+    }
+  },
+  "not_retested": [
+    "two-process UDP battle",
+    "physical badge UI and animation cadence",
+    "physical buttons",
+    "sleep/wake",
+    "battery consumption",
+    "two physical badges battle",
+    "cross-day learning clock"
+  ]
+}

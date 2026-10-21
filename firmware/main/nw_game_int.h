@@ -48,6 +48,8 @@ typedef struct {
 
     /* 主页菜单 */
     uint8_t menu[14], menu_n, menu_idx;
+    int8_t menu_dir;          /* 最近一次翻菜单的方向；只用于 160 ms 的轻微过渡 */
+    uint32_t menu_t;
     bool plan_ok;
     uint16_t plan_reviews, plan_fresh, plan_seconds;
 

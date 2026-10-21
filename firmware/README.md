@@ -83,7 +83,10 @@ python3 tools/verify_firmware.py build
 ```sh
 python3 tests/words_host/test_words.py          # 规则模块和原型逐步对拍
 python3 tests/fw_host/run_host_render.py out/   # 游戏层在宿主上跑一遍主要画面，截图；核对增量重画 = 整屏重画、绘制列表不溢出
+python3 tests/fw_host/test_ui.py --assets firmware/assets/assets.bin --out build/ui  # 7500 词布局、7 套动画、菜单过渡与真实渲染预览
 ```
+
+界面与动画候选改进、预览及验证边界见 [UI_ANIMATION_POLISH.md](UI_ANIMATION_POLISH.md)。
 
 ## 串口调试命令
 

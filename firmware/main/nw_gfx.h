@@ -62,7 +62,7 @@ void nw_rect_a(nw_gfx_t *g, int x, int y, int w, int h, int r, uint16_t fill, in
 void nw_rect_line(nw_gfx_t *g, int x, int y, int w, int h, int r, uint16_t fill, int alpha, uint16_t line, int lw);
 void nw_circle(nw_gfx_t *g, int cx, int cy, int r, uint16_t fill);
 void nw_text(nw_gfx_t *g, nw_font_id_t f, const char *s, int x, int y, nw_align_t al, uint16_t color);
-/* 依次试 fonts 里的字号，用第一个宽度不超过 max_w 的；都超过就用最后一个（可能被裁） */
+/* 依次试字号；最小字号仍过宽时，在完整 UTF-8 字符后加省略号。 */
 void nw_text_fit(nw_gfx_t *g, const nw_font_id_t *fonts, int n, const char *s, int x, int y, int max_w,
                  nw_align_t al, uint16_t color);
 bool nw_image(nw_gfx_t *g, int id, int ax, int ay);        /* 锚点放在 (ax, ay) */

@@ -5,6 +5,7 @@
 
 用法（在仓库根目录）：
     python3 -I firmware/tools/pack_assets.py --fonts <字体目录>
+    python3 -I firmware/tools/pack_assets.py --base-assets <已有 assets.bin>
 字体目录里需要（Google Fonts，OFL 1.1）：
     NotoSansSC[wght].ttf、Fredoka[wdth,wght].ttf、NotoSans[wdth,wght].ttf、SpaceMono-Bold.ttf
 
@@ -399,25 +400,60 @@ def pack_stage(stage: str, bg, step: int) -> Tuple[bytes, List[Dict]]:
 
 # ---------------------------------------------------------------- 总装
 
+def read_base_assets(path: Path) -> List[Tuple[str, bytes]]:
+    """保留已有词库、字体和美术的原始字节，只更新从原始帧生成的动画。"""
+    data = path.read_bytes()
+    if len(data) < 8 or data[:4] != b"NWA1":
+        raise ValueError("基础资源不是 NWA1 assets.bin")
+    count = struct.unpack_from("<I", data, 4)[0]
+    head = 8 + count * 32
+    if head > len(data):
+        raise ValueError("基础资源目录不完整")
+    files, seen = [], set()
+    for i in range(count):
+        name, off, size = struct.unpack_from("<24sII", data, 8 + i * 32)
+        name = name.split(b"\0", 1)[0].decode("ascii")
+        if not name or name in seen or off < head or off + size > len(data):
+            raise ValueError(f"基础资源条目无效：{name}")
+        seen.add(name)
+        if not name.startswith("nabo_"):
+            files.append((name, data[off:off + size]))
+    required = {"words.bin", "art.bin"} | {f"font_{f[0]}.bin" for f in FONT_SPECS}
+    if {name for name, _ in files} != required:
+        raise ValueError("基础资源的词库、字体或美术清单不符")
+    return files
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--fonts", required=True, type=Path)
-    ap.add_argument("--idle-step", type=int, default=2, help="待机 / 睡眠每几帧取一帧（12 fps 源）")
+    source = ap.add_mutually_exclusive_group(required=True)
+    source.add_argument("--fonts", type=Path)
+    source.add_argument("--base-assets", type=Path, help="复用已校验资源中的词库、字体和静态美术")
+    ap.add_argument("--idle-step", type=int, default=1, choices=(1, 2), help="待机 / 睡眠取帧间隔，默认保留 12 fps 原帧")
     args = ap.parse_args()
-    words = json.loads((ROOT / "data" / "words.json").read_text("utf-8"))["words"]
     manifest = json.loads((ART / "manifest.json").read_text("utf-8"))
 
-    files: List[Tuple[str, bytes]] = [("words.bin", pack_words(words))]
-    logger.info("词库 %d 词 %.0f KB", len(words), len(files[0][1]) / 1024)
-    for fid, fname, axes, px, kind in FONT_SPECS:
-        blob, info = pack_font(args.fonts / fname, axes, px, font_charset(kind, words))
-        if info["missing"]:
-            logger.warning("字体 %s 缺字：%s", fid, info["missing"])
-        files.append((f"font_{fid}.bin", blob))
-        logger.info("字体 %-4s %4d 字 行高 %d %.0f KB", fid, info["glyphs"], info["line_h"], len(blob) / 1024)
     art = art_entries(manifest)
-    files.append(("art.bin", pack_art(art)))
-    logger.info("美术 %d 张 %.0f KB", len(art), len(files[-1][1]) / 1024)
+    if args.base_assets:
+        files = read_base_assets(args.base_assets)
+        base_art = dict(files)["art.bin"]
+        names = [base_art[8 + i * 32:28 + i * 32].split(b"\0", 1)[0].decode("ascii")
+                 for i in range(struct.unpack_from("<H", base_art, 4)[0])]
+        if names != [entry[0] for entry in art]:
+            raise ValueError("基础资源美术编号与本仓库不一致，不能复用")
+        logger.info("原样复用 %d 块静态资源", len(files))
+    else:
+        words = json.loads((ROOT / "data" / "words.json").read_text("utf-8"))["words"]
+        files = [("words.bin", pack_words(words))]
+        logger.info("词库 %d 词 %.0f KB", len(words), len(files[0][1]) / 1024)
+        for fid, fname, axes, px, kind in FONT_SPECS:
+            blob, info = pack_font(args.fonts / fname, axes, px, font_charset(kind, words))
+            if info["missing"]:
+                logger.warning("字体 %s 缺字：%s", fid, info["missing"])
+            files.append((f"font_{fid}.bin", blob))
+            logger.info("字体 %-4s %4d 字 行高 %d %.0f KB", fid, info["glyphs"], info["line_h"], len(blob) / 1024)
+        files.append(("art.bin", pack_art(art)))
+        logger.info("美术 %d 张 %.0f KB", len(art), len(files[-1][1]) / 1024)
     anim_info = {}
     for i, stage in enumerate(STAGES):
         if not (SPRITES / stage / "anims.json").exists():
@@ -436,6 +472,8 @@ def main() -> None:
         table += struct.pack("<24sII", name.encode(), head + len(data), len(blob))
         data += blob
     out = struct.pack("<4sI", b"NWA1", n) + table + data
+    if len(out) > 0x5F0000:
+        raise ValueError(f"资源超出 assets 分区：{len(out)} > {0x5F0000}")
     OUT_BIN.parent.mkdir(parents=True, exist_ok=True)
     OUT_BIN.write_bytes(out)
     logger.info("assets.bin %.2f MB", len(out) / 1048576)

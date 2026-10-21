@@ -113,11 +113,35 @@ void nw_text(nw_gfx_t *g, nw_font_id_t f, const char *s, int x, int y, nw_align_
 void nw_text_fit(nw_gfx_t *g, const nw_font_id_t *fonts, int n, const char *s, int x, int y, int max_w,
                  nw_align_t al, uint16_t color)
 {
+    if (n <= 0 || max_w <= 0 || !s) return;
     int k = 0;
     while (k < n - 1 && nw_text_width(fonts[k], s) > max_w) {
         k++;
     }
-    nw_text(g, fonts[k], s, x, y, al, color);
+    if (nw_text_width(fonts[k], s) <= max_w) {
+        nw_text(g, fonts[k], s, x, y, al, color);
+        return;
+    }
+    /* 最小字号仍放不下时，在完整 UTF-8 字符后省略，避免盖住箭头或相邻统计。 */
+    char clipped[256], dots[4] = "...";
+    while (*dots && nw_text_width(fonts[k], dots) > max_w) dots[strlen(dots) - 1] = 0;
+    int limit = max_w - nw_text_width(fonts[k], dots), width = 0;
+    size_t used = 0;
+    const char *p = s;
+    while (*p) {
+        const char *start = p;
+        nw_utf8_next(&p);
+        size_t bytes = (size_t)(p - start);
+        char cp[5] = {0};
+        memcpy(cp, start, bytes);
+        int advance = nw_text_width(fonts[k], cp);
+        if (width + advance > limit || used + bytes + sizeof(dots) > sizeof(clipped)) break;
+        memcpy(clipped + used, start, bytes);
+        used += bytes;
+        width += advance;
+    }
+    memcpy(clipped + used, dots, strlen(dots) + 1);
+    nw_text(g, fonts[k], clipped, x, y, al, color);
 }
 
 bool nw_image(nw_gfx_t *g, int id, int ax, int ay)
