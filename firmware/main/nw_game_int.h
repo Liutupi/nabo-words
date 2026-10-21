@@ -7,14 +7,17 @@
 #include "nw_gfx.h"
 #include "nw_sprite.h"
 #include "nw_store.h"
+#include "words/nabo_words_extra.h"
 #include "words/nabo_words_quiz.h"
 
 typedef enum {
     SC_HOME, SC_STUDY, SC_SUMMARY, SC_STARS, SC_PASSPORT, SC_DESK, SC_SHOP, SC_BATTLE,
+    SC_ONBOARD, SC_PLACE, SC_CHALLENGE,
 } nw_scene_t;
 
 typedef enum {
     MI_STUDY, MI_EXAM, MI_BATTLE, MI_STARS, MI_PASSPORT, MI_DESK, MI_SHOP, MI_NEWPER, MI_SOUND,
+    MI_EXTRA, MI_CHALLENGE, MI_PLACE, MI_HOME,
 } nw_menu_id_t;
 
 typedef enum { A_IDLE, A_HAPPY, A_SAD, A_CHEER, A_SLEEP, A_COUNT } nw_anim_id_t;
@@ -43,7 +46,7 @@ typedef struct {
     uint32_t rtc;
 
     /* 主页菜单 */
-    uint8_t menu[10], menu_n, menu_idx;
+    uint8_t menu[14], menu_n, menu_idx;
     bool plan_ok;
     uint16_t plan_reviews, plan_fresh, plan_seconds;
 
@@ -76,6 +79,26 @@ typedef struct {
     char notes[NW_NOTES][48];
     int n_notes;
 
+    bool extra_mode;                /* 这次学习是加学 */
+
+    /* 开局：选家乡、要不要分级测试 */
+    uint8_t ob_step;                /* 0 选省 1 选市 2 有没有基础 */
+    bool ob_first;                  /* 第一次开机（不能长按返回主页） */
+    int prov_sel, city_sel, ob_sel;
+
+    /* 分级测试 */
+    nw_place_t *place;
+    bool place_done;
+    uint8_t place_sel;
+
+    /* 闪电挑战 */
+    nw_question_t cq;
+    bool c_over;
+    uint16_t c_score;
+    uint32_t c_end;
+    int c_coins;
+    bool c_best, c_first;
+
     /* 其它画面 */
     int page_unit;                  /* 护照：选中的单元 */
     int list_sel;                   /* 书桌 / 小卖部 */
@@ -106,6 +129,9 @@ void nw_draw_desk(void);
 void nw_draw_shop(void);
 void nw_draw_battle(void);
 void nw_draw_overlay(void);
+void nw_draw_onboard(void);
+void nw_draw_place(void);
+void nw_draw_challenge(void);
 
 /* 画面共用的小工具 */
 int nw_game_anim(int *frame);         /* 主页 NABO：动作在包里的编号和帧号 */

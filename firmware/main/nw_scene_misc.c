@@ -35,7 +35,7 @@ static inline int star_pos(int i, int base) { return base + i * 22 / 10; }
 static void paint_stars(const nw_op_t *op, int y, int x0, int x1, uint16_t *row)
 {
     const uint8_t *box = (const uint8_t *)op->u.custom.ctx;
-    int ph = op->u.custom.a;
+    int ph = op->u.custom.a, placed = op->u.custom.b;   /* 分级测试跳过的词用浅色 */
     /* 这一行落在哪一行点上（每行点 2 px 高） */
     int r = (y - SY0) * 10 / 22;
     if (r < 0 || r >= 75) return;
@@ -48,6 +48,7 @@ static void paint_stars(const nw_op_t *op, int y, int x0, int x1, uint16_t *row)
         int sz = b ? 2 : 1;
         if (!b && y - top >= 1) continue;
         uint16_t v = (b >= 6 && (i * 7 + ph) % 23 == 0) ? 0xFFFF : col[b];
+        if (b == 7 && i < placed) v = RGB(0x8C7F5E);
         for (int k = 0; k < sz; k++) {
             if (x + k >= x0 && x + k < x1) row[x + k - x0] = v;
         }
@@ -65,11 +66,15 @@ void nw_draw_stars(void)
     nw_text(g, NW_M11, t, 222, 20, NW_RIGHT, RGB(C_GOLD));
     int ph = (int)(G->now / 333);
     uint32_t key = nw_hash(2166136261u, s->box, NW_TOTAL);
-    nw_custom(g, SX0, SY0, SX0 + 222, SY0 + 166, paint_stars, s->box, ph, 0, 0, 0, 0, key);
+    nw_custom(g, SX0, SY0, SX0 + 222, SY0 + 166, paint_stars, s->box, ph, G->rec.e.placed_end, 0, 0, 0, key);
     /* 学段分界线 */
     for (int st = 0; st < NW_STAGES - 1; st++) {
         int y = star_pos(nw_stage_end[st] / 100, SY0) - 1;
         nw_rect_a(g, SX0, y, 220, 1, 0, RGB(C_GOLD), 90);
+    }
+    if (G->rec.e.placed_end) {
+        nw_rect(g, 18, 214, 8, 8, 2, RGB(0x8C7F5E));
+        nw_text(g, NW_F12, "分级测试跳过的词", 29, 218, NW_LEFT, RGB(C_MUTED));
     }
     static const char *const LG[5] = {"没学", "刚学", "熟悉", "掌握", "毕业"};
     static const int LB[5] = {0, 1, 3, 4, 7};

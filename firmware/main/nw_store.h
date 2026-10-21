@@ -12,8 +12,16 @@ typedef struct {
     uint8_t clock_ok;       /* done_rtc 可信（没有断过电） */
     uint32_t done_rtc;      /* 完成今日学习时的 RTC 秒数 */
     uint32_t saves;         /* 写过多少次（诊断用） */
-    uint32_t reserved[7];
+    uint8_t onboard;        /* 1：选过家乡、做完开局 */
+    uint8_t home_prov, home_city;
+    uint8_t extra_groups;   /* extra_day 那天加学了几组 */
+    uint16_t placed_end;    /* 分级测试跳过的词 [0, placed_end)，星图上用浅色 */
+    uint16_t extra_day;
+    uint16_t chal_day;      /* 最近一次闪电挑战是第几个学习日（每天第一次给金币） */
+    uint16_t chal_best;
+    uint32_t reserved[4];   /* 记录大小不变，旧版本的存档可以直接读 */
 } nw_extra_t;
+_Static_assert(sizeof(nw_extra_t) == 40, "记录大小要和 v0.1.0 一致");
 
 typedef struct {
     uint32_t magic, version, seq, len, crc;

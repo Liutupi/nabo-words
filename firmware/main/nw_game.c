@@ -6,6 +6,7 @@
 #include <string.h>
 
 #include "nw_asset_ids.h"
+#include "nw_cities.h"
 #include "nw_assets.h"
 #include "nw_db.h"
 #include "nw_platform.h"
@@ -167,6 +168,8 @@ int nw_game_anim(int *frame)
 
 /* ---------- 菜单 ---------- */
 
+static int extra_today(void);
+
 static void plan_summary(void)
 {
     if (G->plan_ok) return;
@@ -190,7 +193,7 @@ const char *nw_menu_label(int id, char *sub, size_t n)
     switch (id) {
     case MI_STUDY:
         if (s->done_day == s->day) {
-            snprintf(sub, n, "今天完成了，明天再来");
+            snprintf(sub, n, "%s", nw_extra_available(s, extra_today()) ? "今天完成了 · 学有余力可以加学" : "今天完成了，明天再来");
             return "今日学习 √";
         }
         plan_summary();
@@ -220,13 +223,31 @@ const char *nw_menu_label(int id, char *sub, size_t n)
         snprintf(sub, n, "金币 %u · 盲盒 %d 枚一次", (unsigned)s->coins, nw_toy_price_now(s));
         return "小卖部";
     case MI_NEWPER:
-        snprintf(sub, n, "%d 个 · 复习最多 %d 分钟 · OK 切换", s->new_per_day, nw_review_budget_s(s) / 60);
+        snprintf(sub, n, "每天 %d 个 · OK 切换", s->new_per_day);
         return "每日新词";
+    case MI_EXTRA:
+        snprintf(sub, n, "学有余力 · 今天还能加学 %d 组", NW_EXTRA_GROUPS - extra_today());
+        return "加学 5 个新词";
+    case MI_CHALLENGE:
+        if (G->rec.e.chal_day == s->day) snprintf(sub, n, "60 秒抢答 · 最好 %u 题", G->rec.e.chal_best);
+        else snprintf(sub, n, "60 秒抢答 · 今天第一次有金币");
+        return "闪电挑战";
+    case MI_PLACE:
+        snprintf(sub, n, "有基础？测一测从哪个学段开始");
+        return "分级测试";
+    case MI_HOME:
+        snprintf(sub, n, "%s · OK 修改", nw_unit_city(0));
+        return "家乡";
     case MI_SOUND:
         snprintf(sub, n, "%s · OK 切换", G->rec.e.muted ? "关" : "开");
         return "声音";
     }
     return "";
+}
+
+static int extra_today(void)
+{
+    return G->rec.e.extra_day == S()->day ? G->rec.e.extra_groups : 0;
 }
 
 static void build_menu(void)
@@ -235,12 +256,16 @@ static void build_menu(void)
     int n = 0;
     G->menu[n++] = MI_STUDY;
     if (nw_exam_ready(S())) G->menu[n++] = MI_EXAM;
+    if (nw_extra_available(S(), extra_today())) G->menu[n++] = MI_EXTRA;
+    if (nw_challenge_pool(S()) >= NW_CHALLENGE_MIN) G->menu[n++] = MI_CHALLENGE;
+    if (S()->stage == 0 && !G->rec.e.placed_end && nw_learned(S()) < 100) G->menu[n++] = MI_PLACE;
     G->menu[n++] = MI_BATTLE;
     G->menu[n++] = MI_STARS;
     G->menu[n++] = MI_PASSPORT;
     G->menu[n++] = MI_DESK;
     G->menu[n++] = MI_SHOP;
     G->menu[n++] = MI_NEWPER;
+    G->menu[n++] = MI_HOME;
     G->menu[n++] = MI_SOUND;
     G->menu_n = (uint8_t)n;
     G->menu_idx = 0;
@@ -326,7 +351,9 @@ static void clock_sync(void)
 
 /* ---------- 学习 ---------- */
 
-static void start_session(bool exam)
+enum { SESS_DAY, SESS_EXAM, SESS_EXTRA };
+
+static void start_session(int mode)
 {
     nw_session_t *sess = malloc(sizeof(nw_session_t));
     nw_work_t *work = malloc(sizeof(nw_work_t));
@@ -336,9 +363,14 @@ static void start_session(bool exam)
         toast("内存不足，请重启工牌");
         return;
     }
-    nw_rng_seed(&G->rng, nw_session_seed(S()));
-    if (exam) nw_build_exam(S(), sess, &G->rng, work);
-    else nw_build_session(S(), sess, &G->rng, work);
+    if (mode == SESS_EXTRA) {
+        nw_rng_seed(&G->rng, nw_plat_random());
+        nw_build_extra(S(), sess, &G->rng);
+    } else {
+        nw_rng_seed(&G->rng, nw_session_seed(S()));
+        if (mode == SESS_EXAM) nw_build_exam(S(), sess, &G->rng, work);
+        else nw_build_session(S(), sess, &G->rng, work);
+    }
     free(work);
     if (!sess->len) {
         free(sess);
@@ -347,6 +379,7 @@ static void start_session(bool exam)
     }
     free_session();
     G->sess = sess;
+    G->extra_mode = mode == SESS_EXTRA;
     G->scene = SC_STUDY;
     G->sel = 0;
     G->fb = false;
@@ -378,9 +411,40 @@ static void finish_session(void)
     int acc = sess->right + sess->wrong ? (sess->right * 100 + (sess->right + sess->wrong) / 2) / (sess->right + sess->wrong) : 100;
     int stage_before = s->stage;
     nw_session_result_t res;
-    nw_finish_session(s, sess, &res);
     G->n_notes = 0;
     G->n_rows = 0;
+    if (G->extra_mode) {
+        nw_extra_t *e = &G->rec.e;
+        if (e->extra_day != s->day) {
+            e->extra_day = s->day;
+            e->extra_groups = 0;
+        }
+        e->extra_groups++;
+        snprintf(G->title, sizeof(G->title), "加学完成");
+        if (sess->wrong == 0) {
+            s->coins += 1;
+            add_note("%s", "全对，金币 +1", 0);
+        }
+        int left = nw_extra_available(s, e->extra_groups) ? NW_EXTRA_GROUPS - e->extra_groups : 0;
+        if (left) add_note("今天还能再加学 %d 组", NULL, left);
+        else add_note("%s", "今天加学满了，去闪电挑战试试", 0);
+        snprintf(G->row_l[0], 16, "新词");
+        snprintf(G->row_r[0], 24, "%d", sess->plan_fresh);
+        snprintf(G->row_l[1], 16, "正确率");
+        snprintf(G->row_r[1], 24, "%d%%", acc);
+        snprintf(G->row_l[2], 16, "已学");
+        snprintf(G->row_r[2], 24, "%d 词", nw_learned(s));
+        G->n_rows = 3;
+        G->pending = A_HAPPY;
+        cue(NW_CUE_DONE);
+        mark_dirty();
+        nw_game_save();
+        free_session();
+        G->extra_mode = false;
+        G->scene = SC_SUMMARY;
+        return;
+    }
+    nw_finish_session(s, sess, &res);
     if (res.exam) {
         snprintf(G->title, sizeof(G->title), "%s", res.passed ? "结业考通过！" : "差一点，明天再考");
         if (res.passed) {
@@ -593,15 +657,207 @@ int nw_cur_unit(const nw_state_t *s)
     return w / NW_UNIT;
 }
 
+/* ---------- 开局：选家乡、分级测试 ---------- */
+
+static void apply_home(void)
+{
+    const nw_extra_t *e = &G->rec.e;
+    if (e->onboard && e->home_prov < NW_N_PROVINCES && e->home_city < NW_PROVINCES[e->home_prov].n) {
+        nw_set_home(NW_PROVINCES[e->home_prov].cities[e->home_city]);
+    } else {
+        nw_set_home(NULL);
+    }
+}
+
+static void onboard_start(bool first)
+{
+    G->scene = SC_ONBOARD;
+    G->ob_first = first;
+    G->ob_step = 0;
+    G->prov_sel = G->rec.e.onboard ? G->rec.e.home_prov : 0;
+    G->city_sel = 0;
+    G->ob_sel = 0;
+}
+
+static void onboard_finish(void)
+{
+    G->rec.e.onboard = 1;
+    mark_dirty();
+    nw_game_save();
+    to_home();
+}
+
+static void place_start(void)
+{
+    free(G->place);
+    G->place = malloc(sizeof(nw_place_t));
+    if (!G->place) {
+        toast("内存不足，请重启工牌");
+        return;
+    }
+    nw_rng_seed(&G->rng, nw_plat_random());
+    nw_place_start(G->place, &G->rng);
+    G->place_done = false;
+    G->sel = 0;
+    G->place_sel = 0;
+    G->scene = SC_PLACE;
+}
+
+static void place_end(bool apply)
+{
+    nw_place_t *p = G->place;
+    if (apply && p && p->lo > 0) {
+        nw_place_apply(S(), p->lo);
+        G->rec.e.placed_end = nw_stage_start[p->lo];
+        G->pending = A_CHEER;
+        if (nw_look_of(S()) != G->look) load_pack(nw_look_of(S()));
+        char t[64];
+        snprintf(t, sizeof(t), "从%s开始，前面 %d 个词记为已掌握", NW_STAGE_INFO[p->lo].name, nw_stage_start[p->lo]);
+        toast(t);
+    }
+    free(G->place);
+    G->place = NULL;
+    G->rec.e.onboard = 1;
+    mark_dirty();
+    nw_game_save();
+    to_home();
+}
+
+static void onboard_key(nw_key_t k)
+{
+    int n = G->ob_step == 0 ? NW_N_PROVINCES : G->ob_step == 1 ? NW_PROVINCES[G->prov_sel].n : 2;
+    int *sel = G->ob_step == 0 ? &G->prov_sel : G->ob_step == 1 ? &G->city_sel : &G->ob_sel;
+    if (k == NW_KEY_UP_PRESS) { *sel = (*sel + n - 1) % n; return; }
+    if (k == NW_KEY_DOWN) { *sel = (*sel + 1) % n; return; }
+    if (G->ob_step == 0) {
+        G->ob_step = 1;
+        G->city_sel = G->rec.e.onboard && G->rec.e.home_prov == G->prov_sel ? G->rec.e.home_city : 0;
+        return;
+    }
+    if (G->ob_step == 1) {
+        G->rec.e.home_prov = (uint8_t)G->prov_sel;
+        G->rec.e.home_city = (uint8_t)G->city_sel;
+        bool was = G->rec.e.onboard;
+        G->rec.e.onboard = 1;   /* 先记上家乡，apply_home 要用 */
+        apply_home();
+        G->rec.e.onboard = was;
+        mark_dirty();
+        /* 已经在学的人只是改家乡；新开局（或者还在小学开头）问一下要不要分级测试 */
+        if (was && (S()->stage > 0 || G->rec.e.placed_end || nw_learned(S()) >= 100)) {
+            char t[48];
+            snprintf(t, sizeof(t), "家乡改为%s", NW_PROVINCES[G->prov_sel].cities[G->city_sel]);
+            toast(t);
+            onboard_finish();
+            return;
+        }
+        G->ob_step = 2;
+        G->ob_sel = 0;
+        return;
+    }
+    if (G->ob_sel == 0) place_start();
+    else onboard_finish();
+}
+
+static void place_key(nw_key_t k)
+{
+    nw_place_t *p = G->place;
+    if (G->place_done) {
+        if (k == NW_KEY_UP_PRESS || k == NW_KEY_DOWN) G->place_sel ^= 1;
+        else place_end(G->place_sel == 0);
+        return;
+    }
+    int n = p->q[p->pos].n_opt + 1;   /* 最后一项是“不认识” */
+    if (k == NW_KEY_UP_PRESS) { G->sel = (uint8_t)((G->sel + n - 1) % n); return; }
+    if (k == NW_KEY_DOWN) { G->sel = (uint8_t)((G->sel + 1) % n); return; }
+    bool ok = G->sel == p->q[p->pos].answer;
+    G->sel = 0;
+    if (nw_place_answer(p, ok, &G->rng)) {
+        G->place_done = true;
+        G->place_sel = 0;
+        cue(NW_CUE_DONE);
+    }
+}
+
+/* ---------- 闪电挑战 ---------- */
+
+static void challenge_next(void)
+{
+    nw_challenge_question(S(), &G->cq, &G->rng);
+    G->sel = 0;
+    G->fb = false;
+}
+
+static void challenge_start(void)
+{
+    nw_rng_seed(&G->rng, nw_plat_random());
+    G->c_score = 0;
+    G->c_over = false;
+    G->c_end = G->now + NW_CHALLENGE_MS;
+    G->scene = SC_CHALLENGE;
+    challenge_next();
+}
+
+static void challenge_finish(void)
+{
+    nw_extra_t *e = &G->rec.e;
+    bool first = e->chal_day != S()->day;
+    G->c_first = first;
+    G->c_coins = nw_challenge_coins(G->c_score, first);
+    S()->coins += (uint32_t)G->c_coins;
+    if (first) {
+        e->chal_day = S()->day;
+        e->chal_best = 0;
+    }
+    G->c_best = G->c_score > e->chal_best;
+    if (G->c_best) e->chal_best = G->c_score;
+    G->c_over = true;
+    G->fb = false;
+    cue(NW_CUE_DONE);
+    mark_dirty();
+}
+
+static void challenge_key(nw_key_t k)
+{
+    if (G->c_over) {
+        if (k == NW_KEY_OK) to_home();
+        return;
+    }
+    if (G->fb) return;
+    int n = G->cq.n_opt;
+    if (k == NW_KEY_UP_PRESS) { G->sel = (uint8_t)((G->sel + n - 1) % n); return; }
+    if (k == NW_KEY_DOWN) { G->sel = (uint8_t)((G->sel + 1) % n); return; }
+    G->fb = true;
+    G->fb_ok = G->sel == G->cq.answer;
+    G->fb_pick = G->sel;
+    G->fb_t = G->now;
+    if (G->fb_ok) G->c_score++;
+    else nw_challenge_miss(S(), G->cq.idx);
+    cue(G->fb_ok ? NW_CUE_RIGHT : NW_CUE_WRONG);
+}
+
+static void challenge_update(void)
+{
+    if (G->c_over) return;
+    if ((int32_t)(G->now - G->c_end) >= 0) {
+        challenge_finish();
+        return;
+    }
+    if (G->fb && G->now - G->fb_t > (G->fb_ok ? 250u : 700u)) challenge_next();
+}
+
 static void home_ok(void)
 {
     nw_state_t *s = S();
     switch (G->menu[G->menu_idx]) {
     case MI_STUDY:
         if (s->done_day == s->day) toast("今天完成了，NABO 去休息了");
-        else start_session(false);
+        else start_session(SESS_DAY);
         break;
-    case MI_EXAM: start_session(true); break;
+    case MI_EXAM: start_session(SESS_EXAM); break;
+    case MI_EXTRA: start_session(SESS_EXTRA); break;
+    case MI_CHALLENGE: challenge_start(); break;
+    case MI_PLACE: place_start(); break;
+    case MI_HOME: onboard_start(false); break;
     case MI_BATTLE: G->scene = SC_BATTLE; break;
     case MI_STARS: G->scene = SC_STARS; break;
     case MI_PASSPORT: G->scene = SC_PASSPORT; G->page_unit = nw_cur_unit(s); break;
@@ -647,6 +903,9 @@ static void act(nw_key_t k)
         break;
     case SC_DESK: desk_key(k); break;
     case SC_SHOP: shop_key(k); break;
+    case SC_ONBOARD: onboard_key(k); break;
+    case SC_PLACE: place_key(k); break;
+    case SC_CHALLENGE: challenge_key(k); break;
     }
     if (G->scene != before) nw_gfx_invalidate(&G->gfx);
 }
@@ -655,7 +914,25 @@ static void back(void)
 {
     if (G->scene == SC_HOME) return;
     cue(NW_CUE_TICK);
+    if (G->scene == SC_ONBOARD) {   /* 开局里一步步往回退；第一次开机不能跳过选家乡 */
+        if (G->ob_step > 0) G->ob_step--;
+        else if (!G->ob_first) to_home();
+        nw_gfx_invalidate(&G->gfx);
+        return;
+    }
+    if (G->scene == SC_PLACE) {
+        free(G->place);
+        G->place = NULL;
+        if (!G->rec.e.onboard) {
+            G->scene = SC_ONBOARD;
+            G->ob_step = 2;
+            nw_gfx_invalidate(&G->gfx);
+            return;
+        }
+    }
+    if (G->scene == SC_CHALLENGE && !G->c_over) challenge_finish();
     if (G->scene == SC_STUDY) nw_game_save();
+    G->extra_mode = false;
     to_home();
     nw_gfx_invalidate(&G->gfx);
 }
@@ -680,9 +957,27 @@ void nw_game_key(nw_key_t k, uint32_t now_ms)
 
 /* ---------- 每帧 ---------- */
 
+static void draw_scene(void)
+{
+    switch (G->scene) {
+    case SC_HOME: nw_draw_home(); break;
+    case SC_STUDY: nw_draw_study(); break;
+    case SC_SUMMARY: nw_draw_summary(); break;
+    case SC_STARS: nw_draw_stars(); break;
+    case SC_PASSPORT: nw_draw_passport(); break;
+    case SC_DESK: nw_draw_desk(); break;
+    case SC_SHOP: nw_draw_shop(); break;
+    case SC_BATTLE: nw_draw_battle(); break;
+    case SC_ONBOARD: nw_draw_onboard(); break;
+    case SC_PLACE: nw_draw_place(); break;
+    case SC_CHALLENGE: nw_draw_challenge(); break;
+    }
+    nw_draw_overlay();
+}
+
 const char *nw_game_scene_name(void)
 {
-    static const char *const N[] = {"home", "study", "summary", "stars", "passport", "desk", "shop", "battle"};
+    static const char *const N[] = {"home", "study", "summary", "stars", "passport", "desk", "shop", "battle", "onboard", "place", "challenge"};
     return G ? N[G->scene] : "";
 }
 
@@ -704,6 +999,7 @@ void nw_game_frame(uint32_t now_ms, uint32_t rtc_s)
     if (G->toast[0] && (int32_t)(now_ms - G->toast_until) > 0) G->toast[0] = 0;
     if (G->scene == SC_HOME && G->pack_ok) np_update();
     if (G->scene == SC_STUDY && G->fb && G->fb_ok && now_ms - G->fb_t > 700) next_q();
+    if (G->scene == SC_CHALLENGE) challenge_update();
     if (G->mood && now_ms - G->mood_t > 1000) G->mood = 0;
 
     /* 保存：学习中每 25 题存一次，其它画面改动 3 秒后存 */
@@ -714,17 +1010,7 @@ void nw_game_frame(uint32_t now_ms, uint32_t rtc_s)
     }
 
     nw_gfx_begin(&G->gfx);
-    switch (G->scene) {
-    case SC_HOME: nw_draw_home(); break;
-    case SC_STUDY: nw_draw_study(); break;
-    case SC_SUMMARY: nw_draw_summary(); break;
-    case SC_STARS: nw_draw_stars(); break;
-    case SC_PASSPORT: nw_draw_passport(); break;
-    case SC_DESK: nw_draw_desk(); break;
-    case SC_SHOP: nw_draw_shop(); break;
-    case SC_BATTLE: nw_draw_battle(); break;
-    }
-    nw_draw_overlay();
+    draw_scene();
     nw_gfx_flush(&G->gfx);
 }
 
@@ -795,7 +1081,9 @@ bool nw_game_open(uint32_t now_ms, uint32_t rtc_s, bool rtc_ok)
     nw_gfx_init(&G->gfx, &G->player);
     load_pack(nw_look_of(S()));
     play_idle();
+    apply_home();
     to_home();
+    if (!G->rec.e.onboard) onboard_start(true);   /* 第一次开机：先选家乡，再问要不要分级测试 */
     return true;
 }
 
@@ -862,6 +1150,24 @@ void nw_game_command(const char *line, char *out, size_t n, uint32_t now_ms, uin
         simulate(a, got >= 3 ? b : 82);
         snprintf(out, n, "day=%u stage=%u learned=%d mastered=%d coins=%u", s->day, s->stage, nw_learned(s),
                  nw_mastered(s), (unsigned)s->coins);
+    } else if (!strcmp(word, "solve")) {
+        /* 把当前的学习 / 分级测试全部答对做完（got>=2 时只答 a 题） */
+        int left = got >= 2 ? a : 10000;
+        while (left-- > 0) {
+            if (G->scene == SC_STUDY && G->sess) {
+                const nw_question_t *q = cur_q();
+                if (G->fb) next_q();
+                else if (q->type == NW_Q_INTRO) study_key(NW_KEY_OK);
+                else if (q->type == NW_Q_FLASH) { G->flipped = true; answer(true, 0); }
+                else { G->sel = q->answer; study_key(NW_KEY_OK); }
+            } else if (G->scene == SC_PLACE && G->place && !G->place_done) {
+                G->sel = G->place->q[G->place->pos].answer;
+                place_key(NW_KEY_OK);
+            } else {
+                break;
+            }
+        }
+        snprintf(out, n, "scene=%s", nw_game_scene_name());
     } else if (!strcmp(word, "coins") && got >= 2) {
         s->coins = (uint32_t)a;
         mark_dirty();
@@ -872,7 +1178,10 @@ void nw_game_command(const char *line, char *out, size_t n, uint32_t now_ms, uin
         G->rec.seq = seq;
         mark_dirty();
         nw_game_save();
+        apply_home();
+        if (G->look != 0) load_pack(0);
         to_home();
+        onboard_start(true);
         nw_gfx_invalidate(&G->gfx);
         snprintf(out, n, "wiped");
     } else if (!strcmp(word, "save")) {
@@ -880,7 +1189,7 @@ void nw_game_command(const char *line, char *out, size_t n, uint32_t now_ms, uin
         nw_game_save();
         snprintf(out, n, "saved=%u", (unsigned)G->rec.e.saves);
     } else {
-        snprintf(out, n, "commands: status | key up/down/ok/back | days N | sim N [pct] | coins N | wipe | save");
+        snprintf(out, n, "commands: status | key up/down/ok/back | solve [N] | days N | sim N [pct] | coins N | wipe | save");
     }
 }
 
@@ -891,16 +1200,6 @@ void nw_test_full_redraw(uint32_t now_ms, uint32_t rtc_s)
     G->now = now_ms;
     G->rtc = rtc_s;
     nw_gfx_begin(&G->gfx);
-    switch (G->scene) {
-    case SC_HOME: nw_draw_home(); break;
-    case SC_STUDY: nw_draw_study(); break;
-    case SC_SUMMARY: nw_draw_summary(); break;
-    case SC_STARS: nw_draw_stars(); break;
-    case SC_PASSPORT: nw_draw_passport(); break;
-    case SC_DESK: nw_draw_desk(); break;
-    case SC_SHOP: nw_draw_shop(); break;
-    case SC_BATTLE: nw_draw_battle(); break;
-    }
-    nw_draw_overlay();
+    draw_scene();
     nw_gfx_flush(&G->gfx);
 }

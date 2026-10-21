@@ -1,5 +1,7 @@
 #include "nw_data.h"
 
+#include <string.h>
+
 static const char *const C0[] = {"北京", "上海", "西安", "成都", "杭州", "广州", "桂林", "拉萨", "哈尔滨", "厦门",
                                  "重庆", "昆明", "青岛", "敦煌"};
 static const char *const C1[] = {"东京", "首尔", "曼谷", "新加坡", "河内", "吉隆坡", "马尼拉", "雅加达", "加德满都",
@@ -81,9 +83,22 @@ int nw_unit_stage(int unit)
     return NW_STAGES - 1;
 }
 
+static const char *s_home;
+
+void nw_set_home(const char *city) { s_home = city; }
+
 const char *nw_unit_city(int unit)
 {
     int st = nw_unit_stage(unit), k = unit - nw_stage_start[st] / NW_UNIT;
+    /* 旅行从家乡出发：小学第 1 站是家乡，后面按原来的顺序，跳过和家乡重名的 */
+    if (st == 0 && s_home) {
+        if (k == 0) return s_home;
+        for (int i = 0; i < N(C0); i++) {
+            if (!strcmp(C0[i], s_home)) continue;
+            if (--k == 0) return C0[i];
+        }
+        return "";
+    }
     const nw_stage_info_t *si = &NW_STAGE_INFO[st];
     return k < si->n_cities ? si->cities[k] : "";
 }

@@ -9,7 +9,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 MAIN = ROOT / "firmware" / "main"
-SCRIPT = """wait 1500
+SCRIPT = """wait 300
+shot onboard.rgb
+""" + "key down\n" * 19 + "key ok\n" + "key down\n" * 17 + """shot city.rgb
+key ok
+shot basis.rgb
+key ok
+shot place.rgb
+cmd solve
+shot placed.rgb
+key down
+key ok
+wait 1500
 shot home.rgb
 key ok
 shot intro.rgb
