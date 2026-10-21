@@ -135,7 +135,7 @@ def run(config_path: Path) -> Dict[str, Dict]:
         d = out_root / clip.stage / clip.name
         d.mkdir(parents=True, exist_ok=True)
         for old in d.glob("*.png"):  # 含卷宗自动生成的 ._* 文件
-            old.unlink()
+            old.unlink(missing_ok=True)   # 删掉原文件时卷宗会顺带删掉它的 ._ 伴生文件
         total = 0
         for i, f in enumerate(frames):
             im = place(key(f, clip.desk_y), clip)

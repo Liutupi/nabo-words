@@ -160,6 +160,174 @@
         ]
       },
       "end": 3.0
+    },
+    {
+      "name": "idle",
+      "stage": "cet4",
+      "source": "art/video/cet4/cet4_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {}
+    },
+    {
+      "name": "happy",
+      "stage": "cet4",
+      "source": "art/video/cet4/cet4_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          18,
+          30
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "sad",
+      "stage": "cet4",
+      "source": "art/video/cet4/cet4_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          18,
+          31
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "idle",
+      "stage": "cet6",
+      "source": "art/video/cet6/cet6_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {}
+    },
+    {
+      "name": "happy",
+      "stage": "cet6",
+      "source": "art/video/cet6/cet6_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          18,
+          30
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "sad",
+      "stage": "cet6",
+      "source": "art/video/cet6/cet6_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          18,
+          30
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "idle",
+      "stage": "adv",
+      "source": "art/video/adv/adv_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {}
+    },
+    {
+      "name": "happy",
+      "stage": "adv",
+      "source": "art/video/adv/adv_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          16,
+          28
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "sad",
+      "stage": "adv",
+      "source": "art/video/adv/adv_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          18,
+          31
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "idle",
+      "stage": "grad",
+      "source": "art/video/grad/grad_01_idle.mp4",
+      "fps": 12,
+      "loop": true,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {}
+    },
+    {
+      "name": "happy",
+      "stage": "grad",
+      "source": "art/video/grad/grad_02_happy.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          6,
+          20
+        ]
+      },
+      "end": 3.0
+    },
+    {
+      "name": "sad",
+      "stage": "grad",
+      "source": "art/video/grad/grad_03_sad.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "segments": {
+        "peak": [
+          12,
+          27
+        ]
+      },
+      "end": 3.0
     }
   ]
 }

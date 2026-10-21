@@ -53,7 +53,7 @@ def _static_entries(manifest: Dict) -> list[Entry]:
     """manifest.json 里登记了 target_px 的道具和精灵。"""
     entries = []
     # 顺序有意义：后面的同名条目覆盖前面的（第 4 轮的 companion/ 覆盖第 1 轮的豆豆设计稿）
-    for group in ("props", "companion_designs", "companion", "toys", "ui"):
+    for group in ("props", "companion_designs", "companion", "toys", "ui", "accessories"):
         for rel, info in manifest.get(group, {}).items():
             path = ART / rel
             if not path.exists():

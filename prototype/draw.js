@@ -189,8 +189,15 @@ function drawSprite(stageIdx, form, x, y, t, scale = 1, acc = null) {
   ctx.restore();
 }
 
+// 饰品美术图的锚点位置（帽子类是底边中点，围巾、墨镜是中心）。小披风的美术图像两条腿，先用程序画的
+const ACC_ART_AT = {
+  flower: (h, hw) => [-hw * 0.55, -h + 8], bow: (h) => [0, -h + 6], star: (h, hw) => [hw * 0.55, -h + 8],
+  gradcap: (h) => [0, -h + 3], phones: (h) => [0, -h + h * 0.45],
+  scarf: (h) => [0, -h + h * 0.8 + 2], shades: (h) => [0, -h + h * 0.55],
+};
 function drawAccessory(id, form, h, hw) {
   if (form === 0 && (id === 'shades' || id === 'scarf')) return;   // 蛋没有眼睛和脖子
+  if (ACC_ART_AT[id]) { const [x, y] = ACC_ART_AT[id](h, hw); if (drawArt('acc_' + id, x, y)) return; }
   const top = -h, ey = top + h * 0.55;   // 眼睛大约在身高一半略下（豆豆头顶有豆芽）
   switch (id) {
     case 'flower':
