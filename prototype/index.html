@@ -1,0 +1,179 @@
+<meta charset="utf-8">
+<title>NABO 单词护照</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+/* 布局：左边本机工牌（可操作），中间对手工牌（机器人），右边面板；窄屏依次堆叠。深蓝护照封皮配金色烫印，单一深色风格。 */
+:root {
+  --ink: #0E1424;
+  --panel: #151D33;
+  --line: #243051;
+  --fg: #E4E8F3;
+  --muted: #8C95B3;
+  --gold: #E8B84A;
+  --teal: #3FB8A9;
+  --rival: #F08A3C;
+  --display: "Fredoka", "Noto Sans SC", sans-serif;
+  --body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --mono: "Space Mono", ui-monospace, Menlo, monospace;
+  --cw: 360px;
+  color-scheme: dark;
+}
+html, body { background: var(--ink); color: var(--fg); }
+body { font-family: var(--body); font-size: 14px; line-height: 1.6; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px; display: grid; gap: 22px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+header h1 { margin: 0; font-family: var(--display); font-size: 30px; font-weight: 700; letter-spacing: .01em; }
+header h1 span { font-family: var(--body); font-size: 18px; letter-spacing: .25em; margin-right: 10px; color: var(--gold); }
+header p { margin: 0; color: var(--muted); font-family: var(--mono); font-size: 12px; }
+.stage { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; justify-content: center; }
+.col { display: grid; gap: 10px; justify-items: center; }
+.cap { font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.device {
+  display: flex; align-items: center; gap: 12px; max-width: 100%;
+  padding: 16px 12px 16px 16px; border-radius: 28px;
+  background: linear-gradient(160deg, #222B45, #11172A);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 30px 60px -24px rgba(0,0,0,.9);
+  touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
+.device.rival { padding: 12px; border-radius: 22px; }
+.screen { line-height: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 0 0 3px #070A13, 0 0 0 4px #2A3456; }
+#screen { display: block; width: var(--cw); height: calc(var(--cw) * 4 / 3); }
+#screenB { display: block; width: 210px; height: 280px; }
+.keys { display: flex; flex-direction: column; gap: 12px; }
+.key {
+  width: 40px; height: 52px; border-radius: 20px; border: 1px solid #33406A;
+  background: linear-gradient(#26304F, #171E35); color: var(--muted);
+  font: 700 11px var(--mono); cursor: pointer; padding: 0; box-shadow: 0 2px 0 #070A13;
+}
+.key.ok { height: 64px; color: var(--gold); }
+.key.down { transform: translateY(2px); box-shadow: none; background: #121830; color: var(--fg); }
+.key:focus-visible, button.text:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.panel { flex: 1 1 300px; min-width: 0; max-width: 400px; display: grid; gap: 18px; }
+.panel section { display: grid; gap: 8px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.panel section:last-child { border-bottom: 0; }
+.panel h2 { margin: 0; font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.rows { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; align-items: baseline; margin: 0; }
+.rows dt { color: var(--muted); font-size: 13px; }
+.rows dd { margin: 0; font-size: 13px; min-width: 0; }
+kbd { font: 700 11px var(--mono); padding: 1px 6px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; color: var(--fg); background: var(--panel); }
+.note { margin: 0; color: var(--muted); font-size: 12px; }
+.slider { display: grid; grid-template-columns: 6.5em 1fr 4em; gap: 10px; align-items: center; font-size: 13px; }
+.slider label { color: var(--muted); }
+.slider output { font: 12px var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
+input[type=range] { width: 100%; accent-color: var(--gold); }
+input[type=checkbox] { accent-color: var(--gold); }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; }
+button.text { background: var(--panel); border: 1px solid var(--line); color: var(--fg); border-radius: 6px; padding: 4px 12px; font: 13px var(--body); cursor: pointer; }
+button.text:hover { border-color: var(--gold); }
+button.text.warn { color: var(--muted); }
+canvas.chart { width: 100%; height: auto; display: block; }
+#pkts { margin: 0; padding: 0; list-style: none; max-height: 200px; overflow-y: auto; font: 12px var(--mono); color: var(--muted); }
+#pkts li { padding: 2px 0; border-bottom: 1px dashed var(--line); overflow-wrap: anywhere; }
+#pkts b { color: var(--fg); }
+#pkts .dir { color: var(--teal); }
+#pkts .bytes { color: var(--gold); }
+.live { font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) { :root { --cw: calc(100vw - 2 * max(16px, env(safe-area-inset-left, 0px)) - 82px); } }
+@media (prefers-reduced-motion: reduce) { .key { transition: none; } }
+</style>
+
+<main class="wrap">
+  <header>
+    <h1><span>单词护照</span>NABO WORDS</h1>
+    <p>AI Passport 网页原型 · 240×320 · 三键 · 独立离线固件 · NABO 为占位造型</p>
+  </header>
+
+  <div class="stage">
+    <div class="col">
+      <div class="cap">你的徽章</div>
+      <div class="device">
+        <div class="screen"><canvas id="screen" width="480" height="640" aria-label="本机画面"></canvas></div>
+        <div class="keys">
+          <button class="key" id="kUp" aria-label="UP 键">UP</button>
+          <button class="key ok" id="kOk" aria-label="OK 键">OK</button>
+          <button class="key" id="kDown" aria-label="DOWN 键">DOWN</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="cap">对面的徽章 · 机器人</div>
+      <div class="device rival"><div class="screen"><canvas id="screenB" width="480" height="640" aria-label="对手画面"></canvas></div></div>
+    </div>
+
+    <div class="panel">
+      <section>
+        <h2>操作</h2>
+        <dl class="rows">
+          <dt>UP / DOWN</dt><dd><kbd>↑</kbd> <kbd>↓</kbd> 或 <kbd>W</kbd> <kbd>S</kbd></dd>
+          <dt>OK</dt><dd><kbd>Enter</kbd> <kbd>Space</kbd></dd>
+          <dt>返回</dt><dd>长按 UP 1 秒（右上角出现进度圈）</dd>
+        </dl>
+        <label class="note"><input type="checkbox" id="sound" checked> 声音</label>
+      </section>
+
+      <section>
+        <h2>时间</h2>
+        <div class="btns">
+          <button class="text" id="day1">下一个学习日</button>
+          <button class="text" id="day7">快进 7 天</button>
+          <button class="text" id="day30">快进 30 天</button>
+          <button class="text" id="day365">快进 1 年</button>
+        </div>
+        <div class="slider"><label for="sAcc">模拟正确率</label><input type="range" id="sAcc" min="50" max="98" value="82"><output id="oAcc"></output></div>
+        <div class="slider"><label for="sLazy">偷懒率</label><input type="range" id="sLazy" min="0" max="60" value="10"><output id="oLazy"></output></div>
+        <p class="note">快进由程序替你答题；“下一个学习日”只翻一天，让你自己学。每日新词数在徽章主页“每日新词”里切换。</p>
+      </section>
+
+      <section>
+        <h2>进度</h2>
+        <dl class="rows live" id="live"></dl>
+      </section>
+
+      <section>
+        <h2>记忆盒分布</h2>
+        <canvas class="chart" id="hist" width="720" height="240" aria-label="每个记忆盒里的词数"></canvas>
+      </section>
+
+      <section>
+        <h2>成长曲线 · 已掌握词数</h2>
+        <canvas class="chart" id="curve" width="720" height="300" aria-label="已掌握词数随学习日变化"></canvas>
+      </section>
+
+      <section>
+        <h2>对手机器人</h2>
+        <div class="slider"><label for="bAcc">正确率</label><input type="range" id="bAcc" min="30" max="100" value="75"><output id="obAcc"></output></div>
+        <div class="slider"><label for="bReact">平均反应</label><input type="range" id="bReact" min="10" max="70" value="32"><output id="obReact"></output></div>
+        <div class="slider"><label for="bVocab">学过的词</label><input type="range" id="bVocab" min="30" max="7500" step="10" value="120"><output id="obVocab"></output></div>
+      </section>
+
+      <section>
+        <h2>ESP-NOW 报文（模拟）</h2>
+        <ul id="pkts"><li>在徽章主页选“对战”开始</li></ul>
+      </section>
+
+      <section>
+        <div class="btns"><button class="text warn" id="reset">清空存档</button></div>
+        <p class="note">存档只在这个浏览器里。前 100 个是真实小学词，之后是“样例词”占位。</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="words.js"></script>
+<script src="core.js"></script>
+<script src="quiz.js"></script>
+<script src="draw.js"></script>
+<script src="screens.js"></script>
+<script src="panel.js"></script>
+<script src="battle.js"></script>
+<script src="app.js"></script>
+<script>
+'use strict';
+Panel.init(); toHome(); Panel.render(true);
+Promise.allSettled(['600 12px Fredoka', '700 12px "Noto Sans SC"', '12px "Noto Sans"', '12px "Space Mono"'].map(f => document.fonts.load(f)))
+  .finally(() => requestAnimationFrame(frame));
+</script>
