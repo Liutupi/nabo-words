@@ -68,10 +68,10 @@ python3 tools/build_proto_atlas.py    # art/ + sprites/ → prototype/assets/
 
 ## 待办
 
-- 小披风美术像两条腿，需要 Codex 重画（原型暂用程序画的披风）。
+- 小披风已由 Codex 重画（2026-10-21 19:13），要按 `placement_suggestion` 放大后才看得清；原型里的饰品都按原尺寸 12 px 画，所以披风暂时仍用程序画的。
 - 掌握 2500 词后的笔记本电脑放在桌子正中，会挡住 NABO 胸前的服装细节，考虑挪到一侧。
 - 饰品固定 12 px，戴在 48 px 的完全体上偏小，固件里按 `manifest.json` 的 `placement_suggestion` 缩放。
-- 第 5 轮美术和高学段视频是 Codex 断线时由 Claude Code 导出和检查的，`art/QA.md` 还没更新，可让 Codex 复核。
+- 四级到毕业的 12 段视频是 Codex 断线时由 Claude Code 检查后抽帧的，`art/QA.md` 还没覆盖第 5 轮和这批视频，可让 Codex 复核。
 - 小学词表是按教材主题整理的近似版，待用课标附录核对。
 - 下一步 M3：渲染（沿用牌桌的显示列表 + 脏矩形）、ESP-IDF 5.5.3 独立固件工程、词库和精灵打包进 assets 分区。
 
