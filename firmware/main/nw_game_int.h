@@ -13,12 +13,12 @@
 
 typedef enum {
     SC_HOME, SC_STUDY, SC_SUMMARY, SC_STARS, SC_PASSPORT, SC_DESK, SC_SHOP, SC_BATTLE,
-    SC_ONBOARD, SC_PLACE, SC_CHALLENGE,
+    SC_ONBOARD, SC_PLACE, SC_CHALLENGE, SC_ACH, SC_WEEK,
 } nw_scene_t;
 
 typedef enum {
     MI_STUDY, MI_EXAM, MI_BATTLE, MI_STARS, MI_PASSPORT, MI_DESK, MI_SHOP, MI_NEWPER, MI_SOUND,
-    MI_EXTRA, MI_CHALLENGE, MI_PLACE, MI_HOME,
+    MI_EXTRA, MI_CHALLENGE, MI_PLACE, MI_HOME, MI_ACH,
 } nw_menu_id_t;
 
 typedef enum { A_IDLE, A_HAPPY, A_SAD, A_CHEER, A_SLEEP, A_COUNT } nw_anim_id_t;
@@ -104,6 +104,13 @@ typedef struct {
 
     nw_vs_t *vs;                    /* 对战（只在对战画面分配） */
 
+    /* 周报（弹出时算好） */
+    struct {
+        int week, learned, mastered, done, streak;
+        uint16_t wrong[4];
+        int n_wrong;
+    } wk;
+
     /* 其它画面 */
     int page_unit;                  /* 护照：选中的单元 */
     int list_sel;                   /* 书桌 / 小卖部 */
@@ -136,6 +143,8 @@ void nw_draw_overlay(void);
 void nw_draw_onboard(void);
 void nw_draw_place(void);
 void nw_draw_challenge(void);
+void nw_draw_ach(void);
+void nw_draw_week(void);
 
 /* 画面共用的小工具 */
 int nw_game_anim(int *frame);         /* 主页 NABO：动作在包里的编号和帧号 */

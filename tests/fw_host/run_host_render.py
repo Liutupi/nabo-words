@@ -6,6 +6,7 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
+from host_compile import build_host
 
 ROOT = Path(__file__).resolve().parents[2]
 MAIN = ROOT / "firmware" / "main"
@@ -22,55 +23,50 @@ key down
 key ok
 wait 1500
 shot home.rgb
-key ok
+cmd goto study
 shot intro.rgb
-key ok
-key ok
-key ok
-key ok
-key ok
+cmd solve 7
 shot quiz.rgb
-key ok
-wait 900
-key back
-key down
-key down
-key ok
+cmd solve
+shot summary.rgb
+cmd goto extra
+cmd solve 3
+shot extra.rgb
+cmd goto stars
 shot stars.rgb
-key ok
-key down
-key ok
+cmd goto passport
 shot passport.rgb
-key back
+cmd goto ach
+shot ach.rgb
 cmd sim 400 90
 wait 2500
+cmd goto home
+key back
+wait 1500
 shot home_cet4.rgb
-cmd coins 300
-key down
-key down
-key down
-key down
+cmd goto challenge
 key down
 key ok
+wait 400
+shot challenge.rgb
+cmd coins 300
+cmd goto shop
 key down
 key down
 key down
 key ok
 shot shop.rgb
-key back
-key down
-key ok
+cmd goto desk
 shot desk.rgb
+cmd goto battle
+shot battle.rgb
 """
 
 
 def main() -> int:
-    out = Path(sys.argv[1] if len(sys.argv) > 1 else tempfile.mkdtemp())
+    out = Path(sys.argv[1] if len(sys.argv) > 1 else tempfile.mkdtemp()).resolve()
     out.mkdir(parents=True, exist_ok=True)
-    exe = out / "host"
-    srcs = [str(ROOT / "tests/fw_host/host_main.c")] + [str(p) for p in sorted(MAIN.glob("nw_*.c"))] + \
-           [str(p) for p in sorted((MAIN / "words").glob("*.c"))]
-    subprocess.run(["cc", "-O1", "-std=gnu11", "-Wall", "-Werror", f"-I{MAIN}", "-o", str(exe), *srcs], check=True)
+    exe = build_host(out)
     r = subprocess.run([str(exe), str(ROOT / "firmware/assets/assets.bin")], input=SCRIPT, text=True,
                        capture_output=True, cwd=out)
     print(r.stdout, r.stderr)

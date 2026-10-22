@@ -1,6 +1,6 @@
-# 界面与 NABO 动画候选改进
+# 界面与 NABO 动画优化
 
-基于 v0.3.0，应用版本标记为 `0.3.1-dev`。这是待实机体验确认的开发候选，已发布的 v0.3.0 镜像和标签保持不变。
+PR #1 与 v0.4.0 合并后以 `0.4.1` 预发布，保留成就页、周报和对战再来一局。实机体验仍待确认，既有发布镜像和标签保持不变。
 
 ## 体验变化
 
@@ -18,6 +18,10 @@
 
 ![原始 NABO 待机动画预览](../docs/images/ui-idle.gif)
 
+| 成就页 | 周报 |
+|---|---|
+| ![成就预览](../docs/images/ui-achievements.png) | ![周报预览](../docs/images/ui-week.png) |
+
 ## 生成与验证
 
 需要 Python 3、Pillow、numpy，以及宿主 C 编译器。`CC` 可以是 gcc、clang、`zig cc` 或 Zig 可执行文件的路径。
@@ -29,6 +33,9 @@ python3 -I firmware/tools/pack_assets.py --base-assets /path/to/v0.3.0/assets.bi
 python3 tests/fw_host/test_ui.py --assets firmware/assets/assets.bin --out build/ui
 python3 tests/words_host/test_words.py
 python3 tests/words_host/test_extra.py
+python3 tests/words_host/extra_parity.py
+python3 tests/fw_host/run_host_render.py build/render
+python3 tests/fw_host/run_host_battle.py
 cd firmware
 idf.py build
 idf.py merge-bin -o nabo-words-merged.bin
@@ -37,7 +44,9 @@ python3 tools/verify_firmware.py build
 
 `--base-assets` 冻结输入资源的词库、字体和静态美术，仅从仓库原始帧重新打包动画。修改过文字或静态美术时应使用 `--fonts` 完整生成。`--idle-step 2` 可显式恢复旧采样率；生成的 `nw_asset_ids.h` 与 assets 必须配套使用。
 
-验证结果和候选应用 SHA256 记录在 [validation/ui-animation.json](../validation/ui-animation.json)。宿主回归覆盖 7500 词布局、7 套外观与动画跳帧解码、长时间计时、换装、菜单过渡、主要页面，以及增量重画与整屏重画逐像素一致性。基线 v0.3.0 在同一专项检查中有 97 项失败，候选为 0 项。
+合并后的验证结果和应用 SHA256 见 [validation/v0.4.1.json](../validation/v0.4.1.json)。宿主回归覆盖 7500 词布局、7 套外观与动画跳帧解码、长时间计时、换装、菜单过渡、成就页、周报弹出和关闭，以及增量重画与整屏重画逐像素一致性。早期 `0.3.1-dev` 候选的验证记录保留在 `validation/ui-animation.json`，不能代替新镜像的验证。
+
+渲染和两进程联机测试现在可在 Windows 和 POSIX 宿主运行；Windows 可把 `CC` 设为 Zig 可执行文件路径。Windows 的 Winsock 与等待适配只属于宿主测试，未进入 ESP32-C3 固件。
 
 资源包为 4,658,019 字节，较 v0.3.0 增加 305,929 字节，assets 分区尚余 1,567,901 字节。词库、10 块字体和静态美术共 12 块数据与 v0.3.0 逐字节一致；动画解码缓冲的最大需求不变。
 
@@ -45,6 +54,6 @@ python3 tools/verify_firmware.py build
 
 ## 实机确认范围
 
-尚未刷入工牌。需要确认实际动画节奏、实体按键与菜单过渡、连续运行与换装、睡眠唤醒、耗电表现；两台实机对战及跨天学习时钟仍未验证。本轮没有重新进行联机回归，不能把 v0.3.0 的对战测试当作该候选已复测。
+尚未刷入工牌。需要确认实际动画节奏、实体按键与菜单过渡、连续运行与换装、睡眠唤醒、耗电表现；两台实机对战及跨天学习时钟仍未验证。宿主联机结果不能代替两台实机验收。
 
 后续安装候选时须同时更新 app 与 assets，保留 record 分区的学习记录。NABO 美术的许可限制继续适用，见 [NOTICE.md](../NOTICE.md)。

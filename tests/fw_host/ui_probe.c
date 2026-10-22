@@ -208,6 +208,32 @@ static void animation_seek(void)
     free(a); free(b);
 }
 
+static void achievement_and_week(void)
+{
+    home(0, 100);
+    G->scene = SC_ACH;
+    frame(now += 33); shot("achievements.rgb");
+    G->rec.s.achievements = 127;
+    frame(now += 33); shot("achievements_complete.rgb");
+    G->rec.e.week_day = 35;
+    G->rec.e.week_learned = 80;
+    G->rec.e.week_mastered = 70;
+    G->rec.e.week_done = 5;
+    for (int i = 0; i < 4; i++) G->rec.e.week_wrong[i] = (uint16_t)(i * 10 + 1);
+    G->scene = SC_STARS;
+    char out[64];
+    nw_game_command("key back", out, sizeof(out), now += 33, 100000);
+    check(G->scene == SC_WEEK && G->wk.learned == 20 && G->wk.mastered == 30 &&
+          G->wk.done == 5 && G->wk.n_wrong == 4, "weekly report after returning home");
+    frame(now); shot("week.rgb");
+    nw_game_key(NW_KEY_OK, now += 33);
+    check(G->scene == SC_HOME && G->rec.e.week_day == 42, "weekly report dismisses once");
+    frame(now); home_layout();
+    nw_game_key(NW_KEY_UP_PRESS, now += 33);
+    nw_game_key(NW_KEY_UP_RELEASE, now + 10);
+    frame(now + 10); home_layout();
+}
+
 int main(int argc, char **argv)
 {
     if (argc < 2) return 2;
@@ -273,6 +299,7 @@ int main(int argc, char **argv)
         }
     }
     other_scenes();
+    achievement_and_week();
     home(0, 100);
     uint32_t start = now;
     unsigned char before[NW_TOTAL];

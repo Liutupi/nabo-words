@@ -181,3 +181,81 @@ void nw_draw_challenge(void)
     }
     hint("长按上键 提前结束", 0x5B6584);
 }
+
+/* ---------- 成就 ---------- */
+
+void nw_draw_ach(void)
+{
+    nw_gfx_t *g = &G->gfx;
+    const nw_state_t *s = &G->rec.s;
+    char t[48];
+    int got = 0;
+    for (int k = 0; k < 7; k++) got += (s->achievements >> k) & 1;
+    nw_rect(g, 0, 0, 240, 320, 0, RGB(C_INK));
+    nw_text(g, NW_F16, "成就", 20, 20, NW_LEFT, RGB(C_WHITE));
+    snprintf(t, sizeof(t), "%d / 7", got);
+    nw_text(g, NW_M11, t, 222, 20, NW_RIGHT, RGB(C_GOLD));
+    /* 每项的进度：现在 / 目标 */
+    int m = nw_mastered(s);
+    const int now[7] = {m, m, s->best_streak, s->best_streak, nw_stamp_count(s), s->exam_first == 1, s->win_streak};
+    const int goal[7] = {100, 1000, 7, 30, 1, 1, 10};
+    for (int k = 0; k < 7; k++) {
+        int y = 40 + k * 36;
+        bool on = (s->achievements >> k) & 1;
+        nw_rect_line(g, 14, y, 212, 32, 8, RGB(on ? 0x2A2A1E : 0x1A2136), 255, RGB(on ? C_GOLD : 0x26304D), on ? 2 : 1);
+        nw_circle(g, 32, y + 16, 9, RGB(on ? C_GOLD : 0x2A3350));
+        nw_text(g, NW_F12, on ? "√" : "?", 32, y + 16, NW_CENTER, RGB(on ? C_INK : 0x5B6584));
+        nw_text(g, NW_F16, NW_ACH_NAME[k], 48, y + 16, NW_LEFT, RGB(on ? C_WHITE : 0x8C93A8));
+        if (on) {
+            snprintf(t, sizeof(t), "已获得");
+        } else if (k == 4 || k == 5) {
+            snprintf(t, sizeof(t), k == 5 && s->exam_first == 2 ? "已错过" : "未完成");
+        } else {
+            int v = now[k] < goal[k] ? now[k] : goal[k];
+            snprintf(t, sizeof(t), "%d / %d", v, goal[k]);
+        }
+        nw_text(g, NW_F12, t, 216, y + 16, NW_RIGHT, RGB(on ? C_GOLD : C_MUTED));
+    }
+    nw_text(g, NW_F12, "OK 返回", 20, 302, NW_LEFT, RGB(C_MUTED));
+}
+
+/* ---------- 周报：每 7 个学习日 NABO 汇报一次 ---------- */
+
+void nw_draw_week(void)
+{
+    nw_gfx_t *g = &G->gfx;
+    const nw_state_t *s = &G->rec.s;
+    char t[64];
+    nw_rect(g, 0, 0, 240, 320, 0, RGB(0xF3EBDA));
+    nw_rect(g, 0, 0, 240, 44, 0, RGB(0x24345C));
+    snprintf(t, sizeof(t), "第 %d 周 · NABO 周报", G->wk.week);
+    nw_text(g, NW_F16, t, 120, 23, NW_CENTER, RGB(0xF3EBDA));
+    const char *L[3] = {"新学", "新掌握", "打卡"};
+    char R[3][24];
+    snprintf(R[0], 24, "%d 词", G->wk.learned);
+    snprintf(R[1], 24, "%d 词", G->wk.mastered);
+    snprintf(R[2], 24, "%d / 7 天", G->wk.done);
+    for (int k = 0; k < 3; k++) {
+        int x = 20 + k * 70;
+        nw_rect(g, x, 56, 62, 52, 8, RGB(0xFFFFFF));
+        nw_text(g, NW_F12, L[k], x + 31, 70, NW_CENTER, RGB(0x9A8F78));
+        nw_text_fit(g, F_OPT, 2, R[k], x + 31, 92, 58, NW_CENTER, RGB(0x3A3328));
+    }
+    const char *say = G->wk.done >= 7   ? "全勤！这周一天都没落下"
+                      : G->wk.done >= 5 ? "很稳，保持这个节奏"
+                      : G->wk.done >= 1 ? "有几天没学，下周补回来"
+                                        : "这周休息了，NABO 等你回来";
+    nw_text_fit(g, F_OPT, 2, say, 120, 128, 210, NW_CENTER, RGB(0xC0503A));
+    nw_text(g, NW_F12, "这周容易错的词", 20, 152, NW_LEFT, RGB(0x7A6F5A));
+    if (!G->wk.n_wrong) nw_text(g, NW_F12, "一个都没错，太厉害了", 120, 180, NW_CENTER, RGB(0x9A8F78));
+    for (int k = 0; k < G->wk.n_wrong; k++) {
+        int y = 164 + k * 26;
+        uint16_t w = G->wk.wrong[k];
+        nw_rect(g, 14, y, 212, 22, 6, RGB(0xFFFFFF));
+        nw_text_fit(g, F_WORD + 3, 1, nw_db_word(w), 22, y + 11, 90, NW_LEFT, RGB(C_INK));
+        nw_text_fit(g, F_OPT + 1, 1, nw_db_meaning(w), 218, y + 11, 110, NW_RIGHT, RGB(0x7A6F5A));
+    }
+    snprintf(t, sizeof(t), "连续打卡 %u 天 · 已掌握 %d 词", G->wk.streak, nw_mastered(s));
+    nw_text(g, NW_F12, t, 120, 280, NW_CENTER, RGB(0x7A6F5A));
+    nw_text(g, NW_F12, "OK 继续", 120, 302, NW_CENTER, RGB(0x9A8F78));
+}

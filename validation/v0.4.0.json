@@ -1,0 +1,89 @@
+{
+  "source_commit": "9f34a806a037583b07260023085fde3d1cd0dbea",
+  "artifacts_commit": "62e1ee7f6c1434d9ac8b41d49052e6ee2db7eeba",
+  "prebuilt_unchanged": true,
+  "application": {
+    "version": "0.4.0",
+    "project": "nabo-words-passport",
+    "time": "07:00:35",
+    "date": "Oct 22 2026",
+    "idf": "v5.5.3"
+  },
+  "merged_layout": "PASS",
+  "ui_glyph_coverage": {
+    "font_f12.bin": "",
+    "font_f16.bin": "",
+    "font_f22.bin": ""
+  },
+  "files": {
+    "assets.bin": {
+      "bytes": 4352090,
+      "sha256": "4839c48836d9cfbbfdc8094faff8a2e300679d0f92a7857a7d8a457a2d510ec7"
+    },
+    "bootloader.bin": {
+      "bytes": 21024,
+      "sha256": "09e04f7fd4aafe825dbce689b04082e574c156d9a1cac10f6992631d3ff3c9ed"
+    },
+    "flash_words.py": {
+      "bytes": 3659,
+      "sha256": "29b51008443abace7c493f88e5ec1ab6ce0d6492a21a0e301faafde2860f7a8e"
+    },
+    "nabo-words-merged.bin": {
+      "bytes": 6514778,
+      "sha256": "55cc8115e94f4ddf81671956624f72721b4f3002f45fa72b6f8ca855c4cc409d"
+    },
+    "nabo-words-passport.bin": {
+      "bytes": 917760,
+      "sha256": "722d4d886fc2e8e32719ccaf3e68637dade263b0b9a768091574619aa4898fb9"
+    },
+    "partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "34373abb6cd1b5c1f6de2bde0a3f7eb457fe21c3ee3a7c83a9af1fcc30d06088"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 422,
+      "sha256": "f271d40925a0446869eb31fba00ad1ce1773d797d48e6c456058c34b6e37cd51"
+    }
+  },
+  "hardware_tested": false,
+  "date": "2026-10-22",
+  "release_kind": "prerelease",
+  "local_checks": {
+    "sha256_manifest_bin_count": 5,
+    "merged_layout": "PASS",
+    "esp_application_image": "PASS",
+    "embedded_version": "0.4.0",
+    "golden_replay_steps": 16317,
+    "extra_rules": "PASS",
+    "prototype_extra_parity_lines": 562,
+    "chinese_ui_glyph_coverage": "PASS"
+  },
+  "cloud_reported_checks": {
+    "esp_idf": "5.5.3",
+    "clean_checkout": true,
+    "host_render_scenes": 18,
+    "host_battle_rounds": 2,
+    "reference": "https://github.com/Liutupi/nabo-words/pull/2",
+    "rerun_locally": [
+      "golden rules",
+      "extra rules",
+      "prototype extra parity"
+    ],
+    "not_rerun_locally": [
+      "host renderer",
+      "two-process UDP battle"
+    ]
+  },
+  "hardware_not_verified": [
+    "achievements",
+    "weekly report",
+    "battle rematch",
+    "physical buttons",
+    "sound",
+    "screen frame timing",
+    "sleep/wake",
+    "two physical badges battle",
+    "long-running and cross-day learning clock"
+  ],
+  "ui_animation_pr_1_included": false
+}

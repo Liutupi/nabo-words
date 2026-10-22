@@ -19,7 +19,12 @@ typedef struct {
     uint16_t extra_day;
     uint16_t chal_day;      /* 最近一次闪电挑战是第几个学习日（每天第一次给金币） */
     uint16_t chal_best;
-    uint32_t reserved[4];   /* 记录大小不变，旧版本的存档可以直接读 */
+    /* 周报：每 7 个学习日一份（v0.4.0 起，旧存档里这几项是 0，从下一天开始统计） */
+    uint16_t week_day;      /* 这一周从第几个学习日开始，0 表示还没开始统计 */
+    uint16_t week_learned, week_mastered;   /* 周初的已学 / 掌握 */
+    uint8_t week_done;      /* 这周完成今日学习几天 */
+    uint8_t week_pad;
+    uint16_t week_wrong[4]; /* 这周最近答错的 4 个词（序号 + 1，0 表示空） */
 } nw_extra_t;
 _Static_assert(sizeof(nw_extra_t) == 40, "记录大小要和 v0.1.0 一致");
 
