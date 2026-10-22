@@ -130,14 +130,14 @@ static int anim_frame(bool *done)
 {
     nw_nts_anim_t a;
     nw_nts_anim(&G->pack, G->anim_slot[G->np.anim], &a);
-    uint32_t k = (G->now - G->np.t0) * a.fps / 1000;
+    uint64_t k = (uint64_t)(G->now - G->np.t0) * a.fps / 1000;
     int n = G->np.hi - G->np.lo;
     if (G->np.loop) {
         *done = false;
-        return G->np.lo + (int)(k % (uint32_t)n);
+        return G->np.lo + (int)(k % (unsigned)n);
     }
-    *done = k >= (uint32_t)n;
-    return G->np.lo + (int)(k < (uint32_t)n ? k : (uint32_t)n - 1);
+    *done = k >= (unsigned)n;
+    return G->np.lo + (int)(k < (unsigned)n ? k : (unsigned)n - 1);
 }
 
 static void np_update(void)
@@ -345,7 +345,11 @@ static void to_home(void)
     G->scene = SC_HOME;
     free_session();
     G->fb = false;
-    if (nw_look_of(S()) != G->look) load_pack(nw_look_of(S()));
+    if (nw_look_of(S()) != G->look) {
+        load_pack(nw_look_of(S()));
+        play_idle();             /* 新服装不能沿用上一套动作的帧区间和起点 */
+    }
+    G->menu_dir = 0;
     build_menu();
     if (week_due()) {
         G->scene = SC_WEEK;
@@ -952,9 +956,11 @@ static void act(nw_key_t k)
     switch (G->scene) {
     case SC_HOME:
         if (wake_if_sleeping()) break;
-        if (k == NW_KEY_UP_PRESS) G->menu_idx = (uint8_t)((G->menu_idx + G->menu_n - 1) % G->menu_n);
-        else if (k == NW_KEY_DOWN) G->menu_idx = (uint8_t)((G->menu_idx + 1) % G->menu_n);
-        else home_ok();
+        if (k == NW_KEY_UP_PRESS || k == NW_KEY_DOWN) {
+            G->menu_dir = k == NW_KEY_DOWN ? 1 : -1;
+            G->menu_t = G->now;
+            G->menu_idx = (uint8_t)((G->menu_idx + G->menu_n + G->menu_dir) % G->menu_n);
+        } else home_ok();
         break;
     case SC_STUDY: study_key(k); break;
     case SC_SUMMARY:

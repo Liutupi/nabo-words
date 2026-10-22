@@ -3,7 +3,7 @@
 只装这一个游戏的离线固件（不带小智），开机直接进主页，不需要配网、激活或联网。规则模块在 `main/words/`（M2，和原型逐步对拍），
 渲染和画面在 `main/nw_*.c`（M3）。
 
-当前新增版本为 [v0.4.0 预发布](https://github.com/Liutupi/nabo-words/releases/tag/v0.4.0)，含成就页、NABO 周报和对战再来一局，尚未实机验证。刷写、升级、SHA256 和验证范围见 [RELEASE_v0.4.0.md](RELEASE_v0.4.0.md)。
+当前新增版本为 [v0.4.1 预发布](https://github.com/Liutupi/nabo-words/releases/tag/v0.4.1)，合并界面排版、菜单过渡和 NABO 原始 12 fps 动画，保留成就页、NABO 周报和对战再来一局，尚未实机验证。刷写、升级、SHA256 和验证范围见 [RELEASE_v0.4.1.md](RELEASE_v0.4.1.md)。
 
 ## 操作
 
@@ -29,7 +29,7 @@
 两边显示的题完全一样。之后每题只交换答案和用时（ANSWER），8 秒没答算超时，等对方答案最多再等 1.2 秒。
 10 题做完互发比分（RESULT），两边算的比分对上才计入积分（Elo）和金币，对不上、对方退出或断线都不计积分，但答错的词照样排进明天复习。
 同一对工牌一个学习日内第 4 局起不再改积分。无线只在对战画面打开，Wi-Fi 信道 1，退出就关，平时不耗电也不占内存。
-报文和流程在 `main/nw_vs.c`，画面在 `main/nw_scene_vs.c`。宿主测试：`python3 tests/fw_host/run_host_battle.py`（两个进程经本机 UDP 打一整局）。
+报文和流程在 `main/nw_vs.c`，画面在 `main/nw_scene_vs.c`。宿主测试：`python3 tests/fw_host/run_host_battle.py`（两个进程经本机 UDP 打两局，包含再来一局）。
 
 ## 结构
 
@@ -89,7 +89,10 @@ python3 tests/words_host/test_extra.py          # 分级测试 / 加学 / 闪电
 python3 tests/words_host/extra_parity.py        # 上面三项原型和 C 逐题对拍（需要 node）
 python3 tests/fw_host/run_host_render.py out/   # 游戏层在宿主上跑一遍所有画面，截图；核对增量重画 = 整屏重画、绘制列表不溢出
 python3 tests/fw_host/run_host_battle.py        # 两个进程经本机 UDP 打两局对战（含再来一局），核对比分和积分
+python3 tests/fw_host/test_ui.py --assets firmware/assets/assets.bin --out build/ui  # 7500 词布局、7 套动画、菜单过渡与真实渲染预览
 ```
+
+界面与动画候选改进、预览及验证边界见 [UI_ANIMATION_POLISH.md](UI_ANIMATION_POLISH.md)。
 
 ## 串口调试命令
 

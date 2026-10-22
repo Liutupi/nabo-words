@@ -3,3 +3,4 @@
 third_party/ecdict/ecdict.csv
 __pycache__/
 tests/words_host/build/
+/build/

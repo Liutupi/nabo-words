@@ -108,8 +108,6 @@ static void top_bar(void)
     char t[48];
     if (nw_all_done(s)) snprintf(t, sizeof(t), "环游完成");
     else snprintf(t, sizeof(t), "%s · %s", NW_STAGE_INFO[s->stage].name, nw_unit_city(nw_cur_unit(s)));
-    static const nw_font_id_t F[] = {NW_F12};
-    nw_text_fit(&G->gfx, F, 1, t, NW_SAFE + 4, 12, 116, NW_LEFT, RGB(C_WHITE));
     /* 右边从右往左排：金币、连续天数、补签卡（数字位数会变） */
     char v[12];
     int x = 226;
@@ -130,24 +128,30 @@ static void top_bar(void)
         x -= nw_text_width(NW_M11, v) + 8;
         nw_image(&G->gfx, G->art_ui[2], x, 12);
     }
+    static const nw_font_id_t F[] = {NW_F12};
+    int room = x - 8 - (NW_SAFE + 4);
+    nw_text_fit(&G->gfx, F, 1, t, NW_SAFE + 4, 12, room < 116 ? room : 116, NW_LEFT, RGB(C_WHITE));
 }
 
 static void menu(void)
 {
-    nw_rect(&G->gfx, 12, 256, 216, 56, 10, RGB(0x1E2740));
+    uint32_t dt = G->now - G->menu_t;
+    bool moving = G->menu_dir && dt < 160;
+    int left = moving ? 160 - (int)dt : 0;
+    int dy = G->menu_dir * 4 * left * left / (160 * 160);
+    nw_rect_line(&G->gfx, 12, 256, 216, 56, 10, RGB(0x1E2740), 255,
+                 RGB(moving ? C_TEAL : 0x2A3652), moving ? 2 : 1);
     char sub[64];
     const char *label = nw_menu_label(G->menu[G->menu_idx], sub, sizeof(sub));
-    nw_text(&G->gfx, NW_F16, label, 120, 275, NW_CENTER, RGB(C_WHITE));
+    nw_text(&G->gfx, NW_F16, label, 116, 275 + dy, NW_CENTER, RGB(C_WHITE));
     static const nw_font_id_t F[] = {NW_F12};
-    nw_text_fit(&G->gfx, F, 1, sub, 120, 297, 190, NW_CENTER, RGB(C_MUTED));
+    nw_text_fit(&G->gfx, F, 1, sub, 116, 297 + dy, 176, NW_CENTER, RGB(C_MUTED));
     nw_tri(&G->gfx, 214, 273, 6, true, RGB(0x5B6584));
     nw_tri(&G->gfx, 214, 293, 6, false, RGB(0x5B6584));
     int n = G->menu_n;
-    for (int k = 0; k < n; k++) {
-        int y = 266 + k * 36 / (n > 1 ? n - 1 : 1);
-        bool on = k == G->menu_idx;
-        nw_circle(&G->gfx, 24, y, on ? 3 : 2, RGB(on ? C_GOLD : 0x5B6584));
-    }
+    nw_rect(&G->gfx, 21, 266, 2, 36, 1, RGB(0x3A4866));
+    int y = 268 + G->menu_idx * 32 / (n > 1 ? n - 1 : 1);
+    nw_circle(&G->gfx, 22, y, 3, RGB(C_GOLD));
 }
 
 void nw_draw_home(void)
@@ -181,15 +185,14 @@ void nw_draw_home(void)
     nw_text(g, NW_F12, "已学", 14, 230, NW_LEFT, RGB(C_MUTED));
     snprintf(t, sizeof(t), "%d", l);
     nw_text(g, NW_M18, t, 40, 229, NW_LEFT, RGB(C_WHITE));
-    int lw = nw_text_width(NW_M18, t);
-    snprintf(t, sizeof(t), "词 · 掌握 %d", m);
-    nw_text(g, NW_F12, t, 42 + lw, 230, NW_LEFT, RGB(C_MUTED));
+    snprintf(t, sizeof(t), "掌握 %d", m);
+    nw_text(g, NW_F12, t, 226, 230, NW_RIGHT, RGB(C_TEAL));
     int n = nw_stage_end[si] - nw_stage_start[si];
     int done = nw_count_box(s, nw_stage_start[si], nw_stage_end[si], 1);
     snprintf(t, sizeof(t), "%s %d%%", NW_STAGE_INFO[si].name, done * 100 / n);
-    nw_text(g, NW_F12, t, 226, 230, NW_RIGHT, RGB(C_GOLD));
-    nw_rect(g, 12, 242, 216, 5, 2, RGB(0x2A3350));
-    int bw = 216 * done / n;
-    nw_rect(g, 12, 242, bw < 5 ? 5 : bw, 5, 2, RGB(C_GOLD));
+    nw_text(g, NW_F12, t, 226, 247, NW_RIGHT, RGB(C_GOLD));
+    nw_rect(g, 14, 245, 128, 5, 2, RGB(0x2A3350));
+    int bw = 128 * done / n;
+    nw_rect(g, 14, 245, bw < 3 ? 3 : bw, 5, 2, RGB(C_GOLD));
     menu();
 }

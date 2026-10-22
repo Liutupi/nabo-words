@@ -6,10 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <arpa/inet.h>
-#include <fcntl.h>
-#include <sys/socket.h>
-#include <unistd.h>
+#include "host_platform.h"
 
 #include "nw_assets.h"
 #include "nw_game.h"
@@ -45,7 +42,8 @@ void nw_plat_cue(int c) { nw_sound_cue((nw_cue_t)c); }
 uint32_t nw_plat_random(void) { rng = rng * 1103515245u + 12345u; return rng; }
 
 /* 无线：两个宿主进程用本机 UDP 互通（环境变量 NW_PORT / NW_PEER），MAC 由端口号生成 */
-static int s_sock = -1, s_port, s_peer;
+static host_socket_t s_sock = HOST_INVALID_SOCKET;
+static int s_port, s_peer;
 static void port_mac(int port, uint8_t mac[6])
 {
     uint8_t m[6] = {0x02, 0, 0, 0, (uint8_t)(port >> 8), (uint8_t)port};
@@ -59,20 +57,24 @@ bool nw_plat_radio_on(void)
     s_port = atoi(p);
     s_peer = atoi(q);
     s_sock = socket(AF_INET, SOCK_DGRAM, 0);
+    if (s_sock == HOST_INVALID_SOCKET) return false;
     struct sockaddr_in a = {0};
     a.sin_family = AF_INET;
     a.sin_port = htons((uint16_t)s_port);
     a.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
     int one = 1;
-    setsockopt(s_sock, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(one));
-    if (bind(s_sock, (struct sockaddr *)&a, sizeof(a)) < 0) return false;
-    fcntl(s_sock, F_SETFL, O_NONBLOCK);
+    setsockopt(s_sock, SOL_SOCKET, SO_REUSEADDR, (const char *)&one, sizeof(one));
+    if (bind(s_sock, (struct sockaddr *)&a, sizeof(a)) < 0 || host_nonblock(s_sock) != 0) {
+        host_close(s_sock);
+        s_sock = HOST_INVALID_SOCKET;
+        return false;
+    }
     return true;
 }
 void nw_plat_radio_off(void)
 {
-    if (s_sock >= 0) close(s_sock);
-    s_sock = -1;
+    if (s_sock != HOST_INVALID_SOCKET) host_close(s_sock);
+    s_sock = HOST_INVALID_SOCKET;
 }
 bool nw_plat_radio_send(const uint8_t *mac, const void *data, int len)
 {
@@ -83,14 +85,14 @@ bool nw_plat_radio_send(const uint8_t *mac, const void *data, int len)
     a.sin_family = AF_INET;
     a.sin_port = htons((uint16_t)s_peer);
     a.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
-    return sendto(s_sock, data, (size_t)len, 0, (struct sockaddr *)&a, sizeof(a)) == len || !mac;
+    return sendto(s_sock, (const char *)data, len, 0, (struct sockaddr *)&a, sizeof(a)) == len || !mac;
 }
 int nw_plat_radio_recv(uint8_t mac[6], void *buf, int max)
 {
     struct sockaddr_in a;
-    socklen_t al = sizeof(a);
-    if (s_sock < 0) return 0;
-    ssize_t n = recvfrom(s_sock, buf, (size_t)max, 0, (struct sockaddr *)&a, &al);
+    host_socklen_t al = sizeof(a);
+    if (s_sock == HOST_INVALID_SOCKET) return 0;
+    int n = (int)recvfrom(s_sock, (char *)buf, max, 0, (struct sockaddr *)&a, &al);
     if (n <= 0) return 0;
     port_mac(ntohs(a.sin_port), mac);
     return (int)n;
@@ -101,12 +103,13 @@ static void tick(uint32_t *now, uint32_t rtc)
 {
     *now += 33;
     nw_game_frame(*now, rtc);
-    if (s_realtime) usleep(33000);
+    if (s_realtime) host_pause();
 }
 
 int main(int argc, char **argv)
 {
     if (argc < 2) return 2;
+    if (host_network_init() != 0) return 2;
     FILE *f = fopen(argv[1], "rb");
     if (!f) return 2;
     fseek(f, 0, SEEK_END);
