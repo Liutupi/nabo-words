@@ -3,6 +3,8 @@
 只装这一个游戏的离线固件（不带小智），开机直接进主页，不需要配网、激活或联网。规则模块在 `main/words/`（M2，和原型逐步对拍），
 渲染和画面在 `main/nw_*.c`（M3）。
 
+当前新增版本为 [v0.4.0 预发布](https://github.com/Liutupi/nabo-words/releases/tag/v0.4.0)，含成就页、NABO 周报和对战再来一局，尚未实机验证。刷写、升级、SHA256 和验证范围见 [RELEASE_v0.4.0.md](RELEASE_v0.4.0.md)。
+
 ## 操作
 
 | 按键 | 作用 |
