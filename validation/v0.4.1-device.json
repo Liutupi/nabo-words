@@ -230,18 +230,29 @@
     {
       "id": 3,
       "name": "Physical buttons",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "Press up, down and OK 20 times each by hand; hold up for one second to return.",
       "criteria": "No missed or duplicate input; return progress ring is visible.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN"
+          "status": "PASS",
+          "evidence_source": "user physical operation and visual observation",
+          "date": "2026-10-30",
+          "presses": {
+            "up": 20,
+            "down": 20,
+            "ok": 20
+          },
+          "missed_input_observed": false,
+          "duplicate_input_observed": false,
+          "approximately_one_second_up_hold_returns": true,
+          "progress_ring_visible": true
         },
         "badge_b": {
           "status": "NOT RUN"
         }
       },
-      "notes": "Requires physical button operation and visual observation."
+      "notes": "Badge_a passed the complete physical-button checklist by user observation. Badge_b remains NOT RUN."
     },
     {
       "id": 4,
@@ -839,7 +850,7 @@
   ],
   "unverified": [
     "Badge_b and its app-only upgrade have not been tested.",
-    "Physical buttons, audible quality/mute, two-badge battle/interruption, power-loss and actual power-button reset reason remain unverified.",
+    "Badge_a audible quality/mute, badge_b physical buttons/audio, two-badge battle/interruption, power-loss and actual power-button reset reason remain unverified.",
     "Badge_a sleep/wake passed; badge_b sleep/wake remains unverified.",
     "Overnight rollover and one-day battery use remain unverified.",
     "Section 1 is incomplete. Section 2 and later firmware changes remain gated; report the physical check 10 result before implementing 3.1."
