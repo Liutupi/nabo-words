@@ -368,5 +368,19 @@
     "firmware/main/words/nabo_words_quiz.c": "6e2b69efc584520c16917af4f0ce7f6dbe67e9e5093db300f8b0917b027d3a5c",
     "firmware/main/words/nabo_words_quiz.h": "e138422bec2ff7ac5ddb6662c2eeb427d2d4ac0235233129ae1d8d0a20f45c9f",
     "firmware/main/words/nabo_words_rng.h": "8e91347ce94c295e3c840c73d25d6dc94e02868b88860b7250c325e98e7a5f55"
+  },
+  "publication": {
+    "github_release_url": "https://github.com/Liutupi/nabo-words/releases/tag/v0.4.2-preview.1",
+    "release_source_commit": "02fdffd27340fd0b6828a0f55c191e6f29aa085d",
+    "public_attachments_downloaded_and_sha256_verified": true,
+    "public_attachment_count": 7,
+    "community_submission": {
+      "project_id": 1479,
+      "revision_id": 4139,
+      "slug": "nabo-7500",
+      "status_at_submission": "pending",
+      "receipt_reconciled": true,
+      "firmware_and_bilingual_content_match_approved_preview": true
+    }
   }
 }
