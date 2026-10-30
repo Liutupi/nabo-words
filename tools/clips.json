@@ -328,6 +328,246 @@
         ]
       },
       "end": 3.0
+    },
+    {
+      "name": "sleep",
+      "stage": "junior",
+      "source": "art/video/junior/junior_04_sleep.mp4",
+      "fps": 6,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 4.0,
+      "segments": {
+        "in": [
+          0,
+          9
+        ],
+        "loop": [
+          9,
+          16
+        ],
+        "out": [
+          16,
+          24
+        ]
+      },
+      "palette_colors": 32,
+      "stable_color_distance": 36
+    },
+    {
+      "name": "cheer",
+      "stage": "junior",
+      "source": "art/video/junior/junior_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.75,
+      "segments": {},
+      "palette_colors": 32,
+      "stable_color_distance": 36,
+      "start": 0.5
+    },
+    {
+      "name": "sleep",
+      "stage": "senior",
+      "source": "art/video/senior/senior_04_sleep.mp4",
+      "fps": 6,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 4.0,
+      "segments": {
+        "in": [
+          0,
+          9
+        ],
+        "loop": [
+          9,
+          16
+        ],
+        "out": [
+          16,
+          24
+        ]
+      },
+      "palette_colors": 32,
+      "stable_color_distance": 36
+    },
+    {
+      "name": "cheer",
+      "stage": "senior",
+      "source": "art/video/senior/senior_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.75,
+      "segments": {},
+      "palette_colors": 32,
+      "stable_color_distance": 36,
+      "start": 0.5
+    },
+    {
+      "name": "sleep",
+      "stage": "cet4",
+      "source": "art/video/cet4/cet4_04_sleep_v2.mp4",
+      "fps": 6,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 4.0,
+      "segments": {
+        "in": [
+          0,
+          9
+        ],
+        "loop": [
+          9,
+          16
+        ],
+        "out": [
+          16,
+          24
+        ]
+      },
+      "palette_colors": 32,
+      "stable_color_distance": 36
+    },
+    {
+      "name": "cheer",
+      "stage": "cet4",
+      "source": "art/video/cet4/cet4_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.75,
+      "segments": {},
+      "palette_colors": 32,
+      "stable_color_distance": 36,
+      "start": 0.5
+    },
+    {
+      "name": "sleep",
+      "stage": "cet6",
+      "source": "art/video/cet6/cet6_04_sleep.mp4",
+      "fps": 6,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 4.0,
+      "segments": {
+        "in": [
+          0,
+          9
+        ],
+        "loop": [
+          9,
+          16
+        ],
+        "out": [
+          16,
+          24
+        ]
+      },
+      "palette_colors": 32,
+      "stable_color_distance": 36
+    },
+    {
+      "name": "cheer",
+      "stage": "cet6",
+      "source": "art/video/cet6/cet6_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.75,
+      "segments": {},
+      "palette_colors": 32,
+      "stable_color_distance": 36,
+      "start": 0.5
+    },
+    {
+      "name": "sleep",
+      "stage": "adv",
+      "source": "art/video/adv/adv_04_sleep.mp4",
+      "fps": 6,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 4.0,
+      "segments": {
+        "in": [
+          0,
+          9
+        ],
+        "loop": [
+          9,
+          16
+        ],
+        "out": [
+          16,
+          24
+        ]
+      },
+      "palette_colors": 32,
+      "stable_color_distance": 36
+    },
+    {
+      "name": "cheer",
+      "stage": "adv",
+      "source": "art/video/adv/adv_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.75,
+      "segments": {},
+      "palette_colors": 32,
+      "stable_color_distance": 36,
+      "start": 0.5
+    },
+    {
+      "name": "sleep",
+      "stage": "grad",
+      "source": "art/video/grad/grad_04_sleep_v2.mp4",
+      "fps": 6,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 4.0,
+      "segments": {
+        "in": [
+          0,
+          9
+        ],
+        "loop": [
+          9,
+          16
+        ],
+        "out": [
+          16,
+          24
+        ]
+      },
+      "palette_colors": 32,
+      "stable_color_distance": 36
+    },
+    {
+      "name": "cheer",
+      "stage": "grad",
+      "source": "art/video/grad/grad_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "cap_top_y": 274,
+      "desk_y": 803,
+      "end": 3.75,
+      "segments": {},
+      "palette_colors": 32,
+      "stable_color_distance": 36,
+      "start": 0.5
     }
   ]
 }

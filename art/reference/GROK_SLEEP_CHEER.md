@@ -4,7 +4,7 @@
 
 This is the roadmap section 4 A-priority gap: shots **04 sleep and 05 cheer** for junior through graduation. It is a separate batch from the older CET4–graduation 01–03 handoff in [GROK_REMAINING.md](GROK_REMAINING.md). Existing 01–03 clips and all primary clips remain unchanged.
 
-**Status: all twelve slots received as fourteen original MP4s; final integration remains pending.** [GROK_SLEEP_CHEER.json](GROK_SLEEP_CHEER.json) contains twelve independent Grok jobs, exact prompts, filenames and SHA256-bound starting-image references. The supplied sources are from Grok. No substitute provider has been used. See [the source review](../preview/video_review/SLEEP_CHEER_REVIEW.md): CET4/graduation sleep use v2, all twelve candidates pass source-frame checks, with the graduation single-hand grip explicitly accepted by the user.
+**Status: all twelve slots received as fourteen original MP4s; integrated into v0.4.2-preview.1.** [GROK_SLEEP_CHEER.json](GROK_SLEEP_CHEER.json) contains twelve independent Grok jobs, exact prompts, filenames and SHA256-bound starting-image references. The supplied sources are from Grok. No substitute provider has been used. See [the source review](../preview/video_review/SLEEP_CHEER_REVIEW.md): CET4/graduation sleep use v2, all twelve candidates pass source-frame checks, with the graduation single-hand grip explicitly accepted by the user.
 
 For the local production workspace, start with [the workspace handoff](../../GROK_WORKSPACE_HANDOFF.txt). The [Chinese batch prompt](GROK_PROMPT.zh_CN.txt) and [twelve standalone Chinese shot prompts](grok-prompts/) include reference and output paths. Save original MP4s directly in this checkout's `art/video/<stage>/`; Codex reads them from disk.
 
@@ -32,12 +32,14 @@ Do not overwrite existing sources. Name revisions `_v2`, `_v3`, and record the s
 
 Review the actual video, not only a contact sheet: identity, unmirrored emblem, hands/accessories, fixed camera, action completion and reference-pose return. For sleep, choose a steady breathing interval and verify its extracted seam. Then check registered 256x256 RGBA frames with desk anchor `(128,224)`, the 110-pixel home size and the 48-pixel head crop.
 
-Keep twelve outputs within the remaining asset budget. The roadmap estimate is about 1.1 MB; if needed, evaluate sleep at 6 fps after visual review. This estimate does not certify packed size. Accepted clips must later be registered in `tools/clips.json`, processed by `tools/clip_to_sprites.py`, fully packed with matching app asset IDs, and synchronized to the prototype atlas. Those changes remain pending device acceptance and the remaining source/extraction checks.
+The selected twelve clips are registered in `tools/clips.json`, extracted into 256x256 RGBA sprites at anchor `(128,224)`, packed with matching application segment IDs, and synchronized to the prototype atlas. New sleep uses 24 frames at 6 fps: entry `[0,9)`, a closed-eye loop `[9,16)` and exit `[16,24)`. Cheer trims the neutral holds to source seconds 0.5–3.75, retaining 39 frames at 12 fps. The original MP4s are untouched. New runtime animations use at most 32 colors and a stability distance of 36; the packer still enforces its existing maximum mean color error of 8 and exact index decoding.
 
-Build: NOT RUN (handoff only).
+Assets total 6,074,022 bytes, leaving 151,898 bytes. Twelve static chunks, the primary animation pack and eighteen existing stage animations are unchanged. Native renderer previews show the new sleep and cheer poses; full-frame decode/seek and sleep-entry/loop/wake/idle/reward transitions pass for all seven outfits.
 
-Host tests: PASS (full existing host suite and byte-identical v0.4.1 asset repack).
+Build: PASS (ESP-IDF 5.5.3).
 
-Device tests: NOT RUN.
+Host tests: PASS (complete HANDOFF suite and 29,278 UI checks).
 
-Unverified: continuous playback, extracted loop seams, final packed size, runtime appearance and physical display.
+Device tests: NOT RUN for this revision; the user postponed flashing.
+
+Unverified: physical rendering/timing, extended hardware operation and continuous-playback acceptance. Full artifact identities and validation scope are in [the version record](../../validation/v0.4.2-preview.1.json).

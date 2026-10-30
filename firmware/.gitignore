@@ -1,7 +1,7 @@
 build/
 sdkconfig
 sdkconfig.old
-managed_components/
+/managed_components
 dependencies.lock
 assets/
 *.bin

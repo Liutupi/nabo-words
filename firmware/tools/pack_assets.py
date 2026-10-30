@@ -256,9 +256,11 @@ def flatten(frames: List[np.ndarray], bg) -> Tuple[List[np.ndarray], List[np.nda
     return [r[y0:y1, x0:x1] for r in rgbs], [m[y0:y1, x0:x1] for m in masks], box
 
 
-def quantize(rgbs, masks):
+def quantize(rgbs, masks, colors=COLORS, stable=STABLE):
+    if not 1 <= colors <= COLORS:
+        raise ValueError(f"Invalid animation palette size: {colors}")
     strip = Image.fromarray(np.concatenate(rgbs, axis=1), "RGB")
-    q = strip.quantize(colors=COLORS, method=Image.MEDIANCUT, dither=Image.Dither.NONE)
+    q = strip.quantize(colors=colors, method=Image.MEDIANCUT, dither=Image.Dither.NONE)
     pal = np.array(q.getpalette()[: 255 * 3], np.uint8).reshape(-1, 3)
     idx = np.asarray(q, np.uint8).astype(np.int32) + 1
     w = rgbs[0].shape[1]
@@ -271,7 +273,7 @@ def quantize(rgbs, masks):
         prev, cur = out[i - 1], out[i]
         both = (prev > 0) & (cur > 0)
         drift = np.abs(rgbs[i].astype(np.int32) - pal[np.maximum(prev, 1) - 1].astype(np.int32)).sum(axis=2)
-        keep = both & (drift < STABLE)
+        keep = both & (drift < stable)
         cur[keep] = prev[keep]
     used = int(max(p.max() for p in out))
     return pal[:used], out
@@ -348,7 +350,8 @@ def pack_stage(stage: str, bg, step: int) -> Tuple[bytes, List[Dict]]:
         st = 1 if name in ("happy", "sad", "cheer") else step   # 表演动作保留 12 fps，循环的待机 / 睡眠降帧
         frames = [np.asarray(Image.open(p).convert("RGBA")) for p in paths[::st]]
         rgbs, masks, (x0, y0, x1, y1) = flatten(frames, bg)
-        pal, idx = quantize(rgbs, masks)
+        pal, idx = quantize(rgbs, masks, info.get("palette_colors", COLORS),
+                            info.get("stable_color_distance", STABLE))
         enc = []
         for k, f in enumerate(idx):
             rows = [encode_row(r) for r in f] if k == 0 else [encode_delta_row(p, r) for p, r in zip(idx[k - 1], f)]

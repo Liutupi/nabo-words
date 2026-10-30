@@ -4,7 +4,7 @@
 
 Received on 2026-10-30: **14 original MP4 files covering all 12 requested slots**. CET4 sleep and graduation sleep each have a v2 retake. All 14 sources decode successfully: 97 primary-video frames each, 1,358 frames total, 720x960, 24 fps and 4.041667 seconds. This is nominally four seconds plus the final frame duration. Audio and attached thumbnails remain in the untouched originals.
 
-The source-frame checks pass for all twelve selected candidates. The user explicitly accepted the graduation single-hand diploma grip on 2026-10-30; the deviation from the original stricter prompt is documented. **No new clip has been extracted into runtime sprites, packed, flashed or certified on the physical display.** The device-acceptance gate remains open.
+The source-frame checks pass for all twelve selected candidates. The user explicitly accepted the graduation single-hand diploma grip on 2026-10-30; the deviation from the original stricter prompt is documented. The twelve selected clips are now integrated in v0.4.2-preview.1. Runtime extraction, packing, prototype sync and host validation are complete; the device-acceptance gate remains open.
 
 ## Selection
 
@@ -29,14 +29,10 @@ The producer's original picks are preserved in the paired [selection notes](../.
 
 Each source has a sequential `_contact.png` sheet and `_endpoints.png` comparison in this directory. [metadata.json](metadata.json) records full-frame decoding, bounds, desk measurements and differences. The desk detector now uses a broad wood-colored band on both sides, avoiding the earlier false detection of raised hands in junior cheer.
 
-## Remaining work
+## Runtime integration
 
-Continuous-playback acceptance remains open; the graduation grip variation is approved. Later processing must verify the selected breathing loop, 256x256 RGBA registration at `(128,224)`, palette limits, 110-pixel home and 48-pixel head views, and the actual packed asset budget. Existing sprites, `tools/clips.json`, the prototype atlas, application asset IDs and `assets.bin` remain unchanged by this source intake.
+See [the integration handoff](../../reference/GROK_SLEEP_CHEER.md) for frame ranges, palette settings and budget. New sleep uses 24 frames at 6 fps; its loop excludes early wake-up frames. Cheer retains 39 frames at 12 fps after trimming neutral holds. Native-size production renderer images were inspected for sleep and cheer; all seven outfits pass decode/seek and entry/loop/wake/reward/idle transitions. The user-approved graduation grip is retained.
 
-Build: NOT RUN (source intake and diagnostics only).
+Build: PASS. Host tests: PASS (HANDOFF suite, 29,278 UI checks). Device tests: NOT RUN for this revision; flashing was postponed by the user.
 
-Host tests: PASS (the complete existing host suite; current asset repack remains byte-identical to published v0.4.1).
-
-Device tests: NOT RUN for these new videos.
-
-Unverified: continuous playback, extracted seams, final palette/registration/budget and physical rendering.
+Continuous-playback acceptance and physical display/timing remain unverified. Previous device observations belong to v0.4.1 and do not validate these artifacts. Exact images and test scope are recorded in [validation/v0.4.2-preview.1.json](../../../validation/v0.4.2-preview.1.json).

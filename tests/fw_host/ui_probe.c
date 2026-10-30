@@ -208,6 +208,53 @@ static void animation_seek(void)
     free(a); free(b);
 }
 
+static void sleep_and_cheer(int look)
+{
+    home(look, look < 6 ? nw_stage_start[look] + 100 : NW_TOTAL);
+    check(G->anim_slot[A_SLEEP] >= 0 && G->anim_slot[A_CHEER] >= 0,
+          "outfit lacks sleep or cheer");
+    G->rec.s.done_day = G->rec.s.day - 2;
+    G->rec.e.week_day = G->rec.s.day;
+    G->awake = false;
+    int learned = G->rec.s.next, coins = G->rec.s.coins;
+    char out[64], name[40];
+    G->scene = SC_STARS;
+    nw_game_command("key back", out, sizeof(out), now += 33, 100000);
+    frame(now);
+    check(G->np.anim == A_SLEEP && !G->np.loop && G->np.lo == 0,
+          "sleep entry not selected");
+    frame(now + 5000);
+    nw_nts_anim_t info;
+    nw_nts_anim(&G->pack, G->anim_slot[A_SLEEP], &info);
+    check(G->np.anim == A_SLEEP && G->np.loop && G->np.lo > 0 && G->np.hi < info.frames,
+          "sleep loop includes entry or exit");
+    int loop_hi = G->np.hi;
+    for (int k = 0; k < 30; k++) {
+        frame(now + 167);
+        int f;
+        check(nw_game_anim(&f) == G->anim_slot[A_SLEEP] && f >= G->np.lo && f < loop_hi,
+              "sleep loop escaped its segment");
+    }
+    snprintf(name, sizeof(name), "sleep_%d.rgb", look); shot(name);
+    nw_game_key(NW_KEY_OK, now += 33);
+    frame(now);
+    check(G->scene == SC_HOME && G->np.anim == A_SLEEP && !G->np.loop && G->np.lo >= loop_hi,
+          "wake key did not select sleep exit");
+    frame(now + 5000);
+    check(G->np.anim == A_IDLE, "sleep exit did not return to idle");
+    G->pending = A_CHEER;
+    G->scene = SC_STARS;
+    nw_game_command("key back", out, sizeof(out), now += 33, 100000);
+    frame(now);
+    check(G->np.anim == A_CHEER && !G->np.loop, "reward did not select outfit cheer");
+    frame(now + 1500);
+    snprintf(name, sizeof(name), "cheer_%d.rgb", look); shot(name);
+    frame(now + 5000);
+    check(G->np.anim == A_IDLE, "cheer did not return to idle");
+    check(G->rec.s.next == learned && G->rec.s.coins == coins,
+          "sleep/cheer changed learning progress");
+}
+
 static void achievement_and_week(void)
 {
     home(0, 100);
@@ -274,6 +321,7 @@ int main(int argc, char **argv)
             G->now = now;
         }
     }
+    for (int look = 0; look < 7; look++) sleep_and_cheer(look);
     /* Changing clothes while a different-length expression was active. */
     home(0, 100);
     G->np.anim = A_CHEER; G->np.lo = 2; G->np.hi = 42; G->np.loop = true;
