@@ -5077,5 +5077,441 @@
       "toys/windmill.png": "toys/primary/windmill.png"
     },
     "prototype_integration": "not changed; consume manifest and accessory placement suggestions"
+  },
+  "wall_decor": {
+    "wall/primary.png": {
+      "id": "wall_primary",
+      "stage": "primary",
+      "canvas_px": [
+        192,
+        96
+      ],
+      "target_px": [
+        48,
+        24
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "target_anchor_px": [
+        0,
+        0
+      ],
+      "anchor_type": "top_left",
+      "screen_origin_px": [
+        180,
+        108
+      ],
+      "opaque_rgb_colors": 27,
+      "palette": [
+        "#410000",
+        "#4a0000",
+        "#5a0000",
+        "#620400",
+        "#6a2408",
+        "#730408",
+        "#7b0000",
+        "#7b0808",
+        "#830c08",
+        "#833818",
+        "#8b5018",
+        "#940808",
+        "#940c10",
+        "#9c0c10",
+        "#9c2410",
+        "#a41010",
+        "#a41410",
+        "#ac0c10",
+        "#b40c10",
+        "#bd1410",
+        "#bd7d20",
+        "#c51418",
+        "#cd1818",
+        "#d51818",
+        "#de1c18",
+        "#e61c18",
+        "#e6ba39"
+      ],
+      "pixel_grid_4x": true,
+      "sha256": "cc92c1309f352cb56ba7a565e1418720fca6c4ab07d1c4841493d145a465a609",
+      "source": "design/wall-decor/source/primary.png",
+      "source_sha256": "69dda856b4e2f706fd5ceebda52cd7e2d4f54137da920c7d31f6dcfc66c1f742",
+      "integration": "prepared_only; not included by pack_assets.py or drawn by firmware"
+    },
+    "wall/junior.png": {
+      "id": "wall_junior",
+      "stage": "junior",
+      "canvas_px": [
+        192,
+        96
+      ],
+      "target_px": [
+        48,
+        24
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "target_anchor_px": [
+        0,
+        0
+      ],
+      "anchor_type": "top_left",
+      "screen_origin_px": [
+        180,
+        108
+      ],
+      "opaque_rgb_colors": 29,
+      "palette": [
+        "#000000",
+        "#00aaa4",
+        "#083029",
+        "#088d83",
+        "#101c18",
+        "#180800",
+        "#315941",
+        "#390000",
+        "#390400",
+        "#411800",
+        "#4a2c10",
+        "#520808",
+        "#5a917b",
+        "#620808",
+        "#730c10",
+        "#732410",
+        "#8b0c10",
+        "#9c2820",
+        "#9c9152",
+        "#a45529",
+        "#a46d20",
+        "#bd2020",
+        "#cd3429",
+        "#d59162",
+        "#dec29c",
+        "#e64c39",
+        "#f65d31",
+        "#ff694a",
+        "#ffeea4"
+      ],
+      "pixel_grid_4x": true,
+      "sha256": "7667fba26687d9137130100d6002459b1000d5ba7c2faa924d8bf5c4efcaf69f",
+      "source": "design/wall-decor/source/junior.png",
+      "source_sha256": "490e7570610bf259df54a3de8988de10b953a5e3d46ebbf8ae30f34456c4fa62",
+      "integration": "prepared_only; not included by pack_assets.py or drawn by firmware"
+    },
+    "wall/senior.png": {
+      "id": "wall_senior",
+      "stage": "senior",
+      "canvas_px": [
+        192,
+        96
+      ],
+      "target_px": [
+        48,
+        24
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "target_anchor_px": [
+        0,
+        0
+      ],
+      "anchor_type": "top_left",
+      "screen_origin_px": [
+        180,
+        108
+      ],
+      "opaque_rgb_colors": 30,
+      "palette": [
+        "#001031",
+        "#081839",
+        "#102041",
+        "#102441",
+        "#182c4a",
+        "#29304a",
+        "#314c62",
+        "#4a6173",
+        "#523c41",
+        "#736d6a",
+        "#7395b4",
+        "#7b504a",
+        "#7b8183",
+        "#7bbaf6",
+        "#7bbef6",
+        "#8bbade",
+        "#8bc6ff",
+        "#b4aaa4",
+        "#bd8d6a",
+        "#bdb6a4",
+        "#c5a58b",
+        "#c5aa8b",
+        "#cddade",
+        "#d56939",
+        "#deba8b",
+        "#e6c6a4",
+        "#eed6b4",
+        "#ffe6c5",
+        "#fff2de",
+        "#fffaee"
+      ],
+      "pixel_grid_4x": true,
+      "sha256": "142187739db9ae97d3c87dab298cbee77fba7ed83dc37f2b62f39195373545f5",
+      "source": "design/wall-decor/source/senior.png",
+      "source_sha256": "2cf491598785cb6872285270cfac583fb60583dd2b6518d51683c1234be81274",
+      "integration": "prepared_only; not included by pack_assets.py or drawn by firmware"
+    },
+    "wall/cet4.png": {
+      "id": "wall_cet4",
+      "stage": "cet4",
+      "canvas_px": [
+        192,
+        96
+      ],
+      "target_px": [
+        48,
+        24
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "target_anchor_px": [
+        0,
+        0
+      ],
+      "anchor_type": "top_left",
+      "screen_origin_px": [
+        180,
+        108
+      ],
+      "opaque_rgb_colors": 27,
+      "palette": [
+        "#201008",
+        "#291408",
+        "#311810",
+        "#391c10",
+        "#4a2410",
+        "#521808",
+        "#522c18",
+        "#524031",
+        "#5a3420",
+        "#5a4431",
+        "#623018",
+        "#623820",
+        "#733c20",
+        "#7b3018",
+        "#8b715a",
+        "#a41810",
+        "#ac3810",
+        "#c5ba9c",
+        "#de4018",
+        "#e62418",
+        "#ee6118",
+        "#eee2bd",
+        "#ffeec5",
+        "#ffeecd",
+        "#fff2cd",
+        "#fff6d5",
+        "#ffffde"
+      ],
+      "pixel_grid_4x": true,
+      "sha256": "c0723c3c91865c7ed2c8a2d33bffca4d036ea785a678d23838b49174d81ec1e4",
+      "source": "design/wall-decor/source/cet4.png",
+      "source_sha256": "6d3fc4ac22bfd864d21e85f689369eab1e92b356268dc55a85ab8cafea422c94",
+      "integration": "prepared_only; not included by pack_assets.py or drawn by firmware"
+    },
+    "wall/cet6.png": {
+      "id": "wall_cet6",
+      "stage": "cet6",
+      "canvas_px": [
+        192,
+        96
+      ],
+      "target_px": [
+        48,
+        24
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "target_anchor_px": [
+        0,
+        0
+      ],
+      "anchor_type": "top_left",
+      "screen_origin_px": [
+        180,
+        108
+      ],
+      "opaque_rgb_colors": 30,
+      "palette": [
+        "#089dac",
+        "#18b6bd",
+        "#290029",
+        "#310029",
+        "#317183",
+        "#390429",
+        "#390831",
+        "#39d6d5",
+        "#4a2031",
+        "#4a4041",
+        "#62e2de",
+        "#733839",
+        "#83484a",
+        "#8b6152",
+        "#947952",
+        "#949941",
+        "#b4896a",
+        "#bd6939",
+        "#bd957b",
+        "#c5997b",
+        "#c5be94",
+        "#d5e6d5",
+        "#de8139",
+        "#ee9d52",
+        "#ffae4a",
+        "#ffc26a",
+        "#ffda9c",
+        "#ffe6a4",
+        "#ffeebd",
+        "#fffade"
+      ],
+      "pixel_grid_4x": true,
+      "sha256": "cdc2daef95d26f68ea57e013db2c5f7d818e9f23092ead6d5ba728b3e31be4e5",
+      "source": "design/wall-decor/source/cet6.png",
+      "source_sha256": "af62a04dd9570284f346986f5a72a5efe2dd8e79010a514cfd74e8d588b28804",
+      "integration": "prepared_only; not included by pack_assets.py or drawn by firmware"
+    },
+    "wall/adv.png": {
+      "id": "wall_adv",
+      "stage": "adv",
+      "canvas_px": [
+        192,
+        96
+      ],
+      "target_px": [
+        48,
+        24
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "target_anchor_px": [
+        0,
+        0
+      ],
+      "anchor_type": "top_left",
+      "screen_origin_px": [
+        180,
+        108
+      ],
+      "opaque_rgb_colors": 30,
+      "palette": [
+        "#000000",
+        "#000018",
+        "#000039",
+        "#000839",
+        "#00184a",
+        "#001852",
+        "#00245a",
+        "#10204a",
+        "#106d73",
+        "#20305a",
+        "#20488b",
+        "#29285a",
+        "#29304a",
+        "#293052",
+        "#293862",
+        "#393c73",
+        "#39dabd",
+        "#41618b",
+        "#52aeac",
+        "#5a89a4",
+        "#7340e6",
+        "#8361d5",
+        "#8b99b4",
+        "#8ba5bd",
+        "#8bf2d5",
+        "#a475f6",
+        "#a4b6cd",
+        "#c5def6",
+        "#c5e6ff",
+        "#deeeff"
+      ],
+      "pixel_grid_4x": true,
+      "sha256": "92d529597b166d358e0693948e755920407d6fbb03f494703bd5e57ade1336dd",
+      "source": "design/wall-decor/source/adv.png",
+      "source_sha256": "3eeb0b14f537e8c07bfbe144c78b7892251fb007bb1f728246b711badc46a478",
+      "integration": "prepared_only; not included by pack_assets.py or drawn by firmware"
+    },
+    "wall/grad.png": {
+      "id": "wall_grad",
+      "stage": "grad",
+      "canvas_px": [
+        192,
+        96
+      ],
+      "target_px": [
+        48,
+        24
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "target_anchor_px": [
+        0,
+        0
+      ],
+      "anchor_type": "top_left",
+      "screen_origin_px": [
+        180,
+        108
+      ],
+      "opaque_rgb_colors": 30,
+      "palette": [
+        "#000000",
+        "#18717b",
+        "#291008",
+        "#392418",
+        "#414831",
+        "#4abea4",
+        "#523018",
+        "#5aaa9c",
+        "#627d62",
+        "#734418",
+        "#7b5029",
+        "#7b6539",
+        "#94c6ac",
+        "#9c6529",
+        "#9c7941",
+        "#ac7929",
+        "#ac8952",
+        "#bd8529",
+        "#c59139",
+        "#cd9941",
+        "#cdaa6a",
+        "#cdb27b",
+        "#cdceac",
+        "#e6ce94",
+        "#eeba4a",
+        "#f6de8b",
+        "#ffca4a",
+        "#ffeac5",
+        "#ffeea4",
+        "#fff6d5"
+      ],
+      "pixel_grid_4x": true,
+      "sha256": "8a0486cc028b5fb2a82acf59e5276060c958d23e2596919acf8f5bb2767bf436",
+      "source": "design/wall-decor/source/grad.png",
+      "source_sha256": "da51326ca09ba527193bf82275bfcfb180f62a73ac23a95c0d5b09f901373961",
+      "integration": "prepared_only; not included by pack_assets.py or drawn by firmware"
+    }
   }
 }

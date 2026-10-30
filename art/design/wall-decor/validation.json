@@ -1,0 +1,128 @@
+{
+  "result": "PASS",
+  "generator": "Codex built-in ImageGen",
+  "exports": [
+    {
+      "stage": "primary",
+      "result": "PASS",
+      "visible_colors": 27,
+      "rgba_size": [
+        192,
+        96
+      ],
+      "keepouts_clear": true,
+      "sha256": "cc92c1309f352cb56ba7a565e1418720fca6c4ab07d1c4841493d145a465a609"
+    },
+    {
+      "stage": "junior",
+      "result": "PASS",
+      "visible_colors": 29,
+      "rgba_size": [
+        192,
+        96
+      ],
+      "keepouts_clear": true,
+      "sha256": "7667fba26687d9137130100d6002459b1000d5ba7c2faa924d8bf5c4efcaf69f"
+    },
+    {
+      "stage": "senior",
+      "result": "PASS",
+      "visible_colors": 30,
+      "rgba_size": [
+        192,
+        96
+      ],
+      "keepouts_clear": true,
+      "sha256": "142187739db9ae97d3c87dab298cbee77fba7ed83dc37f2b62f39195373545f5"
+    },
+    {
+      "stage": "cet4",
+      "result": "PASS",
+      "visible_colors": 27,
+      "rgba_size": [
+        192,
+        96
+      ],
+      "keepouts_clear": true,
+      "sha256": "c0723c3c91865c7ed2c8a2d33bffca4d036ea785a678d23838b49174d81ec1e4"
+    },
+    {
+      "stage": "cet6",
+      "result": "PASS",
+      "visible_colors": 30,
+      "rgba_size": [
+        192,
+        96
+      ],
+      "keepouts_clear": true,
+      "sha256": "cdc2daef95d26f68ea57e013db2c5f7d818e9f23092ead6d5ba728b3e31be4e5"
+    },
+    {
+      "stage": "adv",
+      "result": "PASS",
+      "visible_colors": 30,
+      "rgba_size": [
+        192,
+        96
+      ],
+      "keepouts_clear": true,
+      "sha256": "92d529597b166d358e0693948e755920407d6fbb03f494703bd5e57ade1336dd"
+    },
+    {
+      "stage": "grad",
+      "result": "PASS",
+      "visible_colors": 30,
+      "rgba_size": [
+        192,
+        96
+      ],
+      "keepouts_clear": true,
+      "sha256": "8a0486cc028b5fb2a82acf59e5276060c958d23e2596919acf8f5bb2767bf436"
+    }
+  ],
+  "screen_origin_px": [
+    180,
+    108
+  ],
+  "keepouts_screen_px": {
+    "NABO head corridor": [
+      70,
+      24,
+      170,
+      132
+    ],
+    "clock": [
+      20,
+      38,
+      48,
+      66
+    ],
+    "certificate": [
+      17,
+      77,
+      53,
+      105
+    ],
+    "map": [
+      171,
+      21,
+      231,
+      59
+    ],
+    "shelf": [
+      170,
+      96,
+      236,
+      104
+    ],
+    "plant on shelf": [
+      218,
+      73,
+      234,
+      97
+    ]
+  },
+  "raw_rgb565_alpha_pixel_bytes": 24192,
+  "notes": "Pixel payload estimate only, excluding future art-index and alignment overhead. No firmware integration or hardware validation.",
+  "device_tested": false
+}
