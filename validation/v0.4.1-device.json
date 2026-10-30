@@ -1,0 +1,346 @@
+{
+  "application_version": "0.4.1",
+  "date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "roadmap_section": 1,
+  "acceptance_complete": false,
+  "hardware_tested": false,
+  "source_commit": "edc920dd87f7b22ec675fac7d2a23808d9fa704e",
+  "release_url": "https://github.com/Liutupi/nabo-words/releases/tag/v0.4.1",
+  "application_sha256": "c96e7eb3a503871a2de52c747b4128279b0944953308c7e91baa6fc563ab8aa4",
+  "assets_sha256": "5abc46e61f9ae1fe960d205018d0fdc6c6b6c4a382f919363db248bd0918ac6d",
+  "artifact_verification": {
+    "release_file_hashes": "PASS",
+    "files_checked": 7,
+    "reference_manifest": "validation/v0.4.1.json",
+    "release_source_file_hashes": "PASS",
+    "merged_image_matches_components": "PASS",
+    "partition_bounds": "PASS",
+    "flash_mode": "flash_words.py <confirmed-port> --app",
+    "writes": [
+      {
+        "file": "nabo-words-passport.bin",
+        "offset": "0x10000",
+        "bytes": 918320
+      },
+      {
+        "file": "assets.bin",
+        "offset": "0x210000",
+        "bytes": 4658019
+      }
+    ],
+    "preserve_record": {
+      "offset": "0x200000",
+      "bytes": 65536
+    },
+    "device_partition_layout_verified": false
+  },
+  "devices": {
+    "badge_a": {
+      "identity_confirmed": true,
+      "flashed": false,
+      "preflight": {
+        "result": "BLOCKED",
+        "project_name": "FoloToy-AI-Passport",
+        "application_version": "0.2.0-dev",
+        "compile_time": "Oct 30 2026 00:26:52",
+        "observed_partitions": [
+          {
+            "label": "nvs",
+            "offset": "0x9000",
+            "size": "0x6000"
+          },
+          {
+            "label": "phy_init",
+            "offset": "0xf000",
+            "size": "0x1000"
+          },
+          {
+            "label": "factory",
+            "offset": "0x10000",
+            "size": "0x1f0000"
+          },
+          {
+            "label": "kitchen_assets",
+            "offset": "0x200000",
+            "size": "0x500000"
+          },
+          {
+            "label": "files",
+            "offset": "0x700000",
+            "size": "0x100000"
+          }
+        ],
+        "word_game_status_available": false,
+        "compatible_with_words_app_only_upgrade": false,
+        "notes": "Observed startup is kitchen firmware with no record partition. No Flash writes performed. Monitor open produced a USB_UART_CHIP_RESET; this is not a power-button test."
+      }
+    },
+    "badge_b": {
+      "identity_confirmed": false,
+      "flashed": false
+    }
+  },
+  "build": {
+    "result": "NOT RUN",
+    "notes": "Use the hash-verified published v0.4.1 images for this acceptance; no locally rebuilt image has been substituted."
+  },
+  "host_tests": {
+    "rules": {
+      "result": "PASS",
+      "replay_steps": 16317
+    },
+    "extra_rules": {
+      "result": "PASS"
+    },
+    "prototype_extra_parity": {
+      "result": "PASS",
+      "lines": 562
+    },
+    "renderer": {
+      "result": "PASS",
+      "snapshots": 18
+    },
+    "ui": {
+      "result": "PASS",
+      "checks": 27334,
+      "failures": 0
+    },
+    "battle": {
+      "result": "PASS",
+      "transport": "loopback UDP, two native macOS processes",
+      "rounds": 2,
+      "includes_rematch": true,
+      "notes": "Host transport only; not physical ESP-NOW acceptance."
+    },
+    "asset_repack": {
+      "result": "PASS",
+      "command": "build/acceptance/venv/bin/python -I firmware/tools/pack_assets.py --base-assets build/releases/v0.4.1/assets.bin",
+      "static_chunks_reused": 12,
+      "byte_identical_to_release": true,
+      "notes": "No UI text, fonts, word list or static art changed; reused the verified release chunks and regenerated all seven animation packs."
+    },
+    "result": "PASS"
+  },
+  "device_tests": "NOT RUN",
+  "checks": [
+    {
+      "id": 1,
+      "name": "Upgrade preserves learning progress",
+      "status": "NOT RUN",
+      "method": "Capture status before and after flash_words.py <confirmed-port> --app on both badges.",
+      "criteria": "learned, coins and streak remain unchanged.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN",
+          "before": null,
+          "after": null,
+          "notes": "NOT RUN: installed kitchen firmware has an incompatible partition layout; app-only words upgrade cannot establish learning-record preservation."
+        },
+        "badge_b": {
+          "status": "NOT RUN",
+          "before": null,
+          "after": null
+        }
+      },
+      "notes": "Waiting for target identity confirmation and access to both badges."
+    },
+    {
+      "id": 2,
+      "name": "Frame time",
+      "status": "NOT RUN",
+      "method": "Reset perf counters for each scene, measure home for 30 seconds, answer 20 study questions, and measure stars for 10 seconds.",
+      "criteria": "Home average <= 20 ms and maximum <= 60 ms; record actual scene measurements.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN",
+          "home": null,
+          "study": null,
+          "stars": null
+        },
+        "badge_b": {
+          "status": "NOT RUN",
+          "home": null,
+          "study": null,
+          "stars": null
+        }
+      },
+      "notes": "Host UI checks do not establish physical frame times."
+    },
+    {
+      "id": 3,
+      "name": "Physical buttons",
+      "status": "NOT RUN",
+      "method": "Press up, down and OK 20 times each by hand; hold up for one second to return.",
+      "criteria": "No missed or duplicate input; return progress ring is visible.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN"
+        },
+        "badge_b": {
+          "status": "NOT RUN"
+        }
+      },
+      "notes": "Requires physical button operation and visual observation."
+    },
+    {
+      "id": 4,
+      "name": "Audio and mute",
+      "status": "NOT RUN",
+      "method": "Listen to correct, incorrect, completion and stamp cues; turn sound off in the menu.",
+      "criteria": "No clipping or harsh cues; complete silence while muted.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN"
+        },
+        "badge_b": {
+          "status": "NOT RUN"
+        }
+      },
+      "notes": "Requires listening on both physical badges."
+    },
+    {
+      "id": 5,
+      "name": "Two-badge battle and rematch",
+      "status": "NOT RUN",
+      "method": "Discover each other, challenge, finish ten questions, request a rematch and finish the second round.",
+      "criteria": "Scores agree with opposite player ordering; ratings increase and decrease consistently; word-bank exchange completes.",
+      "rounds": [],
+      "notes": "Both physical badges are required; loopback UDP is not device acceptance."
+    },
+    {
+      "id": 6,
+      "name": "Battle interruption",
+      "status": "NOT RUN",
+      "method": "During a battle, test long-press return and physical power-off of one peer.",
+      "criteria": "The other badge reports exit or disconnect within 15 seconds and remains responsive.",
+      "long_press": null,
+      "power_off": null,
+      "notes": "Record measured detection delays and both peer roles."
+    },
+    {
+      "id": 7,
+      "name": "Idle sleep and wake",
+      "status": "NOT RUN",
+      "method": "Leave untouched for five minutes, then wake using a physical button.",
+      "criteria": "Automatic deep sleep; wake returns home and preserves progress.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN"
+        },
+        "badge_b": {
+          "status": "NOT RUN"
+        }
+      },
+      "notes": "Do not poll serial commands during the idle interval; commands reset the idle timer."
+    },
+    {
+      "id": 8,
+      "name": "Overnight day rollover",
+      "status": "NOT RUN",
+      "method": "Complete today's study, keep battery power connected through overnight deep sleep, then wake the next day.",
+      "criteria": "New learning day and today's study are available; streak increases by one as specified by the roadmap. Record both wake-time and post-study status.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN",
+          "start": null,
+          "end": null
+        },
+        "badge_b": {
+          "status": "NOT RUN",
+          "start": null,
+          "end": null
+        }
+      },
+      "notes": "Requires actual overnight elapsed time. Simulated days do not satisfy this check."
+    },
+    {
+      "id": 9,
+      "name": "Power-loss behavior",
+      "status": "NOT RUN",
+      "method": "After completing today's study, remove battery power or use the power button, then restart.",
+      "criteria": "Record the observed behavior against the current v0.4.1 design; report any discrepancy.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN",
+          "before": null,
+          "after": null
+        },
+        "badge_b": {
+          "status": "NOT RUN",
+          "before": null,
+          "after": null
+        }
+      },
+      "notes": "Physical operation required."
+    },
+    {
+      "id": 10,
+      "name": "Power-button reset reason",
+      "status": "NOT RUN",
+      "method": "Power off and on with the badge's power button; capture the startup reset reason without a monitor-induced reset.",
+      "criteria": "Record whether the actual power-button cycle produces ESP_RST_POWERON.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN",
+          "reset_reason": null
+        },
+        "badge_b": {
+          "status": "NOT RUN",
+          "reset_reason": null
+        }
+      },
+      "power_button_cuts_power": null,
+      "reported_to_user": false,
+      "roadmap_3_1_implementation_started": false,
+      "notes": "No physical power-button cycle observed. A USB_UART_CHIP_RESET during serial access is excluded from this check. Report the physical result before selecting section 3.1."
+    },
+    {
+      "id": 11,
+      "name": "Repeated-scene memory stability",
+      "status": "NOT RUN",
+      "method": "Enter and leave battle ten times, and study and challenge five times each; capture status after every cycle.",
+      "criteria": "Heap stabilizes with no continuing decline or restart; distinguish first Wi-Fi initialization from a leak.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN",
+          "samples": []
+        },
+        "badge_b": {
+          "status": "NOT RUN",
+          "samples": []
+        }
+      },
+      "notes": "Requires physical firmware measurements."
+    },
+    {
+      "id": 12,
+      "name": "One-day battery use",
+      "status": "NOT RUN",
+      "method": "Start fully charged, use normally on battery for one day, and record remaining battery level.",
+      "criteria": "Record start/end time, charging conditions, usage and remaining charge; verify how the measurement was obtained.",
+      "per_device": {
+        "badge_a": {
+          "status": "NOT RUN",
+          "start": null,
+          "end": null,
+          "remaining_percent": null
+        },
+        "badge_b": {
+          "status": "NOT RUN",
+          "start": null,
+          "end": null,
+          "remaining_percent": null
+        }
+      },
+      "notes": "Requires actual battery-only use; USB-powered testing does not measure daily battery consumption."
+    }
+  ],
+  "unverified": [
+    "The connected documented badge currently runs kitchen firmware 0.2.0-dev with incompatible partitions; a words --app upgrade has not been attempted.",
+    "Need access to a badge already running the words firmware with its record partition, or a separately authorized installation plan with explicit data impact.",
+    "Only one badge is available; physical two-badge battle and interruption tests are pending.",
+    "All twelve physical acceptance checks remain pending, including human buttons/audio/power operation, overnight rollover and one-day battery use.",
+    "Section 2 and later firmware implementation remain gated by section 1; section 3.1 additionally requires reporting check 10 to the user."
+  ]
+}
