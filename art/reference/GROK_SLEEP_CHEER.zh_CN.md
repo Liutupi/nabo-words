@@ -6,6 +6,8 @@
 
 **状态：提示词已准备，视频尚未生成、尚未验收。** [GROK_SLEEP_CHEER.json](GROK_SLEEP_CHEER.json) 包含 12 个独立 Grok 任务、完整提示词、文件名及绑定 SHA256 的起始图引用。这批视频交给 Grok；没有改用其他视频生成服务。
 
+本地制作从[工作区交接文件](../../GROK_WORKSPACE_HANDOFF.txt)开始读。[中文总提示词](GROK_PROMPT.zh_CN.txt)和 [12 条逐镜完整中文提示词](grok-prompts/)已写明参考图与输出路径。原始 MP4 直接保存到本工作区的 `art/video/<stage>/`，Codex 从磁盘读取。
+
 | 学段 | 必须使用的参考图 | 打瞌睡输出 | 大欢呼输出 |
 | --- | --- | --- | --- |
 | junior | [junior.png](../start/junior.png) | `art/video/junior/junior_04_sleep.mp4` | `art/video/junior/junior_05_cheer.mp4` |

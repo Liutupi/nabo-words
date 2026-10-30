@@ -6,6 +6,8 @@ This is the roadmap section 4 A-priority gap: shots **04 sleep and 05 cheer** fo
 
 **Status: prompts prepared; videos NOT GENERATED and NOT ACCEPTED.** [GROK_SLEEP_CHEER.json](GROK_SLEEP_CHEER.json) contains twelve independent Grok jobs, exact prompts, filenames and SHA256-bound starting-image references. Use Grok for these videos. No substitute provider has been used.
 
+For the local production workspace, start with [the workspace handoff](../../GROK_WORKSPACE_HANDOFF.txt). The [Chinese batch prompt](GROK_PROMPT.zh_CN.txt) and [twelve standalone Chinese shot prompts](grok-prompts/) include reference and output paths. Save original MP4s directly in this checkout's `art/video/<stage>/`; Codex reads them from disk.
+
 | Stage | Required reference | Sleep output | Cheer output |
 | --- | --- | --- | --- |
 | junior | [junior.png](../start/junior.png) | `art/video/junior/junior_04_sleep.mp4` | `art/video/junior/junior_05_cheer.mp4` |
