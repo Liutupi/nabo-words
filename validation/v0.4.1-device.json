@@ -352,14 +352,31 @@
     {
       "id": 9,
       "name": "Power-loss behavior",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "After completing today's study, remove battery power or use the power button, then restart.",
       "criteria": "Record the observed behavior against the current v0.4.1 design; report any discrepancy.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN",
-          "before": null,
-          "after": null
+          "status": "PASS",
+          "operation": "User-confirmed dedicated power-button off, five-second wait, on; USB kept connected",
+          "before": {
+            "day": 2,
+            "done": 2,
+            "learned": 45,
+            "coins": 5,
+            "streak": 2,
+            "clock_ok": 1
+          },
+          "after": {
+            "day": 3,
+            "done": 2,
+            "learned": 45,
+            "coins": 5,
+            "streak": 2,
+            "clock_ok": 0
+          },
+          "usb_disconnect_observed": true,
+          "notes": "Records current v0.4.1 behavior: completed day 2 opens day 3; learned/coins/streak are retained. This observation alone does not establish the numeric reset reason."
         },
         "badge_b": {
           "status": "NOT RUN",
@@ -367,18 +384,22 @@
           "after": null
         }
       },
-      "notes": "The app reflash/USB monitor reset advanced day 1 to day 2 while learned/coins/streak remained unchanged. This is not a physical power-loss test."
+      "notes": "Badge_a physical power-button-cycle behavior recorded. Badge_b remains NOT RUN. Reset-reason classification is tracked separately in check 10."
     },
     {
       "id": 10,
       "name": "Power-button reset reason",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "Power off and on with the badge's power button; capture the startup reset reason without a monitor-induced reset.",
       "criteria": "Record whether the actual power-button cycle produces ESP_RST_POWERON.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN",
-          "reset_reason": null
+          "status": "PARTIAL",
+          "reset_reason": null,
+          "user_confirmed_power_button_cycle": true,
+          "serial_boot_reason_captured": false,
+          "register_retest": "NOT RUN: register-reading method verified, but the repeat physical cycle was not confirmed; bounded listener stopped.",
+          "notes": "Passive serial access caused no observed boot, but USB reconnection missed the reset-reason log. The new direct register capture was verified against hardware cause 5 (deep-sleep wake), without a reset or halt command."
         },
         "badge_b": {
           "status": "NOT RUN",
@@ -860,7 +881,7 @@
   ],
   "unverified": [
     "Badge_b and its app-only upgrade have not been tested.",
-    "Badge_b physical buttons/audio, two-badge battle/interruption, power-loss and actual power-button reset reason remain unverified.",
+    "Badge_b physical buttons/audio and power-cycle behavior, two-badge battle/interruption, and the definitive power-button reset reason remain unverified.",
     "Badge_a sleep/wake passed; badge_b sleep/wake remains unverified.",
     "Overnight rollover and one-day battery use remain unverified.",
     "Section 1 is incomplete. Section 2 and later firmware changes remain gated; report the physical check 10 result before implementing 3.1."
