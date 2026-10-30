@@ -257,18 +257,28 @@
     {
       "id": 4,
       "name": "Audio and mute",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "Listen to correct, incorrect, completion and stamp cues; turn sound off in the menu.",
       "criteria": "No clipping or harsh cues; complete silence while muted.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN"
+          "status": "PASS",
+          "evidence_source": "user listening on the physical badge",
+          "date": "2026-10-30",
+          "cues": {
+            "correct": "PASS",
+            "incorrect": "PASS",
+            "completion": "PASS",
+            "stamp": "PASS"
+          },
+          "no_clipping_or_harshness": true,
+          "muted_answer_completely_silent": true
         },
         "badge_b": {
           "status": "NOT RUN"
         }
       },
-      "notes": "Requires listening on both physical badges."
+      "notes": "The user confirmed all four requested cues and complete silence while muted on badge_a. Badge_b remains NOT RUN."
     },
     {
       "id": 5,
@@ -850,7 +860,7 @@
   ],
   "unverified": [
     "Badge_b and its app-only upgrade have not been tested.",
-    "Badge_a audible quality/mute, badge_b physical buttons/audio, two-badge battle/interruption, power-loss and actual power-button reset reason remain unverified.",
+    "Badge_b physical buttons/audio, two-badge battle/interruption, power-loss and actual power-button reset reason remain unverified.",
     "Badge_a sleep/wake passed; badge_b sleep/wake remains unverified.",
     "Overnight rollover and one-day battery use remain unverified.",
     "Section 1 is incomplete. Section 2 and later firmware changes remain gated; report the physical check 10 result before implementing 3.1."
