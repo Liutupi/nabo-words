@@ -286,18 +286,27 @@
       "criteria": "Automatic deep sleep; wake returns home and preserves progress.",
       "per_device": {
         "badge_a": {
-          "status": "PARTIAL",
+          "status": "PASS",
           "automatic_deep_sleep": "PASS",
           "sleep_log_seconds_after_status": 299.85,
           "usb_disconnect_seconds_after_status": 300.05,
-          "wake": "NOT RUN",
-          "notes": "No serial commands were sent during the idle interval. Physical button wake and visible home/progress confirmation are pending."
+          "wake": "PASS",
+          "notes": "Automatic deep sleep was measured over serial; the user confirmed physical-button wake returned home with the same progress. No serial monitor was opened to substitute for the wake observation.",
+          "wake_evidence": {
+            "source": "user physical observation",
+            "date": "2026-10-30",
+            "returned_to_home": true,
+            "progress_preserved": true,
+            "learned": 20,
+            "coins": 3,
+            "streak": 1
+          }
         },
         "badge_b": {
           "status": "NOT RUN"
         }
       },
-      "notes": "The approximately five-minute automatic deep-sleep transition was observed on badge_a; wake and badge_b remain pending."
+      "notes": "Badge_a passed automatic deep sleep and user-observed physical-button wake with progress preserved. Badge_b remains NOT RUN."
     },
     {
       "id": 8,
@@ -831,7 +840,7 @@
   "unverified": [
     "Badge_b and its app-only upgrade have not been tested.",
     "Physical buttons, audible quality/mute, two-badge battle/interruption, power-loss and actual power-button reset reason remain unverified.",
-    "Automatic deep sleep observed at 299.85 seconds after last status on badge_a; physical wake and visible progress confirmation remain pending.",
+    "Badge_a sleep/wake passed; badge_b sleep/wake remains unverified.",
     "Overnight rollover and one-day battery use remain unverified.",
     "Section 1 is incomplete. Section 2 and later firmware changes remain gated; report the physical check 10 result before implementing 3.1."
   ]
