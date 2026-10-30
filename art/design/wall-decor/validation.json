@@ -124,16 +124,5 @@
   },
   "raw_rgb565_alpha_pixel_bytes": 24192,
   "notes": "Pixel payload estimate only, excluding future art-index and alignment overhead. No firmware integration or hardware validation.",
-  "device_tested": false,
-  "host_tests": {
-    "result": "PASS",
-    "rules_steps": 16317,
-    "extra_rules": "PASS",
-    "extra_parity_lines": 562,
-    "renderer_screens": 18,
-    "ui_checks": 27334,
-    "battle_rounds": 2,
-    "rematch": true,
-    "assets_byte_identical_to_v0_4_1": true
-  }
+  "device_tested": false
 }

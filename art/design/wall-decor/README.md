@@ -27,7 +27,10 @@ python3 art/tools/build_wall_decor.py --homes build/checks/ui
 
 [validation.json](validation.json) records dimensions, genuine source alpha, binary export alpha, visible colors, screen keepouts and hashes. Desktop review covered all seven native compositions and enlarged sprites. Owner design approval, actual display appearance and firmware integration remain unverified.
 
-Build: NOT RUN (art preparation only).  
-Host tests: PASS (rules, extra rules/parity, 18 screens, 27,334 UI checks and two battle rounds with rematch). Asset repack with `--base-assets` is byte-identical to the published v0.4.1 pack.  
-Device tests: NOT RUN.  
+Build: NOT RUN (art preparation only).
+
+Host tests: PASS (rules, extra rules/parity, 18 screens, 27,334 UI checks and two battle rounds with rematch). Asset repack with `--base-assets` is byte-identical to the published v0.4.1 pack.
+
+Device tests: NOT RUN.
+
 Unverified: owner review, physical display and integration after device acceptance.

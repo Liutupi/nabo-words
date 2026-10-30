@@ -27,7 +27,10 @@ python3 art/tools/build_wall_decor.py --homes build/checks/ui
 
 [validation.json](validation.json) 记录尺寸、原图真实透明度、导出二值透明度、可见颜色、屏幕排除区域和哈希。桌面目检覆盖七套原尺寸合成图和放大精灵图。作者美术验收、实屏显示和固件接入仍未验证。
 
-Build: NOT RUN（仅准备美术）。  
-Host tests: PASS（规则、扩展规则与对拍、18 个画面、27,334 项 UI 检查、两局对战及再来一局）。使用 `--base-assets` 重新打包后，与公开 v0.4.1 资源逐字节一致。  
-Device tests: NOT RUN。  
+Build: NOT RUN（仅准备美术）。
+
+Host tests: PASS（规则、扩展规则与对拍、18 个画面、27,334 项 UI 检查、两局对战及再来一局）。使用 `--base-assets` 重新打包后，与公开 v0.4.1 资源逐字节一致。
+
+Device tests: NOT RUN。
+
 Unverified: 作者审图、实屏效果，以及实机验收后的固件接入。
