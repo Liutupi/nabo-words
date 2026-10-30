@@ -46,6 +46,8 @@ class Clip:
     start: float = 0.0
     end: float = 0.0
     segments: Dict[str, List[int]] = field(default_factory=dict)
+    palette_colors: int = PALETTE_COLORS
+    stable_color_distance: int = 24
 
 
 def probe(path: Path) -> Tuple[int, int]:
@@ -147,6 +149,10 @@ def run(config_path: Path) -> Dict[str, Dict]:
         reports.setdefault(clip.stage, {})[clip.name] = {
             "source": clip.source, "fps": clip.fps, "loop": clip.loop, "frames": len(frames),
             "segments": clip.segments, "packed_bytes": total}
+        if clip.palette_colors != PALETTE_COLORS:
+            reports[clip.stage][clip.name]["palette_colors"] = clip.palette_colors
+        if clip.stable_color_distance != 24:
+            reports[clip.stage][clip.name]["stable_color_distance"] = clip.stable_color_distance
         logger.info("%s/%s: %d 帧，估算 %.1f KB", clip.stage, clip.name, len(frames), total / 1024)
     for stage, rep in reports.items():
         meta = {"anchor": ANCHOR, "canvas": CANVAS, "nabo_px": NABO_PX, "anims": rep}

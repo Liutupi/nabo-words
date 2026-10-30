@@ -39,6 +39,39 @@
         ]
       },
       "packed_bytes": 186572
+    },
+    "sleep": {
+      "source": "art/video/cet6/cet6_04_sleep.mp4",
+      "fps": 6,
+      "loop": false,
+      "frames": 24,
+      "segments": {
+        "in": [
+          0,
+          9
+        ],
+        "loop": [
+          9,
+          16
+        ],
+        "out": [
+          16,
+          24
+        ]
+      },
+      "packed_bytes": 112637,
+      "palette_colors": 32,
+      "stable_color_distance": 36
+    },
+    "cheer": {
+      "source": "art/video/cet6/cet6_05_cheer.mp4",
+      "fps": 12,
+      "loop": false,
+      "frames": 39,
+      "segments": {},
+      "packed_bytes": 227061,
+      "palette_colors": 32,
+      "stable_color_distance": 36
     }
   }
 }

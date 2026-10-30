@@ -808,5 +808,601 @@
     ],
     "contact_sheet": "art/preview/video_review/grad_03_sad_contact.png",
     "endpoint_sheet": "art/preview/video_review/grad_03_sad_endpoints.png"
+  },
+  {
+    "file": "art/video/adv/adv_04_sleep.mp4",
+    "sha256": "e70dc9fac9cb495f5a9efc0a2f58c2d8bf8a501e83bf8cd8463d6c589c8adec8",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "adv",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      54,
+      92,
+      185,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.225,
+    "successive_frame_rgb_abs_difference_range": [
+      0.1,
+      7.461
+    ],
+    "contact_sheet": "art/preview/video_review/adv_04_sleep_contact.png",
+    "endpoint_sheet": "art/preview/video_review/adv_04_sleep_endpoints.png"
+  },
+  {
+    "file": "art/video/adv/adv_05_cheer.mp4",
+    "sha256": "8dcf9f6474e209bfb77bb218829ba15cb8b37874d2b1781f65163734f2259897",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "adv",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      14,
+      87,
+      225,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      57,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.021,
+    "successive_frame_rgb_abs_difference_range": [
+      0.083,
+      11.334
+    ],
+    "contact_sheet": "art/preview/video_review/adv_05_cheer_contact.png",
+    "endpoint_sheet": "art/preview/video_review/adv_05_cheer_endpoints.png"
+  },
+  {
+    "file": "art/video/cet4/cet4_04_sleep.mp4",
+    "sha256": "441f43742ac69c0917fcfe9fb08e7bb98cff6dbce2145250002eda8b31138196",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet4",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      259,
+      312
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [
+      23,
+      24,
+      25,
+      26,
+      81,
+      82,
+      83
+    ],
+    "character_bbox_all_frames": [
+      0,
+      92,
+      239,
+      309
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.983,
+    "successive_frame_rgb_abs_difference_range": [
+      0.107,
+      8.573
+    ],
+    "contact_sheet": "art/preview/video_review/cet4_04_sleep_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet4_04_sleep_endpoints.png"
+  },
+  {
+    "file": "art/video/cet4/cet4_04_sleep_v2.mp4",
+    "sha256": "76ab63016aa790e9370d56f88349a3849dd8245f37b4500b883f7588b90809cf",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet4",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      55,
+      92,
+      184,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.366,
+    "successive_frame_rgb_abs_difference_range": [
+      0.186,
+      8.902
+    ],
+    "contact_sheet": "art/preview/video_review/cet4_04_sleep_v2_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet4_04_sleep_v2_endpoints.png"
+  },
+  {
+    "file": "art/video/cet4/cet4_05_cheer.mp4",
+    "sha256": "2e6a707815159516b85b7572c696f3aa94a56e58d5bbdacb8f46f84b993f6ffe",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet4",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      8,
+      90,
+      231,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.046,
+    "successive_frame_rgb_abs_difference_range": [
+      0.093,
+      13.111
+    ],
+    "contact_sheet": "art/preview/video_review/cet4_05_cheer_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet4_05_cheer_endpoints.png"
+  },
+  {
+    "file": "art/video/cet6/cet6_04_sleep.mp4",
+    "sha256": "be7ed1b6628d01fe6fbe3debae069abb4bc4003189782008047fd5065a684861",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet6",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      54,
+      92,
+      184,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.32,
+    "successive_frame_rgb_abs_difference_range": [
+      0.097,
+      7.282
+    ],
+    "contact_sheet": "art/preview/video_review/cet6_04_sleep_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet6_04_sleep_endpoints.png"
+  },
+  {
+    "file": "art/video/cet6/cet6_05_cheer.mp4",
+    "sha256": "4857e3ef03f7f411552cdc2ac3513017dade7364dc6b9ae27e0888e4c2eaf00f",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "cet6",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      8,
+      81,
+      231,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      57,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.887,
+    "successive_frame_rgb_abs_difference_range": [
+      0.078,
+      13.765
+    ],
+    "contact_sheet": "art/preview/video_review/cet6_05_cheer_contact.png",
+    "endpoint_sheet": "art/preview/video_review/cet6_05_cheer_endpoints.png"
+  },
+  {
+    "file": "art/video/grad/grad_04_sleep.mp4",
+    "sha256": "0ffea0830816ffd34842121a57a586e4168454c3f630f66f534a05bca7578d1e",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "grad",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      260,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      40,
+      92,
+      201,
+      265
+    ],
+    "character_bbox_first": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "character_bbox_last": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.095,
+    "successive_frame_rgb_abs_difference_range": [
+      0.166,
+      8.743
+    ],
+    "contact_sheet": "art/preview/video_review/grad_04_sleep_contact.png",
+    "endpoint_sheet": "art/preview/video_review/grad_04_sleep_endpoints.png"
+  },
+  {
+    "file": "art/video/grad/grad_04_sleep_v2.mp4",
+    "sha256": "340e8723e73847cbdffc40c27b7f94c2c5bb875afbc4ab6dc65cb396c3d616a7",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "grad",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      38,
+      92,
+      201,
+      265
+    ],
+    "character_bbox_first": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "character_bbox_last": [
+      49,
+      92,
+      189,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.041,
+    "successive_frame_rgb_abs_difference_range": [
+      0.08,
+      10.421
+    ],
+    "contact_sheet": "art/preview/video_review/grad_04_sleep_v2_contact.png",
+    "endpoint_sheet": "art/preview/video_review/grad_04_sleep_v2_endpoints.png"
+  },
+  {
+    "file": "art/video/grad/grad_05_cheer.mp4",
+    "sha256": "45e734c42cd228a50401e604c36fe2bc106de0cf743016aecbc46b8ac7310f7f",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "grad",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      20,
+      70,
+      221,
+      265
+    ],
+    "character_bbox_first": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "character_bbox_last": [
+      49,
+      92,
+      190,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.285,
+    "successive_frame_rgb_abs_difference_range": [
+      0.086,
+      16.292
+    ],
+    "contact_sheet": "art/preview/video_review/grad_05_cheer_contact.png",
+    "endpoint_sheet": "art/preview/video_review/grad_05_cheer_endpoints.png"
+  },
+  {
+    "file": "art/video/junior/junior_04_sleep.mp4",
+    "sha256": "460c3d09fa9be614204ee96c4e292d3f639ea8e10f2ac0509d2074d217e01c9c",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "junior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      56,
+      92,
+      184,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 0.962,
+    "successive_frame_rgb_abs_difference_range": [
+      0.109,
+      9.528
+    ],
+    "contact_sheet": "art/preview/video_review/junior_04_sleep_contact.png",
+    "endpoint_sheet": "art/preview/video_review/junior_04_sleep_endpoints.png"
+  },
+  {
+    "file": "art/video/junior/junior_05_cheer.mp4",
+    "sha256": "68042505783842a7d88edf0f33b6b5585255619d5db0dcf74caead46b9cd921d",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "junior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      4,
+      89,
+      237,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.006,
+    "successive_frame_rgb_abs_difference_range": [
+      0.108,
+      11.471
+    ],
+    "contact_sheet": "art/preview/video_review/junior_05_cheer_contact.png",
+    "endpoint_sheet": "art/preview/video_review/junior_05_cheer_endpoints.png"
+  },
+  {
+    "file": "art/video/senior/senior_04_sleep.mp4",
+    "sha256": "b5fc1c13035ffb2ef6b962f4fcb7c0e181c72fcfae58731c59753bcae9cdc593",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "senior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      47,
+      92,
+      187,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.189,
+    "successive_frame_rgb_abs_difference_range": [
+      0.121,
+      9.299
+    ],
+    "contact_sheet": "art/preview/video_review/senior_04_sleep_contact.png",
+    "endpoint_sheet": "art/preview/video_review/senior_04_sleep_endpoints.png"
+  },
+  {
+    "file": "art/video/senior/senior_05_cheer.mp4",
+    "sha256": "7e61ba1dbe92b9880f9108911f38c5cd7e19b6b83a3cbd55d85bf5dcdf7e6f7d",
+    "width": 720,
+    "height": 960,
+    "frames": 97,
+    "fps": 24.0,
+    "stage": "senior",
+    "duration_s": 4.041667,
+    "audio_present": true,
+    "desk_y_at_320h_range": [
+      268,
+      268
+    ],
+    "desk_detection": "eight wood-colored rows across both 12-pixel side bands; raised hands excluded",
+    "desk_detection_fallback_frames": [],
+    "character_bbox_all_frames": [
+      14,
+      92,
+      225,
+      265
+    ],
+    "character_bbox_first": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "character_bbox_last": [
+      56,
+      92,
+      182,
+      265
+    ],
+    "first_last_mean_rgb_abs_difference": 1.058,
+    "successive_frame_rgb_abs_difference_range": [
+      0.123,
+      13.297
+    ],
+    "contact_sheet": "art/preview/video_review/senior_05_cheer_contact.png",
+    "endpoint_sheet": "art/preview/video_review/senior_05_cheer_endpoints.png"
   }
 ]

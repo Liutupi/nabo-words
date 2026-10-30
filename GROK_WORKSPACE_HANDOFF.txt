@@ -1,0 +1,16 @@
+NABO 单词护照：Grok 本地工作区交接
+
+唯一工作区：/Volumes/NABO-Build-20261004/nabo-words-sleep-cheer
+分支：codex/art-sleep-cheer-handoff
+
+1. 总提示词：art/reference/GROK_PROMPT.zh_CN.txt
+2. 12 条逐镜完整中文提示词：art/reference/grok-prompts/*.zh_CN.txt
+3. 机器可读任务与起始图哈希：art/reference/GROK_SLEEP_CHEER.json
+4. 锁定起始图：art/start/junior.png、senior.png、cet4.png、cet6.png、adv.png、grad.png
+5. 原始视频输出：art/video/<stage>/<stage>_04_sleep.mp4 和 <stage>_05_cheer.mp4
+
+禁止改动已有起始图、服装、帽标和 01–03 视频。不要上传到聊天，不要合并视频，不压缩不转码。修订加 _v2、_v3，保留旧版。
+Codex 直接从本工作区 art/video/ 读取文件；告诉 Codex“放好了”后即可核对新增文件。
+本批 12 条任务已收到 14 个原始 MP4。四级和毕业 sleep 选 v2。所选 12 条均通过源帧检查；用户已明确接受毕业 cheer 单手持证变化；先读 art/preview/video_review/SLEEP_CHEER_REVIEW.zh_CN.md，不要重复提交已交付任务。
+
+2026-10-30 接入：12 条已进入 v0.4.2-preview.1，构建、HANDOFF 全套与 29278 项界面检查通过。用户暂缓刷机，改为准备社区更新；本地发布文件在 build/releases/v0.4.2-preview.1/，社区预览在 build/community/preview.json。无需重新生成视频。

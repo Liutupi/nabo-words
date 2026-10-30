@@ -1,0 +1,386 @@
+{
+  "version": "0.4.2-preview.1",
+  "release_type": "prerelease",
+  "date": "2026-10-30",
+  "target": "esp32c3",
+  "flash_bytes": 8388608,
+  "esp_idf_version": "5.5.3",
+  "build": "PASS",
+  "host_tests": "PASS",
+  "device_tests": "NOT RUN",
+  "hardware_tested": false,
+  "device_note": "User postponed flashing this revision; earlier v0.4.1 device observations are not acceptance of this artifact.",
+  "unverified": [
+    "Physical display and timing of the new sleep/cheer animations",
+    "Two-device radio battles",
+    "Overnight operation, cross-day learning and battery current",
+    "Power-button reset cause; ROADMAP 3.1 remains unimplemented"
+  ],
+  "artifacts": {
+    "partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "34373abb6cd1b5c1f6de2bde0a3f7eb457fe21c3ee3a7c83a9af1fcc30d06088"
+    },
+    "flash_words.py": {
+      "bytes": 3659,
+      "sha256": "29b51008443abace7c493f88e5ec1ab6ce0d6492a21a0e301faafde2860f7a8e"
+    },
+    "nabo-words-merged.bin": {
+      "bytes": 8236710,
+      "sha256": "1a1a6b3b9c39e3a6c904cde270478d7cebf1be6bcff8911c6edbe41b72a49111"
+    },
+    "assets.bin": {
+      "bytes": 6074022,
+      "sha256": "6ae97bc0851ec88b2ffab88d707d7bec7302c2d347071c783955d7a317d50ab4"
+    },
+    "nabo-words-passport.bin": {
+      "bytes": 918608,
+      "sha256": "d09ddb885c68715cef8de8e24e813f4c106ff0d5e8b8e437fb553c074a6a16b8"
+    },
+    "bootloader.bin": {
+      "bytes": 21024,
+      "sha256": "a6ecb3a836e749c97e8d9d6a17bf8f689558b2b8301bd31ae84da35b88036b4f"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 503,
+      "sha256": "008926a8a88b3ae9991bd4685f322b122c48ecf9dac3d87d6f6aa4949e95e471"
+    }
+  },
+  "elf_sha256": "af5381a257c8924e45fbac60f37ce246e42bbae6a67827b0ca0359ce9a9bef77",
+  "partitions": [
+    {
+      "name": "nvs",
+      "offset": 36864,
+      "size": 24576
+    },
+    {
+      "name": "phy_init",
+      "offset": 61440,
+      "size": 4096
+    },
+    {
+      "name": "factory",
+      "offset": 65536,
+      "size": 2031616
+    },
+    {
+      "name": "record",
+      "offset": 2097152,
+      "size": 65536
+    },
+    {
+      "name": "assets",
+      "offset": 2162688,
+      "size": 6225920
+    }
+  ],
+  "record_format_and_implementation_unchanged": true,
+  "upgrade_mode": "flash_words.py <port> --app; matched app and assets; record range excluded",
+  "validation": {
+    "rules_parity_steps": 16317,
+    "extra_parity_lines": 562,
+    "ui_checks": 29278,
+    "ui_failures": 0,
+    "host_render_screens": 18,
+    "host_battle_rounds": 2,
+    "rematch": true,
+    "image_checksum": "PASS",
+    "image_validation_hash": "PASS",
+    "merged_matches_all_component_images": true,
+    "partition_bounds": "PASS",
+    "assets": {
+      "static_chunks_preserved": [
+        "words.bin",
+        "font_f12.bin",
+        "font_f16.bin",
+        "font_f22.bin",
+        "font_w36.bin",
+        "font_w28.bin",
+        "font_w20.bin",
+        "font_w16.bin",
+        "font_ipa.bin",
+        "font_m11.bin",
+        "font_m18.bin",
+        "art.bin"
+      ],
+      "primary_animation_pack_identical": true,
+      "old_animation_payloads_preserved": [
+        "junior/idle",
+        "junior/happy",
+        "junior/sad",
+        "senior/idle",
+        "senior/happy",
+        "senior/sad",
+        "cet4/idle",
+        "cet4/happy",
+        "cet4/sad",
+        "cet6/idle",
+        "cet6/happy",
+        "cet6/sad",
+        "adv/idle",
+        "adv/happy",
+        "adv/sad",
+        "grad/idle",
+        "grad/happy",
+        "grad/sad"
+      ],
+      "new_animations": [
+        {
+          "stage": "junior",
+          "name": "sleep",
+          "frames": 24,
+          "fps": 6,
+          "size": [
+            82,
+            119
+          ],
+          "offset": [
+            -41,
+            -110
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "junior",
+          "name": "cheer",
+          "frames": 39,
+          "fps": 12,
+          "size": [
+            148,
+            116
+          ],
+          "offset": [
+            -73,
+            -112
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "senior",
+          "name": "sleep",
+          "frames": 24,
+          "fps": 6,
+          "size": [
+            88,
+            118
+          ],
+          "offset": [
+            -46,
+            -110
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "senior",
+          "name": "cheer",
+          "frames": 39,
+          "fps": 12,
+          "size": [
+            134,
+            114
+          ],
+          "offset": [
+            -67,
+            -110
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "cet4",
+          "name": "sleep",
+          "frames": 24,
+          "fps": 6,
+          "size": [
+            82,
+            116
+          ],
+          "offset": [
+            -41,
+            -110
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "cet4",
+          "name": "cheer",
+          "frames": 39,
+          "fps": 12,
+          "size": [
+            142,
+            115
+          ],
+          "offset": [
+            -71,
+            -111
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "cet6",
+          "name": "sleep",
+          "frames": 24,
+          "fps": 6,
+          "size": [
+            83,
+            116
+          ],
+          "offset": [
+            -42,
+            -110
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "cet6",
+          "name": "cheer",
+          "frames": 39,
+          "fps": 12,
+          "size": [
+            141,
+            122
+          ],
+          "offset": [
+            -71,
+            -117
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "adv",
+          "name": "sleep",
+          "frames": 24,
+          "fps": 6,
+          "size": [
+            82,
+            114
+          ],
+          "offset": [
+            -41,
+            -110
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "adv",
+          "name": "cheer",
+          "frames": 39,
+          "fps": 12,
+          "size": [
+            132,
+            117
+          ],
+          "offset": [
+            -66,
+            -113
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "grad",
+          "name": "sleep",
+          "frames": 24,
+          "fps": 6,
+          "size": [
+            104,
+            115
+          ],
+          "offset": [
+            -52,
+            -110
+          ],
+          "palette_colors": 32
+        },
+        {
+          "stage": "grad",
+          "name": "cheer",
+          "frames": 39,
+          "fps": 12,
+          "size": [
+            127,
+            127
+          ],
+          "offset": [
+            -63,
+            -123
+          ],
+          "palette_colors": 32
+        }
+      ],
+      "assets_bytes": 6074022,
+      "assets_capacity": 6225920,
+      "remaining_bytes": 151898
+    }
+  },
+  "dependencies": {
+    "espressif/button": "4.2.0",
+    "espressif/cmake_utilities": "1.1.1",
+    "espressif/esp_codec_dev": "1.6.2",
+    "espressif/esp_lvgl_port": "2.9.0",
+    "lvgl/lvgl": "9.6.0~1"
+  },
+  "source_file_hashes": {
+    "firmware/sdkconfig.defaults": "c47ff23f4d126d0524a6d81b376d8be8e7aefc02aa33a443b59979f92b01a095",
+    "firmware/partitions.csv": "3ca6c932d891e21b8af8bc94334256786ae33c720a418b3b4cdd1b3d1a2d2aae",
+    "firmware/components/bsp/idf_component.yml": "3023fbc5baaca838ae1c792d6ccd49ec871bcc2f7a7a79c7f7d76fa748ec6ba4",
+    "firmware/tools/pack_assets.py": "0a4463f6947ba77e39638b00f3dfc5b7464627b11b9d3e81ba49352d81dae404",
+    "tools/clips.json": "1865cf175ab548fb8e9afdfef61a9c7dd7b7c10dac9b33335fecabab76c19659",
+    "tools/clip_to_sprites.py": "7d78953ce7abf0e61ab218e0bba39a99661e392dc95e4b7e3922602d893771e3",
+    "tools/build_proto_atlas.py": "d693428c2fc705ddef1f81d86f353525efe220f406bacfe21d34c953ef636733",
+    "tests/fw_host/ui_probe.c": "12c09a12443a2aef9f10460d75726e1fe728e461a08a3a8a00a441065245bf8b",
+    "firmware/main/main.c": "b359a7002ecdafbb0f9f408f0135e10ce4269fe93428664dc3fe07822d3a8c8e",
+    "firmware/main/nw_asset_ids.h": "825db2827e0a9521d6a7b0667053ee2e0abd5037714b82ea60bb5fd4ecdfd05b",
+    "firmware/main/nw_assets.c": "e8fde4ccbdb8ce6ae898fed718899785074e8a87fa5689a5e252676730dd96fa",
+    "firmware/main/nw_assets.h": "acd51f4472355d168b093edf7a8f3378d98345dce7c551b4bf3850d532b2f812",
+    "firmware/main/nw_cities.c": "cc7309112305ac64a1cc6b19c76ea70eb35522c3f3cd225b4091da48ab822a78",
+    "firmware/main/nw_cities.h": "9eea7e271a83d4786eae67893658fed4b9fce2f81e7f854b044f2d19a45ef336",
+    "firmware/main/nw_data.c": "d15d10c69d1711e94d47facd2fad2a303efff62f77e5d6e41aefa50237a60835",
+    "firmware/main/nw_data.h": "83e534d61cb710931779dfc950e3ab0003b810d66a265cefba5d3411c6955e44",
+    "firmware/main/nw_db.c": "a2e41c256ce829ab777fb8e2ab450b5b8bfe6ff83d390764127871c94d8a24e2",
+    "firmware/main/nw_db.h": "5f085db720c353513f0f237447509500a0f4efb61e39a9dbfe54732553312d62",
+    "firmware/main/nw_font.c": "52d56615b28f55b019fccaa7f30186c39c59e6c62dd41186019ad88ae9e35172",
+    "firmware/main/nw_font.h": "f69bdeeb43d4d0dba24a6203858e425fec1a260c89bd965fe77b5986cb39770d",
+    "firmware/main/nw_game.c": "661adcace684deff93349448f606206d2d9340f6398edbc898ecbd7e5cfefae3",
+    "firmware/main/nw_game.h": "f8d9b54f9dead0a88d4c085b3e6515486c4ddde6399f38c22974666ce9e2def9",
+    "firmware/main/nw_game_int.h": "22edd26e0107c3f7bbbb9c14cb90a6d492216e2d48334990ac19a3f2e2431d09",
+    "firmware/main/nw_gfx.c": "7ecdfd2bf8ab73b1bf87cf9cff197d5203d99ca931088449afafbd2adc04d5b2",
+    "firmware/main/nw_gfx.h": "77a4c787b2ec97dc23a0c2a8af52e020fd5077f4d0e8aa6ab2d3c512ce9470c9",
+    "firmware/main/nw_platform.h": "a00b9cc60d2e2b14c2c01921b9c40c1c3c20750d1cd10a92d2d4a6006cd5b557",
+    "firmware/main/nw_scene_home.c": "d2cfd0be09ffb477d018833e7de266c97f7bdb466973101be0c0b54c7775e7bc",
+    "firmware/main/nw_scene_misc.c": "4aeba9b0018bd2c3c527389a7bd1b908f4d68d241161cda9eecd5a08b07c2350",
+    "firmware/main/nw_scene_more.c": "a5df99ed66cbabc262571e01838de2d692d66cf7765dc2bbd7c7ea76fc2f482a",
+    "firmware/main/nw_scene_study.c": "8c2ae953b9dabacf15685d090017f0d6dd0b0b2745e9fdd9484fc8f3a4bf0e12",
+    "firmware/main/nw_scene_vs.c": "5d5eecd1700b2eb264efed686115088f9297f31bed78784adf24569501c11c83",
+    "firmware/main/nw_sound.c": "8c37fe0cc717e7f704db6a56af3111fcd0d3dcfd053a41e735f49252e0ebcec1",
+    "firmware/main/nw_sound.h": "bf860c8b4823d2de2d6a4ca0f99c2efa9a5bc5688a3386e801855a37fa30c6b3",
+    "firmware/main/nw_sprite.c": "0a9a7070137429c77e90cf0b92b8696caf8a572b5d1cd031b747148449962e69",
+    "firmware/main/nw_sprite.h": "818be9792841d631bacb35c45bed72fde0b9bc7322ae181d220488d9719f023f",
+    "firmware/main/nw_store.c": "fec07935ee70aff04cfc59cba258c967ec8c3f372cea2a90da0eae39eb9a0791",
+    "firmware/main/nw_store.h": "d989c1bd7014f950422c097b3a8d703cf773cf0f1ac685e4dcfa4c5fa5e1d7bb",
+    "firmware/main/nw_vs.c": "b37565f55b905b432f85f48cf110f3aafae49bbda36571460e099dd25cd43956",
+    "firmware/main/nw_vs.h": "9936a6a0b73ada4c0551a0ed3546d95c00bd36717bea1d66ceef926004bac9d8",
+    "firmware/main/words/nabo_words_battle.c": "2dc9b44b2f915aecb315b6c96dd526fc2c9ff296b496a76eab220d04d9cd35e7",
+    "firmware/main/words/nabo_words_battle.h": "2c0f172055c24a081b45a302fc3caa6f0720e09ea83c022c4dc4a68ac5c69e4d",
+    "firmware/main/words/nabo_words_db.h": "8df073c528fe3253c27ae2b74aef15b5fbfd98a11dd288adddbb42882c7e4546",
+    "firmware/main/words/nabo_words_extra.c": "8a02a4bce0564e1f0540cc8917e35fcf6100424dd426c5c899ea8c2986fdf094",
+    "firmware/main/words/nabo_words_extra.h": "a686398e99ff53bc5597ea1af0a559b866251044e5a74b386ac7c6d18035cffd",
+    "firmware/main/words/nabo_words_model.c": "5e3caa817aca62b908c9216af548b8270998289456c25d28be4cb147992f3748",
+    "firmware/main/words/nabo_words_model.h": "49e77c31ef62772bc32e4d877251b426847bd1ab04ddcda0de41d75e87e12beb",
+    "firmware/main/words/nabo_words_quiz.c": "6e2b69efc584520c16917af4f0ce7f6dbe67e9e5093db300f8b0917b027d3a5c",
+    "firmware/main/words/nabo_words_quiz.h": "e138422bec2ff7ac5ddb6662c2eeb427d2d4ac0235233129ae1d8d0a20f45c9f",
+    "firmware/main/words/nabo_words_rng.h": "8e91347ce94c295e3c840c73d25d6dc94e02868b88860b7250c325e98e7a5f55"
+  },
+  "publication": {
+    "github_release_url": "https://github.com/Liutupi/nabo-words/releases/tag/v0.4.2-preview.1",
+    "release_source_commit": "02fdffd27340fd0b6828a0f55c191e6f29aa085d",
+    "public_attachments_downloaded_and_sha256_verified": true,
+    "public_attachment_count": 7,
+    "community_submission": {
+      "project_id": 1479,
+      "revision_id": 4139,
+      "slug": "nabo-7500",
+      "status_at_submission": "pending",
+      "receipt_reconciled": true,
+      "firmware_and_bilingual_content_match_approved_preview": true
+    }
+  }
+}

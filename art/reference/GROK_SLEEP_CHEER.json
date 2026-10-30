@@ -1,0 +1,421 @@
+{
+  "outputs_expected": 12,
+  "jobs": [
+    {
+      "id": "junior_04_sleep",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/junior.png",
+      "reference_sha256": "b155c58014f958580766608be57f558de5177d98a59401af733993a6fdd3733b",
+      "output": "art/video/junior/junior_04_sleep.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": true,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked blue-and-white zip-up sports school uniform. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 04, sleep: gently lower the head onto the folded arms on the desk, breathe slowly with only a tiny natural nod, then gently rise back to the exact starting neutral pose. Include a steady middle breathing interval of at least 1.2 seconds for later seamless-loop extraction. No desk deformation, face replacement or sudden pose jump. The full source returns to neutral; only the steady middle interval will be considered for the game loop.",
+      "shot_number": "04",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/junior/junior_04_sleep.mp4",
+      "selected_source_sha256": "460c3d09fa9be614204ee96c4e292d3f639ea8e10f2ac0509d2074d217e01c9c",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 6,
+        "end": 4.0,
+        "segments": {
+          "in": [
+            0,
+            9
+          ],
+          "loop": [
+            9,
+            16
+          ],
+          "out": [
+            16,
+            24
+          ]
+        },
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 24
+      }
+    },
+    {
+      "id": "junior_05_cheer",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/junior.png",
+      "reference_sha256": "b155c58014f958580766608be57f558de5177d98a59401af733993a6fdd3733b",
+      "output": "art/video/junior/junior_05_cheer.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": false,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked blue-and-white zip-up sports school uniform. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 05, cheer: smile broadly, raise both hands above the shoulders without leaving frame, then lower them smoothly and return to the exact starting pose. Use a small anticipation and gentle ease-in/ease-out. Preserve fingers, glasses, face and cap throughout.",
+      "shot_number": "05",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/junior/junior_05_cheer.mp4",
+      "selected_source_sha256": "68042505783842a7d88edf0f33b6b5585255619d5db0dcf74caead46b9cd921d",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 12,
+        "start": 0.5,
+        "end": 3.75,
+        "segments": {},
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 39
+      }
+    },
+    {
+      "id": "senior_04_sleep",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/senior.png",
+      "reference_sha256": "5ba7b3c67f38a1899e68991588310da74dbdbd55d6b734ace82a7cb5f772b99f",
+      "output": "art/video/senior/senior_04_sleep.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": true,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked navy school blazer with light lapel trim, white shirt and red tie. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 04, sleep: gently lower the head onto the folded arms on the desk, breathe slowly with only a tiny natural nod, then gently rise back to the exact starting neutral pose. Include a steady middle breathing interval of at least 1.2 seconds for later seamless-loop extraction. No desk deformation, face replacement or sudden pose jump. The full source returns to neutral; only the steady middle interval will be considered for the game loop.",
+      "shot_number": "04",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/senior/senior_04_sleep.mp4",
+      "selected_source_sha256": "b5fc1c13035ffb2ef6b962f4fcb7c0e181c72fcfae58731c59753bcae9cdc593",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 6,
+        "end": 4.0,
+        "segments": {
+          "in": [
+            0,
+            9
+          ],
+          "loop": [
+            9,
+            16
+          ],
+          "out": [
+            16,
+            24
+          ]
+        },
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 24
+      }
+    },
+    {
+      "id": "senior_05_cheer",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/senior.png",
+      "reference_sha256": "5ba7b3c67f38a1899e68991588310da74dbdbd55d6b734ace82a7cb5f772b99f",
+      "output": "art/video/senior/senior_05_cheer.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": false,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked navy school blazer with light lapel trim, white shirt and red tie. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 05, cheer: smile broadly, raise both hands above the shoulders without leaving frame, then lower them smoothly and return to the exact starting pose. Use a small anticipation and gentle ease-in/ease-out. Preserve fingers, glasses, face and cap throughout.",
+      "shot_number": "05",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/senior/senior_05_cheer.mp4",
+      "selected_source_sha256": "7e61ba1dbe92b9880f9108911f38c5cd7e19b6b83a3cbd55d85bf5dcdf7e6f7d",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 12,
+        "start": 0.5,
+        "end": 3.75,
+        "segments": {},
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 39
+      }
+    },
+    {
+      "id": "cet4_04_sleep",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/cet4.png",
+      "reference_sha256": "1f5869c794de056f35b7f7ec390adc80b0f7a19a41d385dc4bbacba320ed77db",
+      "output": "art/video/cet4/cet4_04_sleep.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": true,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked gray hoodie with headphones around the neck; the headphones never move onto the cap. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 04, sleep: gently lower the head onto the folded arms on the desk, breathe slowly with only a tiny natural nod, then gently rise back to the exact starting neutral pose. Include a steady middle breathing interval of at least 1.2 seconds for later seamless-loop extraction. No desk deformation, face replacement or sudden pose jump. The full source returns to neutral; only the steady middle interval will be considered for the game loop.",
+      "shot_number": "04",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/cet4/cet4_04_sleep_v2.mp4",
+      "selected_source_sha256": "76ab63016aa790e9370d56f88349a3849dd8245f37b4500b883f7588b90809cf",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 6,
+        "end": 4.0,
+        "segments": {
+          "in": [
+            0,
+            9
+          ],
+          "loop": [
+            9,
+            16
+          ],
+          "out": [
+            16,
+            24
+          ]
+        },
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 24
+      }
+    },
+    {
+      "id": "cet4_05_cheer",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/cet4.png",
+      "reference_sha256": "1f5869c794de056f35b7f7ec390adc80b0f7a19a41d385dc4bbacba320ed77db",
+      "output": "art/video/cet4/cet4_05_cheer.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": false,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked gray hoodie with headphones around the neck; the headphones never move onto the cap. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 05, cheer: smile broadly, raise both hands above the shoulders without leaving frame, then lower them smoothly and return to the exact starting pose. Use a small anticipation and gentle ease-in/ease-out. Preserve fingers, glasses, face and cap throughout.",
+      "shot_number": "05",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/cet4/cet4_05_cheer.mp4",
+      "selected_source_sha256": "2e6a707815159516b85b7572c696f3aa94a56e58d5bbdacb8f46f84b993f6ffe",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 12,
+        "start": 0.5,
+        "end": 3.75,
+        "segments": {},
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 39
+      }
+    },
+    {
+      "id": "cet6_04_sleep",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/cet6.png",
+      "reference_sha256": "93a7afad06c5e47152d6d780e2e63a5558fd2f3014419e1413b0cd0cc6000168",
+      "output": "art/video/cet6/cet6_04_sleep.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": true,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked white shirt and dark backpack straps. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 04, sleep: gently lower the head onto the folded arms on the desk, breathe slowly with only a tiny natural nod, then gently rise back to the exact starting neutral pose. Include a steady middle breathing interval of at least 1.2 seconds for later seamless-loop extraction. No desk deformation, face replacement or sudden pose jump. The full source returns to neutral; only the steady middle interval will be considered for the game loop.",
+      "shot_number": "04",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/cet6/cet6_04_sleep.mp4",
+      "selected_source_sha256": "be7ed1b6628d01fe6fbe3debae069abb4bc4003189782008047fd5065a684861",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 6,
+        "end": 4.0,
+        "segments": {
+          "in": [
+            0,
+            9
+          ],
+          "loop": [
+            9,
+            16
+          ],
+          "out": [
+            16,
+            24
+          ]
+        },
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 24
+      }
+    },
+    {
+      "id": "cet6_05_cheer",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/cet6.png",
+      "reference_sha256": "93a7afad06c5e47152d6d780e2e63a5558fd2f3014419e1413b0cd0cc6000168",
+      "output": "art/video/cet6/cet6_05_cheer.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": false,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked white shirt and dark backpack straps. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 05, cheer: smile broadly, raise both hands above the shoulders without leaving frame, then lower them smoothly and return to the exact starting pose. Use a small anticipation and gentle ease-in/ease-out. Preserve fingers, glasses, face and cap throughout.",
+      "shot_number": "05",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/cet6/cet6_05_cheer.mp4",
+      "selected_source_sha256": "4857e3ef03f7f411552cdc2ac3513017dade7364dc6b9ae27e0888e4c2eaf00f",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 12,
+        "start": 0.5,
+        "end": 3.75,
+        "segments": {},
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 39
+      }
+    },
+    {
+      "id": "adv_04_sleep",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/adv.png",
+      "reference_sha256": "57fae87113be63e9b713c1cecc31fb84f3b04989127a353122f54db805276a02",
+      "output": "art/video/adv/adv_04_sleep.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": true,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked camel trench coat with one camera attached to the chest strap throughout. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 04, sleep: gently lower the head onto the folded arms on the desk, breathe slowly with only a tiny natural nod, then gently rise back to the exact starting neutral pose. Include a steady middle breathing interval of at least 1.2 seconds for later seamless-loop extraction. No desk deformation, face replacement or sudden pose jump. The full source returns to neutral; only the steady middle interval will be considered for the game loop.",
+      "shot_number": "04",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/adv/adv_04_sleep.mp4",
+      "selected_source_sha256": "e70dc9fac9cb495f5a9efc0a2f58c2d8bf8a501e83bf8cd8463d6c589c8adec8",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 6,
+        "end": 4.0,
+        "segments": {
+          "in": [
+            0,
+            9
+          ],
+          "loop": [
+            9,
+            16
+          ],
+          "out": [
+            16,
+            24
+          ]
+        },
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 24
+      }
+    },
+    {
+      "id": "adv_05_cheer",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/adv.png",
+      "reference_sha256": "57fae87113be63e9b713c1cecc31fb84f3b04989127a353122f54db805276a02",
+      "output": "art/video/adv/adv_05_cheer.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": false,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked camel trench coat with one camera attached to the chest strap throughout. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 05, cheer: smile broadly, raise both hands above the shoulders without leaving frame, then lower them smoothly and return to the exact starting pose. Use a small anticipation and gentle ease-in/ease-out. Preserve fingers, glasses, face and cap throughout.",
+      "shot_number": "05",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/adv/adv_05_cheer.mp4",
+      "selected_source_sha256": "8dcf9f6474e209bfb77bb218829ba15cb8b37874d2b1781f65163734f2259897",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 12,
+        "start": 0.5,
+        "end": 3.75,
+        "segments": {},
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 39
+      }
+    },
+    {
+      "id": "grad_04_sleep",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/grad.png",
+      "reference_sha256": "40b877995dca949b0bc58b9f47bbd2cc6f9edbca97b0e1e561496a4737bb328b",
+      "output": "art/video/grad/grad_04_sleep.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": true,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked black graduation gown, gold stole, original white NABO baseball cap and exactly one rolled diploma held in the hands throughout; never introduce a mortarboard. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 04, sleep: gently lower the head onto the folded arms on the desk, breathe slowly with only a tiny natural nod, then gently rise back to the exact starting neutral pose. Include a steady middle breathing interval of at least 1.2 seconds for later seamless-loop extraction. No desk deformation, face replacement or sudden pose jump. The full source returns to neutral; only the steady middle interval will be considered for the game loop. Keep the one diploma supported in the hands at the desk edge during the head-rest action; do not put a new item on the tabletop, lose or duplicate the diploma.",
+      "shot_number": "04",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/grad/grad_04_sleep_v2.mp4",
+      "selected_source_sha256": "340e8723e73847cbdffc40c27b7f94c2c5bb875afbc4ab6dc65cb396c3d616a7",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS",
+      "runtime": {
+        "fps": 6,
+        "end": 4.0,
+        "segments": {
+          "in": [
+            0,
+            9
+          ],
+          "loop": [
+            9,
+            16
+          ],
+          "out": [
+            16,
+            24
+          ]
+        },
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 24
+      }
+    },
+    {
+      "id": "grad_05_cheer",
+      "provider": "Grok",
+      "generation_status": "RECEIVED",
+      "reference": "art/start/grad.png",
+      "reference_sha256": "40b877995dca949b0bc58b9f47bbd2cc6f9edbca97b0e1e561496a4737bb328b",
+      "output": "art/video/grad/grad_05_cheer.mp4",
+      "duration_seconds": [
+        3,
+        4
+      ],
+      "loop": false,
+      "prompt": "Use only the attached starting image for this stage. Preserve the exact face, hair, eyes, round glasses, proportions, white cap and forward N-A-B-O cap emblem. Never mirror, replace or deform the emblem. Keep the locked outfit: the locked black graduation gown, gold stole, original white NABO baseball cap and exactly one rolled diploma held in the hands throughout; never introduce a mortarboard. Fixed front camera with no zoom, pan, tilt, rotation or scale drift. Pure green #00B140 backdrop, the same horizontal empty desk edge and unchanged framing. No new objects, letters, captions, watermark or extra hands. Hands and existing accessories stay inside frame. Clean flat 2D cartoon with two-step cel shading. Duration 3–4 seconds. Begin with the exact attached neutral pose and finish with that same neutral pose, held briefly. Shot 05, cheer: smile broadly, raise both hands above the shoulders without leaving frame, then lower them smoothly and return to the exact starting pose. Use a small anticipation and gentle ease-in/ease-out. Preserve fingers, glasses, face and cap throughout. Graduation exception: keep holding the single diploma; lift it with the hands only as far as the original grip permits. Do not create a second diploma or force a grip that detaches it from the hands.",
+      "shot_number": "05",
+      "shot_list": "art/reference/SHOT_LIST.md",
+      "selected_source": "art/video/grad/grad_05_cheer.mp4",
+      "selected_source_sha256": "45e734c42cd228a50401e604c36fe2bc106de0cf743016aecbc46b8ac7310f7f",
+      "source_review": "PASS_SOURCE_FRAME_CHECKS_WITH_APPROVED_VARIATION",
+      "approved_variation": {
+        "date": "2026-10-30",
+        "source": "explicit user acceptance",
+        "description": "One hand may hold the single diploma during the raised-arm cheer; no duplication or loss, with the original neutral grip at the endpoints."
+      },
+      "prompt_role": "Original generation prompt retained for provenance; the explicitly approved variation defines the accepted single-hand raised pose.",
+      "runtime": {
+        "fps": 12,
+        "start": 0.5,
+        "end": 3.75,
+        "segments": {},
+        "palette_colors": 32,
+        "stable_color_distance": 36,
+        "frames": 39
+      }
+    }
+  ],
+  "status": "All 12 task slots received as 14 original MP4 files. All selected candidates pass source-frame checks; graduation single-hand grip variation explicitly accepted by the user.",
+  "integration": "Integrated in v0.4.2-preview.1: runtime sprites, prototype atlas, paired app/assets, full host suite and ESP-IDF build complete. Device flashing postponed by user."
+}

@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-30",
+  "task_slots": 12,
+  "source_files_received": 14,
+  "decoded_source_frames": 1358,
+  "selected_sources": [
+    {
+      "task": "junior_04_sleep",
+      "source": "art/video/junior/junior_04_sleep.mp4",
+      "sha256": "460c3d09fa9be614204ee96c4e292d3f639ea8e10f2ac0509d2074d217e01c9c",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        56,
+        92,
+        184,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "junior_05_cheer",
+      "source": "art/video/junior/junior_05_cheer.mp4",
+      "sha256": "68042505783842a7d88edf0f33b6b5585255619d5db0dcf74caead46b9cd921d",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        4,
+        89,
+        237,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "senior_04_sleep",
+      "source": "art/video/senior/senior_04_sleep.mp4",
+      "sha256": "b5fc1c13035ffb2ef6b962f4fcb7c0e181c72fcfae58731c59753bcae9cdc593",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        47,
+        92,
+        187,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "senior_05_cheer",
+      "source": "art/video/senior/senior_05_cheer.mp4",
+      "sha256": "7e61ba1dbe92b9880f9108911f38c5cd7e19b6b83a3cbd55d85bf5dcdf7e6f7d",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        14,
+        92,
+        225,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "cet4_04_sleep",
+      "source": "art/video/cet4/cet4_04_sleep_v2.mp4",
+      "sha256": "76ab63016aa790e9370d56f88349a3849dd8245f37b4500b883f7588b90809cf",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        55,
+        92,
+        184,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "cet4_05_cheer",
+      "source": "art/video/cet4/cet4_05_cheer.mp4",
+      "sha256": "2e6a707815159516b85b7572c696f3aa94a56e58d5bbdacb8f46f84b993f6ffe",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        8,
+        90,
+        231,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "cet6_04_sleep",
+      "source": "art/video/cet6/cet6_04_sleep.mp4",
+      "sha256": "be7ed1b6628d01fe6fbe3debae069abb4bc4003189782008047fd5065a684861",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        54,
+        92,
+        184,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "cet6_05_cheer",
+      "source": "art/video/cet6/cet6_05_cheer.mp4",
+      "sha256": "4857e3ef03f7f411552cdc2ac3513017dade7364dc6b9ae27e0888e4c2eaf00f",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        8,
+        81,
+        231,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "adv_04_sleep",
+      "source": "art/video/adv/adv_04_sleep.mp4",
+      "sha256": "e70dc9fac9cb495f5a9efc0a2f58c2d8bf8a501e83bf8cd8463d6c589c8adec8",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        54,
+        92,
+        185,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "adv_05_cheer",
+      "source": "art/video/adv/adv_05_cheer.mp4",
+      "sha256": "8dcf9f6474e209bfb77bb218829ba15cb8b37874d2b1781f65163734f2259897",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        14,
+        87,
+        225,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "grad_04_sleep",
+      "source": "art/video/grad/grad_04_sleep_v2.mp4",
+      "sha256": "340e8723e73847cbdffc40c27b7f94c2c5bb875afbc4ab6dc65cb396c3d616a7",
+      "status": "PASS_SOURCE_FRAME_CHECKS",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        38,
+        92,
+        201,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED"
+    },
+    {
+      "task": "grad_05_cheer",
+      "source": "art/video/grad/grad_05_cheer.mp4",
+      "sha256": "45e734c42cd228a50401e604c36fe2bc106de0cf743016aecbc46b8ac7310f7f",
+      "status": "PASS_SOURCE_FRAME_CHECKS_WITH_APPROVED_VARIATION",
+      "frames": 97,
+      "fps": 24.0,
+      "duration_s": 4.041667,
+      "desk_y_at_320h_range": [
+        268,
+        268
+      ],
+      "character_bbox_all_frames": [
+        20,
+        70,
+        221,
+        265
+      ],
+      "loop_seam": "NOT VERIFIED",
+      "runtime": "NOT TESTED",
+      "approved_variation": {
+        "date": "2026-10-30",
+        "source": "explicit user acceptance",
+        "description": "One hand may hold the single diploma during the raised-arm cheer; no duplication or loss, with the original neutral grip at the endpoints."
+      }
+    }
+  ],
+  "rejected_variants": {
+    "art/video/cet4/cet4_04_sleep.mp4": "desk deformation/drift; use v2",
+    "art/video/grad/grad_04_sleep.mp4": "desk drift; use v2"
+  },
+  "checks": {
+    "original_starts_hashes": "PASS",
+    "selected_sources_decode": "PASS",
+    "selected_sources_desk_side_band_constant": "PASS",
+    "selected_sources_character_within_frame": "PASS",
+    "identity_and_forward_cap_mark": "sampled visual review passed",
+    "native_110px_48px": "NOT RUN",
+    "extracted_loop_seams": "NOT RUN",
+    "packed_asset_budget": "NOT RUN",
+    "firmware_or_prototype_integration": "NOT RUN",
+    "graduation_single_hand_grip_variation": "ACCEPTED_BY_USER_2026-10-30"
+  },
+  "notes": [
+    "Sources are 720x960 (3:4), whereas locked starts are 1024x1280 (4:5). Endpoint proofs use a uniform resize plus center crop of the reference, without stretching or modifying the original.",
+    "All sources are 4.041667 seconds (97 frames at 24 fps): nominal four seconds plus the final frame duration.",
+    "Source audio and attached thumbnails remain intact. Only the primary video stream is decoded for visual diagnostics.",
+    "Graduation cheer retains one diploma but changes from the two-handed starting grip to one hand during the lift. A dense transition proof is retained; this is an explicitly user-approved variation dated 2026-10-30; the original stricter prompt is retained as generation provenance.",
+    "These are all-frame decode/geometry diagnostics and sampled visual source checks; continuous playback acceptance, final loop extraction and physical-screen rendering are not certified."
+  ]
+}
