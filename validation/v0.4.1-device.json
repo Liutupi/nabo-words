@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "roadmap_section": 1,
   "acceptance_complete": false,
-  "hardware_tested": false,
+  "hardware_tested": true,
   "source_commit": "edc920dd87f7b22ec675fac7d2a23808d9fa704e",
   "release_url": "https://github.com/Liutupi/nabo-words/releases/tag/v0.4.1",
   "application_sha256": "c96e7eb3a503871a2de52c747b4128279b0944953308c7e91baa6fc563ab8aa4",
@@ -16,7 +16,7 @@
     "release_source_file_hashes": "PASS",
     "merged_image_matches_components": "PASS",
     "partition_bounds": "PASS",
-    "flash_mode": "flash_words.py <confirmed-port> --app",
+    "flash_mode": "Verified merged full installation, then published flash_words.py <confirmed-port> --app",
     "writes": [
       {
         "file": "nabo-words-passport.bin",
@@ -31,16 +31,17 @@
     ],
     "preserve_record": {
       "offset": "0x200000",
-      "bytes": 65536
+      "bytes": 65536,
+      "applies_to": "The subsequent --app retention test only; the initial full installation initialized the record area."
     },
-    "device_partition_layout_verified": false
+    "device_partition_layout_verified": true
   },
   "devices": {
     "badge_a": {
       "identity_confirmed": true,
-      "flashed": false,
+      "flashed": true,
       "preflight": {
-        "result": "BLOCKED",
+        "result": "RESOLVED_BY_FULL_INSTALLATION",
         "project_name": "FoloToy-AI-Passport",
         "application_version": "0.2.0-dev",
         "compile_time": "Oct 30 2026 00:26:52",
@@ -73,7 +74,31 @@
         ],
         "word_game_status_available": false,
         "compatible_with_words_app_only_upgrade": false,
-        "notes": "Observed startup is kitchen firmware with no record partition. No Flash writes performed. Monitor open produced a USB_UART_CHIP_RESET; this is not a power-button test."
+        "notes": "Initial kitchen layout was replaced by the authorized complete v0.4.1 installation. The subsequent --app test used the correct words layout. USB monitor resets are not power-button evidence."
+      },
+      "installed": {
+        "version": "0.4.1",
+        "project": "nabo-words-passport",
+        "esp_idf": "v5.5.3",
+        "elf_sha256_prefix_from_boot": "c26241774",
+        "full_install": "PASS",
+        "app_reflash": "PASS",
+        "flash_verification": "esptool completed successfully and reported data hash verification",
+        "initial_progress": {
+          "learned": 0,
+          "coins": 0,
+          "streak": 0
+        },
+        "progress_scope": "Synthetic acceptance-test progress generated through serial onboarding and solve commands."
+      },
+      "after_app_upgrade": {
+        "day": 2,
+        "done": 1,
+        "learned": 20,
+        "coins": 3,
+        "streak": 1,
+        "heap": 134044,
+        "largest": 114688
       }
     },
     "badge_b": {
@@ -122,20 +147,28 @@
     },
     "result": "PASS"
   },
-  "device_tests": "NOT RUN",
+  "device_tests": "PARTIAL",
   "checks": [
     {
       "id": 1,
       "name": "Upgrade preserves learning progress",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "Capture status before and after flash_words.py <confirmed-port> --app on both badges.",
       "criteria": "learned, coins and streak remain unchanged.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN",
-          "before": null,
-          "after": null,
-          "notes": "NOT RUN: installed kitchen firmware has an incompatible partition layout; app-only words upgrade cannot establish learning-record preservation."
+          "status": "PASS",
+          "before": {
+            "learned": 20,
+            "coins": 3,
+            "streak": 1
+          },
+          "after": {
+            "learned": 20,
+            "coins": 3,
+            "streak": 1
+          },
+          "upgrade_path": "v0.4.1 fresh installation -> generated/saved test progress -> same published v0.4.1 --app reflash"
         },
         "badge_b": {
           "status": "NOT RUN",
@@ -143,20 +176,47 @@
           "after": null
         }
       },
-      "notes": "Waiting for target identity confirmation and access to both badges."
+      "notes": "One-badge self-reflash retention passed. A v0.3/v0.4.0-to-v0.4.1 migration and badge_b remain unverified; original word-game progress was unavailable on the initially installed kitchen firmware."
     },
     {
       "id": 2,
       "name": "Frame time",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "Reset perf counters for each scene, measure home for 30 seconds, answer 20 study questions, and measure stars for 10 seconds.",
       "criteria": "Home average <= 20 ms and maximum <= 60 ms; record actual scene measurements.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN",
-          "home": null,
-          "study": null,
-          "stars": null
+          "status": "PASS",
+          "home": {
+            "frames": 915,
+            "avg_ms": 4,
+            "max_ms": 8,
+            "over_33ms": 0,
+            "heap": 126260,
+            "largest": 77824
+          },
+          "study": {
+            "frames": 565,
+            "avg_ms": 2,
+            "max_ms": 26,
+            "over_33ms": 0,
+            "heap": 126260,
+            "largest": 77824
+          },
+          "stars": {
+            "frames": 307,
+            "avg_ms": 3,
+            "max_ms": 14,
+            "over_33ms": 0,
+            "heap": 126260,
+            "largest": 77824
+          },
+          "home_observation_seconds": 30,
+          "stars_observation_seconds": 10,
+          "study_new_words": 20,
+          "study_correct_answers": 20,
+          "study_solve_steps": 60,
+          "input_method": "Serial solve 1, spread across separate rendered frames; includes transition to summary."
         },
         "badge_b": {
           "status": "NOT RUN",
@@ -165,7 +225,7 @@
           "stars": null
         }
       },
-      "notes": "Host UI checks do not establish physical frame times."
+      "notes": "Measured on badge_a. Home 4 ms average / 8 ms maximum meets the 20/60 ms limits. Physical button and display appearance checks are separate."
     },
     {
       "id": 3,
@@ -221,18 +281,23 @@
     {
       "id": 7,
       "name": "Idle sleep and wake",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "Leave untouched for five minutes, then wake using a physical button.",
       "criteria": "Automatic deep sleep; wake returns home and preserves progress.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN"
+          "status": "PARTIAL",
+          "automatic_deep_sleep": "PASS",
+          "sleep_log_seconds_after_status": 299.85,
+          "usb_disconnect_seconds_after_status": 300.05,
+          "wake": "NOT RUN",
+          "notes": "No serial commands were sent during the idle interval. Physical button wake and visible home/progress confirmation are pending."
         },
         "badge_b": {
           "status": "NOT RUN"
         }
       },
-      "notes": "Do not poll serial commands during the idle interval; commands reset the idle timer."
+      "notes": "The approximately five-minute automatic deep-sleep transition was observed on badge_a; wake and badge_b remain pending."
     },
     {
       "id": 8,
@@ -272,7 +337,7 @@
           "after": null
         }
       },
-      "notes": "Physical operation required."
+      "notes": "The app reflash/USB monitor reset advanced day 1 to day 2 while learned/coins/streak remained unchanged. This is not a physical power-loss test."
     },
     {
       "id": 10,
@@ -298,20 +363,447 @@
     {
       "id": 11,
       "name": "Repeated-scene memory stability",
-      "status": "NOT RUN",
+      "status": "PARTIAL",
       "method": "Enter and leave battle ten times, and study and challenge five times each; capture status after every cycle.",
       "criteria": "Heap stabilizes with no continuing decline or restart; distinguish first Wi-Fi initialization from a leak.",
       "per_device": {
         "badge_a": {
-          "status": "NOT RUN",
-          "samples": []
+          "status": "PASS",
+          "study_cycles": [
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 76800,
+              "overflow": 0,
+              "heap": 134260,
+              "largest": 114688
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 134260,
+              "largest": 114688
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 134260,
+              "largest": 114688
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 9576,
+              "overflow": 0,
+              "heap": 134260,
+              "largest": 114688
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 9576,
+              "overflow": 0,
+              "heap": 134260,
+              "largest": 114688
+            }
+          ],
+          "battle_cycles": [
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 9576,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 9576,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 0,
+              "stage": 0,
+              "next": 0,
+              "learned": 0,
+              "mastered": 0,
+              "coins": 0,
+              "streak": 0,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 0,
+              "dirty": 0,
+              "saves": 2,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            }
+          ],
+          "challenge_cycles": [
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 1,
+              "stage": 0,
+              "next": 20,
+              "learned": 20,
+              "mastered": 0,
+              "coins": 3,
+              "streak": 1,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 1,
+              "dirty": 1,
+              "saves": 3,
+              "ops": 28,
+              "px": 10301,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 1,
+              "stage": 0,
+              "next": 20,
+              "learned": 20,
+              "mastered": 0,
+              "coins": 3,
+              "streak": 1,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 1,
+              "dirty": 1,
+              "saves": 3,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 1,
+              "stage": 0,
+              "next": 20,
+              "learned": 20,
+              "mastered": 0,
+              "coins": 3,
+              "streak": 1,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 1,
+              "dirty": 1,
+              "saves": 3,
+              "ops": 28,
+              "px": 9576,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 1,
+              "stage": 0,
+              "next": 20,
+              "learned": 20,
+              "mastered": 0,
+              "coins": 3,
+              "streak": 1,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 1,
+              "dirty": 1,
+              "saves": 3,
+              "ops": 28,
+              "px": 0,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            },
+            {
+              "scene": "home",
+              "day": 1,
+              "done": 1,
+              "stage": 0,
+              "next": 20,
+              "learned": 20,
+              "mastered": 0,
+              "coins": 3,
+              "streak": 1,
+              "freezes": 0,
+              "stamps": 0,
+              "clock_ok": 1,
+              "dirty": 1,
+              "saves": 3,
+              "ops": 28,
+              "px": 9576,
+              "overflow": 0,
+              "heap": 126260,
+              "largest": 77824
+            }
+          ],
+          "input_method": "Serial navigation, measuring status after each return home",
+          "restart_observed": false
         },
         "badge_b": {
           "status": "NOT RUN",
           "samples": []
         }
       },
-      "notes": "Requires physical firmware measurements."
+      "notes": "All five study returns were 134260 bytes free heap; after first radio initialization all ten battle and five challenge returns were 126260 bytes. No continuing decline."
     },
     {
       "id": 12,
@@ -337,10 +829,10 @@
     }
   ],
   "unverified": [
-    "The connected documented badge currently runs kitchen firmware 0.2.0-dev with incompatible partitions; a words --app upgrade has not been attempted.",
-    "Need access to a badge already running the words firmware with its record partition, or a separately authorized installation plan with explicit data impact.",
-    "Only one badge is available; physical two-badge battle and interruption tests are pending.",
-    "All twelve physical acceptance checks remain pending, including human buttons/audio/power operation, overnight rollover and one-day battery use.",
-    "Section 2 and later firmware implementation remain gated by section 1; section 3.1 additionally requires reporting check 10 to the user."
+    "Badge_b and its app-only upgrade have not been tested.",
+    "Physical buttons, audible quality/mute, two-badge battle/interruption, power-loss and actual power-button reset reason remain unverified.",
+    "Automatic deep sleep observed at 299.85 seconds after last status on badge_a; physical wake and visible progress confirmation remain pending.",
+    "Overnight rollover and one-day battery use remain unverified.",
+    "Section 1 is incomplete. Section 2 and later firmware changes remain gated; report the physical check 10 result before implementing 3.1."
   ]
 }
